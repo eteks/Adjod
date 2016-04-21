@@ -1,0 +1,9 @@
+{{ object.title }}
+{{ object.title }}
+{{ object.locality }}
+{{ object.price }}
+{{ object.subcategoryid }}
+{{ object.brandtype }}
+{{ object.city}}
+{{ object.status_isactive}}
+{{ object.premium_plan}}

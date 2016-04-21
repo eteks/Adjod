@@ -1,0 +1,76 @@
+{% load static from staticfiles %}
+{% load i18n %}
+{% block html %}
+{% block content %}
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Remainder for Product</title>
+ </head>
+
+<body>
+<div style="width: 744px; border-radius: 4px; border: 1px solid; height: 530px;">  
+    <div style="padding-left: 37%; padding-top: 2%; padding-bottom: 6px;">
+       <img is-full-width="false" style="max-width: 126px; margin-left: 29px;" src="https://pro-bee-user-content-eu-west-1.s3.amazonaws.com/public/users/BeeFree/754de35f-e3a1-42ed-994e-b0550048af0e/registered logo.jpg" ng-src="https://pro-bee-user-content-eu-west-1.s3.amazonaws.com/public/users/BeeFree/754de35f-e3a1-42ed-994e-b0550048af0e/registered logo.jpg" class="" alt="Image" title="Image" href="" ng-load="updateModelImageWidth()" ng-style="{'max-width': maxWidth}" ng-show="!isPlaceholder()"><br>
+    </div>  
+    <div class="content" style="padding: 7px 0px 0px 114px; width: 670px; height: auto;">
+      <table>
+        <tbody>
+          <tr>
+            <td style="font-size: 25px; font-family: calibri; text-align: center; padding-bottom: 10px; color: rgb(78, 78, 78); background: rgb(235, 235, 235) none repeat scroll 0% 0%;">Your Ad "{{title}}" on Resell has been removed 
+            </td>
+          </tr>
+          <tr>
+           <td style="font-size: 18px; font-family: calibri; text-align: center; padding-bottom: 10px; padding-top: 23px;">DEAR <span style="color:#FE002D;">{{user}}</span></td>
+          </tr>          
+          <tr>
+            <td style="font-family: calibri; padding-bottom: 10px; text-align: center; color: rgb(78, 78, 78); font-size: 17px;">
+              Your Ad "{{title}}" on Resell has been removed in accordance with our lisiting plan.
+            </td>
+          </tr>          
+        </tbody>
+      </table>
+      </div>
+      <div style="float: left; padding-top: 14px;">
+        <img width="191" height="255" emb-block-render-image="" draggable="false" unselectable="on" class="emb-unselectable" ng-src="https://img.createsend1.com/resize/ei/i/71/44F/C61/csimport/email_notification1.jpg?w=600" src="https://img.createsend1.com/resize/ei/i/71/44F/C61/csimport/email_notification1.jpg?w=600">
+      </div>
+      <div style="float: left; font-family: calibiri; padding-left: 23px; color: rgb(78, 78, 78); text-align: center; font-size: 16px;">
+        <p>Your ad was removed as it was found to be a spam ad.</p>
+        <p>For more information, please through <br> Resell's lisiting plan.</p>        
+      </div><br/>
+
+      <div style="float: left; margin-left: 178px; margin-top: 10px;">
+        <table>
+          <tbody>
+            <tr>
+              <td style="pagging-left:0px;">
+                <a style="background-image: linear-gradient(rgb(235, 28, 36), rgb(162, 2, 8)); text-decoration:none; color: white;  padding: 8px 17px 12px 18px;" href="{{active_link}}?plan=" class="active">Active</a>
+              </td>
+            </tr>           
+          </tbody>
+        </table>
+      </div>
+      <div style="float: right; padding-right: 50px; padding-top: 43px;">
+        <table>
+          <tbody>
+            <tr>
+              <td>
+                <img ng-show="!isPlaceholder()" ng-style="{'max-width': maxWidth}" ng-load="updateModelImageWidth()" href="" title="Image" alt="Image" class="" ng-src="https://pro-bee-user-content-eu-west-1.s3.amazonaws.com/public/users/BeeFree/754de35f-e3a1-42ed-994e-b0550048af0e/editor_images/registered red3.jpg" src="https://pro-bee-user-content-eu-west-1.s3.amazonaws.com/public/users/BeeFree/754de35f-e3a1-42ed-994e-b0550048af0e/editor_images/registered red3.jpg" style="max-width: 105px; float:right;" is-full-width="false">
+              </td>           
+            </tr>
+            <tr>
+              <td>
+                    <span style="font-size: 18px; color: rgb(78, 78, 78); font-family: calibri; float: right; padding-bottom: 10px;"> Team Resell</span>
+              </td>
+          </tr></tbody>
+        </table>
+    </div>
+</div>
+
+</body>
+</html>
+{% endblock %}
+{% endblock %}
+

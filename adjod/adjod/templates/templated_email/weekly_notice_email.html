@@ -1,0 +1,51 @@
+{% load i18n %}
+{% block html %}
+{% block content %}
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{% trans "Notice mail" %}</title>
+</head>
+<body>
+<div style="font-family: Arial;">
+  <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:40px auto;">
+    <tr>
+      <td>
+        <table class="background" style="padding-left: 10px;" width="100%" height="100%">
+          <tr>
+              
+            <td style='font-size: 16px; color:#000; line-height: 18px;'>
+              <p style="padding:8px 0px 4px;">{% trans "Hi" %}  {% if actor.first_name|wordcount > 1 %}{{ actor.first_name|truncatewords:1|slice:"-4"}}{% else %}{{ actor.first_name|truncatewords:1}}{% endif %}</p>             
+              
+              <p style="padding:8px 0px 8px;">
+                {% trans "This is your weekly update of leads matching your filters where the customers still are waiting for your help" %}!
+              </p>
+              
+              {% for key,value in main_lead_list.items %}
+              
+              <h3 style="font-size: 19px; color:#000; line-height: 18px;"><a href="{{current_site}}/{{value.url}}">{{ value.lead }}</a></h3>
+              
+              {% endfor %}
+              <p style="padding:8px 0px 4px;">{% trans "You are always welcome to contact us at Fixido to get help. Our contact information is included below" %}.</p>
+              <p style="padding:8px 0px 24px;"> </p>
+              <p style="padding:8px 0px 4px;">{% trans "Best regards" %}</p>
+              <p style="padding:8px 0px 0px;"><b>{% trans "The Fixido team" %}</b></p>
+              <p style="padding:4px 0px 0px;">{% trans "Phone" %}: {% trans "+ 46 (0)8 551 194 10" %}</p>
+              <p style="padding:4px 0px 0px;">{% trans "E-mail" %}: info@fixido.com</p>
+              <p style="padding:4px 0px 4px;"><a href="http://www.fixido.com/">www.fixido.com</a></p>
+              <p style="padding:4px 0px 4px;"><a href="http://www.fixido.com/" title="Fixido.com"><img src='{{current_site}}/{{img_url}}' /></a></p>
+              <!-- <p style="padding:8px 0px 4px;">{% trans "If you dont want any more notice e-mail, please deactivate it" %} <a href="{{current_site}}/{{notice_email_unsubscribe}}">{% trans "here" %}.</a></p> -->
+
+            </td>
+              
+          </tr>
+        </table>
+      </td>
+    </tr>
+    </table>
+</div>
+
+</body>
+</html>
+{% endblock %}
+{% endblock %}

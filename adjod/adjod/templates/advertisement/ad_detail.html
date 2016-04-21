@@ -1,0 +1,424 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% load static from staticfiles %}
+{%block page_swap%}
+    <span>
+      <a href="/search/?q=" class="previous_page2">{% trans "Back to my search results" %}</a>
+      {% if 'ads' in path %}
+      <i class="fa fa-angle-right right"></i>
+      <a href="/search/?q=" class="previous_page1">{{adinfo.category}}</a>
+      <i class="fa fa-angle-right right"></i>
+      <a href="/search/?q=" class="current_page">{{adinfo.subcategory}}</a>
+      {% endif %}
+    </span>
+{%endblock%}
+{%block content%}
+  <div class="row">
+   <div class="col-md-6 second-column">
+            <div id="fb-root" class="other-buttons visible-lg fb_reset">
+                 <span onclick="fbshare()" class="btn btn-default share_button" href="">Share
+                <i class="fa fa-share-alt"></i></span>
+                <!-- <span href="" class="btn btn-default favourite_button"> Add as favourite
+                <i class="fa fa-heart heart_detail"></i></span> -->
+            </div>
+              <div class="visible-lg">
+                  <h4>{{adinfo.title}}</h4>
+                  <span class="Ad-ID">{% trans "Ad ID:" %}{{adinfo.id}} | {{adinfo.created_date}} | {{product_viewed_count}} views</span>
+              </div>
+              <div class="product-image visible-lg">
+              <p class="{% if adinfo.premium_plan_id = 4 %} tag_img1 {% elif adinfo.premium_plan_id = 3 %} tag_img2 {% elif adinfo.premium_plan_id = 2 %} tag_img3 {% endif%} "></p>
+              <div class="upperimg">
+                  <ul class="portfolio clearfix">
+                    {%for photo in photos %}
+                    <!-- <div class="upperimg lightbox" data-big="{{ MEDIA_URL }}{{ photo }}"> -->
+                    <li>
+                      {% if largephoto = '' %}
+                        <a href="{{STATIC_URL}}img/no_imageonly.png"><img  src="{{STATIC_URL}}img/no_imageonly.png" class="dn"></a>
+                      {% else %}
+                        <a href="{{ MEDIA_URL }}{{ photo }}"><img  src="{{ MEDIA_URL }}{{ photo }}" class="dn"></a>
+                      {% endif %}
+                    </li>
+                    {%endfor%}
+                  </ul>
+              </div><!--upperimg-->
+              <div class="thumb_holder">
+                {%for thumbnail in thumbnails %}
+                  <!-- <div class="thumbs nb col-md-2 lightbox" data-big="{{ MEDIA_URL }}{{ photo }}"> -->
+                   <div class="thumbs nb col-md-2">
+                     {% if thumbnail = '' %}
+                     <img src="{{STATIC_URL}}img/no_imageonly.png" class="dn">
+                     {% else %}
+                    <img src="{{ MEDIA_URL }}{{ thumbnail }}" class="dn">
+                    {% endif %}
+                  </div><!--thumbs-->
+                {%endfor%}
+              </div><!-- thumb_holder -->
+                    <!-- <div class=""></div> -->
+                    <!-- <div class="thumbnails1">
+                      <a href=""><img class="img1"src="img/Product_pic1.png"></a>
+                    </div>
+                    <div class="thumbnails2">
+                      <a href=""><img class="img2"src="img/Product_pic2.png"></a>
+                    </div> -->
+                    <!-- <div class="div">
+                       <i class="fa fa-camera"></i><span>{{adinfo.imagecount}}</span>
+                    </div> -->
+              </div><!--product-image visible-lg-->
+    </div> <!-- second-column -->
+    <div class="product-image hidden-lg">
+                   <div class="upperimg upperimg_mob">
+                    <ul class="portfolio_mobile clearfix">
+                      {%for photo in photos %}
+                      <!-- <div class="upperimg lightbox" data-big="{{ MEDIA_URL }}{{ photo }}"> -->
+                      <li>
+                        {% if largephoto = '' %}
+                          <a href="{{STATIC_URL}}img/no_imageonly.png"><img src="{{STATIC_URL}}img/no_imageonly.png"></a>
+                        {% else %}
+                          <a href="{{ MEDIA_URL }}{{ photo }}"><img  src="{{ MEDIA_URL }}{{ photo }}"></a>
+                        {% endif %}
+                      </li>
+                      {%endfor%}
+                    </ul>
+                  </div><!--upperimg-->
+                   <!-- <div class="thumb_holder hidden-xs"> -->
+                   <div class="thumb_holder">
+                    {%for thumbnail in thumbnails %}
+                      <!-- <div class="thumbs nb col-md-2 lightbox" data-big="{{ MEDIA_URL }}{{ photo }}"> -->
+                       <div class="thumbs nb col-md-2">
+                         {% if thumbnail = '' %}
+                         <img src="{{STATIC_URL}}img/no_imageonly.png">
+                         {% else %}
+                        <img src="{{ MEDIA_URL }}{{ thumbnail }}">
+                        {% endif %}
+                      </div><!--thumbs-->
+                    {%endfor%}
+                  </div><!-- thumb_holder -->
+
+                    <!-- <div class=""></div> -->
+                    <!-- <div class="thumbnails1">
+                      <a href=""><img class="img1"src="img/Product_pic1.png"></a>
+                    </div>
+                    <div class="thumbnails2">
+                      <a href=""><img class="img2"src="img/Product_pic2.png"></a>
+                    </div> -->
+                    <div class="div hidden-xs">
+                       <i class="fa fa-camera"></i><span>{{adinfo.imagecount}}</span>
+                    </div>
+
+                  <div class="product_text hidden-lg">
+                    <div class="trans_product">
+                        <h3>{{adinfo.title}}</h3>
+                    </div><!--trans_product-->
+                  </div><!--product_text hidden-lg-->
+                  <div class="product_id">
+                    <span class="Ad-ID">Ad ID:{{adinfo.id}} | {{adinfo.created_date}} </span>
+                  </div><!--product_id-->
+                  <div class="price_mobile hidden-lg">
+                    <span class="price_info">{{adinfo.price|conversion}}</span>
+                  </div><!--price_mobile-->
+    </div><!-- product-image hidden-lg -->
+              <div class="contact-seller">
+                <h4 class="seller">{% trans "Contact Seller" %}</h4>
+                <div class="owner_contact">
+                    <!-- <p class="owner_name">
+                    {% if adinfo.userprofile %}
+                    {{adinfo.userprofile.user.email}}
+                    {% else %}
+                    {% trans "Anonymous" %}
+                    {% endif %}
+                    </p> -->
+                    <div><span class="name_detail">Contact Name : {{adinfo.userprofile.username}}</span></div>
+                    <p class="owner_number"><i class="fa fa-mobile"></i>
+                    {% if adinfo.you_phone %}
+                    {{adinfo.you_phone}}
+                    {% else %}
+                   <!--  No Contact Details, You can contact via chat when they are in online -->
+                    {% endif %}
+                   </p>
+                    <!-- <span class="number_verify_1"><i class="fa fa-check-circle"></i> Number verified</span></p>
+                    <p>{{adinfo.you_phone}}<span class="reply"><a href="" class="btn btn-default replybutton">REPLY</a></span></p> -->
+                    
+                    <!-- <div><button type="button" class="btn btn-warning detail_chat">Chat Now</button></div> -->
+                </div><!--owner_contact-->
+                <!-- <span>Send free SMS <i class="fa fa-caret-down caret-down"></i>
+                        <div class="login_holder">
+                  <form id="login_form" method="post" action="">
+                    Number: <input type="text" name="username" value="" size="30" />
+                    <br /><br />
+                    <input type="submit" value="send" />
+                    </form>
+                  </div>
+                </span> -->
+              </div><!--contact-seller visible-lg-->
+              <div class="detail_add1 visible-lg">
+                <img src="/../media/banners/watsapp_ad.png">
+                <a href="https://www.whatsapp.com/" target="__blank"><img src="/../media/banners/download_ad.png" class="click_link"></a>
+              </div><!--detail_add1-->
+    <div class="col-md-8 first-column">
+                <div class="column-height">
+                  <div class="clear_both"></div>
+                      <script>
+                        window.fbAsyncInit = function() {
+                          FB.init({
+                            appId      :'1157881127573603',
+                            xfbml      : true,
+                            version    : 'v2.5'
+                          });
+                        };
+
+                        (function(d, s, id){
+                           var js, fjs = d.getElementsByTagName(s)[0];
+                           if (d.getElementById(id)) {return;}
+                           js = d.createElement(s); js.id = id;
+                           js.src = "//connect.facebook.net/en_US/sdk.js";
+                           fjs.parentNode.insertBefore(js, fjs);
+                         }(document, 'script', 'facebook-jssdk'));
+                      </script>
+                      <script>
+                        function fbshare(){
+                        FB.ui({
+                         method: 'share',
+                         href: '{{request.META.HTTP_HOST}}{{ request.get_full_path }}',
+                         picture: "{{request.META.HTTP_HOST}}{% if largephoto == '' %}{{STATIC_URL}}img/no_imageonly.png{% else %}{{ MEDIA_URL }}{{ largephoto }}{% endif %}",
+                         caption: '{{adinfo.title}}',
+                         description: '{{adinfo.description}}'
+                        }, function(response){
+                        });
+                        }
+                      </script>
+
+                <div class="product-details">
+                  <div class="product_txt">
+                    <h3>Product Details<span class="price visible-lg">$ {{adinfo.price|conversion}}</span></h3>
+                  </div>
+                  <div class="product_owner_details">
+                    <p class="line_style"><span class="field_name fl">{% trans "Category" %}</span><span>:</span>
+                    <span class="parallel_line">{{adinfo.category}}</span></p>
+                    <p><span class="field_name fl">SubCategory</span><span>:</span>
+                    <span class="parallel_line">{{adinfo.subcategory}}</span></p>
+                    <p class="line_style"><span class="field_name fl">{% trans "Brand" %}</span><span>:</span>
+                    <span class="parallel_line">{{adinfo.ad_brand}}</span></p>
+                    <p><span class="field_name fl">Located In</span><span>:</span>
+                    <span class="parallel_line">{{adinfo.locality}}</span></p>
+                    <p class="line_style"><span class="field_name fl">{% trans "Posted By" %}</span><span>:</span>
+                    <span class="parallel_line">{{adinfo.you_are}}</span></p>
+                  </div>
+                  {% if adinfo.video%}
+                  <div class="video_url">
+                    <span>{% trans "Video URL:" %}<a target="__blank" href="{{adinfo.video}}">{{adinfo.video}}</a></span>
+                  </div>
+                  {% endif %}
+                </div>
+
+              </div>
+              
+               <!-- <div class="contact-seller_mobile hidden-lg"> -->
+                <!-- <h4 class="seller_mobile">{% trans "Seller details" %}</h4> -->
+                <!-- <div class="owner_contact">
+                    <p class="owner_name">
+                    {% if adinfo.userprofile %}
+                    {{adinfo.userprofile.user.email}}
+                    {% else %}
+                    {% trans "Anonymous" %}
+                    {% endif %}
+                    </p>
+                    <p class="owner_number">
+                    {% if adinfo.you_phone %}
+                    {{adinfo.you_phone}}
+                    {% endif %}
+                    </p>
+                    <span class="number_verify_1"><i class="fa fa-check-circle"></i>{% trans "Number verified" %}</span></p>
+                </div><!--owner_contact--> 
+                 <!-- <div class="send_msg">
+                  <span>{% trans "Send free SMS" %}<i class="fa fa-caret-down caret-down"></i>
+                    <div class="login_holder">
+                        <form id="login_form" method="post" action="">
+                          {% trans "Number:" %}<input type="text" name="username" value="" size="30" />
+                          <br /><br />
+                          <input type="submit" value="send" />
+                        </form>
+                    </div><!--login_holder-->
+                  <!-- </span> -->
+                <!-- </div>send_msg   -->
+              <!-- </div> -->
+
+              <div class="description_box">
+                <h4>{% trans "Description" %}</h4>
+                <p class="more">{{adinfo.description}}
+                </p>
+              </div>
+    </div> <!-- first-column -->
+       <!-- {% if adinfo.video %}
+         <div class="video_content visible-lg">
+                <video width="200px" height="100px" controls="true">
+                      <source src="www.youtube.com/watch?v=EdChMvZ0tNo" type="video/mp4">
+                </video>
+          </div>
+       {% endif %} -->
+                <!-- <span class="video_description">BMW Car</span>
+                <span>23,578 Views</span> -->
+
+  </div> <!-- row-1 -->
+
+
+    <div class="container recommend1 visible-lg">
+        <div class="recommended">
+          <span>{% trans "Recommended" %}</span>
+        </div>
+      <div class="row row2">
+        <div class="col-md-8">
+          {% if related_product %}
+              <ul class="product1">
+                {% for related_products in related_product|slice:":6" %}
+                <li class="product_list1 product_recommend">
+                   <div class="product_images1">
+                      <a href="/ads/{{related_products.object.id}}/" class="">
+                          {% if related_products.object.photos = '' %}
+                          <img src="{{STATIC_URL}}img/bg-img2.png">
+                          {% else %}
+                          <img src="{{MEDIA_URL}}{{related_products.object.photos|get_photos}}">
+                          {% endif %}
+                          {% if related_products.object.imagecount != 0 %}
+                          <div class="count_holder1 visible-lg">
+                            <span>{{related_products.object.imagecount}}</span>
+                            <i class="fa fa-camera"></i>
+                          </div>
+                          {% endif %}
+                      </a>
+                    </div>
+
+                    <div class="details">
+                        <div class="product_name1">
+                            <a href="/ads/{{related_products.object.id}}/" class="spans"> {{related_products.object.title}}</a>
+                            <span class="product_description1 visible-lg">{{related_products.object.description|truncatewords:10}}
+                            </span>
+                            <span class="model_year1 visible-lg"> {{related_products.object.condition}} | in {{related_products.object.city}} | By {{related_products.object.you_are}}</span>
+                            <span class="year visible-lg">{{related_products.object.created_date}}</span>
+                        </div>
+                        <div class="additional_details">
+                          <h3>$ {{related_products.object.price}}</h3>
+                          <span class="product_time">{{related_products.object.created_date|timesince}}</span>
+                          <!-- <span class="number_verify1 visible-lg">Number verified<i class="fa fa-check-circle checkcircle"></i></span>
+                          <a href="" class="btn btn-default contact_button visible-lg">Contact</a> -->
+                        </div>
+                    </div> <!-- details -->
+                  </li>
+                {% endfor %}
+              </ul>
+        {% endif %}
+        </div> <!-- col-md-8 -->
+
+        {% if recommendresults %}
+            <div class="col-md-4 column-ad visible-lg">
+              <div class="adv_part">
+                <a href="" class=""><code></code></a>
+              </div>
+            </div>
+        {% else %}
+            <div class="container fifth_part">
+              <div class="hp_ad banner_ad">
+                <ul class="fifth_part">
+                  {% for banners in banner|get_banner %}
+                  {% if banners.pageurl == '/' and banners.position == 'bottom' %}
+                    <li><a class="bannerlink" href="{{banners.link}}" class=""><img class="bannerimage" src="../../{{banners.banner}}" style="height:120px;width:970px;"></a></li>
+                  {% endif %}
+                  {% endfor %}
+                </ul>
+              </div> <!-- hp ad -->
+            </div> <!-- container fifth_part-->
+        {% endif %}
+      </div> <!-- row row2 -->
+ </div> <!-- container -->
+
+  <div class="col-md-3 column-ad visible-lg">
+      <div class="adv_part">
+          {% for banners in banner|get_banner %}
+            {% if banners.bannerplan_id == 6 %}
+              <img src="{{MEDIA_URL}}{{banners.banner}}" class="ad1" />
+            {% endif %}
+          {% endfor %}
+          <br>
+          <br>
+          {% for banners in banner|get_banner %}
+            {% if banners.bannerplan_id == 7 %}
+              <img src="{{MEDIA_URL}}{{banners.banner}}" class="ad1" style="height:260px;width:162px;" />
+            {% endif %}
+          {% endfor %}
+
+      </div>
+  </div>
+
+
+
+<div class="container recommend1 hidden-lg">
+     {% if related_product %}
+        <div class="related">
+          <span>{% trans "Recommended" %}</span>
+        </div>
+      {% endif %}
+      <div class="row row2">
+        <div class="col-md-12">
+          {% if related_product %}
+              <ul class="product1_mobile">
+                {% for related_products in related_product|slice:":6" %}
+                 {% if forloop.counter0|divisibleby:3 %}
+                <li class="product_mobile col-md-4">
+                  <div class="product_imgmbl">
+                    {% endif %}
+                      <a href="/ads/{{related_products.object.id}}/" class="">
+                        {% if related_products.object.photos = '' %}
+                        <img src="{{STATIC_URL}}img/bg-img2.png">
+                        {% else %}
+                        <img src="{{MEDIA_URL}}{{related_products.object.photos|get_photos}}">
+                        {% endif %}
+                        <div class="details">
+                            <div class="product_name1_mobile">
+                              <div class="tran_bg">
+                                <a href="/ads/{{related_products.object.id}}/" class="spans product_hover"> {{related_products.object.title}}</a>
+                                  <div class="additional_details_mobile">
+                                    <h3>$ {{related_products.object.price}}</h3>
+                                    <a href="" class="btn btn-default contact_button visible-lg">Contact</a>
+                                  </div><!--additional_details_mobile-->
+                              </div><!--tran_bg-->
+                            </div><!--product_name1_mobile-->
+                        </div> <!-- details -->
+                      </a>
+                      {% if forloop.counter|divisibleby:3 %}
+                    </div><!--product_imgmbl-->
+                  </li>
+                  {% endif %}
+                {% endfor %}
+            </ul>
+        {% endif %}
+        </div> <!-- col-md-8 -->
+        <div class="col-md-4 column-ad visible-lg">
+            <div class="adv_part">
+              <a href="" class=""><img src=""></a>
+            </div>
+        </div>
+        {% if recommendresults %}
+            <div class="col-md-4 column-ad visible-lg">
+              <div class="adv_part">
+                <a href="" class=""><code></code></a>
+              </div>
+            </div>
+        {% else %}
+
+          <div class="call_seller hidden-lg">
+            <!--  <button class="footer_seller">{% trans "Call seller" %}</button> -->
+          </div><!--call_seller-->
+            <div class="container fifth_part">
+              <div class="hp_ad banner_ad">
+                <ul class="fifth_part">
+                  {% for banners in banner|get_banner %}
+                  {% if banners.pageurl == '/' and banners.position == 'bottom' %}
+                    <li><a class="bannerlink" href="{{banners.link}}" class=""><img class="bannerimage" src="../../{{banners.banner}}" style="height:120px;width:970px;"></a></li>
+                  {% endif %}
+                  {% endfor %}
+                </ul>
+              </div> <!-- hp ad -->
+            </div> <!-- container fifth_part-->
+        {% endif %}
+      </div> <!-- row row2 -->
+    </div> <!-- container -->
+{% endblock %}

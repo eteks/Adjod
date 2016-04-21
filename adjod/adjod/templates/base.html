@@ -1,0 +1,768 @@
+{% load static from staticfiles %}
+{% load i18n %}
+{% load app_filters %}
+<!DOCTYPE>
+<!-- <html xmlns="http://www.w3.org/1999/xhtml" lang="{{ LANGUAGE_CODE|default:"en-us" }}" xml:lang="{{ LANGUAGE_CODE|default:"en-us" }}" {% if LANGUAGE_BIDI %}dir="rtl"{% endif %}> -->
+<html>
+<head>
+    <title>{% block title %}{% endblock %}</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, height=device-height, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="">
+    <link href="{% static "css/font-awesome.css" %}" rel="stylesheet">
+    <link href="{% static "css/bootstrap.min.css" %}" rel="stylesheet">
+    <link href="{% static "css/index.less" %}" rel="stylesheet/less" type="text/less">
+    <link href="{% static "css/jquery-ui.css" %}" rel="stylesheet">
+    <link href="{% static "css/jquery.ui.chatbox.css" %}" rel="stylesheet">
+    <link href="{% static "css/simpleFilePreview.css" %}" rel="stylesheet">
+    <link href="{% static "css/intlTelInput.css" %}" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="all" href="{% static "css/magnific-popup.css" %}">
+    <!-- <script src="{% static "js/jquery-1.9.1.js" %}"></script>
+    <script src="{% static "js/jquery-ui.min.js" %}"></script> -->
+    <script src="{% static "js/jquery-1.11.3.min.js" %}"></script>
+    <script src="{% static "js/jquery-migrate-1.2.1.js" %}"></script>
+    <script src="{% static "js/jquery-ui-1.10.4.custom.min.js" %}"></script>
+    <!-- <script src="{% static "js/bootstrap.min.js" %}"></script> -->
+    <script src="{% static "js/jquery.ui.chatbox.js" %}"></script>
+    <script src="{% static "js/jquery.ui.slider.js" %}"></script> 
+    <script src="{% static "js/jquery.switchButton.js" %}"></script>
+    <script src="{% static "js/html5shiv.js" %}"></script>
+    <script src="{% static "js/less.js" %}"></script>
+    <!-- <script src="{% static "js/action.js" %}"></script> -->
+    <link href="{% static "AdminLTE/dist/css/AdminLTE.css" %}" rel="stylesheet" type="text/css" />
+    <link id='theme' rel='stylesheet' />
+    <link rel='stylesheet' href="{% static "css/chat.css" %}" />
+    <script src="{% static "js/jquery.cookie.js" %}"></script>
+    <script src='http://localhost:<port>/socket.io/socket.io.js'></script>
+    <script src="{% static "js/socket.io.js" %}"></script>
+    <script src="{% static "js/jquery.slimscroll.min.js" %}"></script>
+    <script src="{% static "js/jquery.main.js" %}"></script>
+    <script src="{% static "js/config.js" %}"></script>
+    <script src="{% static "js/i18n_en.js" %}"></script>
+    <script src="{% static "js/quikr_project.js" %}"></script>
+    <script src="{% static "js/search.js" %}"></script>
+    <!-- <script type="text/javascript" src="{% static "js/jquery.fancybox.js" %}"></script> -->
+    <script type="text/javascript" src="{% static "js/jquery.simpleFilePreview.js" %}"></script>
+    <!-- <script src="{% static "js/jquery.iframe-transport.js" %}"></script> -->
+    <script src="{% static "js/intlTelInput.min.js" %}"></script>
+    <script src="{% static "js/mobile_action.js" %}"></script>
+    <script type="text/javascript" src="{% url django.views.i18n.javascript_catalog %}"></script> 
+    <script type="text/javascript" src="{% static "js/jquery.magnific-popup.min.js" %}"></script>
+    <script type="text/javascript">    
+      function updateCountdownTitle() {
+          var remaining = 200 - $('.ad_title').val().length;
+          $('#ad_title_count').text(remaining);
+      }
+      function updateCountdownDesc() {
+          var remaining = 1000 - $('#your_description').val().length;
+          $('#desc_count').text(remaining);
+      }
+    </script>
+    <script type="text/javascript">
+    window.onload = function() {
+        if (window.location.href.indexOf("?freealert") > -1) {
+          $('html, body').animate({scrollTop: '+=1000px'}, 800);
+      }
+    }
+    </script>
+    <script type="text/javascript" charset="utf-8">
+  (function(G,o,O,g,L,e){G[g]=G[g]||function(){(G[g]['q']=G[g]['q']||[]).push(
+   arguments)},G[g]['t']=1*new Date;L=o.createElement(O),e=o.getElementsByTagName(
+   O)[0];L.async=1;L.src='//www.google.com/adsense/search/async-ads.js';
+  e.parentNode.insertBefore(L,e)})(window,document,'script','_googCsa');
+</script>
+
+
+
+</head>
+<body>
+<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/nkAydfUqi1s" frameborder="0" allowfullscreen></iframe> -->
+    <div class="top_header">
+      <div class="container">
+      <nav class="navbar navbar-inverse navigation_bar logo_contain">
+        <div class="navbar-header">
+          {% if path == '/' or 'start' in path  %}
+            <!-- <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="true" aria-controls="navbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button> -->
+            <div class="logo_mobile">
+              <a href="#"><code></code></a>
+            </div><!--logo_mobile-->
+            <div class="custom_select language_custom_select lang_select hidden-lg">
+              <div class="select">
+                  <p>
+                      {% if request.LANGUAGE_CODE == 'en' or request.REQUEST.la == 'en' %}
+                        {% trans "English" %}
+                      {% endif %}
+
+                      {% if request.LANGUAGE_CODE == 'zh' or request.REQUEST.la == 'zh' %}
+                        {% trans "Chinese" %}
+                      {% endif %}
+
+                      {% if request.LANGUAGE_CODE == 'ms' or request.REQUEST.la == 'ms' %}
+                        {% trans "Malay" %}
+                      {% endif %}
+                  </p>
+                  <i class="fa fa-caret-down"></i>
+              </div><!-- select -->
+              <form action="/i18n/setlang/" method="post" id="language_selector">
+                  {% csrf_token %}
+                    <input name="next" type="hidden" value="{{request.path}}{% if request.GET.urlencode %}?{{request.GET.urlencode}}{% endif %}" />
+                    <select name="language" onchange="this.form.submit();">
+                        <option class="lang_hover" value="" style="display: none;"> </option>
+                        <option class="lang_hover" value="en">{% trans "English" %}</option>
+                        <option class="lang_hover" value="zh">{% trans "Chinese" %}</option>
+                        <!-- <option class="lang_hover" value="ms">{% trans "Malay" %}</option> -->
+                    </select>
+              </form>
+            </div><!-- custom_select -->
+            <!-- newly comment by kalai -- >
+            <!-- <div class="user_mobile hidden-lg">
+              <ul class="nav navbar-nav navbar-right">
+                  {% if user.is_authenticated %}
+                    {% if request.path != '/user_manage/' %}
+                      <li class="user_name start_myads"><a href="/user_manage/">My Account</a></li>
+                      {% endif %}
+                      {% endif %}
+                     <li>
+                        {% if user.is_authenticated %}
+                        <a href="/logout/" class="user_logout">{% trans "Logout" %}</a>
+                        {% endif %}
+                      </li>
+              </ul>
+          </div> --><!--user_mobile-->
+          {% endif %}
+
+          {% if 'search' in path  %}
+            <div class="result_page">
+              <a href="/"><i class="fa fa-angle-left left_angle"></i></a>
+              <i class="fa fa-filter filter_font"></i>
+            </div><!--result_page-->
+          {% endif %}
+          {% if 'ads' in path  %}
+            <div class="detail_page">
+               <a href="/"><i class="fa fa-angle-left angle_icon"> <span class="detail_list">Details</span></i></a>
+              <div class="detail_icon">
+                  <!-- <i class="fa fa-heart heart_font"></i> -->
+                    <div class="share hidden-lg">
+                      <span class="share_dropdown"><i class="fa fa-share-alt share_font"></i></span>
+                      <ul class="share_dropdownmenu">
+                        <li><i class="fa fa-facebook-square"></i></li>
+                        <!-- <li><i class="fa fa-twitter-square"></i></li> -->
+                      </ul>
+                    </div> <!--share-->
+                  </div><!--detail_icon-->
+               </div><!--detail_page-->
+         {% endif %}
+    </div> <!-- navbar header -->
+ 
+    {% if 'postad' in path  %}
+            <div class="postad_page">
+              <a href="/"><i class="fa fa-angle-left left_angle"></i>
+              <span class="post_ad_first hidden-lg">Post an Ad in just 30 seconds</span></a>
+            </div><!--postad_page-->
+          {% endif %}
+          {% if 'user_manage' in path %}
+          <div class="user_mgnt_page">
+            <a href="/"><i class="fa fa-angle-left left_angle"></i></a>
+          </div><!--user_mgnt_page-->
+          {% endif %}
+       <!-- CHANGES MADE BY RAMYA FOR USER PROFILE -->
+          <div id="navbar" class="collapse navbar-collapse">
+              <a class="quikr_logo fl" href="/"> </a>
+              <ul class="nav navbar-nav navbar-right">
+                  {% if user.is_authenticated %}
+                    {% if request.path != '/user_manage/' %}
+                      <!-- <li class="user_name start_myads"><a href="/user_manage/">{{request.user.email}}</a></li> -->
+                      <li class="user_name start_myads"><a href="/user_manage/">My Account</a></li>
+                    {% else %}
+                      <!-- <li class="user_name"><a href="/user_manage/">{{request.user.email}}</a></li> -->
+                      <li class="user_name"><a href="/user_manage/">My Account</a></li>
+                      <i class="fa fa-caret-down caret_user"></i>
+                      <div class="user_dropdown">
+                         <ul>
+                            <li class="menu_active"><a href="#" class="My_ads">My Ads</a></li>
+                            <li class="menu_active"><a href="#" class="My_profile">Update My Profile</a></li>
+                          <!--  <a href="/my_chats"><li>My Chats</li></a> -->
+                         </ul>
+                      </div> <!--user_dropdown-->
+                  {% endif %}
+                  {% endif %}
+                    <!-- {% if 'search' in path %}
+                    <li>
+                      <div class="custom_select language_custom_select">
+                        <div class="select">
+                        <p id="cityselected">Select Locality</p>
+                        <i class="fa fa-caret-down"></i>
+                        <!- For Future reference ->
+                        <!- <select class="city">
+                          <option  id="currentid" value="{{request.COOKIES.global_city_id}}">{{ request.COOKIES.city }}</option>
+                          {% for cities in current_country_cities %}
+                            {% if cities.city != request.COOKIES.city %}
+                              <option value="{{cities.id}}" id="ajax_cityid">{{ cities.city }} </option>
+                            {% endif %}
+                          {% endfor%}
+                        </select> ->
+                        <select class="city">
+                          <option  id="currentid" value="Select Locality">Select Locality</option>
+                          {% for localities in locality %}
+                              <option value="{{localities.id}}" id="ajax_cityid">{{ localities.locality }} </option>
+                          {% endfor%}
+                        </select>
+                         </div><!- select ->
+                       </div><!-custom_select->
+                    </li>
+                    {% endif %} -->
+
+                     <li>
+                        <div class="custom_select language_custom_select lang_select">
+                            <div class="select">
+                              <p>
+
+                                  {% if request.LANGUAGE_CODE == 'en' or request.REQUEST.la == 'en' %}
+                                    {% trans "English" %}
+                                  {% endif %}
+
+                                  {% if request.LANGUAGE_CODE == 'zh' or request.REQUEST.la == 'zh' %}
+                                    {% trans "Chinese" %}
+                                  {% endif %}
+
+                                  {% if request.LANGUAGE_CODE == 'ms' or request.REQUEST.la == 'ms' %}
+                                    {% trans "Malay" %}
+                                  {% endif %}
+                              </p>
+
+                              <i class="fa fa-caret-down"></i>
+                              </div><!-- select -->
+                               <form action="/i18n/setlang/" method="post" id="language_selector">
+                                {% csrf_token %}
+                                  <input name="next" type="hidden" value="{{request.path}}{% if request.GET.urlencode %}?{{request.GET.urlencode}}{% endif %}" />
+                                  <select name="language" onchange="this.form.submit();">
+                                      <option class="lang_hover" value="" style="display: none;"> </option>
+                                      <option class="lang_hover" value="en">{% trans "English" %}</option>
+                                      <option class="lang_hover" value="zh">{% trans "Chinese" %}</option>
+                                      <!-- <option class="lang_hover" value="ms">{% trans "Malay" %}</option> -->
+                                  </select>
+                                </form>
+
+                            </div><!-- custom_select -->
+
+                      </li>
+
+                       <li>
+                          {% if user.is_authenticated %}
+                          <a href="/logout/" class="user_logout">{% trans "Logout" %}</a>
+                          {% else %}
+                          <a class="popup_sign_in">{% trans "Login" %}</a>
+                          <li><a class="popup_sign_up">{% trans "Sign up" %}</a></li></a>
+                          {% endif %}
+                      </li>
+                </ul>
+                <div class="clear_both"> </div>
+          </div> <!-- navbar collapse -->
+        </nav> <!-- navigation bar -->
+      </div><!-- container -->
+</div><!-- top_header -->
+
+    {%  if path == '/' or 'start' in path  or 'categories' in path  or 'login' in path%}
+    <div class="header_search">
+      <div class="container header_middle">
+        <h2 class="heading">{% trans "Singapore's largest marketplace" %}</h2>
+        <form class="form" method="get" action="/search/?q=" id="f_search" name="f_search" style="position: relative;">
+            <div class="form">
+              <i class="fa fa-search"></i>
+                {% if query or request.REQUEST.q or request.REQUEST.q == '' %}
+                <input type="text"  name="q" id="q" class="form-control input-lg" placeholder="Search here"  value="{% if query %}{{ query }}{% elif request.REQUEST.q %}{{request.REQUEST.q}}{% elif request.REQUEST.q == '' %}{% else %}{% endif %}" />
+                {% else %}
+
+                <input type="text" name="q" id="q" class="form-control input-lg" placeholder="Search here"  value="{% if recent_viewed_search %}{% for cat in recent_viewed_search|slice:'1' %}{% if cat.activity_view %}{{ cat.activity_view }}{% else %}{% endif %}{% endfor %}{% else %}{% endif %}"/>
+                {% endif %}
+                <button type="submit"class="btn btn-lg btn-success search_btn" value="Search">{% trans "Search" %}</button>
+            </div> <!-- form -->
+
+        </form>
+      </div>
+    </div> <!-- header_search -->
+    <div class="header_first_line">
+      <div class="container">
+        <h4 class="first_line">{% trans "To Buy or Find anything select an option below:" %}</h4>
+      </div> <!-- container -->
+    </div> <!-- header_first_line -->
+    {% endif %}
+
+    {%  if 'search' in path  or 'postad' in path  or 'ads' in path  or 'user_manage' in path %}
+       <div class="search_part">
+          <div class="container">
+              <form class="info_form" method="get" action="/search/?q=">
+                  {%  if 'search' in path %}
+                      <div class="custom_select language_custom_select search_city">
+                          <div class="select select_new">
+                          <p id="localityselected">Select Locality</p>
+                          <i class="fa fa-caret-down"></i>
+                           <select class="locality">
+                            <option  id="currentid" value="Select Locality">Select Locality</option>
+                            {% for localities in locality %}
+                                <option value="{{localities.id}}" id="ajax_cityid">{{ localities.locality }} </option>
+                            {% endfor%}
+                          </select>
+                           </div><!-- select -->
+                      </div><!-- custom_select -->
+                  {% endif %}
+                      <div class="button visible-lg">
+                        <i class="fa fa-search search_icon"></i>
+                        {% if query or request.REQUEST.q or request.REQUEST.q == '' %}
+                          <input type="text" name="q" id="q" class="form-control input-lg" placeholder="Search here" value="{% if query %}{{ query }}{% elif request.REQUEST.q %}{{request.REQUEST.q}}{% elif request.REQUEST.q == '' %}{% else %}{% endif %}" />
+                        {% else %}
+                          <input type="text" name="q" id="q" class="form-control input-lg" placeholder="Search here" value=""/>
+                        {% endif %}
+                        </div>
+                      <button type="submit"class="btn btn-lg btn-success search_b">Search</button>
+                     <!--  <a href="{% url product_form %}" class="btn btn-lg post-button">Post free Ad</a> -->
+                     <div class="search_tool{% if user.is_authenticated and userprofile.ad_count >= 3 and userprofile.is_subscribed == 0%} disable_post {% endif%}">
+                        <a href="{% if user.is_authenticated and userprofile.ad_count >= 3 and userprofile.is_subscribed == 0%} {% else %} {% url product_form %} {% endif%}" class="btn btn-lg post-button">{% trans "Post Free Ad" %}</a>
+                        <div class="searchpage_tooltip">{% trans "You already add 3 posts," %}<br>{% trans "if u want add more posts," %}<br>{% trans "u have to make ur account as premium" %}<button type="button" class="btn btn-link link_tooltip">{% trans "Click here" %}</button></div>
+                      </div>
+                      <a class="btn btn-lg alert-button">{% trans "Create free alert" %}</a>
+
+                </form> <!-- info_form -->
+          </div> <!-- container logo_part -->
+        {%  if 'search' in path %}
+          <div class="container logo_part_mobile hidden-lg">
+                <form class="info_form" method="get" action="/search/?q=">
+                      <div class="button">
+                        <i class="fa fa-search search_icon"></i>
+                        {% if query or request.REQUEST.q or request.REQUEST.q == '' %}
+                          <input type="text" name="q" id="q" class="form-control input-lg" placeholder="" value="{% if query %}{{ query }}{% elif request.REQUEST.q %}{{request.REQUEST.q}}{% elif request.REQUEST.q == '' %}{% else %}{% endif %}" />
+                        {% else %}
+                          <input type="text" name="q" id="q" class="form-control input-lg" placeholder="" value="{% if recent_viewed_search %}{% for cat in recent_viewed_search|slice:'1' %}{% if cat.activity_view %}{{ cat.activity_view }}{% else %}{% endif %}{% endfor %}{% else %}{% endif %}" />
+                        {% endif %}
+                        </div>
+                      <button type="submit"class="btn btn-lg btn-success search_b">{% trans "Search" %}</button>
+                      <a href="{% url product_form %}" class="btn btn-lg post-button">{% trans "Post free Ad" %}</a>
+                      <a href="/" class="btn btn-lg alert-button">{% trans "Create free alert" %}</a>
+                </form> <!-- info_form -->
+          </div> <!-- container logo_part -->
+        {% endif %}
+           {%  if 'postad' in path %}
+            <div class="container">
+              <div class="post_ad_first hidden-xs">{% trans "Post an Ad in just 30 seconds" %}</div>
+                <div class="post_ad_second">{% trans "DO NOT post multiple ads for the same items or service. All duplicate, spam and wrongly categorized ads will be deleted." %}</div>
+            </div>
+          {% endif %}
+      </div> <!-- search_part -->
+      {%  if 'search' in path  or 'ads' in path or 'user_manage' in path %}
+      <div class="page_swap">
+        <div class="container page_back">
+          {%block page_swap%}
+          {%endblock%}
+      </div>
+      </div>
+      <hr class="photos_line" noshade="noshade">
+      {% endif %}
+    {% endif %}
+    <div class="container second_part">
+      {% block content %}
+      {% endblock %}
+    </div> <!-- container second part -->
+
+    {% if 'search' in path %}
+    <div class="container center">
+      {%block search_results%}
+      {%endblock%}
+      {%block search_results1%}
+      {%endblock%}
+    </div> <!-- container -->
+    {% endif %}
+
+
+
+    <div class="container">
+      <p class="contact">{% trans "For site related issues,Check out our" %}<a href=""><span class="span3">{% trans "Help" %}</span></a>{% trans "section or email us at" %} <a href=""><span class="span3">{% trans "support@resell.com" %}</span>
+      </a><br>{% trans "You can also call our support team@65-67119979S(M-F:10AM to 6PM)" %}</p>
+    </div> <!-- container -->
+
+    <div class="footer_image">
+      <img src="/../static/img/SINGAPORE1.png" style="width:100%; height=170px;">
+    </div> <!-- footer_image -->
+
+    <div class="final_part">
+      <div class="container">
+        <div class="row row_4 footer_content">
+          <div class="col-md-2">
+                           <ul>
+                            <li><a href="" class="footer">{% trans "Help" %}</a></li>
+                            <li><a href="" class="footer">{% trans "Terms of use" %}</a></li>
+                            <li><a href="" class="footer">{% trans "How it works" %}</a></li>
+                            </ul>
+          </div>
+          <div class="col-md-2">
+                           <ul>
+                            <li><a href="" class="footer">{% trans "Privacy policy" %}</a></li>
+                            <li><a href="" class="footer">{% trans "Locations map" %}</a></li>
+                            <li><a href="" class="footer">{% trans "Contact us" %}</a></li>
+                            </ul>
+          </div>
+          <div class="col-md-2">
+                            <ul>
+                            <li><a href="" class="footer">{% trans "Popular searches" %}</a></li>
+                            <li><a href="" class="footer">{% trans "who we are" %}</a></li>
+          </div>
+          <div class="col-md-2"></div>
+          <div class="col-md-4 foot"><span class="footer1">{% trans "you can also call our support team" %}<br>
+                            <span class="phone">{% trans "phone:65-67119979" %}</span><br>{% trans "M-F:10AM to 6PM " %}<br>
+                            <a href="#facebook"><i class="fa fa-facebook-official"></i></a>
+                            <a href="#linkedin"><i class="fa fa-linkedin-square"></i></a>
+                            <a href="#twitter"><i class="fa fa-twitter-square"></i></a>
+                            </span>
+          </div>
+        </div> <!-- row4 -->
+
+
+       </div> <!-- container-->
+  </div> <!-- final_part -->
+      {%  if path == '/' or 'start' in path  or 'search' in path %}
+        <div class="col-md-2 footer_responsive">
+              <!-- <select class="footer_lang">
+                        <option selected="" disabled="">{% trans "Select language :" %} </option>
+                        <option>{% trans "English" %}</option>
+                        <option>{% trans "Chinese" %}</option>
+               </select> -->
+               <!-- comment nithya code by kalai -->
+              <!-- <button class="footer_signup">{% trans "Sign up" %}</button>
+              <button class="footer_login">{% trans "Login" %}</button> -->
+              <!-- newly added by kalai -->
+              {% if user.is_authenticated %}
+              <a class="footer_login" href="/logout/">{% trans "Logout" %}</a>
+              <a class="footer_account" href="/user_manage/">{% trans "My Account" %}</a>
+              {% else %}
+              <a class="footer_signup">{% trans "Sign up" %}</a>
+              <a class="footer_login">{% trans "Login" %}</a>
+              {% endif %}
+        </div><!--footer_responsive-->
+      {% endif %}
+
+    {% include "base_ajax.html" %}
+
+      <!--======================
+            Sign in
+      ========================-->
+      <div class="popup_fade cancel_btn" style="{% if request.REQUEST.si %} display:block; {%else%} display: none; {% endif %}"></div>
+      <div class="container">
+            <div id="sign_in_div" class="sign_in_div signin_mobile" style="{% if request.REQUEST.si %} display:block; {%else%} display: none; {% endif %}">
+          <code class="close_btn cancel_btn" style="{% if request.REQUEST.si %} display:block; {%else%} display: none; {% endif %}"> </code>
+
+            <div class="sign_in_title">
+              <span>{% trans "Sign in" %}</span>
+            </div> <!-- sign_in_title -->
+
+            <div id="account" class="form-group">
+                <span>{% trans "I have a account already" %}</span>
+              </div> <!-- account -->
+               <span class="signup_error" style="{% if request.REQUEST.si %} display:block; {%else%} display: none; {% endif %}">
+                {%for message in messages%}{{message}}{% endfor %}</span>
+           <form id="login_form" method="post" action="/login/" name="sign_in">
+           {% csrf_token %}
+            <div id="email_userid_div" class="form-group">
+                <input class="email_id" name="email_id" id="emailid_signup" placeholder="Username*" />
+                <label for="emailid_signup" id="emailid_required" class="labelError" style="display:none;">{% trans "Please enter Email or User ID" %}</label>
+              </div> <!-- email_id_div -->
+
+              <div id="password_signup_div" class="form-group">
+                <input class="password" type="password" name="password" id="password_signup" placeholder="Password*" />
+                <label for="password" id="password_required" class="labelError" style="display:none;">{% trans "Please enter Password" %}</label>
+              </div> <!-- password_div -->
+
+              <input type="hidden" value="{{ request.get_full_path }}" name="next" />
+            </form>
+
+
+            <div id="forgot_div" class="form-group">
+              <span class="forgot_act">{% trans "Forgot your password?" %}</span>
+              <input class="btn confirm_button" type="button" value="Sign in" name="create" id="signin" />
+
+            </div> <!-- forgot_div -->
+
+            <div id="" class="form-group">
+              <hr class="photos_line" noshade="noshade">
+            </div> <!-- hr_div -->
+
+            <div class=" facebook fl" >
+              <a  href="{% url socialauth_begin 'facebook' %}" ><button class="fb_button"><!-- <i class="fa fa-facebook"></i> -->{% trans "Facebook" %}</button></a>
+            </div>
+
+            <div  class=" fl">
+              <a  href="{% url socialauth_begin 'google-oauth2' %}" ><button class="gmail_button"><!-- <i class="fa fa-google-plus"></i> -->{% trans "Gmail" %}</button></a>
+            </div>
+
+            <div class="clear_both"></div>
+            <div id="free_signup_div" class="form-group">
+              <span class="signin">{% trans "I don't have a account" %}</span>
+              <a class="popup_sign_up"><button class="free_button btn-lg">{% trans "Sign up for free" %}</button></a>
+            </div> <!-- free_signup_div -->
+
+        </div> <!-- sign_in_div -->
+      </div> <!-- container -->
+       <!--======================
+          End Sign in
+      ========================-->
+
+      <!--======================
+            Sign up
+      ========================-->
+      <div class="popup_fade cancel_btn" style="{% if request.REQUEST.st %} display:block; {%else%} display: none; {% endif %}"></div>
+      <div class="container">
+
+        <div id="sign_up_div" class="sign_up_div" style="{% if request.REQUEST.st %} display:block; {%else%} display: none; {% endif %}">
+        <code class="close_btn cancel_btn" style="{% if request.REQUEST.st %} display:block; {%else%} display: none; {% endif %}"> </code>
+          <div class="sign_up_title">
+            <span>{% trans "Sign up" %}</span>
+          </div> <!-- sign_up_title -->
+          <span class="signup_error" style="{% if request.REQUEST.st %} display:block; {%else%} display: none; {% endif %}">
+          {%for message in messages%}{{message}}{% endfor %}</span>
+        <form id="user_form" method="post" action="/new_user/" name="sign_up" enctype="multipart/form-data">
+        {% csrf_token %}
+          <div id="register_now" class="form-group">
+              <span>{% trans "Register now for free" %}</span>
+            </div> <!-- register_now -->
+
+
+          <div id="email_id_div" class="form-group">
+              <input class="email_id" name="email_id" id="email_id" placeholder="Email ID*" />
+              <label id="email_required" class="signup_labelError" style="display:none;">{% trans "Please enter Email " %}</span>
+              <span id="valid_signup_email_required" class="hide_error_message error_message">{% trans "Please enter valid Email." %}</span>
+            </div> <!-- email_id_div -->
+
+            <div id="password_div" class="form-group">
+              <input class="password" type="password" name="password" id="password" placeholder="Password*" />
+              <span id="result"></span>
+              <label for="password" id="signup_password_required" class="signup_labelError" style="display:none;">{% trans "Please enter Password" %}</label>
+            </div> <!-- password_div -->
+
+             <div id="user_id_div" class="form-group fl">
+              <input class="user_id" name="user_id" id="user_id" placeholder="Username*" />
+              <label for="user_id" id="user_required" class="signup_labelError" style="display:none;">{% trans "Please enter Username" %}</label>
+            </div> <!--user _id_div -->
+
+
+              <div id="mobile_number_div" class="form-group fr">
+                <input class="mobile_number" name="your_mobile_number" id="mobile_number_sign_up_home"  type="tel"/><br><br>
+                <label id="valid-msg" class="hide">please enter valid mobile number</label>
+              </div>
+
+              <!-- <div id="mobile_number_div" class="form-group">
+                <input class="mobile_number" name="your_mobile_number" id="mobile_number" placeholder="Your mobile number" onkeyup="if (/\D/g.test(this.value)) this.value = this.value.replace(/\D/g,'')" onkeypress="isValidMobileNo();" />
+              </div> -->
+              <div class="clear_both">
+
+              <!-- <div class="sign_up_span">
+              <span>(We will verify this number for privacy protection)</span>
+              </div> -->
+
+
+           <!--  <div id="confirm_div" class="form-group">
+              <input class="confirm" type="checkbox" name="confirm" />
+              <span>I confirm that i am 18 yrs or older</span>
+              <input class="btn signup_confirm_button" type="submit" value="Create" name="create" id="create" disabled="disabled" />
+              <div>
+                      <span class="hovertext"> click the checkbox then create button will enable</span>
+                </div>
+            </div> <!- password_div -->
+            <div id="confirm_div" class="form-group">
+              <input class="confirm" type="checkbox" name="confirm" />
+              <span>{% trans "I confirm that I am 18 years or older" %}</span>
+              <a class="tool_tip"><input class="btn signup_confirm_button masterTooltip" type="submit" value="Create" name="create" id="create"><div class="signup_tooltip">{% trans "Your age must be above 18 years, please check age status and then create account" %}</div></a>
+
+            </div>
+</form>
+            <div id="hr_div" class="form-group">
+              <hr class="photos_line" noshade="noshade">
+            </div> <!-- hr_div -->
+
+            <div id="signin_div" class="form-group">
+              <span class="signin">{% trans "I have a account already" %}<a class="popup_sign_in">{% trans "Sign in" %}</a> </span>
+            </div> <!-- signin_div -->
+
+        </div> <!-- sign_up_div -->
+      </div> <!-- container -->
+       <!--======================
+          End Sign up
+      ========================-->
+
+      <!--======================
+        forgot password
+      ========================-->
+      <div class="container">
+          <div id="forgot_div" class="forgot_div forgot_mobile" style="{% if request.REQUEST.sf %} display:block; {%else%} display: none; {% endif %}">
+          <code class="close_btn cancel_btn" style="{% if request.REQUEST.sf %} display:block; {%else%} display: none; {% endif %}"> </code>
+            <div class="forgot_title">
+              <span>{% trans "Forgot Password" %}</span>
+            </div> <!-- sign_in_title -->
+
+
+              <span class="forgot_error" style="{% if request.REQUEST.sf %} display:block; {%else%} display: none; {% endif %}">
+          {%for message in messages%}{{message}}{% endfor %}</span>
+           <form id="forgot_form" method="post" action="/forgot/" name="forgot">
+           {% csrf_token %}
+
+
+
+            <!-- <div id="email_userid_div" class="form-group">
+                <input class="email_id" name="email_id" id="emailid_signup" placeholder="Email id" />
+                <label for="emailid_signup" id="emailid_required" class="labelError" style="display:none;">Please enter Email or User ID</label>
+              </div> <!- email_id_div ->
+              <div id="forgot_div" class="form-group">
+              <input class="btn confirm_button" type="submit" value="Sign in" name="create" id="signin" />
+
+            </div> -->
+
+            <iframe src="{% url password_reset %}" scrolling="no" frameBorder="0" style="border:none;" class="pwd_reset_iframe"></iframe>
+           </form>
+            <div id="" class="form-group">
+              <hr class="photos_line" noshade="noshade">
+            </div> <!-- hr_div -->
+
+            <div id="free_signup_div" class="form-group">
+              <span class="signin">{% trans "I don't have a account" %}</span>
+              <a class="popup_sign_up"><button class="free_button btn-lg">{% trans "Sign up for free" %}</button></a>
+            </div> <!-- free_signup_div -->
+
+        </div> <!-- forget_div -->
+      </div> <!-- container -->
+      <!--======================
+          End Forgot Password
+      ========================-->
+
+      <!--======================
+         Account Subscription Popup
+      ========================-->
+
+      <div class="subscription_popup">
+      <code class="close_btn cancel_btn" style="{% if request.REQUEST.sf %} display:block; {%else%} display: none; {% endif %}"></code>
+         <div class="subscribe_title">
+            <h4>{% trans "Account Subscribe" %}</h4>
+         </div><!--subscribe_title-->
+         <div class="subscribe_content">
+           <p>{% trans "You already used our Free Limited Services. If you want to post more Ads, Please Subscribe your account." %}</p>
+           <p class="account_amount"> $ {{premium_info_account.premium_price}} </p>
+           <code></code>
+        </div><!--subscribe_content-->
+        <form action='{{sandbox_url}}' method='post' name="paypal_account_subscription">
+        {%csrf_token%}
+          <input id="id_business" type="hidden" value="{{paypal_receiver_email}}" name="business">
+          <input id="id_amount" type="hidden" value="{{premium_info_account.premium_price}}" name="amount">
+          <input id="id_item_name" type="hidden" value="Account Subscription" name="item_name">
+          <input id="id_notify_url" type="hidden" value="{{current_site}}{{notify_url}}" name="notify_url">
+          <input id="id_cancel_return" type="hidden" value="{{current_site}}{{cancel_return}}" name="cancel_return">
+          <input id="id_return_url" type="hidden" value="{{current_site}}{{success_return}}" name="return">
+          <input id="id_custom" type="hidden" value="{{request.user.username}}" name="custom">
+          <input id="id_cmd" type="hidden" value="_xclick" name="cmd">
+          <input id="id_charset" type="hidden" value="utf-8" name="charset">
+          <input id="id_currency_code" type="hidden" value="USD" name="currency_code">
+          <input id="id_no_shipping" type="hidden" value="1" name="no_shipping">
+        </form>
+      </div><!--subscription_popup-->
+
+    <!--======================
+          End Account Subscription Popup
+      ========================-->
+      <!--======================
+         Account post ad success Popup
+      ========================-->
+
+
+      {% for message in messages %}
+      <script>
+      $( document ).ready(function() {
+      var height=$('.postad_success_popup').height();
+      var width=$('.postad_success_popup').width();
+      $('.postad_success_popup').css({'margin-top': -height / 2 + "px", 'margin-left': -width / 2 + "px"});
+      $('.cancel_btn,.popup_fade').click(function(){
+          $('.popup_fade').hide();
+          $('.postad_success_popup').hide();
+          document.body.style.overflow = 'auto';
+      });
+        });
+      </script>
+      <div class="popup_fade " style=" display: block;left:0px;"></div>
+      {% if request.REQUEST.pt == '5' or request.REQUEST.pt == '7'%}
+      <div class="postad_success_popup">
+        <code class="close_btn cancel_btn" style="display: block;"></code>
+           <div class="subscribe_title">
+              <h4>{% trans "Message" %}</h4>
+           </div><!--subscribe_titl-->
+           <div class="subscribe_content">
+             <p>{{ message }}</p>
+           </div><!--subscribe_content-->
+      </div><!--postad_success_popup-->
+   {% elif request.REQUEST.pt == '6' or request.REQUEST.pt == '8'%}
+   <div class="postad_success_popup">
+     <code class="close_btn cancel_btn" style="display: block;"></code>
+        <div class="subscribe_title">
+           <h4>{% trans "Message" %}</h4>
+       </div><!--subscribe_titl-->
+        <div class="subscribe_content">
+          <p>{{ message }}</p>
+          <p class="account_amount"> $ {{premium_info_account.premium_price}} </p>
+           <code></code>
+      </div><!--subscribe_content-->
+      <form action='{{sandbox_url}}' method='post' name="paypal_account_subscription">
+      {%csrf_token%}
+        <input id="id_business" type="hidden" value="{{paypal_receiver_email}}" name="business">
+        <input id="id_amount" type="hidden" value="{{premium_info_account.premium_price}}" name="amount">
+        <input id="id_item_name" type="hidden" value="Account Subscription" name="item_name">
+        <input id="id_item_name" type="hidden" value="{{current_site}}" name="item_name">
+        <input id="id_notify_url" type="hidden" value="{{current_site}}{{notify_url}}" name="notify_url">
+        <input id="id_cancel_return" type="hidden" value="{{current_site}}{{cancel_return}}" name="cancel_return">
+        <input id="id_return_url" type="hidden" value="{{current_site}}{{success_return}}" name="return">
+        <input id="id_custom" type="hidden" value="{{request.user.username}}" name="custom">
+        <input id="id_cmd" type="hidden" value="_xclick" name="cmd">
+        <input id="id_charset" type="hidden" value="utf-8" name="charset">
+        <input id="id_currency_code" type="hidden" value="USD" name="currency_code">
+        <input id="id_no_shipping" type="hidden" value="1" name="no_shipping">
+      </form>
+</div><!--subscription_popup-->
+{% endif %}
+   {% endfor %}
+
+    <!--======================
+          End post ad success Popup
+      ========================-->
+<script type="text/javascript">
+$(function(){
+  $('.portfolio').magnificPopup({
+    delegate: 'a',
+    type: 'image',
+    image: {
+      cursor: null,
+      titleSrc: 'title'
+    },
+    gallery: {
+      enabled: true,
+      preload: [0,1], // Will preload 0 - before current, and 1 after the current image
+      navigateByImgClick: true
+    }
+  });
+});
+
+$(function(){
+  $('.portfolio_mobile').magnificPopup({
+    delegate: 'a',
+    type: 'image',
+    image: {
+      cursor: null,
+      titleSrc: 'title'
+    },
+    gallery: {
+      enabled: true,
+      preload: [0,1], // Will preload 0 - before current, and 1 after the current image
+      navigateByImgClick: true
+    }
+  });
+});
+</script>
+</body>
+</html>

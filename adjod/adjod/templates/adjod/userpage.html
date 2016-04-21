@@ -1,0 +1,368 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% block content %}
+<div class="container">
+    <!-- <div align="center" id="richmedia_6">
+      <a href="http://a.tribalfusion.com/h.click/agmP8qpTB45FM5VrfZaW671Pqf0QV3pStZbM1WZbxVPbw3Vv1XUUDUmPq5mQ9P6MC2HBq1HQAndEn5PvQ3sUeTGQ8WcngR6FmTWFRWrjP3F2oVa7tTT39QTrZaQVZbCQUiwRHY7UVv55Fquodyq0qmp2HbGSGbA26rEptiyTtZb6XFbcYUF6XqarPbJstnXsdv/http://download.mywebface.com/index.jhtml?partner=GRxdm059&amp;offer_id=869&amp;a=302&amp;oc=1204&amp;c=3440&amp;dm=1&amp;s1=225556&amp;s2=&amp;s3=&amp;s4=&amp;s5=" target="_blank">
+      <img width="800" height="90" border="0" src="http://cdnx.tribalfusion.com/media/3794856.gif">
+      </a>
+    </div> -->
+
+     <!-- <div id="adcontainer1"></div> -->
+   <!--   <script type="text/javascript" charset="utf-8"> 
+      var pageOptions = { 
+        'pubId': 'pub-9616389000213823',
+        'query': 'classified ads',
+        'hl': 'en',
+        'adtest': 'on',
+        'adPage': 1
+      };
+
+      var adblock1 = { 
+        'container': 'adcontainer1',
+        'width': '700px'
+      };
+
+      _googCsa('ads', pageOptions, adblock1);
+
+      </script> -->
+
+
+   <!--  <div align="center" class="banner_rotation banner_ad">
+    <ul>
+      {% for banners in banner|get_banner %}
+      {% if banners.bannerplan.page == "Home page" and banners.bannerplan.position == "Top" and banners.bannerplan.bannertype == "Other" and banners.source != None %}
+       <li>
+        <a href="{{banners.link}}" target="_blank">
+          <img width="800" height="90" border="0" src="{{banners.source}}">
+        </a>
+       </li>
+     {{banners.source}}
+      {% endif %}
+      {% endfor %}
+    </ul>
+    </div> -->
+    
+    <div class="row row_1 col-md-12">
+            {% for categories in category %}
+                    {% if forloop.counter0|divisibleby:4 %}
+                    <div class="col-md-4">
+                            <ul class="category">
+                            {% endif %}
+                              <li class="subcategory">
+                              <!-- <a href="/addproduct/" class=""><code></code></a> -->
+                              <a href="/search/?q=&category={{categories.id}}" class="">
+                                <img src="{{ MEDIA_URL }}{{categories.icon}}"></a>
+                                <div class="cate_name">
+                                <a href="/search/?q=&category={{categories.id}}" class="">
+                                <h4>{% trans categories.name %}</h4>
+                                <!-- <i class="fa fa-chevron-right arrow_right"></i> -->
+                                </a>
+                                <span class="brand">{{categories.category_type}}
+                                </span>
+                                </div>
+                              </li>
+                            {% if forloop.counter|divisibleby:4 %}
+                            </ul>
+                  </div> <!-- row1 3rd col-md-4 -->
+            {% endif %}
+           {% endfor %}
+    </div> <!-- row1 -->
+
+
+<div class="row col-md-12 hidden-lg hidden-xs">
+        <div id="home_menu">
+         <!-- Normal Search and Advance Form Start -->
+        <form id="form_search_filter" class="form_search_filter">
+             <input id="search_form" type="hidden" name="{{form.q.html_name}}"  value="{{form.q.value|default:''}}"/>
+             <input type="hidden" name="page"  value="{{page.number}}"/>
+             <input type="hidden" name="city" id="city" value="">
+              <ul id="list_mobile">
+                  <!--  All Categories & Sub-Categories to Display in Advance Search-->
+                      <li class="list_folder">
+                          <ul class="hide_list categoryclick">
+                           {% for categories in initial_load|get_categories %}
+                              <li class="list_folder">
+                                <img src="{{ MEDIA_URL }}{{categories.icon}}" class="category_icon">
+                              <a class="has_sub categoryselected get">
+                               {{categories}}
+                                 <!-- <span class="hidelist1 ajax_categoryid">
+                                      {{categories.id}}
+                                  </span>  -->
+
+                              </a>
+                              <ul class="hide_list hidelist1 subclick"><i class="fa fa-chevron-down arrow_right"></i>
+
+                                  {% for subcategories in categories.id|get_subcategories %}
+                                      <li class="list_folder parent_li">
+                                      <span class="has_sub subcategory_choose get1">{{subcategories}}
+                                      </span>
+                                      <!-- <input type="hidden" class="has_sub subcategory_chooseid" id="subcategoryid"  value="{{subcategories.id}} " name="subcategoryid"/>  --><span class="has_sub hidelist1 ajax_subid">
+                                      {{subcategories.id}}
+
+                                       </li>
+                                      {% endfor %}
+                                </ul>
+                              </li>
+                          {% endfor %}
+                        </ul>
+                     <!--    <input type="hidden"  id="categoryid"  value="" name="categoryid"> -->
+                         <input type="hidden" class="has_sub subcategory_chooseid" id="subcategoryid"  value="" name="subcategoryid"/>
+                      </li>
+                </ul>
+           </form>
+           </div> </div> <!-- row1 -->
+</div> <!--container -->
+
+<div class="left_sidead visible-lg">
+  <a class="handle" >{% trans "Ads" %}</a>
+</div><!--left_side ad-->
+
+<div class="leftslide visible-lg banner_rotation banner_ad">
+ <!--  <code class="closeimg"> </code> -->
+ <ul>
+ {% for banners in banner|get_banner %}
+    {% if banners.bannerplan.page == "Home page" and banners.bannerplan.position == "Right" and banners.bannerplan.bannertype == "Own" and banners.banner != None %}
+    <li>
+     <a href="{{banners.link}}" target="_blank">
+      <img src="{{MEDIA_URL}}{{banners.banner}}" class="ad1" />
+    </a>
+    </li>
+    {% endif %}
+  {% endfor %}
+</ul>
+</div><!--leftslide-->
+
+<div class="leftslide1 visible-lg banner_rotation banner_ad">
+  <!-- <code class="closeimg"> </code> -->
+  <ul>
+  {% for banners in banner|get_banner %}
+    {% if banners.bannerplan.page == "Home page" and banners.bannerplan.position == "Left" and banners.bannerplan.bannertype == "Own" and banners.banner != None %}
+    <li>
+     <a href="{{banners.link}}" target="_blank">
+      <img src="{{MEDIA_URL}}{{banners.banner}}" class="ad2" />
+     </a>
+    </li>
+   {% endif %}
+  {% endfor %}
+  </ul>
+</div><!--leftslide-->
+
+<div class="container third_part">
+  <div class="row row_2">
+      <div class="col-md-7">
+        <h4 class="post_ad">{% trans "Sell or Advertise anything" %}</h4>
+        <div class="{% if user.is_authenticated and userprofile.ad_count >= 3 and userprofile.is_subscribed == 0%} disable_post {% endif%}"> 
+          <a href="{% if user.is_authenticated and userprofile.ad_count >= 3 and userprofile.is_subscribed == 0%} {% else %} {% url product_form %} {% endif%}" class="#postbutton btn btn-warning post_button">Post Free Ad</a>
+          <div class="tooltip">{% trans "You already add 3 posts," %}<br>{% trans "if u want add more posts," %}<br>{% trans "u have to make ur account as premium" %}<button type="button" class="btn btn-link link_tooltip">{% trans "Click here" %}</button></div>
+        </div>
+        <div class="alert_content">
+        <h4 class="need_txt">{% trans "Tell us your need" %}</h4>
+        <a href="#" class="alert_btn">{% trans "Create alert" %}</a>
+      </div>
+      </div> <!--col-md-7 -->   
+
+      <div class="col-md-5">
+        <h4 class="sell"><i class="fa  fa-shield"></i>{% trans "How to sell safely ?" %}</h4>
+        <p>{% trans "Try to take the full payment at the time of delivery." %}<br>{% trans "Remember to use the safe location to meet" %}<a href="#" class="read-more">{% trans "Read more" %}</a></p>
+      </div> <!-- col-md-5 -->
+
+  </div> <!-- row2 -->
+</div> <!-- third part -->
+
+<div class="container fourth_part">
+  <div class="row row_3">
+          <div class="col-md-7 recent_content visible-lg">
+              <div class="recent_add">
+                <h4>{% trans "Recently added" %}</h4>
+              </div>
+              <ul class="products product_content">
+              {% for recentads in recentad %}
+
+                <li class="product_lists ">
+                  <div class="product_image">
+                    <p class="{% if recentads.premium_plan_id = None %} premium-img {% elif recentads.premium_plan_id = 4 %} premium-img1 {% elif recentads.premium_plan_id = 3 %} premium-img2 {% elif recentads.premium_plan_id = 2 %} premium-img3 {% endif%} "></p>
+                    <a href="{% url product_detail recentads.id %}" class="">
+                      {% if recentads.photos = '' %}
+                        <img src="{{STATIC_URL}}img/bg-img2.png" class="dn">
+                      {% else %}
+                        <img src="{{MEDIA_URL}}{{recentads.photos|get_photos}}" class="dn">
+                      {% endif %}
+                      {% if recentads.imagecount != 0 %}
+                      <div class="count_holder">
+                        <span>{{recentads.imagecount}}</span>
+                        <i class="fa fa-camera"></i>
+                      </div><!-- count_holder -->
+                      {% endif %}
+                    </a>
+                  </div>
+                  <div class="product_name"><a href="{% url product_detail recentads.id %}" class="span"> {{recentads.title}}</a></div>
+                  <div class="detail">
+                    <div class="user_detail1">
+                      <span class="product_description"> {{ recentads.description|truncatewords:10 }}</span>
+                      <!-- <span class="product_date">Jan18,2016</span> -->
+                      <span class="product_user"> {{recentads.condition}} | in {{recentads.locality.locality}} | By {{recentads.you_are}}</span>
+                    </div><!--user_detail1-->
+                    <div class="user_detail2">
+                      <span class="currency_product fr">{{country_code|get_symbol}}{{recentads.price|conversion|quantize}}</span>
+                      <span class="product_time_user">{{recentads.created_date|timesince}}</span>
+                  </div><!--user_detail2-->
+                  </div> <!-- detail -->
+                  
+                </li>
+                {% endfor %}
+              </ul>
+          </div> <!-- col-md-7 -->
+
+          <div class="col-md-5 free_content" id="free_mbl">
+              <div class="free_alert">
+                <h4>{% trans "Create free alert" %}</h4>
+                <code class="close_btn closemobile_btn cancel_btn hidden-lg" style="{% if request.REQUEST.si %} display:block; {%else%} display: none; {% endif %}"> </code>
+              </div>
+               <form method="post" action="{% url free_alert %}" name="alert_button">
+                  {% csrf_token %}
+
+                  <ul class="enquiry_form">
+                        <li>
+                          <div class="select_container_category" id="select_container_category">
+                            <div class="select_div">
+                              <p id="select_post_category">{% trans "Select Category" %}</p>
+                              <i class="city_fa fa fa-caret-down">
+                              </i>
+                            </div> <!-- select_div -->
+                            <select id="id_category" class="select_post_category" name="your_category">
+                            <option value="Select Category">{% trans "Select Category" %}</option>
+                            {% for categories in category %}
+                            <option value="{{ categories.id }}">{{ categories.name }}</option>
+                            {% endfor %}
+                            </select>
+                          </div> <!-- select_container_city -->
+                          <span id="id_category_required" class="labelError" style="font-size:12px;display:none;">Please Choose category</span>
+                        </li>
+                        <li>
+                          <div class="select_container_subcategory" id="select_container_subcategory">
+                            <div class="select_div">
+                              <p id="select_post_subcategory">{% trans "Select SubCategory" %}</p>
+                              <i class="city_fa fa fa-caret-down">
+                              </i>
+                            </div> <!-- select_div -->
+                            <select id="id_subcategory" class="select_post_subcategory" name="your_subcategory">
+                            <option value=""></option>
+                            </select>
+                           </div> <!-- select_container_city -->
+                           <span id="id_subcategory_required" class="labelError" style="font-size:12px;display:none;">{% trans "Please Choose sub category" %}</span>
+                        </li>
+                        <li>
+                          <div class="select_container_brand" id="select_container_brand">
+                            <div class="select_div" id="select_brand">
+                              <p id="select_post_brand">{% trans "Select Brand" %}</p>
+                              <i class="city_fa fa fa-caret-down">
+                              </i>
+                            </div> <!-- select_div -->
+                            <select id="id_brand" class="select_post_brand" name="your_brand">
+                            <option value=""></option>
+                            </select>
+                          </div> <!-- select_container_city -->
+                          <span id="id_brand_required" class="labelError" style="font-size:12px;display:none;">{% trans "Please Choose brand" %}</span>
+                        </li>
+                        <li>
+                          <div class="select_container_locality" id="select_container_locality">
+                            <div class="select_div">
+                              <p id="select_post_locality">{% trans "Select Locality" %}</p>
+                              <i class="city_fa fa fa-caret-down">
+                              </i>
+                            </div> <!-- select_div -->
+                            <select id="id_locality" class="select_post_locality" name="your_locality">
+                              <option value="Select Locality">{% trans "Select Locality" %}</option>
+                              {% for localities in locality %}
+                              <option value="{{ localities.id }}">{{ localities.locality }}</option>
+                              {% endfor %}
+                            </select>
+                          </div> <!-- select_container_city -->
+                           <span id="id_locality_required" class="labelError" style="font-size:12px;display:none;">{% trans "Please Choose Locality" %}</span>
+                        </li>
+                        <li>
+                          <div class="form1">
+                          {% if user.is_authenticated %}
+                            <input type="text" class="form-control inputs" value="{% if user.is_authenticated %}{{request.user.email}}{% endif %}" placeholder="Your email" name="email" id="email" disabled="disabled">
+                            <input type="hidden" name="email" value="{{request.user.email}}">
+                          {% else %}
+                            <input type="text" class="form-control inputs" value="" placeholder="Your email" name="email" id="email">
+                            {% endif %}
+                          </div>
+                           <span id="email_required" class="email_labelError" style="font-size:12px;display:none;">{% trans "Please enter email address" %}</span>
+                        </li>
+                        <li>
+                            <div class="form1">
+                              <input type="tel" class="form-control inputs mobile" name="mobilenumber" id="mobilenumber">
+                              <!-- <span id="valid-msg" class="hide">✓ Valid</span> -->
+                              <span id="error-msg" class="hide error-msg">please enter valid mobile number</span>
+                             </div>
+                             <span id="mobilenumber_required" class="labelError" style="font-size:12px;display:none;">{% trans "Please enter the mobile number" %}</span>
+                        </li>
+                  </ul>
+                  <!-- <div class="{% if request.REQUEST.fst %} freealert_labelError {% endif %}">{% for message in messages%}{{message}}{% endfor %}</div> -->
+                  <div class="form_alert">
+                  <!-- <button type="submit" class="btn btn-lg alert_button">Create alert</button> -->
+                    <input type="submit" value="Create alert" class="btn btn-lg alert_button" id="alert_button"/>
+                  </div>
+                </form>
+          </div> <!-- col-md-5 -->
+  </div> <!-- row3 -->
+</div> <!-- container fourth part -->
+
+
+<div class="container fourth_part visible-xs">
+  <div class="row row_3">
+          <div class="col-md-7 recent_content">
+              <div class="recent_add">
+                <h4>{% trans "Recently added" %}</h4>
+              </div>
+              <ul class="products product_content">
+              {% for recentads in recentad %}
+              {% if forloop.counter0|divisibleby:2 %}
+                <li class="mobile_product_lists" >
+                   <div class="mobile_product_image">
+                   {% endif %}
+                    <p class="{% if recentads.premium_plan_id = None %} premium-img {% elif recentads.premium_plan_id = 1 %} premium-img1_mobile {% elif recentads.premium_plan_id = 2 %} premium-img2_mobile {% elif recentads.premium_plan_id = 3 %} premium-img3_mobile {% endif%} "></p>
+                    <a href="{% url product_detail recentads.id %}">
+                      {% if recentads.photos = '' %}
+                      <img src="{{MEDIA_URL}}img/bg-img2.png">
+                      {% else %}
+                        <img src="{{MEDIA_URL}}{{recentads.photos|get_photos}}">
+                      {% endif %}
+                      <div class="detail">
+                          <div class="mobile_product_name">
+                          <div class="transparent_bg">
+                          <a href="{% url product_detail recentads.id %}" class="span"> {{recentads.title}}</a><span>{{recentads.price|conversion}}</span></div>
+                          <span class="product_description"> {{ recentads.description }}</span>
+                          <span class="product_user"> {{recentads.condition}} | in {{recentads.locality.locality}} | By {{recentads.you_are}}</span>
+                      </div> <!-- detail -->
+                    </a>
+                    </div>
+                   {% if forloop.counter|divisibleby:2 %}
+                  </div>
+                 </li>
+                 {% endif %}
+                {% endfor %}
+              </ul>
+          </div> <!-- col-md-7 -->
+
+  </div> <!-- row3 -->
+</div> <!-- container fourth part -->
+<div class="container fifth_part">
+      <div class="banner_ad banner_rotation">
+      <ul class="fifth_part">
+        {% for banners in banner|get_banner %}
+         {% if banners.bannerplan.page == "Home page" and banners.bannerplan.position == "Bottom" and banners.bannerplan.bannertype == "Own" %}
+        <li>    
+         <a href="{{banners.link}}" target="_blank">     
+            <img src="{{MEDIA_URL}}{{banners.banner}}" style="height:120px;width:970px;" />
+          </a>
+         </li>
+         {% endif %}
+        {% endfor %}
+      </ul>
+      </div> <!-- hp ad -->
+    </div> <!-- container fifth_part-->
+{% endblock %}

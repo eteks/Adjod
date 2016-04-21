@@ -1,0 +1,26 @@
+pip install Django==1.4.3
+pip install MySQL-python==1.2.3
+pip install django-social-auth==0.7.17
+pip install pyelasticsearch==0.5
+pip install django-haystack==2.0.0
+pip install django-pagination==1.0.5
+pip install django-paypal==0.1.2
+pip install django-oauth-plus==2.0
+pip install django-smtp-ssl==1.0
+pip install oauth2==1.5.211
+pip install requests==2.0.1
+pip install DjangoSEO
+pip install django-nose==1.4
+pip install django-templated-email==0.4.7
+pip install python-dateutil==2.4.2
+pip install BeautifulSoup==3.2.0
+pip install py-moneyed==0.5.0
+pip install Pillow==2.9.0
+pip install geopy==0.98
+pip install south
+
+sudo apt-get install curl
+sudo apt-get install nodejs
+sudo apt-get install npm
+sudo apt-get install node
+sudo apt-get install nodejs-legacy

@@ -1,0 +1,442 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-04-24 05:04-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1)\n"
+
+#: adjod/views.py:103
+msgid "Account disable"
+msgstr ""
+
+#: adjod/views.py:109
+msgid "Invalid user"
+msgstr ""
+
+#: core/config.py:7
+msgid "English"
+msgstr ""
+
+#: core/config.py:8
+msgid "French"
+msgstr ""
+
+#: core/config.py:9
+msgid "Polish"
+msgstr ""
+
+#: templates/footer.html:5 templates/footer.html.py:30
+msgid "About"
+msgstr ""
+
+#: templates/footer.html:9 templates/footer.html.py:34
+msgid "Contact"
+msgstr ""
+
+#: templates/footer.html:13 templates/footer.html.py:38
+msgid "Developers"
+msgstr ""
+
+#: templates/footer.html:17
+msgid "Privacy policy"
+msgstr ""
+
+#: templates/footer.html:21 templates/fxapi/clients.html:78
+msgid "Terms of service"
+msgstr ""
+
+#: templates/footer.html:42
+msgid "Join us"
+msgstr ""
+
+#: templates/footer.html:46
+msgid "Sign in"
+msgstr ""
+
+#: templates/adjod/userpage.html:5
+msgid "API"
+msgstr "APPl"
+
+#: templates/adjod/userpage.html:6
+msgid "Paypal"
+msgstr "Paylai"
+
+#: templates/adjod/userpage.html:7
+msgid "Submit"
+msgstr "subma"
+
+#: templates/advertisement/paginator.html:7
+msgid "Previous"
+msgstr ""
+
+#: templates/advertisement/paginator.html:31
+msgid "Next"
+msgstr ""
+
+#: templates/card/actor.html:138 templates/card/lead.html:141
+#: templates/fxapi/base.html:87
+msgid "Home"
+msgstr ""
+
+#: templates/card/actor_basic.html:9
+msgid "Address"
+msgstr ""
+
+#: templates/card/actor_basic.html:44 templates/card/lead_basic.html:67
+msgid "Info"
+msgstr ""
+
+#: templates/card/actor_basic.html:86
+msgid "Statistics"
+msgstr ""
+
+#: templates/card/bids.html:5 templates/card/leadbids.html:5
+msgid "Bids"
+msgstr ""
+
+#: templates/card/boughts.html:5
+msgid "Leads bought"
+msgstr ""
+
+#: templates/card/campaign_statistics.html:5
+msgid "Campaign statistics"
+msgstr ""
+
+#: templates/card/filters.html:5
+msgid "Lead Filters"
+msgstr ""
+
+#: templates/card/invoices.html:5
+msgid "Invoices"
+msgstr ""
+
+#: templates/card/latestsearches.html:5
+msgid "Recently search"
+msgstr ""
+
+#: templates/card/lead_auction.html:5
+msgid "Auction"
+msgstr ""
+
+#: templates/card/lead_basic.html:9
+msgid "Details"
+msgstr ""
+
+#: templates/card/lead_basic.html:34
+msgid "Auction Details"
+msgstr ""
+
+#: templates/card/lead_basic.html:52
+msgid "Company Details"
+msgstr ""
+
+#: templates/card/lead_basic.html:113
+msgid "Seller"
+msgstr ""
+
+#: templates/card/lead_basket.html:5
+msgid "Basket"
+msgstr ""
+
+#: templates/card/lead_subscriptions.html:5
+msgid "Lead Subscriptions"
+msgstr ""
+
+#: templates/card/leadorders.html:5 templates/card/orders.html:5
+msgid "Transactions"
+msgstr ""
+
+#: templates/card/leadtrades.html:5
+msgid "Leads Trade"
+msgstr ""
+
+#: templates/card/notice.html:5
+msgid "Notice e-mails"
+msgstr ""
+
+#: templates/card/subscriptions.html:5
+msgid "Subscriptions"
+msgstr ""
+
+#: templates/card/viewedleads.html:5
+msgid "Recently viewed leads"
+msgstr ""
+
+#: templates/card/viewedleads_user.html:5
+msgid "Recently viewed users"
+msgstr ""
+
+#: templates/fxapi/base.html:9
+msgid "Developer center"
+msgstr ""
+
+#: templates/fxapi/base.html:89 templates/fxapi/base.html.py:91
+#: templates/fxapi/clients.html:7
+msgid "Your applications"
+msgstr ""
+
+#: templates/fxapi/base.html:94 templates/fxapi/base.html.py:96
+#: templates/fxapi/playground.html:6
+msgid "API Playground"
+msgstr ""
+
+#: templates/fxapi/base.html:98
+msgid "Documentation"
+msgstr ""
+
+#: templates/fxapi/base.html:99
+msgid "FAQ"
+msgstr ""
+
+#: templates/fxapi/base.html:102
+msgid "Logout"
+msgstr ""
+
+#: templates/fxapi/base.html:104
+msgid "Login"
+msgstr ""
+
+#: templates/fxapi/clients.html:14
+msgid "Name"
+msgstr ""
+
+#: templates/fxapi/clients.html:15
+msgid "Access key"
+msgstr ""
+
+#: templates/fxapi/clients.html:16
+msgid "Secret key"
+msgstr ""
+
+#: templates/fxapi/clients.html:17 templates/fxapi/clients.html.py:60
+msgid "Domain"
+msgstr ""
+
+#: templates/fxapi/clients.html:18
+msgid "Active"
+msgstr ""
+
+#: templates/fxapi/clients.html:34
+msgid "Delete"
+msgstr ""
+
+#: templates/fxapi/clients.html:43 templates/fxapi/playground.html:136
+msgid "No Application"
+msgstr ""
+
+#: templates/fxapi/clients.html:44 templates/fxapi/playground.html:137
+msgid "You don't have any applications"
+msgstr ""
+
+#: templates/fxapi/clients.html:49
+msgid "Create new Application"
+msgstr ""
+
+#: templates/fxapi/clients.html:53
+msgid "Application name"
+msgstr ""
+
+#: templates/fxapi/clients.html:55
+msgid "Name for your reference, Example: Sales Force Lead Importer"
+msgstr ""
+
+#: templates/fxapi/clients.html:62
+msgid "Required for webapplication. Use * to support mulitple subdomains"
+msgstr ""
+
+#: templates/fxapi/clients.html:68
+msgid "Desciption"
+msgstr ""
+
+#: templates/fxapi/clients.html:78
+msgid "I accept Fixido"
+msgstr ""
+
+#: templates/fxapi/clients.html:79
+msgid "I accept Terms &amp; Conditions"
+msgstr ""
+
+#: templates/fxapi/clients.html:84
+msgid "Save changes"
+msgstr ""
+
+#: templates/fxapi/clients.html:85 templates/fxapi/playground.html:128
+msgid "Cancel"
+msgstr ""
+
+#: templates/fxapi/faq.html:8
+msgid "Does Fixido REST API follows oAuth standards?"
+msgstr ""
+
+#: templates/fxapi/faq.html:9
+msgid ""
+"No, oAuth standard protocol does not fit into the Fixido Enviroment for "
+"various reasons"
+msgstr ""
+
+#: templates/fxapi/faq.html:11
+msgid "Can Fixido REST access from Server Side Application?"
+msgstr ""
+
+#: templates/fxapi/faq.html:12
+msgid "Yes. API is accessible via HTTP protocol from any platform"
+msgstr ""
+
+#: templates/fxapi/index.html:8
+msgid "Hello, Developer!"
+msgstr ""
+
+#: templates/fxapi/index.html:9
+msgid ""
+"Create new client application using the API from Fixido. It's easy to use. "
+"Register your client application"
+msgstr ""
+
+#: templates/fxapi/index.html:12 templates/fxapi/index.html.py:14
+msgid "Create New Client Application"
+msgstr ""
+
+#: templates/fxapi/index.html:28
+msgid "Client Application"
+msgstr ""
+
+#: templates/fxapi/index.html:29
+msgid ""
+"To make an integration to Fixido system, you must register for a client "
+"application and get access_key and secret_key. You can have multiple "
+"application with different rights. Rights defines, what you do using Fixido "
+"REST API. When you create a new application, you will get some default "
+"rights to some basic operations. "
+msgstr ""
+
+#: templates/fxapi/playground.html:15
+msgid "Create New Application"
+msgstr ""
+
+#: templates/fxapi/playground.html:15
+msgid "Try API"
+msgstr ""
+
+#: templates/fxapi/playground.html:19
+msgid "Applications"
+msgstr ""
+
+#: templates/fxapi/playground.html:22
+msgid "Select your application"
+msgstr ""
+
+#: templates/fxapi/playground.html:32
+msgid "Actions"
+msgstr ""
+
+#: templates/fxapi/playground.html:35
+msgid "Select action"
+msgstr ""
+
+#: templates/fxapi/playground.html:46
+msgid "API Input"
+msgstr ""
+
+#: templates/fxapi/playground.html:48
+msgid "Access Key"
+msgstr ""
+
+#: templates/fxapi/playground.html:55
+msgid "Secret Key"
+msgstr ""
+
+#: templates/fxapi/playground.html:99
+msgid "Select"
+msgstr ""
+
+#: templates/fxapi/playground.html:100
+msgid "Order"
+msgstr ""
+
+#: templates/fxapi/playground.html:101
+msgid "Deposit"
+msgstr ""
+
+#: templates/fxapi/playground.html:102
+msgid "Payout"
+msgstr ""
+
+#: templates/fxapi/playground.html:103
+msgid "Voucher"
+msgstr ""
+
+#: templates/fxapi/playground.html:104
+msgid "Invite"
+msgstr ""
+
+#: templates/fxapi/playground.html:105
+msgid "Sales"
+msgstr ""
+
+#: templates/fxapi/playground.html:106
+msgid "Commission"
+msgstr ""
+
+#: templates/fxapi/playground.html:107
+msgid "Kickback"
+msgstr ""
+
+#: templates/fxapi/playground.html:108
+msgid "Signup bonus"
+msgstr ""
+
+#: templates/fxapi/playground.html:109
+msgid "Refund"
+msgstr ""
+
+#: templates/fxapi/playground.html:110
+msgid "Credit"
+msgstr ""
+
+#: templates/fxapi/playground.html:111
+msgid "Invoice"
+msgstr ""
+
+#: templates/fxapi/playground.html:127
+msgid "Call API"
+msgstr ""
+
+#: templates/fxapi/playground.html:137
+msgid "Create A New Application"
+msgstr ""
+
+#: templates/fxapi/playground.html:145
+msgid "Result"
+msgstr ""
+
+#: templates/fxapi/playground.html:146
+msgid "URL &amp; Data"
+msgstr ""
+
+#: templates/fxapi/playground.html:147
+msgid "Javascript Sample"
+msgstr ""
+
+#: templates/fxapi/playground.html:148
+msgid "Curl Sample"
+msgstr ""
+
+#: templates/fxapi/playground.html:158
+msgid "Data"
+msgstr ""
+
+msgid "Cars & Bikes"
+msgstr "Care & Bis"

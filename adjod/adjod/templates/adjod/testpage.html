@@ -1,0 +1,85 @@
+
+{% load static from staticfiles %}
+{% block content %}
+
+<html>
+	<title>Test Page</title>
+	<head>
+		<script  src="{% static "js/jquery-1.7.1.min.js" %}"></script>
+	    <script src="{% static "js/slides.jquery.js" %}"></script>
+	    <script src="{% static "js/jquery.cookie.js" %}"></script>
+	    <script src="{% static "js/jquery.infieldlabel.js" %}"></script>
+		<script src="{% static "js/actions.js" %}"></script>
+	</head>
+	<body>
+	<div id='inputblock' name ='inputblock'>	
+		<div>
+		<b>Enter IP </b>
+		<input type = "text" id="givenip" name="givenip" value={{ipaddress}}>	
+		<input type="submit" value="Search" onclick=" return geolocation();" class="btn save_change_btn" />
+		</div> 
+		<br>
+		<br> 
+		<table>
+			<tr>
+				<td>
+					<b>Your IP</b>
+				</td>
+			
+				<td>
+				{{ipaddress}}
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<b>Location</b>
+				</td>
+				<td>
+					{{country}}
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<b>Language</b>
+				</td>
+				<td>
+					{{language}}
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<b>City</b>
+				</td>
+				<td>
+					{{city}}
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<b>Responsive time</b>
+				</td>
+				<td>
+					{{timetaken}}
+				</td>
+			</tr>
+			
+		</table>    
+		
+	</div>
+	<h2>{{msg}}</h2>
+	<div id="test">
+	<form action="." method="get">	
+	<input type = "text" id="" name="invoice_no" value="">
+	<input type="submit" value="Download" />	
+	</form>	
+	</div>
+		
+	<div>
+		<a href='/testerror'>Click to create manual error</a>
+	</div>
+	</body>
+</html>
+
+
+
+{% endblock %}

@@ -1,0 +1,29 @@
+{% load static from staticfiles %}
+ <html>
+ <head>
+     <title>Redirecting...</title>
+     <link href="{% static "css/index.less" %}" rel="stylesheet/less" type="text/less">
+     <script src="{% static "js/less.js" %}"></script>
+     <script language='javascript'>
+        window.onload = function(){
+            document.forms['paypal'].submit(); 
+        }
+    </script>
+ </head>
+<body>
+    <img class="loader" src="{% static "img/loading_spinner.gif" %}">
+    <form action='{{sandbox_url}}' method='post' name="paypal">
+        <input id="id_business" type="hidden" value="{{business}}" name="business">
+        <input id="id_amount" type="hidden" value="{{amount}}" name="amount">
+        <input id="id_item_name" type="hidden" value="{{item_name}}" name="item_name">
+        <input id="id_notify_url" type="hidden" value="{{notify_url}}" name="notify_url">
+        <input id="id_cancel_return" type="hidden" value="{{cancel_return}}" name="cancel_return">
+        <input id="id_return_url" type="hidden" value="{{return}}" name="return">
+        <input id="id_custom" type="hidden" value="{{custom}}" name="custom">
+        <input id="id_cmd" type="hidden" value="_xclick" name="cmd">
+        <input id="id_charset" type="hidden" value="utf-8" name="charset">
+        <input id="id_currency_code" type="hidden" value="{{currency_code}}" name="currency_code">
+        <input id="id_no_shipping" type="hidden" value="1" name="no_shipping">
+    </form>
+</body>
+</html>

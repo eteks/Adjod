@@ -1,0 +1,1979 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-01-11 15:43+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: adjod/settings.py:57 adjod/templates/base.html:182
+#: adjod/templates/base.html.py:195
+#: adjod/templates/registration/email_base2.html:95
+#: adjod/templates/registration/email_base2.html:108
+msgid "Malay"
+msgstr "Melayu"
+
+#: adjod/settings.py:58 adjod/templates/base.html:178
+#: adjod/templates/base.html.py:194
+#: adjod/templates/registration/email_base2.html:91
+#: adjod/templates/registration/email_base2.html:107
+msgid "Chinese"
+msgstr "Cina"
+
+#: adjod/settings.py:59 adjod/templates/base.html:174
+#: adjod/templates/base.html.py:193 adjod/templates/base.html:379
+#: adjod/templates/registration/email_base2.html:87
+#: adjod/templates/registration/email_base2.html:106
+msgid "English"
+msgstr "Bahasa Inggeris"
+
+#: adjod/views.py:111
+msgid "Email Doesnot exists"
+msgstr "E-mel doesnot wujud"
+
+#: adjod/views.py:116
+msgid "Username Does not exists"
+msgstr "Nama pengguna Tidakkah wujud"
+
+#: adjod/views.py:138
+msgid "Wrong password"
+msgstr "Salah kata laluan"
+
+#: adjod/views.py:169
+msgid "Your Account is already inactive due to non-maintanence"
+msgstr "Akaun anda telah aktif kerana tidak maintanence -"
+
+#: adjod/views.py:199
+msgid "Email already exists"
+msgstr "E-mel sudah wujud"
+
+#: adjod/views.py:203
+msgid "Username already exists"
+msgstr "Nama pengguna sudah wujud"
+
+#: adjod/views.py:571 adjod/views.py:585
+msgid "Ad Successfully updated"
+msgstr "Iklan Berjaya dikemaskini"
+
+#: adjod/views.py:579
+msgid "U already post 3 ads....U have to make the account premium"
+msgstr "U sudah hantar 3 iklan .... U perlu membuat akaun premium"
+
+#: adjod/templates/base.html:205
+msgid "Logout"
+msgstr "Log keluar"
+
+#: adjod/templates/base.html:207 adjod/templates/base.html.py:383
+msgid "Login"
+msgstr "Log masuk"
+
+#: adjod/templates/base.html:208 adjod/templates/base.html.py:384
+#: adjod/templates/base.html:462
+msgid "Sign up"
+msgstr "Daftar"
+
+#: adjod/templates/base.html:221
+msgid "Singapore's largest marketplace"
+msgstr "Pasaran terbesar di Singapura"
+
+#: adjod/templates/base.html:231 adjod/templates/base.html.py:292
+#: suit/templates/admin/search_form.html:26
+#: suit/templates/admin/filer/tools/search_form.html:12
+msgid "Search"
+msgstr "carian"
+
+#: adjod/templates/base.html:239
+msgid "To Buy or Find anything select an option below:"
+msgstr "Untuk Beli atau Cari apa-apa buat pilihan di bawah:"
+
+#: adjod/templates/base.html:275 adjod/templates/adjod/userpage.html:112
+msgid "You already add 3 posts,"
+msgstr "Anda sudah menambah 3 jawatan,"
+
+#: adjod/templates/base.html:275 adjod/templates/adjod/userpage.html:112
+msgid "if u want add more posts,"
+msgstr "jika u mahu menambah lebih banyak jawatan,"
+
+#: adjod/templates/base.html:275 adjod/templates/adjod/userpage.html:112
+msgid "u have to make ur account as premium"
+msgstr "u perlu membuat akaun ur sebagai premium"
+
+#: adjod/templates/base.html:275 adjod/templates/adjod/userpage.html:112
+msgid "Click here"
+msgstr "Klik di sini"
+
+#: adjod/templates/base.html:277 adjod/templates/base.html.py:294
+#: adjod/templates/adjod/userpage.html:164
+msgid "Create free alert"
+msgstr "Buat amaran percuma"
+
+#: adjod/templates/base.html:293
+msgid "Post free Ad"
+msgstr "Post Ad percuma"
+
+#: adjod/templates/base.html:300
+msgid "Post an Ad in just 30 seconds"
+msgstr "Masukkan Iklan dalam masa 30 saat"
+
+#: adjod/templates/base.html:301
+msgid ""
+"DO NOT post multiple ads for the same items or service. All duplicate, spam "
+"and wrongly categorized ads will be deleted."
+msgstr ""
+
+#: adjod/templates/base.html:332
+msgid "For site related issues,Check out our"
+msgstr "Untuk isu-isu berkaitan tapak, Semak kamis"
+
+#: adjod/templates/base.html:332 adjod/templates/base.html.py:345
+msgid "Help"
+msgstr "Bantuan"
+
+#: adjod/templates/base.html:332
+msgid "section or email us at"
+msgstr "seksyen atau email kami di"
+
+#: adjod/templates/base.html:332
+msgid "support@quikr.com"
+msgstr "support@quikr.com"
+
+#: adjod/templates/base.html:333
+msgid "You can also call our support team@65-67119979S(M-F:10AM to 6PM)"
+msgstr ""
+"Anda juga boleh menghubungi pasukan sokongan kami @ 65-67119979S ( MF: "
+"10:00-6:00 )"
+
+#: adjod/templates/base.html:346
+msgid "Terms of use"
+msgstr "Terma penggunaan"
+
+#: adjod/templates/base.html:347
+msgid "How it works"
+msgstr "Bagaimana ia berfungsi"
+
+#: adjod/templates/base.html:352
+msgid "Privacy policy"
+msgstr "dasar privasi"
+
+#: adjod/templates/base.html:353
+msgid "Locations map"
+msgstr "lokasi peta"
+
+#: adjod/templates/base.html:354
+msgid "Contact us"
+msgstr "Hubungi kami"
+
+#: adjod/templates/base.html:359
+msgid "Popular searches"
+msgstr "Paling Popular"
+
+#: adjod/templates/base.html:360
+msgid "who we are"
+msgstr "siapa kita"
+
+#: adjod/templates/base.html:363
+msgid "you can also call our support team"
+msgstr "anda juga boleh menghubungi pasukan sokongan kami"
+
+#: adjod/templates/base.html:364
+msgid "phone:65-67119979"
+msgstr "telefon: 65-67119979"
+
+#: adjod/templates/base.html:364
+msgid "M-F:10AM to 6PM "
+msgstr "M- F: 10:00-6:00"
+
+#: adjod/templates/base.html:378
+msgid "Select language :"
+msgstr "Pilih Bahasa :"
+
+#: adjod/templates/base.html:380
+msgid "German"
+msgstr "Jerman"
+
+#: adjod/templates/base.html:381
+msgid "Swedish"
+msgstr "Sweden"
+
+#: adjod/templates/base.html:399 adjod/templates/base.html.py:526
+msgid "Sign in"
+msgstr "Daftar masuk"
+
+#: adjod/templates/base.html:403 adjod/templates/base.html.py:526
+msgid "I have a account already"
+msgstr "Saya mempunyai akaun yang telah"
+
+#: adjod/templates/base.html:411
+msgid "Please enter Email or User ID"
+msgstr "Sila masukkan E-mel atau ID Pengguna"
+
+#: adjod/templates/base.html:416 adjod/templates/base.html.py:482
+msgid "Please enter Password"
+msgstr "Sila masukkan kata laluan"
+
+#: adjod/templates/base.html:424
+msgid "Forgot you password?"
+msgstr "Lupa kata laluan anda ?"
+
+#: adjod/templates/base.html:434
+msgid "Facebook"
+msgstr "Facebook"
+
+#: adjod/templates/base.html:438
+msgid "Gmail"
+msgstr "Gmail"
+
+#: adjod/templates/base.html:443 adjod/templates/base.html.py:569
+msgid "I don't have a account"
+msgstr "Saya tidak mempunyai akaun"
+
+#: adjod/templates/base.html:444 adjod/templates/base.html.py:570
+msgid "Sign up for free"
+msgstr "Daftar secara percuma"
+
+#: adjod/templates/base.html:469
+msgid "Register now for free"
+msgstr "Daftar sekarang secara percuma"
+
+#: adjod/templates/base.html:475
+msgid "Please enter Email "
+msgstr "Sila masukkan E-mel"
+
+#: adjod/templates/base.html:476
+msgid "Please enter valid Email."
+msgstr "sila masukkan email yang sah"
+
+#: adjod/templates/base.html:487
+msgid "Please enter Username"
+msgstr "Sila masukkan Nama Pengguna"
+
+#: adjod/templates/base.html:516
+msgid "I confirm that I am 18 years or older"
+msgstr "Saya mengesahkan bahawa saya 18 tahun atau lebih tua"
+
+#: adjod/templates/base.html:517
+msgid ""
+"Your age must be above 18 years, please check age status and then create "
+"account"
+msgstr ""
+
+#: adjod/templates/base.html:542
+msgid "Forgot Password"
+msgstr "Lupa kata laluan"
+
+#: adjod/templates/base.html:586
+msgid "Account Subscribe"
+msgstr "akaun Langgan"
+
+#: adjod/templates/base.html:589
+msgid ""
+"You already used our Free Limited Services. If you want to post more Ads, "
+"Please Subscribe your account."
+msgstr ""
+
+#: adjod/templates/base.html:634 adjod/templates/base.html.py:644
+msgid "Message"
+msgstr "mesej"
+
+#: adjod/templates/adjod/updateprofile.html:8
+#: adjod/templates/adjod/updateprofile.html:17
+msgid "My Ads"
+msgstr "Iklan Saya"
+
+#: adjod/templates/adjod/updateprofile.html:9
+#: adjod/templates/adjod/updateprofile.html:18
+#: adjod/templates/adjod/updateprofile.html:98
+msgid "Update My Profile"
+msgstr "Kemas kini Profil Saya"
+
+#: adjod/templates/adjod/updateprofile.html:24
+msgid "Activate Ads Management"
+msgstr "Aktifkan Pengurusan Iklan"
+
+#: adjod/templates/adjod/updateprofile.html:46
+msgid "AD ID:"
+msgstr "AD ID:"
+
+#: adjod/templates/adjod/updateprofile.html:47
+msgid "status:"
+msgstr "status:"
+
+#: adjod/templates/adjod/updateprofile.html:65
+msgid "View"
+msgstr "Lihat"
+
+#: adjod/templates/adjod/updateprofile.html:66
+msgid "Edit"
+msgstr "Edit"
+
+#: adjod/templates/adjod/updateprofile.html:67
+#: adjod/templates/adjod/updateprofile.html:86
+#: suit/templates/admin/delete_confirmation.html:18
+#: suit/templates/admin/delete_confirmation.html:49
+#: suit/templates/admin/page_submit_line.html:8
+#: suit/templates/admin/submit_line.html:8
+#: suit/templates/admin/filer/folder/directory_table.html:42
+#: suit/templates/admin/import_export/import.html:69
+msgid "Delete"
+msgstr "Padam"
+
+#: adjod/templates/adjod/updateprofile.html:70
+#: suit/templates/admin/object_history.html:29
+msgid "Action"
+msgstr "tindakan"
+
+#: adjod/templates/adjod/updateprofile.html:82
+msgid "Results"
+msgstr "keputusan"
+
+#: adjod/templates/adjod/updateprofile.html:83
+msgid "Check All"
+msgstr "Memeriksa semua"
+
+#: adjod/templates/adjod/updateprofile.html:88
+#: adjod/templates/search/search.html:282
+msgid "No Results Found"
+msgstr "Tiada keputusan dijumpai"
+
+#: adjod/templates/adjod/updateprofile.html:102
+msgid "Personals Details"
+msgstr "Maklumat Peribadi"
+
+#: adjod/templates/adjod/updateprofile.html:108
+#: adjod/templates/advertisement/ad_post.html:82
+msgid "Upload Photos"
+msgstr "memuat naik foto"
+
+#: adjod/templates/adjod/updateprofile.html:128
+msgid "Enter your Full Name"
+msgstr "Masukkan nama penuh anda"
+
+#: adjod/templates/adjod/updateprofile.html:130
+msgid "Enter your Last Name"
+msgstr "Masukkan Nama Keluarga anda"
+
+#: adjod/templates/adjod/updateprofile.html:139
+msgid "Enter your Email"
+msgstr "Masukkan email anda"
+
+#: adjod/templates/adjod/updateprofile.html:141
+msgid "Enter your mobile no"
+msgstr "Masukkan tidak ada telefon anda"
+
+#: adjod/templates/adjod/updateprofile.html:157
+#: adjod/templates/advertisement/ad_post.html:204
+msgid "Please Choose city"
+msgstr "Sila Pilihkan"
+
+#: adjod/templates/adjod/updateprofile.html:173
+#: adjod/templates/advertisement/ad_post.html:220
+msgid "Please Choose locality"
+msgstr "Sila Pilih kawasan"
+
+#: adjod/templates/adjod/updateprofile.html:183
+msgid "Additional Information"
+msgstr "informasi tambahan"
+
+#: adjod/templates/adjod/updateprofile.html:193
+msgid "Gender"
+msgstr "jantina"
+
+#: adjod/templates/adjod/updateprofile.html:194
+msgid "Male"
+msgstr "lelaki"
+
+#: adjod/templates/adjod/updateprofile.html:195
+msgid "Female"
+msgstr "Wanita"
+
+#: adjod/templates/adjod/updateprofile.html:197
+msgid "Please choose Gender"
+msgstr "Pilih Jantina"
+
+#: adjod/templates/adjod/updateprofile.html:203
+msgid "Enter your age"
+msgstr "Masukkan umur anda"
+
+#: adjod/templates/adjod/updateprofile.html:211
+msgid "Enter your address"
+msgstr "Masukkan alamat anda"
+
+#: adjod/templates/adjod/updateprofile.html:220
+#: adjod/templates/advertisement/ad_post.html:132
+msgid "Individual"
+msgstr "individu"
+
+#: adjod/templates/adjod/updateprofile.html:222
+#: adjod/templates/advertisement/ad_post.html:135
+msgid "Please select You are."
+msgstr "Sila pilih Anda di"
+
+#: adjod/templates/adjod/updateprofile.html:231
+#: adjod/templates/adjod/updateprofile.html:236
+msgid "Marketing communication"
+msgstr "komunikasi pemasaran"
+
+#: adjod/templates/adjod/updateprofile.html:232
+#: adjod/templates/adjod/updateprofile.html:237
+msgid "Include me in marketing mailing communication"
+msgstr "Termasuk saya dalam pemasaran komunikasi surat-menyurat"
+
+#: adjod/templates/adjod/updateprofile.html:241
+msgid "Set Your Password"
+msgstr "Tetapkan Kata Laluan Anda"
+
+#: adjod/templates/adjod/updateprofile.html:245
+msgid "Enter your new password"
+msgstr "Masukkan kata laluan baru anda"
+
+#: adjod/templates/adjod/updateprofile.html:254
+msgid "I wish to receive SMS alerts."
+msgstr "Saya ingin menerima amaran SMS."
+
+#: adjod/templates/adjod/updateprofile.html:258
+#: suit/templates/admin/import_export/import.html:71
+msgid "Update"
+msgstr "Update"
+
+#: adjod/templates/adjod/updateprofile.html:259
+#: suit/templates/admin/cms/page/plugin_change_form.html:129
+msgid "Cancel"
+msgstr "Batal"
+
+#: adjod/templates/adjod/userpage.html:85
+msgid "Ads"
+msgstr "iklan"
+
+#: adjod/templates/adjod/userpage.html:109
+#: adjod/templates/search/search.html:309
+msgid "Sell or Advertise anything"
+msgstr "Menjual atau apa-apa Iklan"
+
+#: adjod/templates/adjod/userpage.html:115
+msgid "Tell us your need"
+msgstr "Beritahu kami keperluan anda"
+
+#: adjod/templates/adjod/userpage.html:116
+#: adjod/templates/search/search.html:313
+msgid "Create alert"
+msgstr "Buat amaran"
+
+#: adjod/templates/adjod/userpage.html:121
+msgid "to sell safely ?"
+msgstr "untuk menjual dengan selamat?"
+
+#: adjod/templates/adjod/userpage.html:122
+#: adjod/templates/search/search.html:405
+msgid "Try to take the full payment at the time of delivery."
+msgstr "Cuba untuk mengambil bayaran penuh pada masa penghantaran."
+
+#: adjod/templates/adjod/userpage.html:122
+#: adjod/templates/search/search.html:405
+msgid "Remember to use the safe location to meet"
+msgstr "Ingat untuk menggunakan lokasi yang selamat untuk memenuhi"
+
+#: adjod/templates/adjod/userpage.html:122
+#: adjod/templates/search/search.html:405
+msgid "Read more"
+msgstr "Baca lebih lanjut"
+
+#: adjod/templates/adjod/userpage.html:132
+#: adjod/templates/adjod/userpage.html:264
+msgid "Recently added"
+msgstr "yang baru ditambah"
+
+#: adjod/templates/adjod/userpage.html:174
+#: adjod/templates/adjod/userpage.html:179
+#: adjod/templates/search/search.html:326
+#: adjod/templates/search/search.html:331
+msgid "Select Category"
+msgstr "Pilih Kategori"
+
+#: adjod/templates/adjod/userpage.html:190
+#: adjod/templates/search/search.html:342
+msgid "Select SubCategory"
+msgstr "Pilih SubKategori"
+
+#: adjod/templates/adjod/userpage.html:198
+#: adjod/templates/search/search.html:350
+msgid "Please Choose sub category"
+msgstr "Sila Pilih kategori sub"
+
+#: adjod/templates/adjod/userpage.html:203
+#: adjod/templates/search/search.html:355
+msgid "Select Brand"
+msgstr "Pilih jenama"
+
+#: adjod/templates/adjod/userpage.html:211
+#: adjod/templates/search/search.html:363
+msgid "Please Choose brand"
+msgstr "Sila Pilih jenama"
+
+#: adjod/templates/adjod/userpage.html:216
+#: adjod/templates/adjod/userpage.html:221
+msgid "Select Locality"
+msgstr "Pilih Kampung"
+
+#: adjod/templates/adjod/userpage.html:227
+msgid "Please Choose Locality"
+msgstr "Sila Pilih Kampung"
+
+#: adjod/templates/adjod/userpage.html:238
+#: adjod/templates/search/search.html:385
+msgid "Please enter email address"
+msgstr "Sila masukkan alamat e-mel"
+
+#: adjod/templates/adjod/userpage.html:246
+#: adjod/templates/search/search.html:391
+msgid "Please enter the mobile number"
+msgstr "Sila masukkan nombor telefon bimbit"
+
+#: adjod/templates/advertisement/ad_detail.html:6
+#: adjod/templates/search/search.html:7
+msgid "Back to my search results"
+msgstr "Kembali ke hasil carian saya"
+
+#: adjod/templates/advertisement/ad_detail.html:20
+msgid "Ad ID:"
+msgstr "Ad ID:"
+
+#: adjod/templates/advertisement/ad_detail.html:100
+msgid "Share"
+msgstr "Kongsi"
+
+#: adjod/templates/advertisement/ad_detail.html:141
+#: adjod/templates/advertisement/ad_post.html:353
+msgid "Category"
+msgstr "kategori"
+
+#: adjod/templates/advertisement/ad_detail.html:145
+msgid "Brand"
+msgstr "jenama"
+
+#: adjod/templates/advertisement/ad_detail.html:149
+msgid "Posted By"
+msgstr "Dihantar oleh"
+
+#: adjod/templates/advertisement/ad_detail.html:156
+msgid "Video URL:"
+msgstr "URL Video:"
+
+#: adjod/templates/advertisement/ad_detail.html:160
+msgid "Contact Seller"
+msgstr "Butiran penjual"
+
+#: adjod/templates/advertisement/ad_detail.html:166
+#: adjod/templates/advertisement/ad_detail.html:197
+msgid "Anonymous"
+msgstr "Anonymous"
+
+#: adjod/templates/advertisement/ad_detail.html:191
+msgid "Seller details"
+msgstr "butiran penjual"
+
+#: adjod/templates/advertisement/ad_detail.html:205
+msgid "Number verified"
+msgstr "nombor disahkan"
+
+#: adjod/templates/advertisement/ad_detail.html:209
+msgid "Send free SMS"
+msgstr "Hantar SMS percuma"
+
+#: adjod/templates/advertisement/ad_detail.html:212
+msgid "Number:"
+msgstr "nombor"
+
+#: adjod/templates/advertisement/ad_detail.html:222
+msgid "Description"
+msgstr "Penerangan"
+
+#: adjod/templates/advertisement/ad_detail.html:242
+msgid "Recommended"
+msgstr "disyorkan"
+
+#: adjod/templates/advertisement/ad_detail.html:329
+msgid "Related posts"
+msgstr "jawatan yang berkaitan"
+
+#: adjod/templates/advertisement/ad_detail.html:381
+msgid "Call seller"
+msgstr "penjual Call"
+
+#: adjod/templates/advertisement/ad_post.html:54
+msgid "Choose"
+msgstr "pilih"
+
+#: adjod/templates/advertisement/ad_post.html:55
+msgid "Please choose category, Subcategory and Brand."
+msgstr "Pilih kategori, Sayuran dan Jenama."
+
+#: adjod/templates/advertisement/ad_post.html:61
+#: adjod/templates/advertisement/ad_post.html:77
+msgid "characters left"
+msgstr "aksara yang tinggal"
+
+#: adjod/templates/advertisement/ad_post.html:62
+msgid "Please enter title to your ad."
+msgstr "Sila masukkan tajuk untuk iklan anda."
+
+#: adjod/templates/advertisement/ad_post.html:71
+msgid "Please enter price."
+msgstr "Sila masukkan harga."
+
+#: adjod/templates/advertisement/ad_post.html:78
+msgid "Please enter description."
+msgstr "Sila masukkan huraian."
+
+#: adjod/templates/advertisement/ad_post.html:94
+msgid "Invalid file type"
+msgstr ""
+
+#: adjod/templates/advertisement/ad_post.html:98
+msgid "Ads with photos sell faster(Upload only png, jpg, jpeg, gif)"
+msgstr ""
+
+#: adjod/templates/advertisement/ad_post.html:113
+msgid "Upload Videos"
+msgstr ""
+
+#: adjod/templates/advertisement/ad_post.html:119
+msgid "Seller Information"
+msgstr ""
+
+#: adjod/templates/advertisement/ad_post.html:122
+msgid "Buyer Information"
+msgstr ""
+
+#: adjod/templates/advertisement/ad_post.html:126
+msgid "You are"
+msgstr ""
+
+#: adjod/templates/advertisement/ad_post.html:134
+msgid "Delear"
+msgstr ""
+
+#: adjod/templates/advertisement/ad_post.html:170
+#: adjod/templates/advertisement/ad_post.html:174
+msgid "Please enter email id."
+msgstr ""
+
+#: adjod/templates/advertisement/ad_post.html:211
+msgid "Select locality *"
+msgstr ""
+
+#: adjod/templates/advertisement/ad_post.html:227
+msgid ""
+"Maintain my Privacy (Buyers will first contact you via reply, you can decide "
+"when to reveal your phone number to them)"
+msgstr ""
+
+#: adjod/templates/advertisement/ad_post.html:229
+msgid "Please Select Your Plan"
+msgstr ""
+
+#: adjod/templates/advertisement/ad_post.html:234
+msgid "Make your Ad Premium"
+msgstr ""
+
+#: adjod/templates/advertisement/ad_post.html:239
+msgid "Urgent Ad"
+msgstr ""
+
+#: adjod/templates/advertisement/ad_post.html:240
+#: adjod/templates/advertisement/ad_post.html:254
+msgid "View Example"
+msgstr ""
+
+#: adjod/templates/advertisement/ad_post.html:245
+msgid "S$ 9.99 per ad"
+msgstr ""
+
+#: adjod/templates/advertisement/ad_post.html:249
+#: adjod/templates/advertisement/ad_post.html:262
+#: adjod/templates/advertisement/ad_post.html:275
+msgid "Select"
+msgstr ""
+
+#: adjod/templates/advertisement/ad_post.html:253
+msgid "Top of the page Ad"
+msgstr ""
+
+#: adjod/templates/advertisement/ad_post.html:259
+msgid "S$ 14.99 per ad"
+msgstr ""
+
+#: adjod/templates/advertisement/ad_post.html:266
+msgid "Top of the page Ad + Urgent Ad"
+msgstr ""
+
+#: adjod/templates/advertisement/ad_post.html:272
+msgid "S$ 19.99 per ad"
+msgstr ""
+
+#: adjod/templates/advertisement/ad_post.html:308
+msgid "By clicking 'Post', you agree to our"
+msgstr ""
+
+#: adjod/templates/advertisement/ad_post.html:308
+msgid "Terms of Use"
+msgstr ""
+
+#: adjod/templates/advertisement/ad_post.html:308
+msgid "Privacy Policy"
+msgstr ""
+
+#: adjod/templates/advertisement/ad_post.html:309
+msgid "Please click the checkbox"
+msgstr ""
+
+#: adjod/templates/advertisement/ad_post.html:354
+msgid "Sub Category"
+msgstr ""
+
+#: adjod/templates/advertisement/ad_post.html:394
+msgid "All category"
+msgstr ""
+
+#: adjod/templates/registration/password_change_done.html:11
+msgid "Your password has been changed successfully"
+msgstr ""
+
+#: adjod/templates/registration/password_change_form.html:111
+#: suit/templates/admin/index.html:26
+#: suit/templates/admin/edit_inline/tabular.html:18
+#: suit/templates/admin/edit_inline/tabular.html:68
+#: suit/templates/admin/filer/folder/change_form.html:24
+#: suit/templates/admin/filer/folder/directory_listing.html:86
+#: suit/templates/admin/filer/folder/directory_table.html:27
+#: suit/templates/admin/filer/folder/directory_table.html:43
+msgid "Change"
+msgstr ""
+
+#: adjod/templates/registration/password_reset_complete.html:15
+msgid "Your password has been set. You may go ahead and log in now"
+msgstr ""
+
+#: adjod/templates/registration/password_reset_complete.html:17
+msgid "Dashboard"
+msgstr ""
+
+#: adjod/templates/registration/password_reset_confirm.html:15
+msgid ""
+"Please enter your new password twice. So we can verify you typed it in "
+"correctly"
+msgstr ""
+
+#: adjod/templates/registration/password_reset_confirm.html:23
+#: suit/templates/registration/password_change_form.html:66
+msgid "New password"
+msgstr ""
+
+#: adjod/templates/registration/password_reset_confirm.html:27
+msgid "Confirm password"
+msgstr ""
+
+#: adjod/templates/registration/password_reset_confirm.html:33
+#: suit/templates/registration/password_change_form.html:88
+msgid "Change my password"
+msgstr ""
+
+#: adjod/templates/registration/password_reset_confirm.html:39
+msgid "Password reset unsuccessful"
+msgstr ""
+
+#: adjod/templates/registration/password_reset_confirm.html:41
+msgid "The password reset link was invalid"
+msgstr ""
+
+#: adjod/templates/registration/password_reset_confirm.html:43
+msgid "possibly because it has already been used"
+msgstr ""
+
+#: adjod/templates/registration/password_reset_confirm.html:45
+msgid "Please request a new password reset"
+msgstr ""
+
+#: adjod/templates/registration/password_reset_confirm.html:47
+msgid "OK"
+msgstr ""
+
+#: adjod/templates/registration/password_reset_done.html:8
+msgid ""
+"We've e-mailed you instructions for setting your password to the e-mail "
+"address you submitted"
+msgstr ""
+
+#: adjod/templates/registration/password_reset_done.html:11
+msgid "You should be receiving it shortly"
+msgstr ""
+
+#: adjod/templates/registration/password_reset_email.html:4
+msgid "Hello"
+msgstr ""
+
+#: adjod/templates/registration/password_reset_email.html:6
+msgid "You have asked for a password reminder for your account"
+msgstr ""
+
+#: adjod/templates/registration/password_reset_email.html:6
+msgid ""
+"If this was not you, or you know your account's password, feel free to "
+"ignore this email. Your account's security has not been compromised"
+msgstr ""
+
+#: adjod/templates/registration/password_reset_email.html:8
+msgid "Please go to the following page and choose a new password"
+msgstr ""
+
+#: adjod/templates/registration/password_reset_email.html:11
+msgid "Your username, in case you've forgotten"
+msgstr ""
+
+#: adjod/templates/registration/password_reset_email.html:13
+msgid "Thanks for using our service"
+msgstr ""
+
+#: adjod/templates/registration/password_reset_form.html:4
+msgid "Password reset"
+msgstr ""
+
+#: adjod/templates/registration/password_reset_form.html:6
+msgid "Enter your e-mail address below, and we'll e-mail"
+msgstr ""
+
+#: adjod/templates/registration/password_reset_form.html:6
+msgid " instructions for setting a new one"
+msgstr ""
+
+#: adjod/templates/registration/password_reset_form.html:13
+msgid "Invalid email"
+msgstr ""
+
+#: adjod/templates/registration/password_reset_form.html:26
+msgid "Reset my password"
+msgstr ""
+
+#: adjod/templates/registration/password_reset_subject.txt:2
+msgid "Password reset for Resell"
+msgstr ""
+
+#: adjod/templates/search/search.html:17
+msgid "All Results"
+msgstr ""
+
+#: adjod/templates/search/search.html:52
+msgid "Apply filters"
+msgstr ""
+
+#: adjod/templates/search/search.html:53
+msgid "Sort by"
+msgstr ""
+
+#: adjod/templates/search/search.html:59
+msgid "None"
+msgstr ""
+
+#: adjod/templates/search/search.html:60
+msgid "Created Date"
+msgstr ""
+
+#: adjod/templates/search/search.html:61
+msgid "online users"
+msgstr ""
+
+#: adjod/templates/search/search.html:62
+msgid "Price Low to High"
+msgstr ""
+
+#: adjod/templates/search/search.html:63
+msgid "Price High to Low"
+msgstr ""
+
+#: adjod/templates/search/search.html:72
+msgid "Refine Your Results"
+msgstr ""
+
+#: adjod/templates/search/search.html:83
+msgid "All Category"
+msgstr ""
+
+#: adjod/templates/search/search.html:106
+msgid "Brands"
+msgstr ""
+
+#: adjod/templates/search/search.html:121
+msgid "Price"
+msgstr ""
+
+#: adjod/templates/search/search.html:125
+msgid "Below"
+msgstr ""
+
+#: adjod/templates/search/search.html:146
+msgid "Above"
+msgstr ""
+
+#: adjod/templates/search/search.html:312
+msgid "Tell us your need "
+msgstr ""
+
+#: adjod/templates/search/search.html:368
+msgid "Select City"
+msgstr ""
+
+#: adjod/templates/search/search.html:373
+msgid "Select City "
+msgstr ""
+
+#: adjod/templates/search/search.html:379
+msgid "Please Choose city "
+msgstr ""
+
+#: adjod/templates/search/search.html:404
+msgid "How to sell safely ?"
+msgstr ""
+
+#: adjod/templates/templated_email/weekly_notice_email.html:7
+msgid "Notice mail"
+msgstr ""
+
+#: adjod/templates/templated_email/weekly_notice_email.html:18
+msgid "Hi"
+msgstr ""
+
+#: adjod/templates/templated_email/weekly_notice_email.html:21
+msgid ""
+"This is your weekly update of leads matching your filters where the "
+"customers still are waiting for your help"
+msgstr ""
+
+#: adjod/templates/templated_email/weekly_notice_email.html:29
+msgid ""
+"You are always welcome to contact us at Fixido to get help. Our contact "
+"information is included below"
+msgstr ""
+
+#: adjod/templates/templated_email/weekly_notice_email.html:31
+msgid "Best regards"
+msgstr ""
+
+#: adjod/templates/templated_email/weekly_notice_email.html:32
+msgid "The Fixido team"
+msgstr ""
+
+#: adjod/templates/templated_email/weekly_notice_email.html:33
+msgid "Phone"
+msgstr ""
+
+#: adjod/templates/templated_email/weekly_notice_email.html:33
+msgid "+ 46 (0)8 551 194 10"
+msgstr ""
+
+#: adjod/templates/templated_email/weekly_notice_email.html:34
+msgid "E-mail"
+msgstr ""
+
+#: adjod/templates/templated_email/weekly_notice_email.html:37
+msgid "If you dont want any more notice e-mail, please deactivate it"
+msgstr ""
+
+#: adjod/templates/templated_email/weekly_notice_email.html:37
+msgid "here"
+msgstr ""
+
+#: advertisement/views.py:329 advertisement/views.py:345
+msgid "Congratulations...Your Ad Successfully posted"
+msgstr ""
+
+#: advertisement/views.py:337 advertisement/views.py:348
+msgid "U already post 3 ads....U have to make the account premium. "
+msgstr ""
+
+#: core/extra.py:42
+msgid "Please keep filesize under %s.  %(Current filesize)s"
+msgstr ""
+
+#: core/extra.py:44
+msgid "Filetype not supported."
+msgstr ""
+
+#: paypal/standard/ipn/views.py:144
+msgid "Your Ad Successfully posted with succesfull payment"
+msgstr ""
+
+#: paypal/standard/ipn/views.py:149 paypal/standard/ipn/views.py:165
+msgid "Error In Transaction"
+msgstr ""
+
+#: paypal/standard/ipn/views.py:162
+#, fuzzy
+msgid "Your account Successfully subscribed"
+msgstr "akaun Langgan"
+
+#: suit/widgets.py:104 suit/tests/widgets.py:63
+msgid "Date:"
+msgstr ""
+
+#: suit/widgets.py:118 suit/tests/widgets.py:91
+msgid "Time:"
+msgstr ""
+
+#: suit/templates/403.html:4
+msgid "forbidden"
+msgstr ""
+
+#: suit/templates/403.html:6 suit/templates/404.html:6
+#: suit/templates/500.html:6 suit/templates/suit/error_base.html:76
+msgid "error"
+msgstr ""
+
+#: suit/templates/403.html:9
+msgid "We're sorry, but the requested action is forbidden"
+msgstr ""
+
+#: suit/templates/404.html:4
+msgid "Page not found"
+msgstr ""
+
+#: suit/templates/404.html:9
+msgid "We're sorry, but the requested page could not be found."
+msgstr ""
+
+#: suit/templates/500.html:4
+msgid "Server Error"
+msgstr ""
+
+#: suit/templates/500.html:9
+msgid ""
+"There's been an error. It's been reported to the site administrators via e-"
+"mail and should be fixed shortly. Thanks for your patience."
+msgstr ""
+
+#: suit/templates/admin/actions.html:14
+#: suit/templates/admin/filer/actions.html:5
+msgid "Run the selected action"
+msgstr ""
+
+#: suit/templates/admin/actions.html:14
+#: suit/templates/admin/filer/actions.html:5
+msgid "Go"
+msgstr ""
+
+#: suit/templates/admin/actions.html:22
+#: suit/templates/admin/filer/actions.html:14
+msgid "Click here to select the objects across all pages"
+msgstr ""
+
+#: suit/templates/admin/actions.html:23
+#, python-format
+msgid ""
+"Select all %(total_count)s\n"
+"                    %(module_name)s"
+msgstr ""
+
+#: suit/templates/admin/actions.html:26
+#: suit/templates/admin/filer/actions.html:16
+msgid "Clear selection"
+msgstr ""
+
+#: suit/templates/admin/app_index.html:8 suit/templates/admin/base.html:102
+#: suit/templates/admin/change_form.html:61
+#: suit/templates/admin/change_list.html:42
+#: suit/templates/admin/delete_confirmation.html:7
+#: suit/templates/admin/delete_selected_confirmation.html:7
+#: suit/templates/admin/object_history.html:7
+#: suit/templates/admin/auth/user/change_password.html:19
+#: suit/templates/admin/cms/page/change_form.html:46
+#: suit/templates/admin/cms/page/change_list.html:8
+#: suit/templates/admin/cms/page/plugin_change_form.html:82
+#: suit/templates/admin/filer/breadcrumbs.html:5
+#: suit/templates/admin/filer/folder/change_form.html:8
+#: suit/templates/admin/import_export/base.html:10
+#: suit/templates/registration/logged_out.html:6
+#: suit/templates/registration/password_change_form.html:26
+#: suit/templates/reversion/recover_form.html:8
+#: suit/templates/reversion/recover_list.html:8
+#: suit/templates/reversion/revision_form.html:8
+#: suit/templates/suit/menu.html:10
+msgid "Home"
+msgstr ""
+
+#: suit/templates/admin/app_index.html:11
+#, python-format
+msgid "%(name)s"
+msgstr ""
+
+#: suit/templates/admin/base.html:68
+msgid "Welcome,"
+msgstr ""
+
+#: suit/templates/admin/base.html:77
+#: suit/templates/registration/password_change_form.html:15
+msgid "Documentation"
+msgstr ""
+
+#: suit/templates/admin/base.html:80
+#: suit/templates/admin/auth/user/change_password.html:32
+#: suit/templates/admin/auth/user/change_password.html:75
+#: suit/templates/registration/password_change_form.html:19
+msgid "Change password"
+msgstr ""
+
+#: suit/templates/admin/base.html:82
+#: suit/templates/registration/password_change_form.html:21
+msgid "Log out"
+msgstr ""
+
+#: suit/templates/admin/change_form.html:21
+msgid "You have unsaved changes"
+msgstr ""
+
+#: suit/templates/admin/change_form.html:50
+#: suit/templates/admin/change_form.html:76 suit/templates/admin/index.html:34
+#: suit/templates/admin/cms/page/change_form.html:53
+#: suit/templates/admin/cms/page/plugin_change_form.html:85
+msgid "Add"
+msgstr ""
+
+#: suit/templates/admin/change_form.html:99
+#: suit/templates/admin/filer/image/change_form.html:7
+msgid "tools"
+msgstr ""
+
+#: suit/templates/admin/change_form.html:109
+#: suit/templates/admin/object_history.html:15
+#: suit/templates/admin/cms/page/change_form.html:105
+#: suit/templates/admin/filer/folder/change_form.html:33
+#: suit/templates/admin/filer/image/change_form.html:10
+#: suit/templates/reversion/revision_form.html:16
+msgid "History"
+msgstr ""
+
+#: suit/templates/admin/change_form.html:113
+#: suit/templates/admin/cms/page/change_form.html:104
+#: suit/templates/admin/edit_inline/stacked.html:15
+#: suit/templates/admin/filer/folder/change_form.html:37
+#: suit/templates/admin/filer/image/change_form.html:15
+msgid "View on site"
+msgstr ""
+
+#: suit/templates/admin/change_form.html:119
+#: suit/templates/admin/change_list.html:68
+#: suit/templates/admin/change_list.html:116
+#: suit/templates/admin/cms/page/change_form.html:108
+#: suit/templates/admin/cms/page/change_list.html:113
+#: suit/templates/admin/cms/page/change_list.html:141
+#, python-format
+msgid "Add %(name)s"
+msgstr ""
+
+#: suit/templates/admin/change_form.html:147
+#: suit/templates/admin/change_list.html:86 suit/templates/admin/login.html:27
+#: suit/templates/admin/auth/user/change_password.html:45
+#: suit/templates/admin/cms/page/change_form.html:137
+#: suit/templates/admin/cms/page/plugin_change_form.html:99
+#: suit/templates/admin/filer/folder/new_folder_form.html:10
+#: suit/templates/registration/password_change_form.html:44
+msgid "Please correct the error below."
+msgid_plural " Please correct the errors below."
+msgstr[0] ""
+msgstr[1] ""
+
+#: suit/templates/admin/change_list.html:110
+msgid "Nothing found"
+msgstr ""
+
+#: suit/templates/admin/change_list.html:112
+msgid "Reset search and filters"
+msgstr ""
+
+#: suit/templates/admin/change_list.html:114
+#, python-format
+msgid "%(name_plural)s are not created yet"
+msgstr ""
+
+#: suit/templates/admin/change_list_results.html:19
+#, python-format
+msgid "Sorting priority: %(priority_number)s"
+msgstr ""
+
+#: suit/templates/admin/change_list_results.html:20
+msgid "Toggle sorting"
+msgstr ""
+
+#: suit/templates/admin/change_list_results.html:22
+msgid "Remove from sorting"
+msgstr ""
+
+#: suit/templates/admin/delete_confirmation.html:26
+#: suit/templates/admin/filer/delete_confirmation.html:12
+#, python-format
+msgid ""
+"Deleting the %(object_name)s '%(escaped_object)s' would result in deleting "
+"related objects, but your account doesn't have permission to delete the "
+"following types of objects:"
+msgstr ""
+
+#: suit/templates/admin/delete_confirmation.html:36
+#: suit/templates/admin/filer/delete_confirmation.html:21
+#, python-format
+msgid ""
+"Deleting the %(object_name)s '%(escaped_object)s' would require deleting the "
+"following protected related objects:"
+msgstr ""
+
+#: suit/templates/admin/delete_confirmation.html:51
+#: suit/templates/admin/filer/delete_confirmation.html:31
+#, python-format
+msgid ""
+"Are you sure you want to delete the %(object_name)s \"%(escaped_object)s\"? "
+"All of the following related items will be deleted:"
+msgstr ""
+
+#: suit/templates/admin/delete_confirmation.html:57
+#: suit/templates/admin/delete_selected_confirmation.html:61
+#: suit/templates/admin/filer/delete_confirmation.html:36
+#: suit/templates/admin/filer/delete_selected_files_confirmation.html:47
+msgid "Yes, I'm sure"
+msgstr ""
+
+#: suit/templates/admin/delete_selected_confirmation.html:15
+msgid "Delete multiple objects"
+msgstr ""
+
+#: suit/templates/admin/delete_selected_confirmation.html:23
+#, python-format
+msgid ""
+"Deleting the selected %(objects_name)s would result in deleting related "
+"objects, but your account doesn't have permission to delete the following "
+"types of objects:"
+msgstr ""
+
+#: suit/templates/admin/delete_selected_confirmation.html:33
+#, python-format
+msgid ""
+"Deleting the selected %(objects_name)s would require deleting the following "
+"protected related objects:"
+msgstr ""
+
+#: suit/templates/admin/delete_selected_confirmation.html:51
+msgid "Confirm deletion"
+msgstr ""
+
+#: suit/templates/admin/delete_selected_confirmation.html:54
+#, python-format
+msgid ""
+"Are you sure you want to delete the selected %(objects_name)s? All of the "
+"following objects and their related items will be deleted:"
+msgstr ""
+
+#: suit/templates/admin/index.html:19
+#, python-format
+msgid "Models available in the %(name)s application."
+msgstr ""
+
+#: suit/templates/admin/index.html:45
+msgid "You don't have permission to edit anything."
+msgstr ""
+
+#: suit/templates/admin/index.html:54
+msgid "My Actions"
+msgstr ""
+
+#: suit/templates/admin/index.html:59
+msgid "None available"
+msgstr ""
+
+#: suit/templates/admin/index.html:68
+msgid "added"
+msgstr ""
+
+#: suit/templates/admin/index.html:69
+msgid "changed"
+msgstr ""
+
+#: suit/templates/admin/index.html:70
+msgid "deleted"
+msgstr ""
+
+#: suit/templates/admin/index.html:76
+msgid "Unknown content"
+msgstr ""
+
+#: suit/templates/admin/login.html:56
+#: suit/templates/admin/auth/user/change_password.html:54
+msgid "Password"
+msgstr ""
+
+#: suit/templates/admin/login.html:64
+msgid "Forgotten your password or username?"
+msgstr ""
+
+#: suit/templates/admin/login.html:68
+msgid "Log in"
+msgstr ""
+
+#: suit/templates/admin/object_history.html:27
+#: suit/templates/reversion/object_history.html:15
+#: suit/templates/reversion/recover_list.html:27
+msgid "Date/time"
+msgstr ""
+
+#: suit/templates/admin/object_history.html:28
+#: suit/templates/reversion/object_history.html:16
+msgid "User"
+msgstr ""
+
+#: suit/templates/admin/object_history.html:43
+#: suit/templates/reversion/object_history.html:36
+msgid ""
+"This object doesn't have a change history. It probably wasn't added via this "
+"admin site."
+msgstr ""
+
+#: suit/templates/admin/page_submit_line.html:3
+#: suit/templates/admin/pagination.html:4
+#: suit/templates/admin/submit_line.html:3
+#: suit/templates/admin/cms/page/plugin_change_form.html:128
+#: suit/templates/admin/filer/folder/new_folder_form.html:43
+msgid "Save"
+msgstr ""
+
+#: suit/templates/admin/page_submit_line.html:4
+#: suit/templates/admin/submit_line.html:4
+msgid "Save and continue editing"
+msgstr ""
+
+#: suit/templates/admin/page_submit_line.html:5
+#: suit/templates/admin/submit_line.html:5
+msgid "Save as new"
+msgstr ""
+
+#: suit/templates/admin/page_submit_line.html:6
+#: suit/templates/admin/submit_line.html:6
+msgid "Save and add another"
+msgstr ""
+
+#: suit/templates/admin/page_submit_line.html:14
+#, python-format
+msgid "Delete %(language)s translation"
+msgstr ""
+
+#: suit/templates/admin/pagination.html:26
+msgid "Show all"
+msgstr ""
+
+#: suit/templates/admin/search_form.html:8
+msgid "keyword"
+msgstr ""
+
+#: suit/templates/admin/search_form.html:29
+#, python-format
+msgid "%(counter)s result"
+msgid_plural "%(counter)s results"
+msgstr[0] ""
+msgstr[1] ""
+
+#: suit/templates/admin/search_form.html:31
+#, python-format
+msgid "%(full_result_count)s total"
+msgstr ""
+
+#: suit/templates/admin/auth/user/add_form.html:6
+msgid ""
+"First, enter a username and password. Then, you'll be able to edit more user "
+"options."
+msgstr ""
+
+#: suit/templates/admin/auth/user/add_form.html:8
+msgid "Enter a username and password."
+msgstr ""
+
+#: suit/templates/admin/auth/user/change_password.html:48
+#, python-format
+msgid "Enter a new password for the user <strong>%(username)s</strong>."
+msgstr ""
+
+#: suit/templates/admin/auth/user/change_password.html:64
+#: suit/templates/registration/password_change_form.html:77
+msgid "Password (again)"
+msgstr ""
+
+#: suit/templates/admin/auth/user/change_password.html:68
+msgid "Enter the same password as above, for verification."
+msgstr ""
+
+#: suit/templates/admin/cms/page/change_form.html:4
+msgid "Change a page"
+msgstr ""
+
+#: suit/templates/admin/cms/page/change_form.html:64
+msgid "Confirm delete"
+msgstr ""
+
+#: suit/templates/admin/cms/page/change_form.html:65
+msgid "Remove delete request"
+msgstr ""
+
+#: suit/templates/admin/cms/page/change_form.html:68
+msgid "Confirm page deletion"
+msgstr ""
+
+#: suit/templates/admin/cms/page/change_form.html:93
+msgid "actions"
+msgstr ""
+
+#: suit/templates/admin/cms/page/change_form.html:97
+#: suit/templates/admin/cms/page/change_list.html:78
+msgid "Publish"
+msgstr ""
+
+#: suit/templates/admin/cms/page/change_form.html:97
+#: suit/templates/admin/cms/page/change_form.html:98
+msgid "draft"
+msgstr ""
+
+#: suit/templates/admin/cms/page/change_form.html:98
+#: suit/templates/admin/import_export/import.html:51
+msgid "Preview"
+msgstr ""
+
+#: suit/templates/admin/cms/page/change_form.html:100
+msgid "Revert to public"
+msgstr ""
+
+#: suit/templates/admin/cms/page/change_form.html:157
+msgid "All permissions"
+msgstr ""
+
+#: suit/templates/admin/cms/page/change_form.html:158
+#: suit/templates/admin/cms/page/change_form.html:169
+msgid "Loading..."
+msgstr ""
+
+#: suit/templates/admin/cms/page/change_form.html:168
+msgid "Page states"
+msgstr ""
+
+#: suit/templates/admin/cms/page/change_list.html:3
+msgid "List of pages"
+msgstr ""
+
+#: suit/templates/admin/cms/page/change_list.html:69
+msgid "Successfully moved"
+msgstr ""
+
+#: suit/templates/admin/cms/page/change_list.html:87
+msgid "An error occured. Please reload the page"
+msgstr ""
+
+#: suit/templates/admin/cms/page/change_list.html:110
+#: suit/templates/reversion/change_list.html:8
+#: suit/templates/reversion/recover_form.html:14
+#: suit/templates/reversion/recover_list.html:14
+#, python-format
+msgid "Recover deleted %(name)s"
+msgstr ""
+
+#: suit/templates/admin/cms/page/change_list.html:125
+msgid "Pages on:"
+msgstr ""
+
+#: suit/templates/admin/edit_inline/stacked.html:73
+#: suit/templates/admin/edit_inline/tabular.html:128
+#, python-format
+msgid "Add another %(verbose_name)s"
+msgstr ""
+
+#: suit/templates/admin/edit_inline/stacked.html:76
+#: suit/templates/admin/edit_inline/tabular.html:131
+msgid "Remove"
+msgstr ""
+
+#: suit/templates/admin/edit_inline/tabular.html:19
+msgid "Delete?"
+msgstr ""
+
+#: suit/templates/admin/filer/actions.html:14
+#, python-format
+msgid "Select all %(total_count)s files and/or folders"
+msgstr ""
+
+#: suit/templates/admin/filer/breadcrumbs.html:5
+msgid "Go back to admin homepage"
+msgstr ""
+
+#: suit/templates/admin/filer/breadcrumbs.html:8
+msgid "Go back to Filer app"
+msgstr ""
+
+#: suit/templates/admin/filer/breadcrumbs.html:8
+#: suit/templates/admin/filer/folder/change_form.html:12
+msgid "Filer"
+msgstr ""
+
+#: suit/templates/admin/filer/breadcrumbs.html:12
+msgid "Go back to root folder"
+msgstr ""
+
+#: suit/templates/admin/filer/breadcrumbs.html:12
+#: suit/templates/admin/filer/folder/change_form.html:15
+#: suit/templates/admin/filer/folder/directory_listing.html:80
+msgid "root"
+msgstr ""
+
+#: suit/templates/admin/filer/breadcrumbs.html:17
+#: suit/templates/admin/filer/breadcrumbs.html:23
+#: suit/templates/admin/filer/folder/change_form.html:19
+#, python-format
+msgid "Go back to '%(folder_name)s' folder"
+msgstr ""
+
+#: suit/templates/admin/filer/change_form.html:30
+msgid "duplicates"
+msgstr ""
+
+#: suit/templates/admin/filer/delete_selected_files_confirmation.html:11
+msgid ""
+"Deleting the selected files and/or folders would result in deleting related "
+"objects, but your account doesn't have permission to delete the following "
+"types of objects:"
+msgstr ""
+
+#: suit/templates/admin/filer/delete_selected_files_confirmation.html:20
+msgid ""
+"Deleting the selected files and/or folders would require deleting the "
+"following protected related objects:"
+msgstr ""
+
+#: suit/templates/admin/filer/delete_selected_files_confirmation.html:30
+msgid ""
+"<p>Are you sure you want to delete the selected files and/or folders? All of "
+"the following objects and their related items will be deleted:</p>"
+msgstr ""
+
+#: suit/templates/admin/filer/folder/change_form.html:8
+#: suit/templates/admin/filer/folder/change_form.html:12
+#: suit/templates/admin/filer/folder/change_form.html:15
+#: suit/templates/admin/filer/folder/directory_listing.html:80
+msgid "Go back to"
+msgstr ""
+
+#: suit/templates/admin/filer/folder/change_form.html:8
+msgid "admin homepage"
+msgstr ""
+
+#: suit/templates/admin/filer/folder/change_form.html:15
+#: suit/templates/admin/filer/folder/directory_listing.html:80
+#: suit/templates/admin/filer/folder/new_folder_form.html:4
+#: suit/templates/admin/filer/tools/clipboard/clipboard.html:15
+msgid "folder"
+msgstr ""
+
+#: suit/templates/admin/filer/folder/change_form.html:50
+#: suit/templates/admin/filer/folder/directory_listing.html:81
+#: suit/templates/admin/filer/folder/directory_listing.html:91
+#: suit/templates/admin/filer/folder/directory_table.html:23
+msgid "Folder Icon"
+msgstr ""
+
+#: suit/templates/admin/filer/folder/choose_copy_destination.html:12
+msgid ""
+"Your account doesn't have permissions to copy all of the selected files and/"
+"or folders."
+msgstr ""
+
+#: suit/templates/admin/filer/folder/choose_copy_destination.html:15
+#: suit/templates/admin/filer/folder/choose_move_destination.html:15
+msgid "There are no destination folders available."
+msgstr ""
+
+#: suit/templates/admin/filer/folder/choose_copy_destination.html:18
+msgid "There are no files and/or folders available to copy."
+msgstr ""
+
+#: suit/templates/admin/filer/folder/choose_copy_destination.html:21
+msgid ""
+"The following files and/or folders will be copied to a destination folder "
+"(retaining their tree structure):"
+msgstr ""
+
+#: suit/templates/admin/filer/folder/choose_copy_destination.html:31
+#: suit/templates/admin/filer/folder/choose_move_destination.html:32
+msgid "Destination folder:"
+msgstr ""
+
+#: suit/templates/admin/filer/folder/choose_copy_destination.html:38
+msgid "Copy"
+msgstr ""
+
+#: suit/templates/admin/filer/folder/choose_images_resize_options.html:12
+msgid ""
+"Your account doesn't have permissions to resize all of the selected images."
+msgstr ""
+
+#: suit/templates/admin/filer/folder/choose_images_resize_options.html:15
+msgid "There are no images available to resize."
+msgstr ""
+
+#: suit/templates/admin/filer/folder/choose_images_resize_options.html:18
+msgid "The following images will be resized:"
+msgstr ""
+
+#: suit/templates/admin/filer/folder/choose_images_resize_options.html:29
+msgid "Choose an existing thumbnail option or enter resize parameters:"
+msgstr ""
+
+#: suit/templates/admin/filer/folder/choose_images_resize_options.html:32
+msgid "Choose resize parameters:"
+msgstr ""
+
+#: suit/templates/admin/filer/folder/choose_images_resize_options.html:35
+msgid ""
+"Warning: Images will be resized in-place and originals will be lost. Maybe "
+"first make a copy of them to retain the originals."
+msgstr ""
+
+#: suit/templates/admin/filer/folder/choose_images_resize_options.html:36
+msgid "Resize"
+msgstr ""
+
+#: suit/templates/admin/filer/folder/choose_move_destination.html:12
+msgid ""
+"Your account doesn't have permissions to move all of the selected files and/"
+"or folders."
+msgstr ""
+
+#: suit/templates/admin/filer/folder/choose_move_destination.html:18
+msgid "There are no files and/or folders available to move."
+msgstr ""
+
+#: suit/templates/admin/filer/folder/choose_move_destination.html:21
+msgid ""
+"The following files and/or folders will be moved to a destination folder "
+"(retaining their tree structure):"
+msgstr ""
+
+#: suit/templates/admin/filer/folder/choose_move_destination.html:38
+msgid "Move"
+msgstr ""
+
+#: suit/templates/admin/filer/folder/choose_rename_format.html:12
+msgid ""
+"Your account doesn't have permissions to rename all of the selected files."
+msgstr ""
+
+#: suit/templates/admin/filer/folder/choose_rename_format.html:15
+msgid "There are no files available to rename."
+msgstr ""
+
+#: suit/templates/admin/filer/folder/choose_rename_format.html:18
+msgid ""
+"The following files will be renamed (they will stay in their folders and "
+"keep original filename, only displayed filename will be changed):"
+msgstr ""
+
+#: suit/templates/admin/filer/folder/choose_rename_format.html:31
+msgid "Rename"
+msgstr ""
+
+#: suit/templates/admin/filer/folder/directory_listing.html:71
+msgid "Adds a new Folder"
+msgstr ""
+
+#: suit/templates/admin/filer/folder/directory_listing.html:71
+msgid "New Folder"
+msgstr ""
+
+#: suit/templates/admin/filer/folder/directory_listing.html:72
+msgid "upload files"
+msgstr ""
+
+#: suit/templates/admin/filer/folder/directory_listing.html:72
+msgid "Upload"
+msgstr ""
+
+#: suit/templates/admin/filer/folder/directory_listing.html:80
+msgid "Go back to the parent folder"
+msgstr ""
+
+#: suit/templates/admin/filer/folder/directory_listing.html:82
+#: suit/templates/admin/filer/folder/directory_table.html:30
+#: suit/templates/admin/filer/tools/search_form.html:19
+#, python-format
+msgid "1 folder"
+msgid_plural "%(counter)s folders"
+msgstr[0] ""
+msgstr[1] ""
+
+#: suit/templates/admin/filer/folder/directory_listing.html:82
+#: suit/templates/admin/filer/folder/directory_table.html:30
+#: suit/templates/admin/filer/tools/search_form.html:20
+#, python-format
+msgid "1 file"
+msgid_plural "%(counter)s files"
+msgstr[0] ""
+msgstr[1] ""
+
+#: suit/templates/admin/filer/folder/directory_listing.html:86
+msgid "Change current folder details"
+msgstr ""
+
+#: suit/templates/admin/filer/folder/directory_table.html:13
+msgid "Name"
+msgstr ""
+
+#: suit/templates/admin/filer/folder/directory_table.html:23
+#: suit/templates/admin/filer/folder/directory_table.html:27
+#: suit/templates/admin/filer/folder/directory_table.html:29
+#, python-format
+msgid "Change '%(item_label)s' folder details"
+msgstr ""
+
+#: suit/templates/admin/filer/folder/directory_table.html:30
+#: suit/templates/admin/filer/folder/directory_table.html:45
+msgid "Owner"
+msgstr ""
+
+#: suit/templates/admin/filer/folder/directory_table.html:37
+msgid "Select this file"
+msgstr ""
+
+#: suit/templates/admin/filer/folder/directory_table.html:39
+#: suit/templates/admin/filer/folder/directory_table.html:43
+#: suit/templates/admin/filer/folder/directory_table.html:44
+#, python-format
+msgid "Change '%(item_label)s' details"
+msgstr ""
+
+#: suit/templates/admin/filer/folder/directory_table.html:42
+#, python-format
+msgid "Delete '%(item_label)s'"
+msgstr ""
+
+#: suit/templates/admin/filer/folder/directory_table.html:45
+msgid "Permissions"
+msgstr ""
+
+#: suit/templates/admin/filer/folder/directory_table.html:45
+msgid "disabled"
+msgstr ""
+
+#: suit/templates/admin/filer/folder/directory_table.html:45
+msgid "enabled"
+msgstr ""
+
+#: suit/templates/admin/filer/folder/directory_table.html:49
+msgid "Move to clipboard"
+msgstr ""
+
+#: suit/templates/admin/filer/folder/directory_table.html:57
+msgid "there are no files or subfolders"
+msgstr ""
+
+#: suit/templates/admin/filer/folder/directory_table.html:64
+msgid "previous"
+msgstr ""
+
+#: suit/templates/admin/filer/folder/directory_table.html:68
+#, python-format
+msgid ""
+"\n"
+"            Page %(number)s of %(num_pages)s\n"
+"            "
+msgstr ""
+
+#: suit/templates/admin/filer/folder/directory_table.html:74
+msgid "next"
+msgstr ""
+
+#: suit/templates/admin/filer/folder/new_folder_form.html:4
+msgid "Add new"
+msgstr ""
+
+#: suit/templates/admin/filer/image/change_form.html:31
+msgid "Full size preview"
+msgstr ""
+
+#: suit/templates/admin/filer/tools/search_form.html:11
+msgid "Enter your search phrase here"
+msgstr ""
+
+#: suit/templates/admin/filer/tools/search_form.html:12
+msgid "Click here to"
+msgstr ""
+
+#: suit/templates/admin/filer/tools/search_form.html:12
+msgid "run search for entered phrase"
+msgstr ""
+
+#: suit/templates/admin/filer/tools/search_form.html:15
+msgid "Check it to"
+msgstr ""
+
+#: suit/templates/admin/filer/tools/search_form.html:15
+msgid "limit the search to current folder"
+msgstr ""
+
+#: suit/templates/admin/filer/tools/search_form.html:19
+msgid "found"
+msgstr ""
+
+#: suit/templates/admin/filer/tools/search_form.html:19
+msgid "and"
+msgstr ""
+
+#: suit/templates/admin/filer/tools/search_form.html:20
+msgid "cancel search"
+msgstr ""
+
+#: suit/templates/admin/filer/tools/clipboard/clipboard.html:4
+msgid "Clipboard"
+msgstr ""
+
+#: suit/templates/admin/filer/tools/clipboard/clipboard.html:15
+msgid "discard"
+msgstr ""
+
+#: suit/templates/admin/filer/tools/clipboard/clipboard.html:15
+msgid "Move all clipboard files to"
+msgstr ""
+
+#: suit/templates/admin/filer/tools/clipboard/clipboard.html:15
+msgid "unfiled files"
+msgstr ""
+
+#: suit/templates/admin/filer/tools/clipboard/clipboard.html:24
+msgid "Paste all items here"
+msgstr ""
+
+#: suit/templates/admin/filer/tools/clipboard/clipboard.html:63
+msgid "the clipboard is empty"
+msgstr ""
+
+#: suit/templates/admin/filer/tools/clipboard/clipboard_item_rows.html:10
+msgid "upload failed"
+msgstr ""
+
+#: suit/templates/admin/import_export/change_list_export.html:5
+#: suit/templates/admin/import_export/change_list_import_export.html:6
+#: suit/templates/admin/import_export/export.html:5
+#: suit/templates/admin/import_export/export.html:12
+msgid "Export"
+msgstr ""
+
+#: suit/templates/admin/import_export/change_list_import.html:5
+#: suit/templates/admin/import_export/change_list_import_export.html:5
+#: suit/templates/admin/import_export/import.html:6
+#: suit/templates/admin/import_export/import.html:25
+msgid "Import"
+msgstr ""
+
+#: suit/templates/admin/import_export/import.html:17
+msgid "This importer will import the following fields: "
+msgstr ""
+
+#: suit/templates/admin/import_export/import.html:34
+msgid "Errors"
+msgstr ""
+
+#: suit/templates/admin/import_export/import.html:42
+msgid "Line number"
+msgstr ""
+
+#: suit/templates/admin/import_export/import.html:65
+msgid "New"
+msgstr ""
+
+#: suit/templates/admin/import_export/import.html:67
+msgid "Skipped"
+msgstr ""
+
+#: suit/templates/admin/import_export/import.html:90
+msgid "Confirm import"
+msgstr ""
+
+#: suit/templates/registration/logged_out.html:9
+msgid "Thanks for spending some quality time with the Web site today."
+msgstr ""
+
+#: suit/templates/registration/logged_out.html:12
+msgid "Log in again"
+msgstr ""
+
+#: suit/templates/registration/password_change_form.html:28
+#: suit/templates/registration/password_change_form.html:32
+msgid "Password change"
+msgstr ""
+
+#: suit/templates/registration/password_change_form.html:40
+msgid ""
+"Please enter your old password, for security's sake, and then enter your new "
+"password twice so we can verify you typed it in correctly."
+msgstr ""
+
+#: suit/templates/registration/password_change_form.html:55
+msgid "Old password"
+msgstr ""
+
+#: suit/templates/reversion/object_history.html:8
+msgid ""
+"Choose a date from the list below to revert to a previous version of this "
+"object."
+msgstr ""
+
+#: suit/templates/reversion/object_history.html:17
+msgid "Comment"
+msgstr ""
+
+#: suit/templates/reversion/recover_form.html:25
+msgid "Press the save button below to recover this version of the object."
+msgstr ""
+
+#: suit/templates/reversion/recover_list.html:21
+msgid ""
+"Choose a date from the list below to recover a deleted version of an object."
+msgstr ""
+
+#: suit/templates/reversion/recover_list.html:41
+msgid "There are no deleted objects to recover."
+msgstr ""
+
+#: suit/templates/reversion/revision_form.html:18
+#, python-format
+msgid "Revert %(verbose_name)s"
+msgstr ""
+
+#: suit/templates/reversion/revision_form.html:27
+msgid "Press the save button below to revert to this version of the object."
+msgstr ""
+
+#: suit/templates/suit/error_base.html:87
+msgid "Close window"
+msgstr ""
+
+#: suit/templates/suit/error_base.html:90
+msgid "Go back"
+msgstr ""
+
+#: suit/templates/suit/error_base.html:93
+msgid "Go to admin home"
+msgstr ""
+
+#: suit/tests/templates/form_tabs.py:15
+msgid "Tab2"
+msgstr ""
+
+#~ msgid "Cars & Bikes"
+#~ msgstr "Kereta & Basikal"
