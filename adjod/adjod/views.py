@@ -643,3 +643,6 @@ def password_reset_confirm(request, uidb36=None, token=None,
 		context.update(extra_context)
 	return TemplateResponse(request, template_name, context,
 							current_app=current_app)
+
+def testads_google(request):
+	return render_to_response('testads_google.html', context_instance=RequestContext(request))

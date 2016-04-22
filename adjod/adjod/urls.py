@@ -152,4 +152,6 @@ urlpatterns = patterns('',
 
     url(r'^(?i)autocomplete_product_search/$', 'advertisement.views.autocomplete_product_search', name='autocomplete_product_search'),
 
+    url(r'^(?i)testads_google/$', 'adjod.views.testads_google', name='custom_404'),
+
 )+static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
