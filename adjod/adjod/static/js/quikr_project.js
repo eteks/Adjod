@@ -332,9 +332,9 @@ $( document ).ready(function() {
     });   
 
     // Social auth share button actions for desktop
-    $(".fbtwtbutton").hide();
+    
     $(".share_button").click(function(){
-        $(".fbtwtbutton").toggle();
+        $(".desktop_share").toggle();
     });
 
     //Actions for User Management page

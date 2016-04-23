@@ -16,11 +16,20 @@
   <div class="row">
    <div class="col-md-6 second-column">
             <div id="fb-root" class="other-buttons visible-lg fb_reset">
-                 <span onclick="fbshare()" class="btn btn-default share_button" href="">Share
+                 <!-- <span onclick="fbshare()" class="btn btn-default share_button" href="">Share
+                <i class="fa fa-share-alt"></i></span> -->
+                 <span class="btn btn-default share_button">Share
                 <i class="fa fa-share-alt"></i></span>
                 <!-- <span href="" class="btn btn-default favourite_button"> Add as favourite
                 <i class="fa fa-heart heart_detail"></i></span> -->
-            </div>
+                 <div class="desktop_share"> 
+                	<ul class="share-icons">
+                        <li class="fl"><i class="fa fa-facebook-square fb_desktop"></i></li>
+                        <li class="fl"><i class="fa fa-twitter-square twitter_desktop"></i></li>
+                      </ul>	
+            	</div>
+             </div>
+            
               <div class="visible-lg">
                   <h4>{{adinfo.title}}</h4>
                   <span class="Ad-ID">{% trans "Ad ID:" %}{{adinfo.id}} | {{adinfo.created_date}} | {{product_viewed_count}} views</span>
