@@ -27,21 +27,21 @@
 
       </script> -->
 
-    <!-- Start Here (working code) -->
-    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <!-- Testad -->
-    <ins class="adsbygoogle"
-         style="display:inline-block;width:728px;height:90px"
-         data-ad-client="9127686280343905"></ins>
-    <script>
-    (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-    <!-- End Here --> 
+      <!-- Start Here (working code) -->
+      <!-- <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+      <!- Testad ->
+      <ins class="adsbygoogle"
+           style="display:inline-block;width:728px;height:90px"
+           data-ad-client="9127686280343905"></ins>
+      <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+      </script> -->
+      <!-- End Here --> 
 
      <div align="center" class="banner_rotation banner_ad">
       {% for banners in banner|get_banner %}
         {% if banners.bannerplan.page == "Home page" and banners.bannerplan.position == "Top" and banners.bannerplan.bannertype == "Other" and banners.source != None %}
-          {{banners.source}}
+          {{banners.source|safe}}
         {% endif %}
       {% endfor %}
      </div>
