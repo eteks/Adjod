@@ -244,7 +244,7 @@ def create_path_for_photos_thumbanails(photos, product):
 			for photo in photos:
 				print "photos", photo
 				count=count-1
-				THUMBNAIL_SIZE = (100, 100) # dimensions
+				THUMBNAIL_SIZE = (400, 400) # dimensions
 				image = ImageObj.open(settings.MEDIA_ROOT + '/' + photo)
 				print "image", image
 				print "THUMBNAIL_SIZE", THUMBNAIL_SIZE

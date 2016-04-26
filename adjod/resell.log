@@ -8638,3 +8638,63 @@ WARNING 2016-04-26 14:30:51,495 base 4099 -1247487168 Not Found: /media/img/bg-i
 WARNING 2016-04-26 14:30:53,167 base 4099 -1284506816 Not Found: /media/img/bg-img2.png
 WARNING 2016-04-26 14:30:58,236 base 4099 -1247487168 Not Found: /media/img/bg-img2.png
 WARNING 2016-04-26 14:30:59,198 base 4099 -1247487168 Not Found: /media/img/bg-img2.png
+WARNING 2016-04-26 20:20:36,624 base 11350 -1247659200 Not Found: /media/img/bg-img2.png
+WARNING 2016-04-26 20:20:38,197 base 11350 -1247659200 Not Found: /media/img/bg-img2.png
+WARNING 2016-04-26 20:20:49,080 base 11350 -1285555392 Not Found: /media/img/bg-img2.png
+WARNING 2016-04-26 20:20:50,843 base 11350 -1285555392 Not Found: /media/img/bg-img2.png
+WARNING 2016-04-26 20:22:19,716 base 11350 -1247659200 Not Found: /media/img/bg-img2.png
+WARNING 2016-04-26 20:22:21,400 base 11350 -1247659200 Not Found: /media/img/bg-img2.png
+WARNING 2016-04-26 20:22:31,258 base 11350 -1285555392 Not Found: /media/img/bg-img2.png
+WARNING 2016-04-26 20:22:33,010 base 11350 -1285555392 Not Found: /media/img/bg-img2.png
+WARNING 2016-04-26 20:22:38,933 base 11350 -1275069632 Not Found: /media/
+WARNING 2016-04-26 20:22:41,019 base 11350 -1296041152 Not Found: /media/
+WARNING 2016-04-26 20:22:55,182 base 11350 -1275069632 Not Found: /media/
+WARNING 2016-04-26 20:22:56,843 base 11350 -1275069632 Not Found: /media/
+WARNING 2016-04-26 20:48:16,975 base 11350 -1275069632 Not Found: /media/img/bg-img2.png
+WARNING 2016-04-26 20:48:17,284 base 11350 -1296041152 Not Found: /media/img/bg-img2.png
+WARNING 2016-04-26 20:48:21,427 base 11350 -1306526912 Not Found: /media/img/bg-img2.png
+WARNING 2016-04-26 20:48:21,735 base 11350 -1296041152 Not Found: /media/img/bg-img2.png
+WARNING 2016-04-26 20:48:24,125 base 11350 -1247659200 Not Found: /media/img/bg-img2.png
+WARNING 2016-04-26 20:48:25,001 base 11350 -1275069632 Not Found: /media/img/bg-img2.png
+ERROR 2016-04-26 20:52:33,394 base 11350 -1247659200 Internal Server Error: /addproduct/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/administrator/virtual_django/Adjod/adjod/advertisement/views.py", line 381, in product_save
+    post_success(request, product)
+  File "/home/administrator/virtual_django/Adjod/adjod/advertisement/views.py", line 327, in post_success
+    product.save()
+  File "/home/administrator/virtual_django/Adjod/adjod/advertisement/models.py", line 167, in save
+    super(Product, self).save(force_insert, force_update)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/base.py", line 463, in save
+    self.save_base(using=using, force_insert=force_insert, force_update=force_update)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/base.py", line 565, in save_base
+    created=(not record_exists), raw=raw, using=using)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/dispatch/dispatcher.py", line 172, in send
+    response = receiver(signal=self, sender=sender, **named)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/haystack/signals.py", line 47, in handle_save
+    index.update_object(instance, using=using)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/haystack/indexes.py", line 266, in update_object
+    backend.update(self, [instance])
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/haystack/backends/elasticsearch_backend.py", line 177, in update
+    self.conn.bulk_index(self.index_name, 'modelresult', prepped_docs, id_field=ID)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/pyelasticsearch/client.py", line 96, in decorate
+    return func(*args, query_params=query_params, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/pyelasticsearch/client.py", line 389, in bulk_index
+    query_params=query_params)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/pyelasticsearch/client.py", line 239, in send_request
+    **({'data': request_body} if body else {}))
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/requests/sessions.py", line 403, in post
+    return self.request('POST', url, data=data, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/requests/sessions.py", line 361, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/requests/sessions.py", line 464, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/requests/adapters.py", line 356, in send
+    raise ConnectionError(e)
+ConnectionError: HTTPConnectionPool(host='127.0.0.1', port=9200): Max retries exceeded with url: /_bulk?op_type=create (Caused by <class 'socket.error'>: [Errno 111] Connection refused)
+WARNING 2016-04-26 20:52:33,864 base 11350 -1247659200 Not Found: /favicon.ico
+WARNING 2016-04-26 20:52:33,919 base 11350 -1275069632 Not Found: /favicon.ico
+WARNING 2016-04-26 21:01:02,631 base 12782 -1275069632 Not Found: /ads/static/themes/undefined/jquery-ui.min.css
+WARNING 2016-04-26 21:01:08,891 base 12782 -1285555392 Not Found: /ads/static/themes/undefined/jquery-ui.min.css
+WARNING 2016-04-26 21:33:34,515 base 13798 -1315964096 Not Found: /ads/static/themes/undefined/jquery-ui.min.css
