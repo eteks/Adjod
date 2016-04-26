@@ -97,12 +97,57 @@
 
         // when file input changes, get file contents and show preview (if it's an image)
         .on('change', '.simpleFilePreview input.simpleFilePreview_formInput', function(e) {
-          var s=this.files[0].size;
+        var file = this.files[0];
+        var dataUrl = "";
+        // Create an image
+        var img = document.createElement("img");
+        // Create a file reader
+        var reader = new FileReader();
+        // Set the image once loaded into file reader
+        reader.onload = function(e)
+        {
+            img.src = e.target.result;
+    
+            var canvas = document.createElement("canvas");
+            //var canvas = $("<canvas>", {"id":"testing"})[0];
+            var ctx = canvas.getContext("2d");
+            ctx.drawImage(img, 0, 0);
+    
+            // Set Width and Height
+            var MAX_WIDTH = 400;
+            var MAX_HEIGHT = 300;
+            var width = img.width;
+            var height = img.height;
+    
+            if (width > height) {
+              if (width > MAX_WIDTH) {
+                height *= MAX_WIDTH / width;
+                width = MAX_WIDTH;
+              }
+            } else {
+              if (height > MAX_HEIGHT) {
+                width *= MAX_HEIGHT / height;
+                height = MAX_HEIGHT;
+              }
+            }
+            canvas.width = width;
+            canvas.height = height;
+            var ctx = canvas.getContext("2d");
+            ctx.drawImage(img, 0, 0, width, height);
+    
+            dataUrl = canvas.toDataURL("image/png");
+            // alert("dataUrl"+dataUrl.length);
+            // document.getElementById('image_preview').src = dataUrl;                 
+        }
+        // Load files into file reader
+        reader.readAsDataURL(file);
+        // var s=this.files[0].size;
+          var s=dataUrl.size;
           // if (s<140000){
             // if (s<80000){
               // if (s<270000000){
           var e = getFileExt(this.value);
-          if (s<1000000){
+          if (dataUrl.length<1000000){
           if((e == null)||($.inArray(e.toLowerCase(), ['gif','png','jpg','jpeg']) == -1)){
              $('.photo_labelError').addClass('error_input_field'); 
              $('.photo_labelError').text('Invalid File Format. We allow only gif, png, jpg, jpeg').show();
