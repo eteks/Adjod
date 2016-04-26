@@ -38,14 +38,14 @@
       </script> -->
       <!-- End Here --> 
 
-     <div align="center" class="banner_rotation banner_ad">
+    
+    <div align="center" class="banner_ad banner_rotation">
       {% for banners in banner|get_banner %}
         {% if banners.bannerplan.page == "Home page" and banners.bannerplan.position == "Top" and banners.bannerplan.bannertype == "Other" and banners.source != None %}
           {{banners.source|safe}}
         {% endif %}
       {% endfor %}
      </div>
-
 
 
    <!--  <div align="center" class="banner_rotation banner_ad">
