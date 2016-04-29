@@ -1,5 +1,9 @@
 $( document ).ready(function() {
-	
+	 var current_width = $(window).width();
+	 if(current_width < 766){
+		// alert('test');
+		$('.ui-dialog').addClass('ui-dialog-mobile');
+	}
 	// Social auth share button actions for mobile
     $('.share_dropdownmenu li i').hide();
     $('.share_dropdown').click(function(){
@@ -133,6 +137,7 @@ function brand_mobile_center_align(){
     
     $(".left_font").click(function(){
       $('.left_part_mobile').hide();
-    })
-
+    });
+    
+   
 });
