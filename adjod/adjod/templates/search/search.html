@@ -333,7 +333,7 @@
                   <!-- <div id="richmedia_6">
                    <script src="http://a.tribalfusion.com/j.ad?flashVer=0&amp;ver=1.27&amp;th=12052180711&amp;tagKey=2429344267&amp;site=faadooengineerscom&amp;adSpace=ros&amp;center=1&amp;size=728x90&amp;env=display&amp;url=http%3A%2F%2Fwww.faadooengineers.com%2Fthreads%2F2771-PHP-programming-Basic-Study-material&amp;rurl=http%3A%2F%2Fwww.google.co.in%2Furl%3Fsa%3Dt%26rct%3Dj%26q%3D%26esrc%3Ds%26source%3Dweb%26cd%3D3%26cad%3Drja%26uact%3D8%26ved%3D0CDQQFjAC%26url%3Dhttp%253A%252F%252Fwww.faadooengineers.com%252Fthreads%252F2771-PHP-programming-Basic-Study-material%26ei%3Div6EVZ7JAYeRuAS05bCAAQ%26usg%3DAFQjCNGrmM3sWndZwp4irdeANs6R_OFnNA&amp;f=0&amp;p=4891703&amp;a=5&amp;adContainerId=richmedia_6&amp;rnd=4894557" type="text/javascript"></script>
                 </div> -->
-                 <div class="banner_rotation banner_ad" id="richmedia_6">
+                <!--  <div class="banner_rotation banner_ad" id="richmedia_6">
                       <ul>
                       {% for banners in banner|get_banner %}
                       {% if banners.bannerplan.page == "Listing page" and banners.bannerplan.position == "Center_top" and banners.bannerplan.bannertype == "Own" and banners.banner != None %}
@@ -345,13 +345,21 @@
                       {% endif %}
                       {% endfor %}
                     </ul>
-                    </div>
+                    </div> -->
+
+                <div align="center" class="banner_rotation banner_ad" id="richmedia_6">
+                  {% for banners in banner|get_banner %}
+                    {% if banners.bannerplan.page == "Listing page" and banners.bannerplan.position == "Center_top" and banners.bannerplan.bannertype == "Other" and banners.source != None %}
+                      {{banners.source|safe}}
+                    {% endif %}
+                  {% endfor %}
+                </div>
                 </li>
                 {% endif %}
 
                 {% if forloop.counter == 10 %}
                 <li>
-                  <div align="center" class="banner_rotation banner_ad" id="richmedia_6">
+                  <!-- <div align="center" class="banner_rotation banner_ad" id="richmedia_6">
                   <ul>
                   {% for banners in banner|get_banner %}
                   {% if banners.bannerplan.page == "Listing page" and banners.bannerplan.position == "Center_bottom" and banners.bannerplan.bannertype == "Other" and banners.source != None %}
@@ -363,7 +371,15 @@
                   {% endif %}
                   {% endfor %}
                 </ul>
+                </div> -->
+                <div align="center" class="banner_rotation banner_ad" id="richmedia_6">
+                  {% for banners in banner|get_banner %}
+                    {% if banners.bannerplan.page == "Listing page" and banners.bannerplan.position == "Center_bottom" and banners.bannerplan.bannertype == "Other" and banners.source != None %}
+                      {{banners.source|safe}}
+                    {% endif %}
+                  {% endfor %}
                 </div>
+                </li>
                 </li>
                 {% endif %}
 
