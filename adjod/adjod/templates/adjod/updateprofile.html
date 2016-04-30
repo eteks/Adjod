@@ -56,7 +56,7 @@
                   <input type="checkbox" name="title_box" value="{{my_ads.id}}" class="check check_individual_act"><span class="description1">
                   <a href="/ads/{{my_ads.id}}/">{{my_ads.title}}</a></span>
                   <!-- <span class="ads_id">AD ID:{{my_ads.id}}</span> -->
-                  <span class="category_ads">{% trans "status:" %}{% if my_ads.status_isactive == 1 %}Active{%else%}Inactive{%endif%}</span><br> 
+                  <span class="category_ads category_active">{% trans "status:" %}{% if my_ads.status_isactive == 1 %}Active{%else%}Inactive{%endif%}</span><br> 
                   <span class="category_ads">{{my_ads.category.name}}<br>{{my_ads.subcategory.name}}</span>
                </div><!--ads_name1-->
                 <div class="ads_name2">
@@ -121,7 +121,7 @@
                 <div class="field_title form-group">
                   <span class="title">{% trans "Upload Photos" %}</span>
                 </div> <!-- field_title -->
-                <div class="field_div form-group upload_image" id="photos_div">
+                <div class="field_div form-group upload_image img_upload" id="photos_div">
                 {% if userprofile.profile_picture %}
                     <input type='file' id="profile_poster" class="poster profile_poster_update" name="profile_poster" value=""/>
                     <img id="clean_img" class="after_save" src="../media/{{userprofile.profile_picture}}">

@@ -50,7 +50,7 @@
          </div> -->
 
          <div align="center" class="banner_rotation banner_ad">
-          <ul>
+          <!-- <ul>
           {% for banners in banner|get_banner %}
           {% if banners.bannerplan.page == "Listing page" and banners.bannerplan.position == "Top" and banners.bannerplan.bannertype == "Other" and banners.source != None %}
            <li>
@@ -60,7 +60,8 @@
            </li>
           {% endif %}
           {% endfor %}
-        </ul>
+        </ul> -->
+        <img src="{{ MEDIA_URL }}banners/banner_search.jpg" />
         </div>
    
           <div class="sort_part">
@@ -299,7 +300,7 @@
                       <a href="{% url product_detail product.object.id %}" class="spans"> {{product.object.title}}</a>
 
                       <span class="product_description1 visible-lg">{{product.object.description|truncatewords:9}}</span>
-                      <span class="product_description1 hidden-lg">{{product.object.description|truncatewords:7}}</span>
+                      <span class="product_description1 hidden-lg">{{product.object.description|truncatewords:6}}</span>
                       <!-- <span class="additional_description">{{product.object.description}}</span> -->
 
                       <span class="model_year1 visible-lg"> {{product.object.condition}} | in {{product.object.locality.locality}} | By {{product.object.you_are}}</span>
@@ -575,6 +576,6 @@
         {% endfor %}
       </ul>
       </div> <!-- hp ad -->
-    </div> <!-- container fifth_part-->
+</div> <!-- container fifth_part-->
 {%endif%}
 {%endblock%}

@@ -5,12 +5,13 @@
 <!-- <html xmlns="http://www.w3.org/1999/xhtml" lang="{{ LANGUAGE_CODE|default:"en-us" }}" xml:lang="{{ LANGUAGE_CODE|default:"en-us" }}" {% if LANGUAGE_BIDI %}dir="rtl"{% endif %}> -->
 <html>
 <head>
-    <title>{% block title %}{% endblock %}</title>
+    <title>Resell</title>
+    <link rel="icon" href="{% static "img/fav_icon.png" %}"/>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, height=device-height, user-scalable=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="shortcut icon" href="">
+    <!-- <link rel="shortcut icon" href=""> -->
     <link href="{% static "css/font-awesome.css" %}" rel="stylesheet">
     <link href="{% static "css/bootstrap.min.css" %}" rel="stylesheet">
     <link href="{% static "css/index.less" %}" rel="stylesheet/less" type="text/less">
@@ -168,7 +169,7 @@
           {% endif %}
           {% if 'user_manage' in path %}
           <div class="user_mgnt_page">
-            <a href="/"><i class="fa fa-angle-left left_angle"></i></a>
+            <a href="/"><i class="fa fa-angle-left left_angle"></i><span class="user-text">User Management</span></a>
           </div><!--user_mgnt_page-->
           {% endif %}
        <!-- CHANGES MADE BY RAMYA FOR USER PROFILE -->
@@ -424,7 +425,7 @@
 
        </div> <!-- container-->
   </div> <!-- final_part -->
-      {%  if path == '/' or 'start' in path  or 'search' in path %}
+      {%  if path == '/' or 'start' in path  or 'search' in path or 'postad' in path or 'user_manage' in path or 'ads' in path%}
         <div class="col-md-2 footer_responsive">
               <!-- <select class="footer_lang">
                         <option selected="" disabled="">{% trans "Select language :" %} </option>
