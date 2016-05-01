@@ -311,7 +311,7 @@ $( document ).ready(function() {
     // }
 
     //Box Dialog for new user
-    function main_set_dialog ( id, user, product ) {
+    function main_set_dialog ( id, user, product, status ) {
       // alert("main_set_dialog");
       // alert("dialog status"+$("#Dialog" + product[i]).parents(".ui-dialog").is(":visible"));
       // var referrer =  document.referrer;
@@ -834,7 +834,7 @@ $( document ).ready(function() {
        });
     }
 
-    function main_append_dialog ( id, user, product ) {
+    function main_append_dialog ( id, user, product, status ) {
       // alert("main_append_dialog");
       // alert("id1"+ id);
       // alert("user1"+ user);
@@ -851,7 +851,7 @@ $( document ).ready(function() {
         // alert("product[i]"+ product[i]);
         // alert("chat_history"+chat_history);
         // alert("chat_history"+JSON.stringify(chat_history));
-        $("#main").append("<div id='Dialog" + product[i] + "' title='' user='" + user + "' productid='" + product[i] + "'>\
+        $("#main").append("<div id='Dialog" + product[i] + "' title='' user='" + user + "' productid='" + product[i] + "' data-status='" + status + "'>\
             <div class='box box-info direct-chat direct-chat-info ui-widget-content no-content-border'>\
               <div class='box-header with-border'>\
                 <h4 class='box-title'></h4>\
@@ -1316,6 +1316,7 @@ $( document ).ready(function() {
 
         // alert(name);
         // alert(msg);
+        // alert(status);
         product_title=recv.data.product_title;
         // alert("product_title"+ product_title);
 
@@ -1337,9 +1338,9 @@ $( document ).ready(function() {
 
         if ( $( "#Dialog" + product_id ).length == 0 ) {
         // alert("if");  
-        main_append_dialog( recv.data.user.uid, recv.data.user.user, recv.data.product_id);
+        main_append_dialog( recv.data.user.uid, recv.data.user.user, recv.data.product_id,status);
         // append_previous_chat_message( recv.data.user.uid, recv.data.user.user, recv.data.product_id, recv.data.user.chat_message)
-        main_set_dialog( recv.data.user.uid, recv.data.user.user, recv.data.product_id);
+        main_set_dialog( recv.data.user.uid, recv.data.user.user, recv.data.product_id,status);
         append_previous_chat_message(recv.data.user.user,user_name,recv.data.product_id);
         
         }
@@ -1370,9 +1371,8 @@ $( document ).ready(function() {
         }
         
         // alert(product_title);
-        // alert("before append msg he");
+        // alert("before append msg he"); 
         append_msg_he( msg, name, date, avatar, product_id );
-        // FIXME
         // Set dialog position
         main.dialog( "option", "position", { my: "right bottom", at: "right top-3", of: "#user-button-"+iduser+"_product-"+product_id, collision: "flip, none" });
         chat_record['sender']=name;
@@ -1396,9 +1396,10 @@ $( document ).ready(function() {
         // sample_f1();
         // alert("newuser" +recv.user.user);
         // alert("newuser");
-        main_append_dialog( recv.user.uid, recv.user.user, recv.user.product);
+        status = recv.user.status;
+        main_append_dialog( recv.user.uid, recv.user.user, recv.user.product,status);
         // append_previous_chat_message(recv.user.uid, recv.user.user, recv.user.product, recv.user.chat_message);
-        main_set_dialog( recv.user.uid, recv.user.user, recv.user.product);
+        main_set_dialog( recv.user.uid, recv.user.user, recv.user.product,status);
         // main_set_dialog( recv.user.uid, recv.user.user);
 
         //Append the user to chat
@@ -1471,10 +1472,11 @@ $( document ).ready(function() {
           // alert("recv user id: "+recv.user[i].uid);
           // alert("recv user: "+recv.user[i].user);
           // alert("recv product: "+recv.user[i].product);
+          status = 'online';
           if (recv.user[i].user!=user_name){
-          main_append_dialog( recv.user[i].uid, recv.user[i].user, recv.user[i].product);
+          main_append_dialog( recv.user[i].uid, recv.user[i].user, recv.user[i].product,status);
           // append_previous_chat_message(recv.user[i].uid, recv.user[i].user, recv.user[i].product, recv.user[i].chat_message);
-          main_set_dialog( recv.user[i].uid, recv.user[i].user, recv.user[i].product);
+          main_set_dialog( recv.user[i].uid, recv.user[i].user, recv.user[i].product,status);
           // main_set_dialog( recv.user[i].uid, recv.user[i].user);
 
           //Append the user to chat
