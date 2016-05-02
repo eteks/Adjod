@@ -9170,3 +9170,574 @@ WARNING 2016-04-29 19:00:55,433 base 6360 5492 Not Found: /media/products/Tulips
 WARNING 2016-04-29 19:00:56,684 base 6360 6556 Not Found: /media/products/Tulips_photo.jpg
 WARNING 2016-04-29 19:00:57,826 base 6360 6832 Not Found: /media/products/Tulips_photo.jpg
 WARNING 2016-04-29 19:01:34,150 base 6360 1132 Not Found: /media/products/Tulips_photo.jpg
+WARNING 2016-05-02 10:54:38,786 base 3576 4884 Not Found: /media/products/Tulips_photo.jpg
+WARNING 2016-05-02 10:54:39,390 base 3576 4696 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-02 10:54:40,226 base 3576 1912 Not Found: /media/products/Tulips_photo.jpg
+WARNING 2016-05-02 10:54:40,253 base 3576 2556 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-02 10:57:28,710 base 3576 4652 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-02 10:57:28,710 base 3576 4108 Not Found: /media/products/Tulips_photo.jpg
+WARNING 2016-05-02 10:57:29,391 base 3576 3848 Not Found: /media/products/Tulips_photo.jpg
+WARNING 2016-05-02 10:57:29,398 base 3576 4228 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-02 11:00:06,757 base 3576 3796 Not Found: /media/products/Tulips_photo.jpg
+WARNING 2016-05-02 11:00:06,757 base 3576 2784 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-02 11:00:08,099 base 3576 2644 Not Found: /media/products/Tulips_photo.jpg
+WARNING 2016-05-02 11:00:08,303 base 3576 2708 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-02 11:00:52,895 base 3576 4688 Not Found: /media/products/Tulips_photo.jpg
+WARNING 2016-05-02 11:00:52,898 base 3576 3892 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-02 11:00:54,243 base 3576 4956 Not Found: /media/products/Tulips_photo.jpg
+WARNING 2016-05-02 11:00:54,392 base 3576 1620 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-02 11:02:33,920 base 3576 4700 Not Found: /media/products/Tulips_photo.jpg
+WARNING 2016-05-02 11:02:33,921 base 3576 4280 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-02 11:02:34,796 base 3576 1588 Not Found: /media/products/Tulips_photo.jpg
+WARNING 2016-05-02 11:02:34,801 base 3576 3036 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-02 11:02:46,901 base 3576 1920 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-02 11:02:46,927 base 3576 4252 Not Found: /media/products/Tulips_photo.jpg
+WARNING 2016-05-02 11:02:47,726 base 3576 1220 Not Found: /media/products/Tulips_photo.jpg
+WARNING 2016-05-02 11:02:47,753 base 3576 2720 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-02 11:02:57,055 base 3576 4612 Not Found: /media/products/Tulips_photo.jpg
+WARNING 2016-05-02 11:02:57,055 base 3576 3720 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-02 11:02:58,006 base 3576 1732 Not Found: /media/products/Tulips_photo.jpg
+WARNING 2016-05-02 11:02:58,010 base 3576 3852 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-02 11:06:01,825 base 3576 1000 Not Found: /media/products/Tulips_photo.jpg
+WARNING 2016-05-02 11:06:01,825 base 3576 3136 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-02 11:06:03,180 base 3576 4604 Not Found: /media/products/Tulips_photo.jpg
+WARNING 2016-05-02 11:06:03,503 base 3576 4664 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-02 11:40:16,286 base 3576 4284 Not Found: /favicon.ico
+WARNING 2016-05-02 11:40:16,286 base 3576 1220 Not Found: /favicon.ico
+WARNING 2016-05-02 12:42:01,778 base 3576 5988 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-02 12:42:02,989 base 3576 6768 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-02 12:47:09,823 base 3576 5444 Not Found: /media/
+WARNING 2016-05-02 12:47:10,094 base 3576 3924 Not Found: /media//profile/Jellyfish.jpg
+WARNING 2016-05-02 12:47:10,944 base 3576 6532 Not Found: /media/
+WARNING 2016-05-02 12:47:10,973 base 3576 6536 Not Found: /media//profile/Jellyfish.jpg
+WARNING 2016-05-02 12:55:51,467 base 3576 6848 Not Found: /media/
+WARNING 2016-05-02 12:55:51,516 base 3576 5504 Not Found: /media//profile/Jellyfish.jpg
+WARNING 2016-05-02 12:55:52,819 base 3576 7092 Not Found: /media/
+WARNING 2016-05-02 12:55:52,984 base 3576 3244 Not Found: /media//profile/Jellyfish.jpg
+WARNING 2016-05-02 13:05:45,368 base 3576 5764 Not Found: /media/
+WARNING 2016-05-02 13:05:45,398 base 3576 6028 Not Found: /media//profile/Jellyfish.jpg
+WARNING 2016-05-02 13:05:46,457 base 3576 6408 Not Found: /media/
+WARNING 2016-05-02 13:05:46,487 base 3576 3920 Not Found: /media//profile/Jellyfish.jpg
+WARNING 2016-05-02 13:11:37,390 base 3576 6704 Not Found: /media/
+WARNING 2016-05-02 13:11:37,431 base 3576 7032 Not Found: /media//profile/Jellyfish.jpg
+WARNING 2016-05-02 13:11:38,717 base 3576 6032 Not Found: /media/
+WARNING 2016-05-02 13:11:38,927 base 3576 6220 Not Found: /media//profile/Jellyfish.jpg
+WARNING 2016-05-02 13:12:57,683 base 3576 6480 Not Found: /media/
+WARNING 2016-05-02 13:12:57,723 base 3576 6296 Not Found: /media//profile/Jellyfish.jpg
+WARNING 2016-05-02 13:12:58,868 base 3576 6068 Not Found: /media/
+WARNING 2016-05-02 13:12:59,101 base 3576 6728 Not Found: /media//profile/Jellyfish.jpg
+WARNING 2016-05-02 13:13:05,351 base 3576 6752 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-02 13:13:06,490 base 3576 6608 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-02 13:13:15,230 base 3576 7096 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-02 13:13:16,391 base 3576 1248 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-02 13:13:20,000 base 3576 7056 Not Found: /media/
+WARNING 2016-05-02 13:13:20,051 base 3576 6260 Not Found: /media//profile/Jellyfish.jpg
+WARNING 2016-05-02 13:13:21,161 base 3576 6640 Not Found: /media/
+WARNING 2016-05-02 13:13:21,210 base 3576 6656 Not Found: /media//profile/Jellyfish.jpg
+WARNING 2016-05-02 13:14:28,730 base 3576 6164 Not Found: /media/
+WARNING 2016-05-02 13:14:28,770 base 3576 5756 Not Found: /media//profile/Jellyfish.jpg
+WARNING 2016-05-02 13:14:29,821 base 3576 6756 Not Found: /media/
+WARNING 2016-05-02 13:14:29,861 base 3576 6152 Not Found: /media//profile/Jellyfish.jpg
+WARNING 2016-05-02 13:17:27,841 base 3576 6336 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-02 13:17:28,940 base 3576 3596 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-02 13:21:53,260 base 3576 7052 Not Found: /media/
+WARNING 2016-05-02 13:21:53,301 base 3576 5492 Not Found: /media//profile/Jellyfish.jpg
+WARNING 2016-05-02 13:21:54,361 base 3576 5452 Not Found: /media/
+WARNING 2016-05-02 13:21:54,381 base 3576 7076 Not Found: /media//profile/Jellyfish.jpg
+WARNING 2016-05-02 13:22:20,941 base 3576 4696 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-02 13:22:22,500 base 3576 6184 Not Found: /media/img/bg-img2.png
+ERROR 2016-05-02 13:29:22,342 base 3576 6940 Internal Server Error: /user_manage/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 77, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\resell_apr21\Adjod\adjod\adjod\views.py", line 478, in user_manage
+    return render_to_response('adjod/updateprofile.html', ctx, context_instance=RequestContext(request))
+  File "C:\Python27\lib\site-packages\django\shortcuts\__init__.py", line 20, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 169, in render_to_string
+    t = get_template(template_name)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 145, in get_template
+    template, origin = find_template(template_name)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 134, in find_template
+    source, display_name = loader(name, dirs)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 42, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 48, in load_template
+    template = get_template_from_string(source, origin, template_name)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 156, in get_template_from_string
+    return Template(source, origin, name)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 125, in __init__
+    self.nodelist = compile_string(template_string, origin)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 153, in compile_string
+    return parser.parse()
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 267, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Python27\lib\site-packages\django\template\loader_tags.py", line 214, in do_extends
+    nodelist = parser.parse()
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 267, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Python27\lib\site-packages\django\template\loader_tags.py", line 189, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 267, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Python27\lib\site-packages\django\template\defaulttags.py", line 762, in do_for
+    nodelist_loop = parser.parse(('empty', 'endfor',))
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 267, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Python27\lib\site-packages\django\template\defaulttags.py", line 912, in do_if
+    nodelist = parser.parse(('endif',))
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 265, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 320, in invalid_block_tag
+    (command, get_text_list(["'%s'" % p for p in parse_until])))
+TemplateSyntaxError: Invalid block tag: 'elif', expected 'endif'
+ERROR 2016-05-02 13:30:23,615 base 3576 6524 Internal Server Error: /user_manage/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 77, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\resell_apr21\Adjod\adjod\adjod\views.py", line 478, in user_manage
+    return render_to_response('adjod/updateprofile.html', ctx, context_instance=RequestContext(request))
+  File "C:\Python27\lib\site-packages\django\shortcuts\__init__.py", line 20, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 169, in render_to_string
+    t = get_template(template_name)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 145, in get_template
+    template, origin = find_template(template_name)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 134, in find_template
+    source, display_name = loader(name, dirs)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 42, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 48, in load_template
+    template = get_template_from_string(source, origin, template_name)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 156, in get_template_from_string
+    return Template(source, origin, name)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 125, in __init__
+    self.nodelist = compile_string(template_string, origin)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 153, in compile_string
+    return parser.parse()
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 267, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Python27\lib\site-packages\django\template\loader_tags.py", line 214, in do_extends
+    nodelist = parser.parse()
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 267, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Python27\lib\site-packages\django\template\loader_tags.py", line 189, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 267, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Python27\lib\site-packages\django\template\defaulttags.py", line 762, in do_for
+    nodelist_loop = parser.parse(('empty', 'endfor',))
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 267, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Python27\lib\site-packages\django\template\defaulttags.py", line 905, in do_if
+    condition = TemplateIfParser(parser, bits).parse()
+  File "C:\Python27\lib\site-packages\django\template\smartif.py", line 187, in parse
+    retval = self.expression()
+  File "C:\Python27\lib\site-packages\django\template\smartif.py", line 197, in expression
+    left = t.nud(self)
+  File "C:\Python27\lib\site-packages\django\template\smartif.py", line 145, in nud
+    raise parser.error_class("Unexpected end of expression in if tag.")
+TemplateSyntaxError: Unexpected end of expression in if tag.
+WARNING 2016-05-02 13:32:52,328 base 3576 6880 Not Found: /media//profile/Jellyfish.jpg
+WARNING 2016-05-02 13:32:52,354 base 3576 6160 Not Found: /media/
+WARNING 2016-05-02 13:32:53,573 base 3576 6544 Not Found: /media/
+WARNING 2016-05-02 13:32:53,855 base 3576 6300 Not Found: /media//profile/Jellyfish.jpg
+WARNING 2016-05-02 13:33:01,243 base 3576 6012 Not Found: /media/
+ERROR 2016-05-02 13:35:23,878 base 3576 5280 Internal Server Error: /user_manage/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 77, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\resell_apr21\Adjod\adjod\adjod\views.py", line 478, in user_manage
+    return render_to_response('adjod/updateprofile.html', ctx, context_instance=RequestContext(request))
+  File "C:\Python27\lib\site-packages\django\shortcuts\__init__.py", line 20, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 169, in render_to_string
+    t = get_template(template_name)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 145, in get_template
+    template, origin = find_template(template_name)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 134, in find_template
+    source, display_name = loader(name, dirs)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 42, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 48, in load_template
+    template = get_template_from_string(source, origin, template_name)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 156, in get_template_from_string
+    return Template(source, origin, name)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 125, in __init__
+    self.nodelist = compile_string(template_string, origin)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 153, in compile_string
+    return parser.parse()
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 267, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Python27\lib\site-packages\django\template\loader_tags.py", line 214, in do_extends
+    nodelist = parser.parse()
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 267, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Python27\lib\site-packages\django\template\loader_tags.py", line 189, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 267, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Python27\lib\site-packages\django\template\defaulttags.py", line 762, in do_for
+    nodelist_loop = parser.parse(('empty', 'endfor',))
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 267, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Python27\lib\site-packages\django\template\defaulttags.py", line 905, in do_if
+    condition = TemplateIfParser(parser, bits).parse()
+  File "C:\Python27\lib\site-packages\django\template\smartif.py", line 187, in parse
+    retval = self.expression()
+  File "C:\Python27\lib\site-packages\django\template\smartif.py", line 197, in expression
+    left = t.nud(self)
+  File "C:\Python27\lib\site-packages\django\template\smartif.py", line 145, in nud
+    raise parser.error_class("Unexpected end of expression in if tag.")
+TemplateSyntaxError: Unexpected end of expression in if tag.
+ERROR 2016-05-02 13:35:51,585 base 3576 7152 Internal Server Error: /user_manage/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 77, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\resell_apr21\Adjod\adjod\adjod\views.py", line 478, in user_manage
+    return render_to_response('adjod/updateprofile.html', ctx, context_instance=RequestContext(request))
+  File "C:\Python27\lib\site-packages\django\shortcuts\__init__.py", line 20, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 169, in render_to_string
+    t = get_template(template_name)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 145, in get_template
+    template, origin = find_template(template_name)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 134, in find_template
+    source, display_name = loader(name, dirs)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 42, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 48, in load_template
+    template = get_template_from_string(source, origin, template_name)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 156, in get_template_from_string
+    return Template(source, origin, name)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 125, in __init__
+    self.nodelist = compile_string(template_string, origin)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 153, in compile_string
+    return parser.parse()
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 267, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Python27\lib\site-packages\django\template\loader_tags.py", line 214, in do_extends
+    nodelist = parser.parse()
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 267, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Python27\lib\site-packages\django\template\loader_tags.py", line 189, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 267, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Python27\lib\site-packages\django\template\defaulttags.py", line 762, in do_for
+    nodelist_loop = parser.parse(('empty', 'endfor',))
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 267, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Python27\lib\site-packages\django\template\defaulttags.py", line 905, in do_if
+    condition = TemplateIfParser(parser, bits).parse()
+  File "C:\Python27\lib\site-packages\django\template\smartif.py", line 187, in parse
+    retval = self.expression()
+  File "C:\Python27\lib\site-packages\django\template\smartif.py", line 197, in expression
+    left = t.nud(self)
+  File "C:\Python27\lib\site-packages\django\template\smartif.py", line 145, in nud
+    raise parser.error_class("Unexpected end of expression in if tag.")
+TemplateSyntaxError: Unexpected end of expression in if tag.
+ERROR 2016-05-02 13:37:36,450 base 3576 6028 Internal Server Error: /user_manage/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 77, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\resell_apr21\Adjod\adjod\adjod\views.py", line 478, in user_manage
+    return render_to_response('adjod/updateprofile.html', ctx, context_instance=RequestContext(request))
+  File "C:\Python27\lib\site-packages\django\shortcuts\__init__.py", line 20, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 169, in render_to_string
+    t = get_template(template_name)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 145, in get_template
+    template, origin = find_template(template_name)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 134, in find_template
+    source, display_name = loader(name, dirs)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 42, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 48, in load_template
+    template = get_template_from_string(source, origin, template_name)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 156, in get_template_from_string
+    return Template(source, origin, name)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 125, in __init__
+    self.nodelist = compile_string(template_string, origin)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 153, in compile_string
+    return parser.parse()
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 267, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Python27\lib\site-packages\django\template\loader_tags.py", line 214, in do_extends
+    nodelist = parser.parse()
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 267, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Python27\lib\site-packages\django\template\loader_tags.py", line 189, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 267, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Python27\lib\site-packages\django\template\defaulttags.py", line 762, in do_for
+    nodelist_loop = parser.parse(('empty', 'endfor',))
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 267, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Python27\lib\site-packages\django\template\defaulttags.py", line 905, in do_if
+    condition = TemplateIfParser(parser, bits).parse()
+  File "C:\Python27\lib\site-packages\django\template\smartif.py", line 187, in parse
+    retval = self.expression()
+  File "C:\Python27\lib\site-packages\django\template\smartif.py", line 197, in expression
+    left = t.nud(self)
+  File "C:\Python27\lib\site-packages\django\template\smartif.py", line 145, in nud
+    raise parser.error_class("Unexpected end of expression in if tag.")
+TemplateSyntaxError: Unexpected end of expression in if tag.
+ERROR 2016-05-02 13:38:30,030 base 3576 5952 Internal Server Error: /user_manage/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 77, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\resell_apr21\Adjod\adjod\adjod\views.py", line 478, in user_manage
+    return render_to_response('adjod/updateprofile.html', ctx, context_instance=RequestContext(request))
+  File "C:\Python27\lib\site-packages\django\shortcuts\__init__.py", line 20, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 169, in render_to_string
+    t = get_template(template_name)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 145, in get_template
+    template, origin = find_template(template_name)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 134, in find_template
+    source, display_name = loader(name, dirs)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 42, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 48, in load_template
+    template = get_template_from_string(source, origin, template_name)
+  File "C:\Python27\lib\site-packages\django\template\loader.py", line 156, in get_template_from_string
+    return Template(source, origin, name)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 125, in __init__
+    self.nodelist = compile_string(template_string, origin)
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 153, in compile_string
+    return parser.parse()
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 267, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Python27\lib\site-packages\django\template\loader_tags.py", line 214, in do_extends
+    nodelist = parser.parse()
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 267, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Python27\lib\site-packages\django\template\loader_tags.py", line 189, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 267, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Python27\lib\site-packages\django\template\defaulttags.py", line 762, in do_for
+    nodelist_loop = parser.parse(('empty', 'endfor',))
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 267, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Python27\lib\site-packages\django\template\defaulttags.py", line 905, in do_if
+    condition = TemplateIfParser(parser, bits).parse()
+  File "C:\Python27\lib\site-packages\django\template\smartif.py", line 187, in parse
+    retval = self.expression()
+  File "C:\Python27\lib\site-packages\django\template\smartif.py", line 197, in expression
+    left = t.nud(self)
+  File "C:\Python27\lib\site-packages\django\template\smartif.py", line 145, in nud
+    raise parser.error_class("Unexpected end of expression in if tag.")
+TemplateSyntaxError: Unexpected end of expression in if tag.
+WARNING 2016-05-02 13:41:15,411 base 3576 6268 Not Found: /media/
+WARNING 2016-05-02 13:41:15,433 base 3576 6376 Not Found: /media//profile/Jellyfish.jpg
+WARNING 2016-05-02 13:41:16,496 base 3576 6416 Not Found: /media/
+WARNING 2016-05-02 13:41:16,766 base 3576 5484 Not Found: /media//profile/Jellyfish.jpg
+WARNING 2016-05-02 13:41:21,237 base 3576 6384 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-02 13:41:22,098 base 3576 6844 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-02 13:54:00,773 base 3576 6832 Not Found: /media/products/Desert_photo_1.jpg
+WARNING 2016-05-02 13:54:00,846 base 3576 3912 Not Found: /media/products/Chrysanthemum_photo_1.jpg
+WARNING 2016-05-02 13:54:00,848 base 3576 6560 Not Found: /media/products/Jellyfish_photo_3.jpg
+WARNING 2016-05-02 13:54:00,943 base 3576 2800 Not Found: /media/products/Penguins_photo_3.jpg
+WARNING 2016-05-02 13:54:02,714 base 3576 6336 Not Found: /media/products/Desert_photo_1.jpg
+WARNING 2016-05-02 13:54:02,750 base 3576 6608 Not Found: /media/products/Penguins_photo_3.jpg
+WARNING 2016-05-02 13:54:02,750 base 3576 7148 Not Found: /media/products/Jellyfish_photo_3.jpg
+WARNING 2016-05-02 13:54:02,750 base 3576 7036 Not Found: /media/products/Chrysanthemum_photo_1.jpg
+WARNING 2016-05-02 13:54:03,556 base 3576 6332 Not Found: /ads/static/themes/undefined/jquery-ui.min.css
+WARNING 2016-05-02 13:54:29,910 base 3576 5764 Not Found: /media/products/Desert_photo_1.jpg
+WARNING 2016-05-02 13:54:29,960 base 3576 6380 Not Found: /media/products/Chrysanthemum_photo_1.jpg
+WARNING 2016-05-02 13:54:29,960 base 3576 6836 Not Found: /media/products/Jellyfish_photo_3.jpg
+WARNING 2016-05-02 13:54:29,960 base 3576 2712 Not Found: /media/products/Penguins_photo_3.jpg
+WARNING 2016-05-02 13:54:30,951 base 3576 7164 Not Found: /media/products/Desert_photo_1.jpg
+WARNING 2016-05-02 13:54:31,005 base 3576 6272 Not Found: /media/products/Penguins_photo_3.jpg
+WARNING 2016-05-02 13:54:31,005 base 3576 5436 Not Found: /media/products/Jellyfish_photo_3.jpg
+WARNING 2016-05-02 13:54:31,005 base 3576 1764 Not Found: /media/products/Chrysanthemum_photo_1.jpg
+WARNING 2016-05-02 13:54:31,509 base 3576 2028 Not Found: /ads/static/themes/undefined/jquery-ui.min.css
+WARNING 2016-05-02 13:54:34,236 base 3576 6544 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-02 13:54:35,288 base 3576 6212 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-02 13:54:40,617 base 3576 1284 Not Found: /ads/static/themes/undefined/jquery-ui.min.css
+WARNING 2016-05-02 13:59:55,309 base 3576 6292 Not Found: /ads/static/themes/undefined/jquery-ui.min.css
+WARNING 2016-05-02 15:40:51,539 base 4444 2476 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-02 15:40:52,269 base 4444 1820 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-02 15:42:51,397 base 4444 4792 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-02 15:42:52,900 base 4444 2496 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-02 15:44:14,579 base 4444 1404 Not Found: /media/
+WARNING 2016-05-02 15:44:14,660 base 4444 2052 Not Found: /media//profile/Jellyfish.jpg
+WARNING 2016-05-02 15:44:15,490 base 4444 3080 Not Found: /media/
+WARNING 2016-05-02 15:44:15,529 base 4444 2820 Not Found: /media//profile/Jellyfish.jpg
+WARNING 2016-05-02 15:45:13,410 base 4444 2056 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-02 15:45:19,378 base 4444 5048 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-02 15:48:09,967 base 4444 1616 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-02 15:50:36,821 base 4444 4608 Not Found: /media/
+WARNING 2016-05-02 15:50:36,854 base 4444 5092 Not Found: /media//profile/Jellyfish.jpg
+WARNING 2016-05-02 15:50:37,898 base 4444 4764 Not Found: /media/
+WARNING 2016-05-02 15:50:38,108 base 4444 4744 Not Found: /media//profile/Jellyfish.jpg
+WARNING 2016-05-02 15:51:07,234 base 4444 776 Not Found: /media/
+WARNING 2016-05-02 15:51:07,267 base 4444 3940 Not Found: /media//profile/Jellyfish.jpg
+WARNING 2016-05-02 15:51:08,187 base 4444 4180 Not Found: /media/
+WARNING 2016-05-02 15:51:08,378 base 4444 4144 Not Found: /media//profile/Jellyfish.jpg
+WARNING 2016-05-02 15:52:29,328 base 4444 3908 Not Found: /media/
+WARNING 2016-05-02 15:52:29,375 base 4444 4260 Not Found: /media//profile/Jellyfish.jpg
+WARNING 2016-05-02 15:52:31,145 base 4444 4772 Not Found: /media/
+WARNING 2016-05-02 15:52:31,421 base 4444 3784 Not Found: /media//profile/Jellyfish.jpg
+WARNING 2016-05-02 15:54:19,082 base 4444 3220 Not Found: /media//profile/Jellyfish.jpg
+WARNING 2016-05-02 15:54:19,112 base 4444 2392 Not Found: /media/
+WARNING 2016-05-02 15:54:19,881 base 4444 3208 Not Found: /media/
+WARNING 2016-05-02 15:54:19,901 base 4444 4984 Not Found: /media//profile/Jellyfish.jpg
+WARNING 2016-05-02 16:05:36,884 base 4444 1668 Not Found: /media/
+WARNING 2016-05-02 16:05:36,924 base 4444 2256 Not Found: /media//profile/Jellyfish.jpg
+WARNING 2016-05-02 16:05:37,773 base 4444 5016 Not Found: /media/
+WARNING 2016-05-02 16:05:37,803 base 4444 2420 Not Found: /media//profile/Jellyfish.jpg
+WARNING 2016-05-02 16:07:42,153 base 4444 984 Not Found: /media/
+WARNING 2016-05-02 16:07:42,194 base 4444 3680 Not Found: /media//profile/Jellyfish.jpg
+WARNING 2016-05-02 16:07:43,194 base 4444 3848 Not Found: /media/
+WARNING 2016-05-02 16:07:43,354 base 4444 3656 Not Found: /media//profile/Jellyfish.jpg
+WARNING 2016-05-02 16:08:07,194 base 4444 4416 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-02 16:08:32,608 base 4444 4112 Not Found: /media/
+WARNING 2016-05-02 16:11:50,171 base 4444 2420 Not Found: /media/
+WARNING 2016-05-02 16:13:21,006 base 4444 2492 Not Found: /media/
+WARNING 2016-05-02 16:13:21,030 base 4444 4860 Not Found: /media//profile/Jellyfish.jpg
+WARNING 2016-05-02 16:13:22,055 base 4444 2572 Not Found: /media/
+WARNING 2016-05-02 16:13:22,279 base 4444 3940 Not Found: /media//profile/Jellyfish.jpg
+WARNING 2016-05-02 16:13:27,588 base 4444 1548 Not Found: /media//profile/Jellyfish.jpg
+WARNING 2016-05-02 16:13:27,608 base 4444 5016 Not Found: /media/
+WARNING 2016-05-02 16:13:28,538 base 4444 1000 Not Found: /media/
+WARNING 2016-05-02 16:13:28,578 base 4444 2460 Not Found: /media//profile/Jellyfish.jpg
+WARNING 2016-05-02 16:16:07,961 base 4444 148 Not Found: /media/
+WARNING 2016-05-02 16:16:08,007 base 4444 2400 Not Found: /media//profile/Jellyfish.jpg
+WARNING 2016-05-02 16:16:09,045 base 4444 3364 Not Found: /media/
+WARNING 2016-05-02 16:16:09,397 base 4444 4860 Not Found: /media//profile/Jellyfish.jpg
+WARNING 2016-05-02 16:16:22,055 base 4444 3944 Not Found: /media/
+WARNING 2016-05-02 16:17:26,286 base 4444 3896 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-02 16:33:34,384 base 4444 2308 Not Found: /media/
+ERROR 2016-05-02 16:33:51,783 base 4444 3956 Internal Server Error: /delete_ad/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 77, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\resell_apr21\Adjod\adjod\adjod\views.py", line 591, in delete_ad
+    get_products = [int(i) for i in list_items]
+ValueError: invalid literal for int() with base 10: ''
+WARNING 2016-05-02 16:35:37,161 base 4444 3908 Not Found: /media/
+WARNING 2016-05-02 16:35:37,181 base 4444 2256 Not Found: /media//profile/Jellyfish.jpg
+WARNING 2016-05-02 16:35:38,288 base 4444 4512 Not Found: /media/
+WARNING 2016-05-02 16:35:38,522 base 4444 224 Not Found: /media//profile/Jellyfish.jpg
+WARNING 2016-05-02 16:35:43,496 base 4444 3876 Not Found: /media/
+WARNING 2016-05-02 16:35:43,526 base 4444 4064 Not Found: /media//profile/Jellyfish.jpg
+WARNING 2016-05-02 16:35:44,355 base 4444 5028 Not Found: /media/
+WARNING 2016-05-02 16:35:44,385 base 4444 1404 Not Found: /media//profile/Jellyfish.jpg
+WARNING 2016-05-02 16:35:47,446 base 4444 5100 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-02 16:35:48,446 base 4444 2460 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-02 16:36:02,905 base 4444 2056 Not Found: /ads/static/themes/undefined/jquery-ui.min.css
+WARNING 2016-05-02 16:37:20,365 base 4444 3944 Not Found: /ads/static/themes/undefined/jquery-ui.min.css
+WARNING 2016-05-02 16:37:32,088 base 4444 4868 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-02 16:37:32,917 base 4444 2308 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-02 16:37:45,937 base 4444 2816 Not Found: /ads/static/themes/undefined/jquery-ui.min.css
+WARNING 2016-05-02 16:37:53,789 base 4444 1784 Not Found: /ads/static/themes/undefined/jquery-ui.min.css
+WARNING 2016-05-02 16:37:59,891 base 4444 3532 Not Found: /ads/static/themes/undefined/jquery-ui.min.css
+WARNING 2016-05-02 16:39:13,861 base 4444 180 Not Found: /ads/static/themes/undefined/jquery-ui.min.css
+WARNING 2016-05-02 16:39:26,878 base 4444 4416 Not Found: /ads/static/themes/undefined/jquery-ui.min.css
+WARNING 2016-05-02 16:39:41,740 base 4444 4152 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-02 16:39:42,821 base 4444 5028 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-02 16:39:48,233 base 4444 2744 Not Found: /ads/static/themes/undefined/jquery-ui.min.css
+WARNING 2016-05-02 16:40:13,668 base 4444 1616 Not Found: /ads/static/themes/undefined/jquery-ui.min.css
+WARNING 2016-05-02 16:42:59,150 base 4444 5016 Not Found: /ads/static/themes/undefined/jquery-ui.min.css
+WARNING 2016-05-02 16:43:31,779 base 4444 4984 Not Found: /ads/static/themes/undefined/jquery-ui.min.css
+WARNING 2016-05-02 16:43:44,532 base 4444 4308 Not Found: /ads/static/themes/undefined/jquery-ui.min.css
+WARNING 2016-05-02 16:43:50,173 base 4444 5016 Not Found: /ads/static/themes/undefined/jquery-ui.min.css
+WARNING 2016-05-02 16:46:42,599 base 4444 4184 Not Found: /ads/static/themes/undefined/jquery-ui.min.css
+WARNING 2016-05-02 16:47:40,108 base 4444 3732 Not Found: /ads/static/themes/undefined/jquery-ui.min.css
+WARNING 2016-05-02 17:13:50,563 base 4444 1072 Not Found: /flags@2x.png
+WARNING 2016-05-02 17:14:05,421 base 4444 5736 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-02 17:14:13,802 base 4444 5708 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-02 17:14:19,914 base 4444 3216 Not Found: /ads/static/themes/undefined/jquery-ui.min.css
+WARNING 2016-05-02 17:15:09,500 base 4444 4376 Not Found: /ads/static/themes/undefined/jquery-ui.min.css
+WARNING 2016-05-02 17:15:36,621 base 4444 1340 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-02 17:15:55,369 base 4444 6072 Not Found: /ads/static/themes/undefined/jquery-ui.min.css
+WARNING 2016-05-02 17:16:41,065 base 4444 5572 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-02 17:17:09,368 base 4444 3448 Not Found: /ads/static/themes/undefined/jquery-ui.min.css
+WARNING 2016-05-02 17:18:30,443 base 4444 2808 Not Found: /ads/static/themes/undefined/jquery-ui.min.css
+WARNING 2016-05-02 17:19:29,500 base 4444 4772 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-02 17:19:30,630 base 4444 2352 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-02 17:24:48,493 base 4444 4904 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-02 17:25:32,232 base 4444 6032 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-02 17:25:37,453 base 4444 6024 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-02 17:25:40,451 base 4444 6016 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-02 17:25:43,446 base 4444 5200 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-02 17:25:48,299 base 4444 6036 Not Found: /ads/static/themes/undefined/jquery-ui.min.css
+WARNING 2016-05-02 17:27:00,917 base 4444 5312 Not Found: /media/products/Desert_photo_1.jpg
+WARNING 2016-05-02 17:27:00,977 base 4444 5508 Not Found: /media/products/Penguins_photo_3.jpg
+WARNING 2016-05-02 17:27:00,977 base 4444 6048 Not Found: /media/products/Chrysanthemum_photo_1.jpg
+WARNING 2016-05-02 17:27:00,977 base 4444 2404 Not Found: /media/products/Jellyfish_photo_3.jpg
+WARNING 2016-05-02 17:27:02,058 base 4444 2492 Not Found: /media/products/Desert_photo_1.jpg
+WARNING 2016-05-02 17:27:02,088 base 4444 5516 Not Found: /media/products/Chrysanthemum_photo_1.jpg
+WARNING 2016-05-02 17:27:02,088 base 4444 2352 Not Found: /media/products/Jellyfish_photo_3.jpg
+WARNING 2016-05-02 17:27:02,088 base 4444 4860 Not Found: /media/products/Penguins_photo_3.jpg
+WARNING 2016-05-02 17:27:02,608 base 4444 6008 Not Found: /ads/static/themes/undefined/jquery-ui.min.css
+WARNING 2016-05-02 17:27:05,961 base 4444 5976 Not Found: /media/products/Desert_photo_1.jpg
+WARNING 2016-05-02 17:27:08,648 base 4444 204 Not Found: /media/products/Penguins_photo_3.jpg
+WARNING 2016-05-02 17:27:11,038 base 4444 2420 Not Found: /media/products/Desert_photo_1.jpg
+WARNING 2016-05-02 17:27:14,005 base 4444 148 Not Found: /media/products/Penguins_photo_3.jpg
+WARNING 2016-05-02 17:27:18,697 base 4444 2432 Not Found: /media/products/Desert_photo_1.jpg
+WARNING 2016-05-02 17:28:04,309 base 4444 5944 Not Found: /ads/static/themes/undefined/jquery-ui.min.css
+WARNING 2016-05-02 17:28:07,482 base 4444 5588 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-02 17:28:12,161 base 4444 4776 Not Found: /ads/static/themes/undefined/jquery-ui.min.css
+WARNING 2016-05-02 17:33:37,691 base 4444 4276 Not Found: /ads/static/themes/undefined/jquery-ui.min.css
+WARNING 2016-05-02 17:36:04,710 base 4444 4288 Not Found: /ads/static/themes/undefined/jquery-ui.min.css
+WARNING 2016-05-02 17:36:47,039 base 4444 5436 Not Found: /ads/static/themes/undefined/jquery-ui.min.css
+WARNING 2016-05-02 17:38:14,838 base 4192 5180 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-02 17:38:26,808 base 4192 5460 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-02 17:39:29,726 base 4192 936 Not Found: /ads/static/themes/undefined/jquery-ui.min.css
+WARNING 2016-05-02 17:40:32,746 base 4192 1748 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-02 17:40:42,118 base 4192 2544 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-02 17:43:05,773 base 4192 5140 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-02 17:43:19,062 base 4192 2352 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-02 17:43:31,970 base 4192 5748 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-02 17:43:33,061 base 4192 2516 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-02 17:43:42,118 base 4192 5364 Not Found: /media/
+WARNING 2016-05-02 17:43:42,148 base 4192 5288 Not Found: /media//profile/Jellyfish.jpg
+WARNING 2016-05-02 17:43:43,207 base 4192 5920 Not Found: /media/
+WARNING 2016-05-02 17:43:43,227 base 4192 5028 Not Found: /media//profile/Jellyfish.jpg
+WARNING 2016-05-02 17:43:45,724 base 4192 4764 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-02 17:43:46,891 base 4192 4000 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-02 17:43:57,351 base 4192 5684 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-02 17:43:58,460 base 4192 936 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-02 17:45:40,898 base 4192 6044 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-02 17:45:41,987 base 4192 3760 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-02 17:53:28,426 base 4192 5932 Not Found: /ads/static/themes/undefined/jquery-ui.min.css
+WARNING 2016-05-02 17:53:29,861 base 4192 5296 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-02 17:57:36,059 base 5232 4156 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-02 17:57:37,055 base 5232 5104 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-02 17:57:40,680 base 5232 740 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-02 17:57:53,479 base 5232 5824 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-02 17:57:54,618 base 5232 6128 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-02 17:57:59,869 base 5232 5864 Not Found: /flags@2x.png
+WARNING 2016-05-02 17:58:12,275 base 5232 4216 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-02 18:02:30,743 base 5232 5192 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-02 18:02:31,903 base 5232 4744 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-02 18:08:29,039 base 5232 5432 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-02 18:08:29,460 base 5232 1144 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-02 18:08:30,773 base 5232 5668 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-02 18:08:47,881 base 5232 5852 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-02 18:08:49,065 base 5232 1792 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-02 18:09:18,986 base 5232 5824 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-02 19:29:54,482 base 5232 5500 Not Found: /ads/static/themes/undefined/jquery-ui.min.css
+WARNING 2016-05-02 19:29:56,875 base 5232 5860 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-02 19:53:01,130 base 5232 2308 Not Found: /ads/static/themes/undefined/jquery-ui.min.css
+WARNING 2016-05-02 19:53:03,141 base 5232 4164 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-02 19:58:01,276 base 5232 6100 Not Found: /ads/static/themes/undefined/jquery-ui.min.css

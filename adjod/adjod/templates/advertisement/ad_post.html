@@ -203,7 +203,7 @@
               <div class="select_container_city fl" id="select_container_city">
                   <div class="select_div select_disable">
                     <p id="select_post_city">{% if edit_product.city %}{{edit_product.city}}{% else %}{{city}}{% endif %}</p>
-                    <i class="city_fa fa fa-caret-down">
+                    <!-- <i class="city_fa fa fa-caret-down"> -->
                     </i>
                   </div> <!-- select_div -->
                   <select id="id_city" class="select_post_city disable_cursor" disabled="disabled">
@@ -386,7 +386,7 @@
       		<div class="row title_row">
   				<div class="col-md-4">{% trans "Category" %}</div>
   				<div class="col-md-4">{% trans "Sub Category" %}</div>
-  				<div style="display: none;" id="brand" class="col-md-4"></div>
+  				<div id="brand" class="col-md-4">{% trans "Brand" %}</div>
 			</div>
       		<div class="row content_row">
   				<div class="category_list_div col-md-4">
