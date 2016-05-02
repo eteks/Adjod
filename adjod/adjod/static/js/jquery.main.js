@@ -1375,9 +1375,8 @@ $( document ).ready(function() {
         }
         
         // alert(product_title);
-        // alert("before append msg he");
+        // alert("before append msg he"); 
         append_msg_he( msg, name, date, avatar, product_id );
-        // FIXME
         // Set dialog position
         main.dialog( "option", "position", { my: "right bottom", at: "right top-3", of: "#user-button-"+iduser+"_product-"+product_id, collision: "flip, none" });
         chat_record['sender']=name;
