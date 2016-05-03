@@ -1,0 +1,91 @@
+WARNING 2016-04-30 15:10:47,426 base 6500 -1247450304 Not Found: /media/img/bg-img2.png
+WARNING 2016-04-30 15:10:49,894 base 6500 -1306526912 Not Found: /media/img/bg-img2.png
+WARNING 2016-04-30 15:11:46,327 base 6500 -1296041152 Not Found: /media/img/bg-img2.png
+WARNING 2016-04-30 15:12:09,936 base 6500 -1285555392 Not Found: /ads/static/themes/undefined/jquery-ui.min.css
+WARNING 2016-04-30 15:12:36,131 base 6500 -1285555392 Not Found: /media/img/bg-img2.png
+WARNING 2016-04-30 15:12:36,357 base 6500 -1285555392 Not Found: /media/img/bg-img2.png
+WARNING 2016-04-30 15:12:39,456 base 6500 -1306526912 Not Found: /ads/static/themes/undefined/jquery-ui.min.css
+WARNING 2016-04-30 15:14:51,369 base 6783 -1315964096 Not Found: /ads/static/themes/undefined/jquery-ui.min.css
+WARNING 2016-04-30 15:15:06,745 base 6783 -1247028416 Not Found: /ads/static/themes/undefined/jquery-ui.min.css
+WARNING 2016-04-30 15:15:26,176 base 6783 -1315964096 Not Found: /media/img/bg-img2.png
+WARNING 2016-04-30 15:15:27,519 base 6783 -1315964096 Not Found: /media/img/bg-img2.png
+WARNING 2016-04-30 15:15:31,205 base 6783 -1294992576 Not Found: /media/img/bg-img2.png
+WARNING 2016-04-30 15:15:32,332 base 6783 -1294992576 Not Found: /media/img/bg-img2.png
+WARNING 2016-04-30 15:16:10,494 base 6783 -1247028416 Not Found: /media/img/bg-img2.png
+WARNING 2016-04-30 15:16:11,989 base 6783 -1315964096 Not Found: /media/img/bg-img2.png
+WARNING 2016-04-30 15:16:35,612 base 6783 -1264059584 Not Found: /ads/static/themes/undefined/jquery-ui.min.css
+WARNING 2016-04-30 15:16:49,202 base 6783 -1315964096 Not Found: /media/img/bg-img2.png
+WARNING 2016-04-30 15:16:50,687 base 6783 -1315964096 Not Found: /media/img/bg-img2.png
+WARNING 2016-04-30 15:16:54,200 base 6783 -1247028416 Not Found: /media/img/bg-img2.png
+WARNING 2016-04-30 15:16:55,720 base 6783 -1294992576 Not Found: /media/img/bg-img2.png
+WARNING 2016-04-30 15:17:00,610 base 6783 -1294992576 Not Found: /ads/static/themes/undefined/jquery-ui.min.css
+WARNING 2016-04-30 15:17:39,719 base 6783 -1315964096 Not Found: /media/img/bg-img2.png
+WARNING 2016-04-30 15:17:40,425 base 6783 -1247028416 Not Found: /media/img/bg-img2.png
+WARNING 2016-04-30 15:20:43,250 base 7372 -1318061248 Not Found: /ads/static/themes/undefined/jquery-ui.min.css
+WARNING 2016-04-30 15:21:16,916 base 7372 -1297089728 Not Found: /ads/static/themes/undefined/jquery-ui.min.css
+WARNING 2016-04-30 15:23:10,810 base 7372 -1297089728 Not Found: /ads/static/themes/undefined/jquery-ui.min.css
+WARNING 2016-04-30 15:38:31,110 base 7372 -1275069632 Not Found: /ads/static/themes/undefined/jquery-ui.min.css
+WARNING 2016-04-30 15:38:44,586 base 7372 -1275069632 Not Found: /media/img/bg-img2.png
+WARNING 2016-04-30 15:38:46,735 base 7372 -1275069632 Not Found: /media/img/bg-img2.png
+WARNING 2016-04-30 15:40:04,153 base 7372 -1318061248 Not Found: /media/img/bg-img2.png
+WARNING 2016-04-30 15:40:06,052 base 7372 -1318061248 Not Found: /media/img/bg-img2.png
+WARNING 2016-04-30 15:40:13,988 base 7372 -1307575488 Not Found: /favicon.ico
+ERROR 2016-04-30 15:41:06,016 base 7372 -1307575488 Internal Server Error: /new_user/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 129, in get_response
+    raise ValueError("The view %s.%s didn't return an HttpResponse object." % (callback.__module__, view_name))
+ValueError: The view adjod.views.register didn't return an HttpResponse object.
+WARNING 2016-04-30 15:48:57,486 base 8362 -1267729600 Not Found: /media/img/bg-img2.png
+WARNING 2016-04-30 15:48:59,555 base 8362 -1267729600 Not Found: /media/img/bg-img2.png
+WARNING 2016-04-30 15:49:00,544 base 8362 -1257243840 Not Found: /media/img/bg-img2.png
+WARNING 2016-04-30 15:49:03,625 base 8362 -1257243840 Not Found: /media/img/bg-img2.png
+WARNING 2016-04-30 15:49:59,575 base 8362 -1303381184 Not Found: /media/img/bg-img2.png
+WARNING 2016-04-30 15:50:02,413 base 8362 -1257243840 Not Found: /media/img/bg-img2.png
+WARNING 2016-04-30 15:55:28,238 base 8362 -1303381184 Not Found: /media/img/bg-img2.png
+WARNING 2016-04-30 15:55:31,563 base 8362 -1313866944 Not Found: /media/img/bg-img2.png
+WARNING 2016-04-30 15:55:59,722 base 8362 -1278215360 Not Found: /media/img/bg-img2.png
+WARNING 2016-04-30 15:56:02,186 base 8362 -1278215360 Not Found: /media/img/bg-img2.png
+WARNING 2016-04-30 15:56:15,363 base 8362 -1278215360 Not Found: /media/img/bg-img2.png
+WARNING 2016-04-30 15:56:18,518 base 8362 -1278215360 Not Found: /media/img/bg-img2.png
+WARNING 2016-04-30 15:56:39,555 base 8362 -1313866944 Not Found: /media/img/bg-img2.png
+WARNING 2016-04-30 15:56:42,788 base 8362 -1313866944 Not Found: /media/img/bg-img2.png
+WARNING 2016-04-30 15:57:45,422 base 8362 -1278215360 Not Found: /media/img/bg-img2.png
+WARNING 2016-04-30 15:57:48,682 base 8362 -1278215360 Not Found: /media/img/bg-img2.png
+WARNING 2016-04-30 15:58:13,622 base 8867 -1267729600 Not Found: /media/img/bg-img2.png
+WARNING 2016-04-30 15:58:15,949 base 8867 -1267729600 Not Found: /media/img/bg-img2.png
+ERROR 2016-04-30 16:01:33,981 base 8867 -1267729600 Internal Server Error: /new_user/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 129, in get_response
+    raise ValueError("The view %s.%s didn't return an HttpResponse object." % (callback.__module__, view_name))
+ValueError: The view adjod.views.register didn't return an HttpResponse object.
+WARNING 2016-04-30 16:03:39,699 base 8929 -1247749312 Not Found: /media/img/bg-img2.png
+WARNING 2016-04-30 16:03:43,995 base 8929 -1247749312 Not Found: /media/img/bg-img2.png
+WARNING 2016-04-30 16:03:52,721 base 8929 -1284768960 Not Found: /media/img/bg-img2.png
+WARNING 2016-04-30 16:03:57,442 base 8929 -1261991104 Not Found: /media/img/bg-img2.png
+ERROR 2016-04-30 16:05:42,551 base 8929 -1247749312 Internal Server Error: /new_user/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 129, in get_response
+    raise ValueError("The view %s.%s didn't return an HttpResponse object." % (callback.__module__, view_name))
+ValueError: The view adjod.views.register didn't return an HttpResponse object.
+WARNING 2016-04-30 16:09:10,015 base 9056 -1264321728 Not Found: /media/img/bg-img2.png
+WARNING 2016-04-30 16:09:14,635 base 9056 -1247188160 Not Found: /media/img/bg-img2.png
+WARNING 2016-04-30 16:09:15,982 base 9056 -1247188160 Not Found: /media/img/bg-img2.png
+WARNING 2016-04-30 16:09:19,445 base 9056 -1247188160 Not Found: /media/img/bg-img2.png
+WARNING 2016-04-30 16:09:33,053 base 9056 -1264321728 Not Found: /media/img/bg-img2.png
+WARNING 2016-04-30 16:09:36,140 base 9056 -1264321728 Not Found: /media/img/bg-img2.png
+ERROR 2016-04-30 16:10:16,433 base 9056 -1264321728 Internal Server Error: /new_user/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 129, in get_response
+    raise ValueError("The view %s.%s didn't return an HttpResponse object." % (callback.__module__, view_name))
+ValueError: The view adjod.views.register didn't return an HttpResponse object.
+WARNING 2016-04-30 16:15:44,982 base 9201 -1257792704 Not Found: /media/img/bg-img2.png
+WARNING 2016-04-30 16:15:48,401 base 9201 -1257792704 Not Found: /media/img/bg-img2.png
+WARNING 2016-04-30 16:16:44,198 base 9266 -1283458240 Not Found: /media/img/bg-img2.png
+WARNING 2016-04-30 16:16:49,135 base 9266 -1273496768 Not Found: /media/img/bg-img2.png
+ERROR 2016-04-30 16:17:11,163 base 9266 -1273496768 Internal Server Error: /new_user/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 129, in get_response
+    raise ValueError("The view %s.%s didn't return an HttpResponse object." % (callback.__module__, view_name))
+ValueError: The view adjod.views.register didn't return an HttpResponse object.
+WARNING 2016-04-30 16:17:54,688 base 9407 -1264321728 Not Found: /media/img/bg-img2.png
+WARNING 2016-04-30 16:17:57,639 base 9407 -1264321728 Not Found: /media/img/bg-img2.png

@@ -6,9 +6,9 @@
       <a href="/search/?q=" class="previous_page2">{% trans "Back to my search results" %}</a>
       {% if 'ads' in path %}
       <i class="fa fa-angle-right right"></i>
-      <a href="/search/?q=" class="previous_page1">{{adinfo.category}}</a>
+      <a href="/search/?q=&category={{adinfo.category.id}}" class="previous_page1">{{adinfo.category}}</a>
       <i class="fa fa-angle-right right"></i>
-      <a href="/search/?q=" class="current_page">{{adinfo.subcategory}}</a>
+      <a href="/search/?q=&subcategoryid={{adinfo.subcategory.id}}" class="current_page">{{adinfo.subcategory}}</a>
       {% endif %}
     </span>
 {%endblock%}
