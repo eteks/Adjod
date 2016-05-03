@@ -1082,10 +1082,14 @@ $( document ).ready(function() {
     });
     
     $(".user_dropdown").hide();
-    $(".caret_user").click(function(){
+    $(".caret_user").click(function(event){
+    	event.stopPropagation();
         $('.user_dropdown').toggle();
     });
-
+   	$(document).click( function(){
+        $('.user_dropdown').hide();
+    });
+    
     $('.subscribe_content code').click(function(){
       // alert("subscription");
       transaction_type = $('form[name="paypal_account_subscription"]').find("input[name='item_name']").val();

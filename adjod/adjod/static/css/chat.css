@@ -39,9 +39,18 @@ body {
 	display: inline-block;
 	position: fixed;
 	bottom: 0px;
-	right: 2em;
+	right: 1em;
 	float: left;
 	z-index: 50000;
+	@media (min-width: 968px){
+		padding: 0px;
+		display: inline-block;
+		position: fixed;
+		bottom: 0px;
+		right: 2em;
+		float: left;
+		z-index: 50000;
+	}
 }
 
 #tools-menu {
@@ -49,7 +58,10 @@ body {
 }
 
 .toolbar-max {
-	width: 90%;
+    width: 98%;
+	@media (min-width: 968px){
+		width: 90%;
+	}
 }
 
 /* support: IE7 */
@@ -187,14 +199,14 @@ body {
 	font-size: 75%;
 }
 
-.main-chat-window {
+/*.main-chat-window {
 	margin: 0 0 0 65px;
 }
 @media (min-width: 968px){
 	.main-chat-window {
 		margin: 0px;
 	}
-}
+}*/
 
 .user-pad {
 	padding: 5px;

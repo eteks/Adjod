@@ -217,7 +217,8 @@
                   </div>
                   {% if adinfo.video%}
                   <div class="video_url">
-                    <span>{% trans "Video URL:" %}<a target="__blank" href="{{adinfo.video}}">{{adinfo.video}}</a></span>
+                  	<h4>{% trans "Video URL" %}</h4>
+                    <span><a target="__blank" href="{{adinfo.video}}">{{adinfo.video}}</a></span>
                   </div>
                   {% endif %}
                 </div>
@@ -302,7 +303,7 @@
                     <div class="details">
                         <div class="product_name1">
                             <a href="/ads/{{related_products.object.id}}/" class="spans"> {{related_products.object.title}}</a>
-                            <span class="product_description1 visible-lg">{{related_products.object.description|truncatewords:10}}
+                            <span class="product_description1 visible-lg">{{related_products.object.description|truncatewords:9}}
                             </span>
                             <span class="model_year1 visible-lg"> {{related_products.object.condition}} | in {{related_products.object.city}} | By {{related_products.object.you_are}}</span>
                             <span class="year visible-lg">{{related_products.object.created_date}}</span>

@@ -94,6 +94,7 @@ $( document ).ready(function() {
       var prefix = "user-button-";
       var iduser = $( this ).attr( "id" ).substring( (prefix.length) );
       var name   = $( this ).find('li').text();
+      var current_width = $(window).width();
       // alert(user_name);
       // alert(name);
       // if (window.location.pathname == '/search/'){
@@ -117,6 +118,9 @@ $( document ).ready(function() {
       // var value = $(this).parent().parent().parent().parent().siblings('.ui-dialog').children('.ui-dialog-content').children('.box').children('.box-header').children('.box-title').text(product_title);
       // alert(value);
       // Del notification if exist
+       if(current_width < 766){
+		$('.ui-dialog').addClass('ui-dialog-mobile');
+	  }
       main_chat_user_alert( iduser, 1, product_id );
 
       if ( name.length > 15 ) {

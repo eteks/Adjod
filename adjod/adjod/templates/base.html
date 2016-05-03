@@ -351,7 +351,7 @@
            {%  if 'postad' in path %}
             <div class="container">
               <div class="post_ad_first hidden-xs">{% trans "Post an Ad in just 30 seconds" %}</div>
-                <div class="post_ad_second">{% trans "DO NOT post multiple ads for the same items or service. All duplicate, spam and wrongly categorized ads will be deleted." %}</div>
+                <div class="post_ad_second">{% trans "Do not post multiple ads for the same items or service. All duplicate, spam and wrongly categorized ads will be deleted." %}</div>
             </div>
           {% endif %}
       </div> <!-- search_part -->
@@ -468,7 +468,7 @@
            <form id="login_form" method="post" action="/login/" name="sign_in">
            {% csrf_token %}
             <div id="email_userid_div" class="form-group">
-                <input class="email_id" name="email_id" id="emailid_signup" placeholder="Username*" />
+                <input class="email_id" name="email_id" id="emailid_signup" placeholder="Username or E-mail address*" />
                 <label for="emailid_signup" id="emailid_required" class="labelError" style="display:none;">{% trans "Please enter Email or User ID" %}</label>
               </div> <!-- email_id_div -->
 
@@ -695,7 +695,7 @@
            <div class="subscribe_title">
               <h4>{% trans "Message" %}</h4>
            </div><!--subscribe_titl-->
-           <div class="subscribe_content">
+           <div class="subscribe_content" style="padding: 45px 28px;">
              <p>{{ message }}</p>
            </div><!--subscribe_content-->
       </div><!--postad_success_popup-->
