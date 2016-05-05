@@ -178,7 +178,7 @@
         </div>
         <div class="alert_content">
         <h4 class="need_txt">{% trans "Tell us your need" %}</h4>
-        <a href="#" class="alert_btn">{% trans "Create alert" %}</a>
+        <a href="#" class="alert_btn">{% trans "Create free alert" %}</a>
       </div>
       </div> <!--col-md-7 -->   
 
@@ -239,7 +239,7 @@
                 <h4>{% trans "Create free alert" %}</h4>
                 <code class="close_btn closemobile_btn cancel_btn hidden-lg" style="{% if request.REQUEST.si %} display:block; {%else%} display: none; {% endif %}"> </code>
               </div>
-               <form method="post" action="{% url free_alert %}" name="alert_button">
+               <form method="post" action="{% url free_alert %}" name="alert_button" class="free-alert-align">
                   {% csrf_token %}
 
                   <ul class="enquiry_form">

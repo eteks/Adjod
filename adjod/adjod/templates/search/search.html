@@ -466,13 +466,13 @@
         <a href="{% url product_form %}" class="#postbutton btn btn-lg btn-warning post_button" style="{% if user.is_authenticated %}{% if userprofile.ad_count > 3 and userprofile.is_emailverified == 0 and userprofile.is_subscribed == 0 %} cursor:default;opacity:0.4; {% elif userprofile.ad_count > 3 and userprofile.is_emailverified == 1 and userprofile.is_subscribed == 0 %} cursor:default;opacity:0.4; {% elif userprofile.is_subscribed == 1 %} cursor:pointer; pointer-events:auto;{% endif %} {% endif %}" title="{% if user.is_authenticated %}{% if userprofile.ad_count > 3 and userprofile.is_emailverified == 0 and userprofile.is_subscribed == 0 %} You already add 3 posts and also did not verified ur email, if u want add more posts, u have to verify ur email and also make ur account as premium {% elif userprofile.ad_count > 3 and userprofile.is_emailverified == 1 and userprofile.is_subscribed == 0 %} You already add 3 posts, if u want add more posts, u have to make ur account as premium{% endif %}{% endif %}">Post Free Ad</a>
         <div class="alert_content">
         <h4 class="need_txt">{% trans "Tell us your need "%}</h4>
-        <a href="#" class="alert_btn">{% trans "Create alert" %}</a>
+        <a href="#" class="alert_btn">{% trans "Create free alert" %}</a>
         <div class="col-md-5 free_content">
               <div class="free_alert">
                 <h4>Create free alert</h4>
                 <code class="close_btn closemobile_btn cancel_btn" style="{% if request.REQUEST.si %} display:block; {%else%} display: none; {% endif %}"> </code>
               </div>
-               <form method="post" action="{% url free_alert %}" name="alert_button">
+               <form method="post" action="{% url free_alert %}" name="alert_button" class="free-alert-align">
                   {% csrf_token %}
 
                   <ul class="enquiry_form">

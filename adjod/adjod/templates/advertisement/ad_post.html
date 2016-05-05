@@ -72,7 +72,7 @@
             <input type="text" class="your_year" name="your_year" id="your_year" placeholder="Year" value="{% if edit_product.ad_year%}{{edit_product.ad_year}}{% endif %}" onkeyup="if (/\D/g.test(this.value)) this.value = this.value.replace(/\D/g,'')"  maxlength="4" />
 
             <span class="price_icon">{{country_code|get_symbol}}</span>
-            <label id="price_required" class="labelError" style="display:none;">{% trans "Please enter price." %}</label>
+            <label id="price_required" class="labelError price_mbl" style="display:none;">{% trans "Please enter price." %}</label>
           </div>
 
          	<div class="field_div form-group" id="description_div">

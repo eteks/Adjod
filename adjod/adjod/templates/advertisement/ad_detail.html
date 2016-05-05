@@ -218,9 +218,16 @@
                   {% if adinfo.video%}
                   <div class="video_url">
                   	<h4>{% trans "Video URL" %}</h4>
+                  	<iframe width="600" height="315" src="https://www.youtube.com/embed/qerrZSVNJHY" frameborder="0" allowfullscreen class="visible-lg"></iframe>
+                  	<iframe width="360" height="200" src="https://www.youtube.com/embed/qerrZSVNJHY" frameborder="0" allowfullscreen class="visible-xs"></iframe>
                     <span><a target="__blank" href="{{adinfo.video}}">{{adinfo.video}}</a></span>
                   </div>
                   {% endif %}
+                  <div class="description_box">
+                <h4>{% trans "Description" %}</h4>
+                <p class="more">{{adinfo.description}}
+                </p>
+              </div>
                 </div>
 
               </div>
@@ -255,11 +262,7 @@
                 <!-- </div>send_msg   -->
               <!-- </div> -->
 
-              <div class="description_box">
-                <h4>{% trans "Description" %}</h4>
-                <p class="more">{{adinfo.description}}
-                </p>
-              </div>
+              
     </div> <!-- first-column -->
        <!-- {% if adinfo.video %}
          <div class="video_content visible-lg">
