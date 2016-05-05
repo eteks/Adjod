@@ -250,7 +250,6 @@ def register(request):
 			redirect_url = format_redirect_url(redirect_path, query_string)
 			return HttpResponseRedirect(redirect_url)
 
-
 def send_registration_confirmation(userprofile):
 	current_site = Site.objects.get_current()
 	title = "Resell account confirmation"
