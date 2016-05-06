@@ -19,7 +19,6 @@ import pprint
 from django.core.urlresolvers import reverse
 from django.template import *
 from django import template
-from django.core.urlresolvers import reverse
 from django.conf import settings
 from django import forms
 from django.core.files import File

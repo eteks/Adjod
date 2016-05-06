@@ -264,6 +264,7 @@ def send_registration_confirmation(userprofile):
 						 'user': userprofile,
 						 'content':content,
 						 'email':userprofile.email,
+						 'username':userprofile.username,
 				},
 			)
 
