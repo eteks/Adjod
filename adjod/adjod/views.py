@@ -199,6 +199,8 @@ def auto_login(request, user):
 #User registration definition
 @csrf_protect
 def register(request):
+	if request.user.is_superuser:
+		logout(request)
 	if request.method == 'POST' and request.user.is_anonymous():
 		error={}
 		email=request.POST['email_id']

@@ -1376,7 +1376,10 @@ $( document ).ready(function() {
         
         // alert(product_title);
         // alert("before append msg he"); 
-        append_msg_he( msg, name, date, avatar, product_id );
+        setTimeout(function() {
+            append_msg_he( msg, name, date, avatar, product_id );
+        }, 1000);
+        // append_msg_he( msg, name, date, avatar, product_id );
         // Set dialog position
         main.dialog( "option", "position", { my: "right bottom", at: "right top-3", of: "#user-button-"+iduser+"_product-"+product_id, collision: "flip, none" });
         chat_record['sender']=name;

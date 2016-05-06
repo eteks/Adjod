@@ -32,9 +32,21 @@
               <div class="product_images1 bg-img">
                 <p class="{% if my_ads.premium_plan_id = 1 %} premium-img1 {% elif my_ads.premium_plan_id = 2 %} premium-img2 {% elif my_ads.premium_plan_id = 3 %} premium-img3 {% endif%} "></p>
                 {% if my_ads.status_isactive == 1 %}
-                <a href="/ads/{{my_ads.id}}/"><img src="{{MEDIA_URL}}{{my_ads.photos|get_photos}}"></a>
+                <a href="/ads/{{my_ads.id}}/">
+                {% if my_ads.photos %}
+                  <img src="{{MEDIA_URL}}{{my_ads.photos|get_photos}}">
                 {% else %}
-                <a><img src="{{MEDIA_URL}}{{my_ads.photos|get_photos}}"></a>
+                  <img src="{{STATIC_URL}}img/bg-img2.png" class="dn">
+                {% endif %}
+                </a>
+                {% else %}
+                <a>
+                {% if my_ads.photos %}
+                  <img src="{{MEDIA_URL}}{{my_ads.photos|get_photos}}">
+                {% else %}
+                  <img src="{{STATIC_URL}}img/bg-img2.png" class="dn">
+                {% endif %}
+                </a>
                 {% endif %}
                 <div class="count_holder1 visible-lg">
                       <span>{{my_ads.imagecount}}</span>
