@@ -67,7 +67,7 @@
          	</div> <!-- ad_title_div -->
 
           <div style="display: block;" class="field_div form-group" id="price_div">
-            <input type="text" class="your_price input" name="your_price" id="your_price" value="{% if edit_product.price  %}{{edit_product.price}}{% endif %}" placeholder="Price"/>
+            <input type="text" class="your_price input" name="your_price" id="your_price" value="{% if edit_product.price  %}{{edit_product.price}}{% endif %}" placeholder="Price*"/>
 
             <input type="text" class="your_year" name="your_year" id="your_year" placeholder="Year" value="{% if edit_product.ad_year%}{{edit_product.ad_year}}{% endif %}" onkeyup="if (/\D/g.test(this.value)) this.value = this.value.replace(/\D/g,'')"  maxlength="4" />
 

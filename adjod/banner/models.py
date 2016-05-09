@@ -65,11 +65,11 @@ class PostBanner(models.Model):
                             help_text="Please enter the source for API banners")
     link = models.CharField(max_length=200, blank = True,
                             help_text="Please enter website redirect link for the banner")
-    bannerplan = models.ForeignKey(BannerPlan,help_text='Choose bannerplan')
+    bannerplan = models.ForeignKey(BannerPlan,help_text='Choose bannerplan',verbose_name="Banner Plan")
     startdate = models.DateTimeField(
-        default=datetime.now(), help_text="Startdate for banner")
+        default=datetime.now(), help_text="Start date for banner",verbose_name="Start Date")
     enddate = models.DateTimeField(default=datetime.now(
-    ) + timedelta(days=30), help_text="Enddate for banner")
+    ) + timedelta(days=30), help_text="End date for banner",verbose_name="End Date")
     admin_status = models.BooleanField(default=False)
 
     def __unicode__(self):

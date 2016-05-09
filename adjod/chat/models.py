@@ -25,7 +25,7 @@ class LastActive(models.Model):
     session = models.ForeignKey(Session, related_name='session_active')
 
     def __str__(self):
-        return self.user.id
+        return str(self.user.id)
 
 # class VideoSession(models.Model):
 #     sender   = models.ForeignKey(User, related_name = 'sender_user1')

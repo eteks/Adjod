@@ -30,7 +30,7 @@ class CityAdmin(admin.ModelAdmin):
     fields=['city','country_code','country_name']
     list_display = ('id', 'city','country_code','country_name')
     list_filter = ['country_name']
-    search_fields = [ 'city','country_code','country_name']
+    search_fields = [ 'id','city','country_code','country_name']
     # readonly_fields =['id']
     list_per_page = 50
 
@@ -61,7 +61,8 @@ class FreeAlertAdmin(admin.ModelAdmin):
     fields=['alert_user','alert_category', 'alert_subcategory', 'alert_brand', 'alert_city','alert_locality', 'alert_email', 'alert_mobile']
     list_display = ('id', 'alert_user','alert_category', 'alert_subcategory', 'alert_brand', 'alert_city', 'alert_email', 'alert_mobile','mail_is_sent')
     list_filter = ['alert_category']
-    search_fields = ['id', 'alert_email','alert_mobile','alert_user','alert_brand', 'alert_city', 'alert_subcategory' ]
+    # search_fields = ['id', 'alert_email','alert_mobile','alert_user','alert_brand', 'alert_city', 'alert_subcategory' ]
+    search_fields = ['id','alert_email','alert_category__name','alert_subcategory__name','alert_brand__brand_name','alert_city__city']
     # readonly_fields =['id']
     list_per_page = 50
 

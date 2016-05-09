@@ -140,7 +140,7 @@ function find_brand(sub_category_id) {
               $('#category_name').val(category_id);
               $('#subcategory_name').val(sub_category_id);
               $('#category').val(category + " » " + sub_category);
-              $('.choose_button').text('change');
+              $('.choose_button').text('Change');
              }
              else{
               var options = '';
