@@ -142,7 +142,7 @@
  <!--  <code class="closeimg"> </code> -->
  <ul>
  {% for banners in banner|get_banner %}
-    {% if banners.bannerplan.page == "Home page" and banners.bannerplan.position == "Right" and banners.bannerplan.bannertype == "Own" and banners.banner != None %}
+    {% if banners.bannerplan.page == "Home page" and banners.bannerplan.position == "Background_Right" and banners.bannerplan.bannertype == "Own" and banners.banner != None %}
     <li>
      <a href="{{banners.link}}" target="_blank">
       <img src="{{MEDIA_URL}}{{banners.banner}}" class="ad1" />
@@ -157,7 +157,7 @@
   <!-- <code class="closeimg"> </code> -->
   <ul>
   {% for banners in banner|get_banner %}
-    {% if banners.bannerplan.page == "Home page" and banners.bannerplan.position == "Left" and banners.bannerplan.bannertype == "Own" and banners.banner != None %}
+    {% if banners.bannerplan.page == "Home page" and banners.bannerplan.position == "Background_Left" and banners.bannerplan.bannertype == "Own" and banners.banner != None %}
     <li>
      <a href="{{banners.link}}" target="_blank">
       <img src="{{MEDIA_URL}}{{banners.banner}}" class="ad2" />

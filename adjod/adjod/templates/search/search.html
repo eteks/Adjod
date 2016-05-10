@@ -49,7 +49,7 @@
               </a>
          </div> -->
 
-         <div align="center" class="banner_rotation banner_ad">
+         <!-- <div align="center" class="banner_rotation banner_ad"> -->
           <!-- <ul>
           {% for banners in banner|get_banner %}
           {% if banners.bannerplan.page == "Listing page" and banners.bannerplan.position == "Top" and banners.bannerplan.bannertype == "Other" and banners.source != None %}
@@ -61,9 +61,17 @@
           {% endif %}
           {% endfor %}
         </ul> -->
-        <img src="{{ MEDIA_URL }}banners/banner_search.jpg" />
-        </div>
-   
+       <!--  <img src="{{ MEDIA_URL }}banners/banner_search.jpg" />
+        </div> -->
+
+
+         <div align="center" class="banner_ad banner_rotation">
+          {% for banners in banner|get_banner %}
+            {% if banners.bannerplan.page == "Listing page" and banners.bannerplan.position == "Top" and banners.bannerplan.bannertype == "Other" and banners.source != None %}
+              {{banners.source|safe}}
+            {% endif %}
+          {% endfor %}
+         </div>
           <div class="sort_part">
                <div class="app col-md-2 hidden-lg">
                <!-- <p class="app_filter">{% trans "Apply filters" %}</p> -->
@@ -433,7 +441,7 @@
  <!--  <code class="closeimg"> </code> -->
  <ul>
  {% for banners in banner|get_banner %}
-    {% if banners.bannerplan.page == "Listing page" and banners.bannerplan.position == "Right" and banners.bannerplan.bannertype == "Own" and banners.banner != None %}
+    {% if banners.bannerplan.page == "Listing page" and banners.bannerplan.position == "Background_Right" and banners.bannerplan.bannertype == "Own" and banners.banner != None %}
     <li>
      <a href="{{banners.link}}" target="_blank">
       <img src="{{MEDIA_URL}}{{banners.banner}}" class="ad1" />
@@ -448,7 +456,7 @@
   <!-- <code class="closeimg"> </code> -->
   <ul>
   {% for banners in banner|get_banner %}
-    {% if banners.bannerplan.page == "Listing page" and banners.bannerplan.position == "Left" and banners.bannerplan.bannertype == "Own" and banners.banner != None %}
+    {% if banners.bannerplan.page == "Listing page" and banners.bannerplan.position == "Background_Left" and banners.bannerplan.bannertype == "Own" and banners.banner != None %}
     <li>
      <a href="{{banners.link}}" target="_blank">
       <img src="{{MEDIA_URL}}{{banners.banner}}" class="ad2" />

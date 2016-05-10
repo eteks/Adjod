@@ -13,6 +13,8 @@ POSITION = (
     ('Right_top', 'Right top of the page'),
     ('Right_bottom', 'Right bottom of the page'),
     ('Left', 'Left of the page'),
+    ('Background_Right', 'Backgorund Right of the page'),
+    ('Background_Left', 'Backgorund Left of the page'),
 )
 
 PAGEURL = (

@@ -13,9 +13,55 @@
     </span>
 {%endblock%}
 {%block content%}
-	<div align="center" class="banner_rotation banner_ad">
+	<!-- <div align="center" class="banner_rotation banner_ad">
 		<img src="{{ MEDIA_URL }}banners/banner_detail.jpg" />
-	</div>
+	</div> -->
+   <div align="center" class="banner_ad banner_rotation">
+      {% for banners in banner|get_banner %}
+        {% if banners.bannerplan.page == "Detail page" and banners.bannerplan.position == "Top" and banners.bannerplan.bannertype == "Other" and banners.source != None %}
+          {{banners.source|safe}}
+        {% endif %}
+      {% endfor %}
+  </div>
+  <div class="leftslide visible-lg banner_rotation banner_ad">
+ <!--  <code class="closeimg"> </code> -->
+ <ul>
+ 
+  <!--   <li>
+     <a href="{{banners.link}}" target="_blank">
+      <img src="{{ MEDIA_URL }}banners/ads2.jpg" class="ad1" />
+    </a>
+    </li> -->
+    {% for banners in banner|get_banner %}
+    {% if banners.bannerplan.page == "Detail page" and banners.bannerplan.position == "Background_Right" and banners.bannerplan.bannertype == "Own" and banners.banner != None %}
+    <li>
+     <a href="{{banners.link}}" target="_blank">
+      <img src="{{MEDIA_URL}}{{banners.banner}}" class="ad1" />
+    </a>
+    </li>
+    {% endif %}
+  {% endfor %}
+    
+</ul>
+</div><!--leftslide-->
+
+<div class="leftslide1 visible-lg banner_rotation banner_ad">
+  <!-- <code class="closeimg"> </code> -->
+ <ul>
+ 
+   {% for banners in banner|get_banner %}
+    {% if banners.bannerplan.page == "Detail page" and banners.bannerplan.position == "Background_Left" and banners.bannerplan.bannertype == "Own" and banners.banner != None %}
+    <li>
+     <a href="{{banners.link}}" target="_blank">
+      <img src="{{MEDIA_URL}}{{banners.banner}}" class="ad1" />
+    </a>
+    </li>
+    {% endif %}
+  {% endfor %}
+    
+</ul>
+</div><!--leftslide-->
+
   <div class="row">
    <div class="col-md-6 second-column">
             <div id="fb-root" class="other-buttons visible-lg fb_reset">
@@ -162,10 +208,17 @@
                   </div>
                 </span> -->
               </div><!--contact-seller visible-lg-->
-              <div class="detail_add1 visible-lg">
+               <!-- <div class="detail_add1 visible-lg">
                 <img src="/../media/banners/watsapp_ad.jpg">
                 <a href="https://www.whatsapp.com/" target="__blank"><img src="/../media/banners/download_ad.png" class="click_link"></a>
-              </div><!--detail_add1-->
+              </div>  --><!--detail_add1 -->
+              <div class="detail_add1 banner_ad banner_rotation visible-lg">
+                {% for banners in banner|get_banner %}
+                  {% if banners.bannerplan.page == "Detail page" and banners.bannerplan.position == "Right" and banners.bannerplan.bannertype == "Other" and banners.source != None %}
+                    {{banners.source|safe}}
+                  {% endif %}
+                {% endfor %}
+              </div> <!--detail_add1-->
     <div class="col-md-8 first-column">
                 <div class="column-height">
                   <div class="clear_both"></div>
