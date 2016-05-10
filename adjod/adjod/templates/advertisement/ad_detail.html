@@ -18,7 +18,7 @@
 	</div> -->
    <div align="center" class="banner_ad banner_rotation">
       {% for banners in banner|get_banner %}
-        {% if banners.bannerplan.page == "Detail page" and banners.bannerplan.position == "Top" and banners.bannerplan.bannertype == "Other" and banners.source != None %}
+        {% if banners.bannerplan.page == "Details page" and banners.bannerplan.position == "Top" and banners.bannerplan.bannertype == "Other" and banners.source != None %}
           {{banners.source|safe}}
         {% endif %}
       {% endfor %}
@@ -33,7 +33,7 @@
     </a>
     </li> -->
     {% for banners in banner|get_banner %}
-    {% if banners.bannerplan.page == "Detail page" and banners.bannerplan.position == "Background_Right" and banners.bannerplan.bannertype == "Own" and banners.banner != None %}
+    {% if banners.bannerplan.page == "Details page" and banners.bannerplan.position == "Background_Right" and banners.bannerplan.bannertype == "Own" and banners.banner != None %}
     <li>
      <a href="{{banners.link}}" target="_blank">
       <img src="{{MEDIA_URL}}{{banners.banner}}" class="ad1" />
@@ -50,7 +50,7 @@
  <ul>
  
    {% for banners in banner|get_banner %}
-    {% if banners.bannerplan.page == "Detail page" and banners.bannerplan.position == "Background_Left" and banners.bannerplan.bannertype == "Own" and banners.banner != None %}
+    {% if banners.bannerplan.page == "Details page" and banners.bannerplan.position == "Background_Left" and banners.bannerplan.bannertype == "Own" and banners.banner != None %}
     <li>
      <a href="{{banners.link}}" target="_blank">
       <img src="{{MEDIA_URL}}{{banners.banner}}" class="ad1" />
@@ -214,7 +214,7 @@
               </div>  --><!--detail_add1 -->
               <div class="detail_add1 banner_ad banner_rotation visible-lg">
                 {% for banners in banner|get_banner %}
-                  {% if banners.bannerplan.page == "Detail page" and banners.bannerplan.position == "Right" and banners.bannerplan.bannertype == "Other" and banners.source != None %}
+                  {% if banners.bannerplan.page == "Details page" and banners.bannerplan.position == "Right" and banners.bannerplan.bannertype == "Other" and banners.source != None %}
                     {{banners.source|safe}}
                   {% endif %}
                 {% endfor %}
