@@ -870,6 +870,7 @@ $( document ).ready(function() {
     //*************** Start Post Ad form validation ***********
     required = ["category", "ad_title", "your_price", "your_description", "your_email"];
     jQuery("#post").click(function(){
+      var regYoutube = /(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/ ]{11})/i;
         for (i=0;i<required.length;i++) {
           var input = jQuery('#'+required[i]);
           if (input.val() == "")  {
@@ -941,6 +942,13 @@ $( document ).ready(function() {
           // $('#terms_required').show();
           $('#terms_of_use').addClass("error_input_field");
           $('#terms_of_use').next().siblings('.labelError').show();
+        }
+        video_url = $('#videos1').val();
+        if(regYoutube.test(video_url)) {
+          $('#videos1').siblings('.labelError').hide();
+        }
+        else if(video_url !=''){
+          $('#videos1').siblings('.labelError').show();
         }
         if ($(":input").hasClass("error_input_field") || $(".select_container_city").hasClass("error_input_field") || $(".select_container_locality").hasClass("error_input_field") || $("#buy,#sell").hasClass("error_input_field") || $("#individual,#dealer,.photo_labelError").hasClass("error_input_field") || $('#your_mobile_no').hasClass("error")){
         return false;
