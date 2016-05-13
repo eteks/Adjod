@@ -832,6 +832,7 @@ $( document ).ready(function() {
             var input = jQuery('#'+sign_up_required[i]);
             if (input.val() == "")  {
             input.addClass("error_input_field");
+            input.siblings('.error_message').hide();
             input.siblings('.signup_labelError').show();
             } else {
               input.removeClass("error_input_field");
@@ -842,14 +843,15 @@ $( document ).ready(function() {
           if($('#email_id').val() != ''){
           if (!/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/.test($('#email_id').val())) {
             $('#email_id').addClass("error_input_field");
-            $('#email_id').siblings('.signup_labelError').text("Please enter valid email address");
-            $('.signup_labelError').show();
+            // $('#email_id').siblings('.signup_labelError').text("Please enter valid email address");
+            $('#email_id').siblings('.signup_labelError').hide();
+            $('#email_id').siblings('.error_message').show();
             //email.val(emailerror);
           }
           else
           {
             $('#email_id').removeClass("error_input_field");
-            $('#email_id').siblings('.signup_labelError').hide();
+            $('#email_id').siblings('.error_message').hide();
           }
           }
            if ($(":input").hasClass("error_input_field") || $('#mobile_number_sign_up_home').hasClass("error")){

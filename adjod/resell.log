@@ -1,5 +1,347 @@
-WARNING 2016-05-10 17:47:30,553 base 10687 -1317012672 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
-WARNING 2016-05-10 17:47:30,554 base 10687 -1275069632 Not Found: /media/products/_20_photo_1.jpg
-WARNING 2016-05-10 17:47:35,582 base 10687 -1317012672 Not Found: /media/products/_20_photo_1.jpg
-WARNING 2016-05-10 17:47:35,803 base 10687 -1317012672 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
-WARNING 2016-05-10 17:47:35,981 base 10687 -1285555392 Not Found: /ads/static/themes/undefined/jquery-ui.min.css
+WARNING 2016-05-11 20:01:43,524 base 8262 -1287652544 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-11 20:01:43,616 base 8262 -1321211072 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-11 20:01:48,158 base 8262 -1266681024 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-11 20:01:48,159 base 8262 -1287652544 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-11 20:01:48,543 base 8262 -1266681024 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-11 20:01:48,864 base 8262 -1266681024 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-11 20:02:04,791 base 8262 -1277166784 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-11 20:02:05,260 base 8262 -1298138304 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-11 20:02:26,539 base 8262 -1321211072 Not Found: /ads/static/themes/undefined/jquery-ui.min.css
+ERROR 2016-05-11 20:57:59,402 base 9265 -1296041152 Internal Server Error: /addproduct/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/administrator/virtual_django/resell/Adjod/adjod/advertisement/views.py", line 380, in product_save
+    post_success(request, product)
+  File "/home/administrator/virtual_django/resell/Adjod/adjod/advertisement/views.py", line 278, in post_success
+    product.category=Category.objects.get(id=request.POST['category_name'])
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/manager.py", line 131, in get
+    return self.get_query_set().get(*args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/query.py", line 358, in get
+    clone = self.filter(*args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/query.py", line 624, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/query.py", line 642, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1250, in add_q
+    can_reuse=used_aliases, force_having=force_having)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1185, in add_filter
+    connector)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/where.py", line 69, in add
+    value = obj.prepare(lookup_type, value)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/where.py", line 320, in prepare
+    return self.field.get_prep_lookup(lookup_type, value)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/fields/__init__.py", line 310, in get_prep_lookup
+    return self.get_prep_value(value)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/fields/__init__.py", line 537, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: ''
+WARNING 2016-05-11 20:58:00,049 base 9265 -1264583872 Not Found: /favicon.ico
+WARNING 2016-05-11 20:58:00,097 base 9265 -1264583872 Not Found: /favicon.ico
+ERROR 2016-05-11 20:59:00,973 base 9265 -1296041152 Internal Server Error: /addproduct/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/administrator/virtual_django/resell/Adjod/adjod/advertisement/views.py", line 380, in product_save
+    post_success(request, product)
+  File "/home/administrator/virtual_django/resell/Adjod/adjod/advertisement/views.py", line 278, in post_success
+    product.category=Category.objects.get(id=request.POST['category_name'])
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/manager.py", line 131, in get
+    return self.get_query_set().get(*args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/query.py", line 358, in get
+    clone = self.filter(*args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/query.py", line 624, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/query.py", line 642, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1250, in add_q
+    can_reuse=used_aliases, force_having=force_having)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1185, in add_filter
+    connector)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/where.py", line 69, in add
+    value = obj.prepare(lookup_type, value)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/where.py", line 320, in prepare
+    return self.field.get_prep_lookup(lookup_type, value)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/fields/__init__.py", line 310, in get_prep_lookup
+    return self.get_prep_value(value)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/fields/__init__.py", line 537, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: ''
+WARNING 2016-05-13 15:02:10,902 base 4275 -1264583872 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-13 15:02:10,903 base 4275 -1247540416 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 15:02:13,961 base 4275 -1296041152 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-13 15:02:13,962 base 4275 -1275069632 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 15:02:15,021 base 4275 -1264583872 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 15:02:15,022 base 4275 -1275069632 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-13 15:02:15,946 base 4275 -1275069632 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 15:02:15,950 base 4275 -1247540416 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-13 15:02:29,285 base 4275 -1264583872 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 15:02:29,285 base 4275 -1247540416 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-13 15:02:29,776 base 4275 -1306526912 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-13 15:02:29,783 base 4275 -1275069632 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 15:02:32,051 base 4275 -1247540416 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 15:02:32,051 base 4275 -1296041152 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-13 15:04:50,636 base 4275 -1296041152 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-13 15:04:50,638 base 4275 -1306526912 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 15:05:03,636 base 4275 -1325405376 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 15:05:03,638 base 4275 -1306526912 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-13 15:05:04,220 base 4275 -1306526912 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 15:05:04,390 base 4275 -1333798080 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-13 15:06:33,591 base 4275 -1285555392 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 15:06:33,592 base 4275 -1306526912 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-13 15:06:34,036 base 4275 -1306526912 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 15:06:34,247 base 4275 -1317012672 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-13 15:07:08,467 base 4275 -1306526912 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-13 15:07:08,468 base 4275 -1325405376 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 15:11:18,944 base 4275 -1306526912 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 15:11:18,946 base 4275 -1317012672 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-13 15:11:19,606 base 4275 -1306526912 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 15:11:19,694 base 4275 -1317012672 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-13 15:14:07,841 base 4275 -1306526912 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 15:14:07,842 base 4275 -1350583488 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-13 15:14:08,521 base 4275 -1350583488 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 15:14:08,662 base 4275 -1296041152 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-13 15:15:38,572 base 4275 -1275069632 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 15:15:38,574 base 4275 -1306526912 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-13 15:15:39,234 base 4275 -1306526912 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 15:15:39,340 base 4275 -1317012672 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-13 15:16:12,281 base 4275 -1285555392 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 15:16:12,283 base 4275 -1306526912 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-13 15:16:12,592 base 4275 -1317012672 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 15:16:12,866 base 4275 -1333798080 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-13 15:16:56,537 base 4275 -1317012672 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 15:16:56,538 base 4275 -1333798080 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-13 15:16:56,864 base 4275 -1325405376 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 15:16:57,258 base 4275 -1275069632 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-13 15:17:43,754 base 4275 -1333798080 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-13 15:17:43,756 base 4275 -1306526912 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 15:17:44,291 base 4275 -1285555392 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 15:17:44,690 base 4275 -1306526912 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-13 15:18:28,019 base 4275 -1317012672 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 15:18:28,020 base 4275 -1296041152 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-13 15:18:28,760 base 4275 -1317012672 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 15:18:28,779 base 4275 -1333798080 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-13 15:19:25,521 base 4275 -1306526912 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 15:19:25,521 base 4275 -1296041152 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-13 15:19:26,029 base 4275 -1325405376 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 15:19:26,297 base 4275 -1317012672 Not Found: /media/img/bg-img2.png
+ERROR 2016-05-13 15:19:36,292 base 4275 -1306526912 Internal Server Error: /new_user/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 91, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/resell/Adjod/adjod/adjod/views.py", line 242, in register
+    send_registration_confirmation(userprofile)
+  File "/home/administrator/virtual_django/resell/Adjod/adjod/adjod/views.py", line 267, in send_registration_confirmation
+    'username':userprofile.username,
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/templated_email/__init__.py", line 72, in send_templated_mail
+    headers=headers, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/templated_email/backends/vanilla_django.py", line 181, in send
+    e.send(fail_silently)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/core/mail/message.py", line 248, in send
+    return self.get_connection(fail_silently).send_messages([self])
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/core/mail/backends/smtp.py", line 92, in send_messages
+    sent = self._send(message)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/core/mail/backends/smtp.py", line 110, in _send
+    email_message.message().as_string())
+  File "/usr/lib/python2.7/smtplib.py", line 742, in sendmail
+    raise SMTPRecipientsRefused(senderrs)
+SMTPRecipientsRefused: {'kalairkv.mca14gmail.com': (553, '5.1.2 The recipient address <kalairkv.mca14gmail.com> is not a valid\n5.1.2 RFC-5321 address. dh4sm24749742pad.37 - gsmtp')}
+WARNING 2016-05-13 15:19:36,694 base 4275 -1306526912 Not Found: /favicon.ico
+WARNING 2016-05-13 15:19:49,972 base 4275 -1317012672 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-13 15:19:49,974 base 4275 -1306526912 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 15:19:50,482 base 4275 -1325405376 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 15:19:50,486 base 4275 -1296041152 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-13 15:19:51,963 base 4275 -1317012672 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 15:19:51,964 base 4275 -1285555392 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-13 15:20:09,191 base 4275 -1296041152 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 15:20:09,193 base 4275 -1275069632 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-13 15:20:09,542 base 4275 -1306526912 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 15:20:09,545 base 4275 -1285555392 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-13 15:20:20,512 base 4275 -1325405376 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-13 15:20:20,512 base 4275 -1306526912 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 15:20:21,008 base 4275 -1317012672 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 15:20:21,009 base 4275 -1342190784 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-13 15:21:54,546 base 4275 -1342190784 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 15:21:54,547 base 4275 -1306526912 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-13 15:21:55,786 base 4275 -1317012672 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 15:21:55,827 base 4275 -1275069632 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-13 15:22:52,129 base 4275 -1275069632 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 15:22:52,130 base 4275 -1333798080 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-13 15:22:53,527 base 4275 -1333798080 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 15:22:53,723 base 4275 -1296041152 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-13 15:23:29,514 base 4275 -1317012672 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-13 15:23:29,514 base 4275 -1296041152 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 15:23:30,854 base 4275 -1296041152 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 15:23:31,050 base 4275 -1325405376 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-13 15:26:12,594 base 4275 -1325405376 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-13 15:26:12,596 base 4275 -1296041152 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 15:26:14,119 base 4275 -1275069632 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 15:26:14,345 base 4275 -1285555392 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-13 15:27:02,649 base 4275 -1275069632 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-13 15:27:02,650 base 4275 -1317012672 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 15:27:03,846 base 4275 -1296041152 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-13 15:27:03,847 base 4275 -1306526912 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 15:28:12,152 base 4275 -1296041152 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-13 15:28:12,153 base 4275 -1306526912 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 15:28:13,585 base 4275 -1306526912 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-13 15:28:13,585 base 4275 -1285555392 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 15:28:22,860 base 4275 -1285555392 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 15:28:22,862 base 4275 -1306526912 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-13 15:28:24,542 base 4275 -1285555392 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 15:28:24,604 base 4275 -1333798080 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-13 15:29:19,577 base 4275 -1285555392 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 15:29:19,577 base 4275 -1306526912 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-13 15:29:21,117 base 4275 -1285555392 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 15:29:21,309 base 4275 -1296041152 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-13 15:34:57,208 base 4275 -1285555392 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-13 15:34:57,209 base 4275 -1296041152 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 15:34:58,550 base 4275 -1317012672 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-13 15:34:58,551 base 4275 -1285555392 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 15:35:00,232 base 4275 -1285555392 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 15:35:00,463 base 4275 -1306526912 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-13 15:35:58,817 base 4275 -1306526912 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 15:35:58,821 base 4275 -1317012672 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-13 15:35:59,471 base 4275 -1317012672 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-13 15:35:59,472 base 4275 -1296041152 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 15:36:47,610 base 4275 -1317012672 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-13 15:36:47,611 base 4275 -1296041152 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 15:36:49,262 base 4275 -1333798080 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 15:36:49,598 base 4275 -1296041152 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-13 15:38:28,037 base 4275 -1325405376 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 15:38:28,038 base 4275 -1296041152 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-13 15:38:30,059 base 4275 -1296041152 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 15:38:30,362 base 4275 -1296041152 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-13 15:39:25,709 base 4275 -1342190784 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 15:39:25,710 base 4275 -1333798080 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-13 15:39:27,131 base 4275 -1333798080 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 15:39:27,412 base 4275 -1333798080 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-13 15:42:19,374 base 4275 -1275069632 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 15:42:19,375 base 4275 -1285555392 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-13 15:42:21,340 base 4275 -1285555392 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 15:42:21,597 base 4275 -1275069632 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-13 15:43:25,123 base 4275 -1325405376 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 15:43:25,124 base 4275 -1285555392 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-13 15:43:25,804 base 4275 -1285555392 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 15:43:26,027 base 4275 -1317012672 Not Found: /media/img/bg-img2.png
+ERROR 2016-05-13 15:43:53,193 base 4275 -1317012672 Internal Server Error: /subcategory_for_category/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/administrator/virtual_django/resell/Adjod/adjod/advertisement/views.py", line 106, in subcategory_for_category
+    objs1 = SubCategory.objects.filter(category_id=request.GET['category_id'])
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/manager.py", line 143, in filter
+    return self.get_query_set().filter(*args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/query.py", line 624, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/query.py", line 642, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1250, in add_q
+    can_reuse=used_aliases, force_having=force_having)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1185, in add_filter
+    connector)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/where.py", line 69, in add
+    value = obj.prepare(lookup_type, value)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/where.py", line 320, in prepare
+    return self.field.get_prep_lookup(lookup_type, value)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/fields/related.py", line 137, in get_prep_lookup
+    return self._pk_trace(value, 'get_prep_lookup', lookup_type)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/fields/related.py", line 210, in _pk_trace
+    v = getattr(field, prep_func)(lookup_type, v, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/fields/__init__.py", line 310, in get_prep_lookup
+    return self.get_prep_value(value)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/fields/__init__.py", line 537, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: 'Select Category'
+WARNING 2016-05-13 15:44:36,983 base 4275 -1296041152 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 15:44:36,983 base 4275 -1317012672 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-13 15:44:37,564 base 4275 -1317012672 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 15:44:37,790 base 4275 -1296041152 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-13 15:48:26,877 base 8615 -1305478336 Not Found: /ads/
+ERROR 2016-05-13 15:54:58,665 base 8615 -1305478336 Internal Server Error: /admin/banner/bannerplan/add/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/options.py", line 366, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 91, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/views/decorators/cache.py", line 89, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 196, in inner
+    return view(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 25, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 91, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 21, in bound_func
+    return func(self, *args2, **kwargs2)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/transaction.py", line 209, in inner
+    return func(*args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/options.py", line 955, in add_view
+    self.save_model(request, new_object, form, False)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/options.py", line 709, in save_model
+    obj.save()
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/base.py", line 463, in save
+    self.save_base(using=using, force_insert=force_insert, force_update=force_update)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/base.py", line 551, in save_base
+    result = manager._insert([self], fields=fields, return_id=update_pk, using=using, raw=raw)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/manager.py", line 203, in _insert
+    return insert_query(self.model, objs, fields, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/query.py", line 1593, in insert_query
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 912, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/backends/util.py", line 40, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/backends/mysql/base.py", line 114, in execute
+    return self.cursor.execute(query, args)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/MySQLdb/cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+IntegrityError: (1062, "Duplicate entry 'Listing page-Bottom' for key 'page'")
+ERROR 2016-05-13 15:58:54,350 base 8615 -1332749504 Internal Server Error: /admin/banner/bannerplan/add/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/options.py", line 366, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 91, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/views/decorators/cache.py", line 89, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 196, in inner
+    return view(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 25, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 91, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 21, in bound_func
+    return func(self, *args2, **kwargs2)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/transaction.py", line 209, in inner
+    return func(*args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/options.py", line 955, in add_view
+    self.save_model(request, new_object, form, False)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/options.py", line 709, in save_model
+    obj.save()
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/base.py", line 463, in save
+    self.save_base(using=using, force_insert=force_insert, force_update=force_update)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/base.py", line 551, in save_base
+    result = manager._insert([self], fields=fields, return_id=update_pk, using=using, raw=raw)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/manager.py", line 203, in _insert
+    return insert_query(self.model, objs, fields, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/query.py", line 1593, in insert_query
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 912, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/backends/util.py", line 40, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/backends/mysql/base.py", line 114, in execute
+    return self.cursor.execute(query, args)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/MySQLdb/cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+IntegrityError: (1062, "Duplicate entry 'Listing page-Bottom' for key 'page'")
