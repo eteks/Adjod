@@ -392,3 +392,393 @@ Traceback (most recent call last):
   File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
     raise errorclass, errorvalue
 IntegrityError: (1062, "Duplicate entry 'Listing page-Bottom' for key 'page'")
+WARNING 2016-05-13 17:56:11,444 base 10701 -1247749312 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 17:56:11,448 base 10701 -1299186880 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-13 17:56:12,102 base 10701 -1309672640 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-13 17:56:12,103 base 10701 -1326458048 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 18:01:24,849 base 11299 -1294992576 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 18:01:25,807 base 11299 -1305478336 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 18:01:35,675 base 11299 -1257505984 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 18:01:36,361 base 11299 -1324356800 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 18:03:16,026 base 11299 -1315964096 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 18:03:16,031 base 11299 -1305478336 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-13 18:03:16,963 base 11299 -1315964096 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 18:03:16,966 base 11299 -1257505984 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-13 18:03:18,499 base 11299 -1324356800 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 18:03:19,068 base 11299 -1305478336 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 18:03:30,492 base 11299 -1257505984 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 18:03:31,647 base 11299 -1294992576 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 18:05:00,667 base 11299 -1257505984 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 18:05:01,595 base 11299 -1294992576 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 18:05:11,963 base 11299 -1274959040 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 18:05:12,820 base 11299 -1274959040 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 18:05:30,305 base 11299 -1257505984 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 18:05:31,110 base 11299 -1274959040 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 18:08:11,614 base 12109 -1247188160 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 18:08:13,842 base 12109 -1247188160 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 18:08:44,131 base 12109 -1274963136 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 18:08:46,424 base 12109 -1274963136 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 18:09:44,417 base 12109 -1294992576 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 18:09:47,186 base 12109 -1274963136 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 18:11:14,946 base 12109 -1294992576 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 18:11:17,909 base 12109 -1284506816 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 18:11:54,133 base 12109 -1305478336 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 18:11:57,865 base 12109 -1274963136 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 18:12:28,650 base 12109 -1315964096 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 18:12:29,607 base 12109 -1247188160 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 18:12:38,115 base 12109 -1247188160 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 18:12:39,583 base 12109 -1305478336 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 18:12:43,822 base 12109 -1274963136 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 18:12:44,587 base 12109 -1324356800 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 18:12:51,646 base 12109 -1315964096 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 18:12:53,539 base 12109 -1284506816 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+ERROR 2016-05-13 19:12:53,318 base 14898 -1247659200 Internal Server Error: /admin/banner/postbanner/add/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/options.py", line 366, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 91, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/views/decorators/cache.py", line 89, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 196, in inner
+    return view(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 25, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 91, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 21, in bound_func
+    return func(self, *args2, **kwargs2)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/transaction.py", line 209, in inner
+    return func(*args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/options.py", line 955, in add_view
+    self.save_model(request, new_object, form, False)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/options.py", line 709, in save_model
+    obj.save()
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/base.py", line 463, in save
+    self.save_base(using=using, force_insert=force_insert, force_update=force_update)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/base.py", line 565, in save_base
+    created=(not record_exists), raw=raw, using=using)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/dispatch/dispatcher.py", line 172, in send
+    response = receiver(signal=self, sender=sender, **named)
+  File "/home/administrator/virtual_django/resell/Adjod/adjod/banner/models.py", line 84, in post_save_postbanner
+    banner_exists = PostBanner.objects.filter(id=instance.bannerplan,admin_status=1)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/manager.py", line 143, in filter
+    return self.get_query_set().filter(*args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/query.py", line 624, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/query.py", line 642, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1250, in add_q
+    can_reuse=used_aliases, force_having=force_having)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1185, in add_filter
+    connector)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/where.py", line 69, in add
+    value = obj.prepare(lookup_type, value)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/where.py", line 320, in prepare
+    return self.field.get_prep_lookup(lookup_type, value)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/fields/__init__.py", line 310, in get_prep_lookup
+    return self.get_prep_value(value)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/fields/__init__.py", line 537, in get_prep_value
+    return int(value)
+TypeError: int() argument must be a string or a number, not 'BannerPlan'
+ERROR 2016-05-13 19:14:07,112 base 14997 -1246872768 Internal Server Error: /admin/banner/postbanner/add/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/options.py", line 366, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 91, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/views/decorators/cache.py", line 89, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 196, in inner
+    return view(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 25, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 91, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 21, in bound_func
+    return func(self, *args2, **kwargs2)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/transaction.py", line 209, in inner
+    return func(*args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/options.py", line 955, in add_view
+    self.save_model(request, new_object, form, False)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/options.py", line 709, in save_model
+    obj.save()
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/base.py", line 463, in save
+    self.save_base(using=using, force_insert=force_insert, force_update=force_update)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/base.py", line 565, in save_base
+    created=(not record_exists), raw=raw, using=using)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/dispatch/dispatcher.py", line 172, in send
+    response = receiver(signal=self, sender=sender, **named)
+  File "/home/administrator/virtual_django/resell/Adjod/adjod/banner/models.py", line 85, in post_save_postbanner
+    banner_exists = PostBanner.objects.filter(id=int(instance.bannerplan),admin_status=1)
+TypeError: int() argument must be a string or a number, not 'BannerPlan'
+ERROR 2016-05-13 19:15:04,963 base 15017 -1246872768 Internal Server Error: /admin/banner/postbanner/add/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/options.py", line 366, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 91, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/views/decorators/cache.py", line 89, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 196, in inner
+    return view(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 25, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 91, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 21, in bound_func
+    return func(self, *args2, **kwargs2)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/transaction.py", line 209, in inner
+    return func(*args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/options.py", line 955, in add_view
+    self.save_model(request, new_object, form, False)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/options.py", line 709, in save_model
+    obj.save()
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/base.py", line 463, in save
+    self.save_base(using=using, force_insert=force_insert, force_update=force_update)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/base.py", line 565, in save_base
+    created=(not record_exists), raw=raw, using=using)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/dispatch/dispatcher.py", line 172, in send
+    response = receiver(signal=self, sender=sender, **named)
+  File "/home/administrator/virtual_django/resell/Adjod/adjod/banner/models.py", line 85, in post_save_postbanner
+    banner_exists = PostBanner.objects.filter(bannerplan_id=int(instance.bannerplan),admin_status=1)
+TypeError: int() argument must be a string or a number, not 'BannerPlan'
+ERROR 2016-05-13 19:15:39,605 base 15120 -1247188160 Internal Server Error: /admin/banner/postbanner/add/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/options.py", line 366, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 91, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/views/decorators/cache.py", line 89, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 196, in inner
+    return view(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 25, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 91, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 21, in bound_func
+    return func(self, *args2, **kwargs2)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/transaction.py", line 209, in inner
+    return func(*args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/options.py", line 955, in add_view
+    self.save_model(request, new_object, form, False)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/options.py", line 709, in save_model
+    obj.save()
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/base.py", line 463, in save
+    self.save_base(using=using, force_insert=force_insert, force_update=force_update)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/base.py", line 565, in save_base
+    created=(not record_exists), raw=raw, using=using)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/dispatch/dispatcher.py", line 172, in send
+    response = receiver(signal=self, sender=sender, **named)
+  File "/home/administrator/virtual_django/resell/Adjod/adjod/banner/models.py", line 87, in post_save_postbanner
+    banner_exists.save()
+AttributeError: 'QuerySet' object has no attribute 'save'
+ERROR 2016-05-13 19:15:57,291 base 15145 -1246872768 Internal Server Error: /admin/banner/postbanner/add/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/options.py", line 366, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 91, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/views/decorators/cache.py", line 89, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 196, in inner
+    return view(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 25, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 91, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 21, in bound_func
+    return func(self, *args2, **kwargs2)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/transaction.py", line 209, in inner
+    return func(*args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/options.py", line 955, in add_view
+    self.save_model(request, new_object, form, False)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/options.py", line 709, in save_model
+    obj.save()
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/base.py", line 463, in save
+    self.save_base(using=using, force_insert=force_insert, force_update=force_update)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/base.py", line 565, in save_base
+    created=(not record_exists), raw=raw, using=using)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/dispatch/dispatcher.py", line 172, in send
+    response = receiver(signal=self, sender=sender, **named)
+  File "/home/administrator/virtual_django/resell/Adjod/adjod/banner/models.py", line 85, in post_save_postbanner
+    banner_exists = PostBanner.objects.get(bannerplan_id=int(instance.bannerplan_id),admin_status=1)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/manager.py", line 131, in get
+    return self.get_query_set().get(*args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/query.py", line 368, in get
+    % (self.model._meta.object_name, num, kwargs))
+MultipleObjectsReturned: get() returned more than one PostBanner -- it returned 2! Lookup parameters were {'admin_status': 1, 'bannerplan_id': 13}
+ERROR 2016-05-13 19:17:44,220 base 15168 -1247278272 Internal Server Error: /admin/banner/postbanner/add/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/options.py", line 366, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 91, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/views/decorators/cache.py", line 89, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 196, in inner
+    return view(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 25, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 91, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 21, in bound_func
+    return func(self, *args2, **kwargs2)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/transaction.py", line 209, in inner
+    return func(*args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/options.py", line 955, in add_view
+    self.save_model(request, new_object, form, False)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/options.py", line 709, in save_model
+    obj.save()
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/base.py", line 463, in save
+    self.save_base(using=using, force_insert=force_insert, force_update=force_update)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/base.py", line 565, in save_base
+    created=(not record_exists), raw=raw, using=using)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/dispatch/dispatcher.py", line 172, in send
+    response = receiver(signal=self, sender=sender, **named)
+  File "/home/administrator/virtual_django/resell/Adjod/adjod/banner/models.py", line 85, in post_save_postbanner
+    banner_exists = PostBanner.objects.get(bannerplan_id=int(instance.bannerplan_id),admin_status=1)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/manager.py", line 131, in get
+    return self.get_query_set().get(*args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/query.py", line 368, in get
+    % (self.model._meta.object_name, num, kwargs))
+MultipleObjectsReturned: get() returned more than one PostBanner -- it returned 2! Lookup parameters were {'admin_status': 1, 'bannerplan_id': 13}
+ERROR 2016-05-13 19:18:47,254 base 15168 -1296041152 Internal Server Error: /admin/banner/postbanner/add/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/options.py", line 366, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 91, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/views/decorators/cache.py", line 89, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 196, in inner
+    return view(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 25, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 91, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 21, in bound_func
+    return func(self, *args2, **kwargs2)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/transaction.py", line 209, in inner
+    return func(*args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/options.py", line 955, in add_view
+    self.save_model(request, new_object, form, False)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/options.py", line 709, in save_model
+    obj.save()
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/base.py", line 463, in save
+    self.save_base(using=using, force_insert=force_insert, force_update=force_update)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/base.py", line 565, in save_base
+    created=(not record_exists), raw=raw, using=using)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/dispatch/dispatcher.py", line 172, in send
+    response = receiver(signal=self, sender=sender, **named)
+  File "/home/administrator/virtual_django/resell/Adjod/adjod/banner/models.py", line 87, in post_save_postbanner
+    banner_exists.save()
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/base.py", line 463, in save
+    self.save_base(using=using, force_insert=force_insert, force_update=force_update)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/base.py", line 565, in save_base
+    created=(not record_exists), raw=raw, using=using)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/dispatch/dispatcher.py", line 172, in send
+    response = receiver(signal=self, sender=sender, **named)
+  File "/home/administrator/virtual_django/resell/Adjod/adjod/banner/models.py", line 85, in post_save_postbanner
+    banner_exists = PostBanner.objects.get(bannerplan_id=int(instance.bannerplan_id),admin_status=1)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/manager.py", line 131, in get
+    return self.get_query_set().get(*args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/query.py", line 366, in get
+    % self.model._meta.object_name)
+DoesNotExist: PostBanner matching query does not exist.
+ERROR 2016-05-13 19:21:41,842 base 15353 -1264583872 Internal Server Error: /admin/banner/postbanner/add/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/options.py", line 366, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 91, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/views/decorators/cache.py", line 89, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 196, in inner
+    return view(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 25, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 91, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 21, in bound_func
+    return func(self, *args2, **kwargs2)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/transaction.py", line 209, in inner
+    return func(*args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/options.py", line 955, in add_view
+    self.save_model(request, new_object, form, False)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/options.py", line 709, in save_model
+    obj.save()
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/base.py", line 463, in save
+    self.save_base(using=using, force_insert=force_insert, force_update=force_update)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/base.py", line 565, in save_base
+    created=(not record_exists), raw=raw, using=using)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/dispatch/dispatcher.py", line 172, in send
+    response = receiver(signal=self, sender=sender, **named)
+  File "/home/administrator/virtual_django/resell/Adjod/adjod/banner/models.py", line 88, in post_save_postbanner
+    banner_exists.save()
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/base.py", line 463, in save
+    self.save_base(using=using, force_insert=force_insert, force_update=force_update)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/base.py", line 565, in save_base
+    created=(not record_exists), raw=raw, using=using)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/dispatch/dispatcher.py", line 172, in send
+    response = receiver(signal=self, sender=sender, **named)
+  File "/home/administrator/virtual_django/resell/Adjod/adjod/banner/models.py", line 85, in post_save_postbanner
+    banner_exists = PostBanner.objects.get(bannerplan_id=int(instance.bannerplan_id),admin_status=1)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/manager.py", line 131, in get
+    return self.get_query_set().get(*args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/query.py", line 366, in get
+    % self.model._meta.object_name)
+DoesNotExist: PostBanner matching query does not exist.
+WARNING 2016-05-13 19:23:31,510 base 15510 -1246962880 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 19:23:31,512 base 15510 -1264321728 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-13 19:23:32,161 base 15510 -1264321728 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 19:23:32,164 base 15510 -1274021056 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-13 19:23:33,506 base 15510 -1274021056 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 19:23:34,364 base 15510 -1264321728 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 19:24:05,479 base 15510 -1341142208 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 19:24:06,022 base 15510 -1332749504 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 19:24:09,619 base 15510 -1264321728 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 19:54:01,455 base 16183 -1246819520 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 19:54:02,016 base 16183 -1264321728 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 19:54:07,778 base 16183 -1246819520 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 19:54:08,735 base 16183 -1246819520 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 19:54:18,007 base 16183 -1289749696 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 19:54:18,542 base 16183 -1246819520 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 19:54:21,779 base 16183 -1321206976 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 19:54:22,511 base 16183 -1310721216 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 19:54:24,579 base 16183 -1300235456 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 19:54:25,361 base 16183 -1277166784 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 19:54:29,537 base 16183 -1300235456 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 19:54:30,005 base 16183 -1321206976 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 19:54:36,240 base 16183 -1321206976 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 19:54:36,532 base 16183 -1276007616 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 19:55:47,135 base 16183 -1321206976 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 19:55:47,140 base 16183 -1329599680 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-13 19:55:47,887 base 16183 -1289749696 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-13 19:55:47,889 base 16183 -1321206976 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 19:55:52,623 base 16183 -1276007616 Not Found: /ads/static/themes/undefined/jquery-ui.min.css
+WARNING 2016-05-13 19:55:55,263 base 16183 -1276007616 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 19:55:55,791 base 16183 -1300235456 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 19:55:59,111 base 16183 -1264321728 Not Found: /ads/static/themes/undefined/jquery-ui.min.css
+WARNING 2016-05-13 19:56:14,271 base 16183 -1264321728 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 19:56:14,279 base 16183 -1300235456 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-13 19:56:14,774 base 16183 -1310721216 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 19:56:14,776 base 16183 -1300235456 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-13 19:56:18,418 base 16183 -1310721216 Not Found: /ads/static/themes/undefined/jquery-ui.min.css

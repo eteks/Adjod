@@ -2,6 +2,7 @@ from django.db import models
 from adjod.models import UserProfile
 from core.extra import ContentTypeRestrictedFileField
 from datetime import timedelta,datetime
+from django.db.models.signals import post_save
 
 POSITION = (
     ('Top', 'Top of the page'),
@@ -76,3 +77,18 @@ class PostBanner(models.Model):
 
     def __unicode__(self):
         return unicode(self.banner)
+
+def post_save_postbanner(sender, instance, **kwargs):
+    bannerplan = instance.bannerplan.bannertype
+    print "bannerplan inside post_save_postbanner",bannerplan
+    if bannerplan == "Other":
+        try:
+            banner_exists = PostBanner.objects.filter(bannerplan_id=int(instance.bannerplan_id),admin_status=1).exclude(id=instance.id)
+            if banner_exists:   
+                for banners in banner_exists:
+                    banners.admin_status = False
+                    banners.save()
+        except:
+            pass
+
+post_save.connect(post_save_postbanner, sender=PostBanner)
