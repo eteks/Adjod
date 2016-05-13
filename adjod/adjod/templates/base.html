@@ -323,9 +323,13 @@
                         </div>
                       <button type="submit"class="btn btn-lg btn-success search_b">Search</button>
                      <!--  <a href="{% url product_form %}" class="btn btn-lg post-button">Post free Ad</a> -->
-                     <div class="search_tool{% if user.is_authenticated and userprofile.ad_count >= 3 and userprofile.is_subscribed == 0%} disable_post {% endif%}">
+                     <!-- commented to removed account subscription.In future we need this -->
+                    <!--  <div class="search_tool{% if user.is_authenticated and userprofile.ad_count >= 3 and userprofile.is_subscribed == 0%} disable_post {% endif%}">
                         <a href="{% if user.is_authenticated and userprofile.ad_count >= 3 and userprofile.is_subscribed == 0%} {% else %} {% url product_form %} {% endif%}" class="btn btn-lg post-button">{% trans "Post Free Ad" %}</a>
                         <div class="searchpage_tooltip">{% trans "You already add 3 posts," %}<br>{% trans "if u want add more posts," %}<br>{% trans "u have to make ur account as premium" %}<button type="button" class="btn btn-link link_tooltip">{% trans "Click here" %}</button></div>
+                      </div> -->
+                       <div class="search_tool">
+                        <a href="{% url product_form %}" class="btn btn-lg post-button">{% trans "Post Free Ad" %}</a>
                       </div>
                       <a class="btn btn-lg alert-button">{% trans "Create free alert" %}</a>
 

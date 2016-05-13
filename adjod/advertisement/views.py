@@ -174,8 +174,8 @@ def product_form(request, name=None, subname=None):
 	if request.user.is_authenticated():
 		if not request.user.is_superuser:
 			userprofile = UserProfile.objects.get(id=request.user.id)
-			if userprofile.ad_count>3 and userprofile.is_subscribed == 0:
-				return HttpResponseRedirect('/')
+			# if userprofile.ad_count>3 and userprofile.is_subscribed == 0:
+			# 	return HttpResponseRedirect('/')
 	return TemplateResponse(request, 'advertisement/ad_post.html')
 
 def paypal_transaction(request, product_dict):
@@ -354,36 +354,40 @@ def product_save(request):
 			if request.user.is_authenticated() and not request.user.is_superuser:
 				product.userprofile = UserProfile.objects.get(id=request.user.id)
 				product.isregistered_user = True
-				product.status_isactive  = True
-				if product.userprofile.ad_count < 3 or product.userprofile.is_subscribed == True:
-					product_dict = post_success(request, product)
-					#Store in Userprofile table to know the status of users post ad counts
-					product.userprofile.ad_count = int(product.userprofile.ad_count) + 1
-					product.userprofile.save()
-					if product_dict is None:
-						error['success'] = ugettext('Congratulations...Your Ad Successfully posted')#Ad Successfully posted
-						raise ValidationError(error['success'], 5)
-					else:
-						response = paypal_transaction(request,product_dict)
-						print "after all"
-						return response
-				else:
-					# get_object_or_404('/postad/')
-					error['exit_count'] = ugettext('U already post 3 ads....U have to make the account premium. ')#
-					print "error['exit_count']",error['exit_count']
-					raise ValidationError(error['exit_count'], 6)
-			else:
-				product.userprofile = None
+				# product.status_isactive  = True
+				# commented the below codes for removing account subscribe
+				# if product.userprofile.ad_count < 3 or product.userprofile.is_subscribed == True:
+				product_dict = post_success(request, product)
+				#Store in Userprofile table to know the status of users post ad counts
+				product.userprofile.ad_count = int(product.userprofile.ad_count) + 1
 				product.status_isactive  = False
-				emailfilter = Product.objects.filter(you_email=request.POST.get('your_email')).count()
-				if emailfilter < 3:
-					post_success(request, product)
+				product.userprofile.save()
+				if product_dict is None:
+					# error['success'] = ugettext('Congratulations...Your Ad Successfully posted')#Ad Successfully posted
+					# raise ValidationError(error['success'], 5)
 					error['success'] = ugettext('Your Ad Successfully posted. Please confirm your ad in email to make active')#Ad Successfully posted
 					raise ValidationError(error['success'], 5)
 				else:
-					error['exit_count'] = ugettext('U already post 3 ads....U have to make the account premium. ')#
-					print "error['exit_count']",error['exit_count']
-					raise ValidationError(error['exit_count'], 6)
+					response = paypal_transaction(request,product_dict)
+					print "after all"
+					return response
+				# else:
+				# 	# get_object_or_404('/postad/')
+				# 	error['exit_count'] = ugettext('U already post 3 ads....U have to make the account premium. ')#
+				# 	print "error['exit_count']",error['exit_count']
+				# 	raise ValidationError(error['exit_count'], 6)
+			else:
+				product.userprofile = None
+				product.status_isactive  = False
+				# emailfilter = Product.objects.filter(you_email=request.POST.get('your_email')).count()
+				# if emailfilter < 3:
+				post_success(request, product)
+				error['success'] = ugettext('Your Ad Successfully posted. Please confirm your ad in email to make active')#Ad Successfully posted
+				raise ValidationError(error['success'], 5)
+				# else:
+				# 	error['exit_count'] = ugettext('U already post 3 ads....U have to make the account premium. ')#
+				# 	print "error['exit_count']",error['exit_count']
+				# 	raise ValidationError(error['exit_count'], 6)
 
 		except ValidationError as e:
 			messages.add_message(request, messages.ERROR, e.messages[-1])

@@ -172,9 +172,12 @@
   <div class="row row_2">
       <div class="col-md-7">
         <h4 class="post_ad">{% trans "Sell or Advertise anything" %}</h4>
-        <div class="{% if user.is_authenticated and userprofile.ad_count >= 3 and userprofile.is_subscribed == 0%} disable_post {% endif%}"> 
+        <!-- <div class="{% if user.is_authenticated and userprofile.ad_count >= 3 and userprofile.is_subscribed == 0%} disable_post {% endif%}"> 
           <a href="{% if user.is_authenticated and userprofile.ad_count >= 3 and userprofile.is_subscribed == 0%} {% else %} {% url product_form %} {% endif%}" class="#postbutton btn btn-warning post_button">Post Free Ad</a>
           <div class="tooltip">{% trans "You already add 3 posts," %}<br>{% trans "if u want add more posts," %}<br>{% trans "u have to make ur account as premium" %}<button type="button" class="btn btn-link link_tooltip">{% trans "Click here" %}</button></div>
+        </div> -->
+        <div class=""> 
+          <a href="{% url product_form %}" class="#postbutton btn btn-warning post_button">Post Free Ad</a>
         </div>
         <div class="alert_content">
         <h4 class="need_txt">{% trans "Tell us your need" %}</h4>

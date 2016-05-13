@@ -338,13 +338,12 @@
             <label id="terms_required" class="labelError choose_error" style="display:none;">{% trans "Please click the checkbox" %}</label>
          	</div> <!-- terms_of_use_div -->
 
-         	 <!--  <div class="field_div form-group {% if user.is_authenticated and userprofile.ad_count >= 3 and userprofile.is_subscribed == 0%}disable_post_ad{% endif%}" id="post_button_div">
-            <input class="btn-warning btn post_form_send" type="submit" value="Post the Ad" id="post" name="post" {% if user.is_authenticated and userprofile.ad_count >= 3 and userprofile.is_subscribed == 0%}disabled{% endif%}/>
-            <p class="postpage_tooltip">{% trans "You already add 3 posts," %}<br>{% trans "if u want add more posts," %}<br>{% trans "u have to make ur account as premium" %}<a type="button" class="btn btn-link link_tooltip">{% trans "Click here" %}</a></p>
-          </div>  -->
-          <div class="field_div form-group {% if user.is_authenticated and userprofile.ad_count >= 3 and userprofile.is_subscribed == 0 and 'edit_postad_detail' in path %}{% elif user.is_authenticated and userprofile.ad_count >= 3 and userprofile.is_subscribed == 0 %}disable_post_ad{% endif%}" id="post_button_div">
+          <!-- <div class="field_div form-group {% if user.is_authenticated and userprofile.ad_count >= 3 and userprofile.is_subscribed == 0 and 'edit_postad_detail' in path %}{% elif user.is_authenticated and userprofile.ad_count >= 3 and userprofile.is_subscribed == 0 %}disable_post_ad{% endif%}" id="post_button_div">
             <input class="btn-warning btn post_form_send" type="submit" value="Post the Ad" id="post" name="post" {% if user.is_authenticated and userprofile.ad_count >= 3 and userprofile.is_subscribed == 0 and 'edit_postad_detail' in path %}{% elif user.is_authenticated and userprofile.ad_count >= 3 and userprofile.is_subscribed == 0 %}disabled{% endif%}/>
             <p class="postpage_tooltip">{% trans "You already add 3 posts," %}<br>{% trans "if u want add more posts," %}<br>{% trans "u have to make ur account as premium" %}<a type="button" class="btn btn-link link_tooltip">{% trans "Click here" %}</a></p>
+          </div>  -->
+          <div class="field_div form-group" id="post_button_div">
+            <input class="btn-warning btn post_form_send" type="submit" value="Post the Ad" id="post" name="post"/>
           </div> <!-- post_button_div -->
      	</form> <!-- post_ad -->
     </div> <!-- inner_container -->

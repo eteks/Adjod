@@ -8,7 +8,7 @@ from django.contrib.auth.admin import UserAdmin
 
 class UserProfileAdmin(admin.ModelAdmin):
 
-    fields=['username','first_name','last_name','password','email','mobile','city','language','age_status']
+    fields=['username','first_name','last_name','password','email','mobile','city','language','is_subscribed','age_status']
     list_display = ('id','email','mobile','city','language','ad_count','is_emailverified','is_subscribed','age_status',)
     list_filter = ['city','language']
     search_fields = ['city', 'language','username','email','mobile']
