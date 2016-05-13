@@ -47,7 +47,7 @@ class BannerPlan(models.Model):
     width = models.BigIntegerField(
         null=True, blank=True, help_text="Please enter the width to be allowed for this banner plan")
     class Meta:
-        unique_together = (("page", "position", "bannertype"), ("page", "position"))
+        unique_together = ("page", "position", "bannertype")
 
     def __unicode__(self):
         return unicode(self.page+' '+self.position+' '+self.bannertype)
