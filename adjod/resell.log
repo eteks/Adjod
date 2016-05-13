@@ -345,3 +345,50 @@ Traceback (most recent call last):
   File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
     raise errorclass, errorvalue
 IntegrityError: (1062, "Duplicate entry 'Listing page-Bottom' for key 'page'")
+WARNING 2016-05-13 16:20:39,664 base 9549 -1264321728 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 16:20:39,708 base 9549 -1305478336 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-13 16:20:40,129 base 9549 -1305478336 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-13 16:20:40,130 base 9549 -1264321728 Not Found: /media/img/bg-img2.png
+ERROR 2016-05-13 17:49:47,929 base 10083 -1333798080 Internal Server Error: /admin/banner/bannerplan/add/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/options.py", line 366, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 91, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/views/decorators/cache.py", line 89, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 196, in inner
+    return view(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 25, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 91, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 21, in bound_func
+    return func(self, *args2, **kwargs2)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/transaction.py", line 209, in inner
+    return func(*args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/options.py", line 955, in add_view
+    self.save_model(request, new_object, form, False)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/options.py", line 709, in save_model
+    obj.save()
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/base.py", line 463, in save
+    self.save_base(using=using, force_insert=force_insert, force_update=force_update)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/base.py", line 551, in save_base
+    result = manager._insert([self], fields=fields, return_id=update_pk, using=using, raw=raw)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/manager.py", line 203, in _insert
+    return insert_query(self.model, objs, fields, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/query.py", line 1593, in insert_query
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 912, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/backends/util.py", line 40, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/backends/mysql/base.py", line 114, in execute
+    return self.cursor.execute(query, args)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/MySQLdb/cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+IntegrityError: (1062, "Duplicate entry 'Listing page-Bottom' for key 'page'")
