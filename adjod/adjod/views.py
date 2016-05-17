@@ -437,7 +437,8 @@ def user_manage(request):
 			person_is = request.POST.get('person_is')
 			is_marketing_person = request.POST.get('is_marketing_person')
 			is_allow_sms = request.POST.get('is_allow_sms')
-			locality = Locality.objects.get(id=request.POST['user_locality'])
+			# locality = Locality.objects.get(id=request.POST['user_locality'])
+			locality = request.POST['user_locality']
 
 			def handle_uploaded_file(f):
 				print "settings.MEDIA_ROOT", settings.MEDIA_ROOT
@@ -450,7 +451,10 @@ def user_manage(request):
 			if userprofile:
 				# userprofile.city =City.objects.get(id=1)
 				userprofile.mobile = mobile
-				userprofile.locality = Locality.objects.get(id=int(locality.id))
+				if locality:
+					userprofile.locality = Locality.objects.get(id=int(locality))
+				else:
+					userprofile.locality = None
 				# userprofile.city = City.objects.get(id=request.POST['user_city'])
 				if user_age:
 					userprofile.user_age = user_age

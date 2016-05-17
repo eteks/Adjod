@@ -567,7 +567,10 @@ $( document ).ready(function() {
     });
     // Find password strength in sign up popup
     $('#password').keyup(function(){
+      if ($('#password').val() != '')
         $('#result').html(checkStrength($('#password').val()));
+      else
+        $('#result').html('');
     });
 
     // Find No. Of characters left in textarea when type
