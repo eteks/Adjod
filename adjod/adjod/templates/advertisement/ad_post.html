@@ -88,7 +88,7 @@
           <div class="field_div form-group upload_image" id="upload_photos_div">
             {% if pic %}
                {% for pics in pic %}
-               <input type='file' id="profile_poster" class="poster profile_poster_update" name="photos" value=""/>
+               <input type='file' id="profile_poster" class="poster profile_poster_update" name="photos[]" value=""/>
                 <img id="clean_img" class="after_save" src="{{MEDIA_URL}}{{pics}}">
                 <span class="upload_image_change">Change</span>
                 <!-- <span class="upload_image_remove">Remove</span> -->
