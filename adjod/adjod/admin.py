@@ -41,7 +41,7 @@ class UserProfileAdmin(admin.ModelAdmin):
 class ExchangeRateAdmin(admin.ModelAdmin):
     fields=['currency','value']
     list_display = ('id','currency','value','base_currency')
-    search_fields = ['currency']
+    search_fields = ['id','currency']
     readonly_fields =['currency','value']
     list_per_page = 50
 

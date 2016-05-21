@@ -121,11 +121,11 @@
 
 
 <div class="profile_text">
-   <span class="hidden-xs">{% trans "Update My Profile" %}</span>
-<form id="update_user" method="POST" enctype="multipart/form-data">
+  <span class="hidden-xs">{% trans "Update My Profile" %}</span>
+  <form id="update_user" method="POST" enctype="multipart/form-data">
   {% csrf_token %}
   <div class="update_profile col-md-9">
-    <span class="personal_txt">{% trans "Personals Details" %}</span>
+    <span class="personal_txt">{% trans "Personal Details" %}</span>
      <div class="container center">
         <div class="profile_content">
           <div class="personal_details">
@@ -192,6 +192,7 @@
                           </i>
                         </div> <!-- post_city -->
                         <select id= "user_locality" name="user_locality" class="profile_locality">
+                        <option value="">Select locality</option>
                         {% for localities in locality %}
                           <option value="{{localities.id}}">{{localities.locality}}</option>
                         {% endfor %}

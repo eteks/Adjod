@@ -1309,3 +1309,1344 @@ WARNING 2016-05-17 20:14:14,997 base 9794 -1296041152 Not Found: /media/img/bg-i
 WARNING 2016-05-17 20:14:17,204 base 9794 -1285555392 Not Found: /media/img/bg-img2.png
 WARNING 2016-05-17 20:14:20,115 base 9794 -1275069632 Not Found: /media/img/bg-img2.png
 WARNING 2016-05-17 20:18:25,407 base 9794 -1317012672 Not Found: /favicon.ico
+WARNING 2016-05-17 20:49:34,484 base 12239 -1246766272 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-17 20:49:35,094 base 12239 -1264059584 Not Found: /media/img/bg-img2.png
+ERROR 2016-05-17 20:59:31,411 base 12566 -1247028416 Internal Server Error: /admin/adjod/userprofile/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/options.py", line 366, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 91, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/views/decorators/cache.py", line 89, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 196, in inner
+    return view(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 25, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 91, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 21, in bound_func
+    return func(self, *args2, **kwargs2)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1128, in changelist_view
+    self)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/views/main.py", line 71, in __init__
+    self.query_set = self.get_query_set(request)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/views/main.py", line 365, in get_query_set
+    qs = qs.filter(reduce(operator.or_, or_queries))
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/query.py", line 624, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/query.py", line 642, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1247, in add_q
+    self.add_q(child, used_aliases, force_having=force_having)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1250, in add_q
+    can_reuse=used_aliases, force_having=force_having)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1185, in add_filter
+    connector)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/where.py", line 69, in add
+    value = obj.prepare(lookup_type, value)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/where.py", line 320, in prepare
+    return self.field.get_prep_lookup(lookup_type, value)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/fields/related.py", line 142, in get_prep_lookup
+    raise TypeError("Related Field has invalid lookup: %s" % lookup_type)
+TypeError: Related Field has invalid lookup: icontains
+ERROR 2016-05-17 21:00:45,372 base 12639 -1247081664 Internal Server Error: /admin/adjod/userprofile/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/options.py", line 366, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 91, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/views/decorators/cache.py", line 89, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 196, in inner
+    return view(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 25, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 91, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 21, in bound_func
+    return func(self, *args2, **kwargs2)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1128, in changelist_view
+    self)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/views/main.py", line 71, in __init__
+    self.query_set = self.get_query_set(request)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/views/main.py", line 365, in get_query_set
+    qs = qs.filter(reduce(operator.or_, or_queries))
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/query.py", line 624, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/query.py", line 642, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1247, in add_q
+    self.add_q(child, used_aliases, force_having=force_having)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1250, in add_q
+    can_reuse=used_aliases, force_having=force_having)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1185, in add_filter
+    connector)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/where.py", line 69, in add
+    value = obj.prepare(lookup_type, value)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/where.py", line 320, in prepare
+    return self.field.get_prep_lookup(lookup_type, value)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/fields/related.py", line 142, in get_prep_lookup
+    raise TypeError("Related Field has invalid lookup: %s" % lookup_type)
+TypeError: Related Field has invalid lookup: icontains
+ERROR 2016-05-17 21:01:20,451 base 12667 -1275331776 Internal Server Error: /admin/adjod/userprofile/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/options.py", line 366, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 91, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/views/decorators/cache.py", line 89, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 196, in inner
+    return view(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 25, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 91, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 21, in bound_func
+    return func(self, *args2, **kwargs2)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1128, in changelist_view
+    self)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/views/main.py", line 71, in __init__
+    self.query_set = self.get_query_set(request)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/views/main.py", line 365, in get_query_set
+    qs = qs.filter(reduce(operator.or_, or_queries))
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/query.py", line 624, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/query.py", line 642, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1247, in add_q
+    self.add_q(child, used_aliases, force_having=force_having)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1250, in add_q
+    can_reuse=used_aliases, force_having=force_having)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1185, in add_filter
+    connector)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/where.py", line 69, in add
+    value = obj.prepare(lookup_type, value)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/where.py", line 320, in prepare
+    return self.field.get_prep_lookup(lookup_type, value)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/fields/related.py", line 142, in get_prep_lookup
+    raise TypeError("Related Field has invalid lookup: %s" % lookup_type)
+TypeError: Related Field has invalid lookup: icontains
+ERROR 2016-05-17 21:02:26,266 base 12724 -1257616576 Internal Server Error: /admin/adjod/userprofile/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 89, in get_response
+    response = middleware_method(request)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/middleware/locale.py", line 21, in process_request
+    check_path = self.is_language_prefix_patterns_used()
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/middleware/locale.py", line 54, in is_language_prefix_patterns_used
+    for url_pattern in get_resolver(None).url_patterns:
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 328, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 323, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+  File "/home/administrator/virtual_django/resell/Adjod/adjod/adjod/urls.py", line 23, in <module>
+    admin.autodiscover()
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/__init__.py", line 29, in autodiscover
+    import_module('%s.admin' % app)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+  File "/home/administrator/virtual_django/resell/Adjod/adjod/adjod/admin.py", line 69, in <module>
+    admin.site.register(UserProfile,UserProfileAdmin)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 92, in register
+    validate(admin_class, model)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/validation.py", line 38, in validate
+    % (cls.__name__, idx, field, cls.__name__, model._meta.object_name))
+ImproperlyConfigured: UserProfileAdmin.list_display[0], 'user_ptr_id' is not a callable or an attribute of 'UserProfileAdmin' or found in the model 'UserProfile'.
+ERROR 2016-05-17 21:02:42,667 base 12724 -1246962880 Internal Server Error: /admin/adjod/userprofile/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 89, in get_response
+    response = middleware_method(request)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/middleware/locale.py", line 21, in process_request
+    check_path = self.is_language_prefix_patterns_used()
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/middleware/locale.py", line 54, in is_language_prefix_patterns_used
+    for url_pattern in get_resolver(None).url_patterns:
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 328, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 323, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+  File "/home/administrator/virtual_django/resell/Adjod/adjod/adjod/urls.py", line 23, in <module>
+    admin.autodiscover()
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/__init__.py", line 29, in autodiscover
+    import_module('%s.admin' % app)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+  File "/home/administrator/virtual_django/resell/Adjod/adjod/adjod/admin.py", line 69, in <module>
+    admin.site.register(UserProfile,UserProfileAdmin)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 92, in register
+    validate(admin_class, model)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/validation.py", line 38, in validate
+    % (cls.__name__, idx, field, cls.__name__, model._meta.object_name))
+ImproperlyConfigured: UserProfileAdmin.list_display[0], 'user_ptr_id__id' is not a callable or an attribute of 'UserProfileAdmin' or found in the model 'UserProfile'.
+ERROR 2016-05-17 21:03:02,372 base 12724 -1246962880 Internal Server Error: /admin/adjod/userprofile/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 89, in get_response
+    response = middleware_method(request)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/middleware/locale.py", line 21, in process_request
+    check_path = self.is_language_prefix_patterns_used()
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/middleware/locale.py", line 54, in is_language_prefix_patterns_used
+    for url_pattern in get_resolver(None).url_patterns:
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 328, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 323, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+  File "/home/administrator/virtual_django/resell/Adjod/adjod/adjod/urls.py", line 23, in <module>
+    admin.autodiscover()
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/__init__.py", line 29, in autodiscover
+    import_module('%s.admin' % app)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+  File "/home/administrator/virtual_django/resell/Adjod/adjod/adjod/admin.py", line 69, in <module>
+    admin.site.register(UserProfile,UserProfileAdmin)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 92, in register
+    validate(admin_class, model)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/validation.py", line 38, in validate
+    % (cls.__name__, idx, field, cls.__name__, model._meta.object_name))
+ImproperlyConfigured: UserProfileAdmin.list_display[0], 'user_ptr_id' is not a callable or an attribute of 'UserProfileAdmin' or found in the model 'UserProfile'.
+ERROR 2016-05-17 21:03:47,513 base 12812 -1247540416 Internal Server Error: /admin/adjod/userprofile/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/options.py", line 366, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 91, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/views/decorators/cache.py", line 89, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 196, in inner
+    return view(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 25, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 91, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 21, in bound_func
+    return func(self, *args2, **kwargs2)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1128, in changelist_view
+    self)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/views/main.py", line 71, in __init__
+    self.query_set = self.get_query_set(request)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/views/main.py", line 365, in get_query_set
+    qs = qs.filter(reduce(operator.or_, or_queries))
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/query.py", line 624, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/query.py", line 642, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1247, in add_q
+    self.add_q(child, used_aliases, force_having=force_having)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1250, in add_q
+    can_reuse=used_aliases, force_having=force_having)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1185, in add_filter
+    connector)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/where.py", line 69, in add
+    value = obj.prepare(lookup_type, value)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/where.py", line 320, in prepare
+    return self.field.get_prep_lookup(lookup_type, value)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/fields/related.py", line 142, in get_prep_lookup
+    raise TypeError("Related Field has invalid lookup: %s" % lookup_type)
+TypeError: Related Field has invalid lookup: icontains
+ERROR 2016-05-17 21:04:19,768 base 12837 -1264583872 Internal Server Error: /admin/adjod/userprofile/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/options.py", line 366, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 91, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/views/decorators/cache.py", line 89, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 196, in inner
+    return view(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 25, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 91, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 21, in bound_func
+    return func(self, *args2, **kwargs2)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1128, in changelist_view
+    self)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/views/main.py", line 71, in __init__
+    self.query_set = self.get_query_set(request)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/views/main.py", line 365, in get_query_set
+    qs = qs.filter(reduce(operator.or_, or_queries))
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/query.py", line 624, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/query.py", line 642, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1247, in add_q
+    self.add_q(child, used_aliases, force_having=force_having)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1250, in add_q
+    can_reuse=used_aliases, force_having=force_having)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1185, in add_filter
+    connector)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/where.py", line 69, in add
+    value = obj.prepare(lookup_type, value)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/where.py", line 320, in prepare
+    return self.field.get_prep_lookup(lookup_type, value)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/fields/related.py", line 142, in get_prep_lookup
+    raise TypeError("Related Field has invalid lookup: %s" % lookup_type)
+TypeError: Related Field has invalid lookup: icontains
+ERROR 2016-05-17 21:05:31,699 base 12871 -1246766272 Internal Server Error: /admin/adjod/userprofile/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/options.py", line 366, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 91, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/views/decorators/cache.py", line 89, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 196, in inner
+    return view(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 25, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 91, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 21, in bound_func
+    return func(self, *args2, **kwargs2)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1128, in changelist_view
+    self)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/views/main.py", line 71, in __init__
+    self.query_set = self.get_query_set(request)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/views/main.py", line 365, in get_query_set
+    qs = qs.filter(reduce(operator.or_, or_queries))
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/query.py", line 624, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/query.py", line 642, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1247, in add_q
+    self.add_q(child, used_aliases, force_having=force_having)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1250, in add_q
+    can_reuse=used_aliases, force_having=force_having)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1185, in add_filter
+    connector)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/where.py", line 69, in add
+    value = obj.prepare(lookup_type, value)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/where.py", line 320, in prepare
+    return self.field.get_prep_lookup(lookup_type, value)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/fields/related.py", line 142, in get_prep_lookup
+    raise TypeError("Related Field has invalid lookup: %s" % lookup_type)
+TypeError: Related Field has invalid lookup: icontains
+ERROR 2016-05-17 21:07:09,946 base 13073 -1275069632 Internal Server Error: /admin/adjod/userprofile/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/options.py", line 366, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 91, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/views/decorators/cache.py", line 89, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 196, in inner
+    return view(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 25, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 91, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 21, in bound_func
+    return func(self, *args2, **kwargs2)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1128, in changelist_view
+    self)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/views/main.py", line 71, in __init__
+    self.query_set = self.get_query_set(request)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/views/main.py", line 365, in get_query_set
+    qs = qs.filter(reduce(operator.or_, or_queries))
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/query.py", line 624, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/query.py", line 642, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1247, in add_q
+    self.add_q(child, used_aliases, force_having=force_having)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1250, in add_q
+    can_reuse=used_aliases, force_having=force_having)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1122, in add_filter
+    process_extras=process_extras)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1475, in setup_joins
+    raise FieldError("Join on field %r not permitted. Did you misspell %r for the lookup type?" % (name, names[pos + 1]))
+FieldError: Join on field 'id' not permitted. Did you misspell 'username' for the lookup type?
+WARNING 2016-05-17 21:11:46,773 base 13147 -1285555392 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-17 21:11:47,444 base 13147 -1264846016 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-17 21:11:50,751 base 13147 -1247450304 Not Found: /favicon.ico
+ERROR 2016-05-17 21:14:07,172 base 13388 -1285555392 Internal Server Error: /admin/adjod/userprofile/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/options.py", line 366, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 91, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/views/decorators/cache.py", line 89, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 196, in inner
+    return view(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 25, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 91, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 21, in bound_func
+    return func(self, *args2, **kwargs2)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1128, in changelist_view
+    self)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/views/main.py", line 71, in __init__
+    self.query_set = self.get_query_set(request)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/views/main.py", line 365, in get_query_set
+    qs = qs.filter(reduce(operator.or_, or_queries))
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/query.py", line 624, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/query.py", line 642, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1247, in add_q
+    self.add_q(child, used_aliases, force_having=force_having)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1250, in add_q
+    can_reuse=used_aliases, force_having=force_having)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1185, in add_filter
+    connector)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/where.py", line 69, in add
+    value = obj.prepare(lookup_type, value)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/where.py", line 320, in prepare
+    return self.field.get_prep_lookup(lookup_type, value)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/fields/related.py", line 142, in get_prep_lookup
+    raise TypeError("Related Field has invalid lookup: %s" % lookup_type)
+TypeError: Related Field has invalid lookup: icontains
+ERROR 2016-05-17 21:16:59,518 base 13421 -1286603968 Internal Server Error: /admin/adjod/userprofile/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/options.py", line 366, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 91, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/views/decorators/cache.py", line 89, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 196, in inner
+    return view(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 25, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 91, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 21, in bound_func
+    return func(self, *args2, **kwargs2)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1128, in changelist_view
+    self)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/views/main.py", line 71, in __init__
+    self.query_set = self.get_query_set(request)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/views/main.py", line 365, in get_query_set
+    qs = qs.filter(reduce(operator.or_, or_queries))
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/query.py", line 624, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/query.py", line 642, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1247, in add_q
+    self.add_q(child, used_aliases, force_having=force_having)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1250, in add_q
+    can_reuse=used_aliases, force_having=force_having)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1185, in add_filter
+    connector)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/where.py", line 69, in add
+    value = obj.prepare(lookup_type, value)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/where.py", line 320, in prepare
+    return self.field.get_prep_lookup(lookup_type, value)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/fields/related.py", line 142, in get_prep_lookup
+    raise TypeError("Related Field has invalid lookup: %s" % lookup_type)
+TypeError: Related Field has invalid lookup: icontains
+ERROR 2016-05-17 21:19:40,776 base 13560 -1246962880 Internal Server Error: /admin/adjod/userprofile/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/options.py", line 366, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 91, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/views/decorators/cache.py", line 89, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 196, in inner
+    return view(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 25, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 91, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 21, in bound_func
+    return func(self, *args2, **kwargs2)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1128, in changelist_view
+    self)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/views/main.py", line 71, in __init__
+    self.query_set = self.get_query_set(request)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/views/main.py", line 365, in get_query_set
+    qs = qs.filter(reduce(operator.or_, or_queries))
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/query.py", line 624, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/query.py", line 642, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1247, in add_q
+    self.add_q(child, used_aliases, force_having=force_having)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1250, in add_q
+    can_reuse=used_aliases, force_having=force_having)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1185, in add_filter
+    connector)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/where.py", line 69, in add
+    value = obj.prepare(lookup_type, value)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/where.py", line 320, in prepare
+    return self.field.get_prep_lookup(lookup_type, value)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/fields/related.py", line 142, in get_prep_lookup
+    raise TypeError("Related Field has invalid lookup: %s" % lookup_type)
+TypeError: Related Field has invalid lookup: icontains
+ERROR 2016-05-17 21:19:49,865 base 13560 -1285555392 Internal Server Error: /admin/adjod/userprofile/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/options.py", line 366, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 91, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/views/decorators/cache.py", line 89, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 196, in inner
+    return view(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 25, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 91, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 21, in bound_func
+    return func(self, *args2, **kwargs2)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1128, in changelist_view
+    self)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/views/main.py", line 71, in __init__
+    self.query_set = self.get_query_set(request)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/views/main.py", line 365, in get_query_set
+    qs = qs.filter(reduce(operator.or_, or_queries))
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/query.py", line 624, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/query.py", line 642, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1247, in add_q
+    self.add_q(child, used_aliases, force_having=force_having)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1250, in add_q
+    can_reuse=used_aliases, force_having=force_having)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1185, in add_filter
+    connector)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/where.py", line 69, in add
+    value = obj.prepare(lookup_type, value)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/where.py", line 320, in prepare
+    return self.field.get_prep_lookup(lookup_type, value)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/fields/related.py", line 142, in get_prep_lookup
+    raise TypeError("Related Field has invalid lookup: %s" % lookup_type)
+TypeError: Related Field has invalid lookup: icontains
+ERROR 2016-05-17 21:20:03,499 base 13617 -1247605952 Internal Server Error: /admin/adjod/userprofile/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/options.py", line 366, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 91, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/views/decorators/cache.py", line 89, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 196, in inner
+    return view(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 25, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 91, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 21, in bound_func
+    return func(self, *args2, **kwargs2)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1128, in changelist_view
+    self)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/views/main.py", line 71, in __init__
+    self.query_set = self.get_query_set(request)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/views/main.py", line 365, in get_query_set
+    qs = qs.filter(reduce(operator.or_, or_queries))
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/query.py", line 624, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/query.py", line 642, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1247, in add_q
+    self.add_q(child, used_aliases, force_having=force_having)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1250, in add_q
+    can_reuse=used_aliases, force_having=force_having)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1185, in add_filter
+    connector)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/where.py", line 69, in add
+    value = obj.prepare(lookup_type, value)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/where.py", line 320, in prepare
+    return self.field.get_prep_lookup(lookup_type, value)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/fields/related.py", line 142, in get_prep_lookup
+    raise TypeError("Related Field has invalid lookup: %s" % lookup_type)
+TypeError: Related Field has invalid lookup: icontains
+WARNING 2016-05-17 21:20:04,212 base 13617 -1247605952 Not Found: /favicon.ico
+WARNING 2016-05-17 21:20:04,279 base 13617 -1247605952 Not Found: /favicon.ico
+ERROR 2016-05-17 21:20:13,711 base 13617 -1297089728 Internal Server Error: /admin/adjod/userprofile/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/options.py", line 366, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 91, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/views/decorators/cache.py", line 89, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 196, in inner
+    return view(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 25, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 91, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 21, in bound_func
+    return func(self, *args2, **kwargs2)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1128, in changelist_view
+    self)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/views/main.py", line 71, in __init__
+    self.query_set = self.get_query_set(request)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/views/main.py", line 365, in get_query_set
+    qs = qs.filter(reduce(operator.or_, or_queries))
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/query.py", line 624, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/query.py", line 642, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1247, in add_q
+    self.add_q(child, used_aliases, force_having=force_having)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1250, in add_q
+    can_reuse=used_aliases, force_having=force_having)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1185, in add_filter
+    connector)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/where.py", line 69, in add
+    value = obj.prepare(lookup_type, value)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/where.py", line 320, in prepare
+    return self.field.get_prep_lookup(lookup_type, value)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/fields/related.py", line 142, in get_prep_lookup
+    raise TypeError("Related Field has invalid lookup: %s" % lookup_type)
+TypeError: Related Field has invalid lookup: icontains
+ERROR 2016-05-17 21:24:33,056 base 13701 -1275069632 Internal Server Error: /admin/adjod/userprofile/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/options.py", line 366, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 91, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/views/decorators/cache.py", line 89, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 196, in inner
+    return view(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 25, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 91, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 21, in bound_func
+    return func(self, *args2, **kwargs2)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1128, in changelist_view
+    self)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/views/main.py", line 71, in __init__
+    self.query_set = self.get_query_set(request)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/views/main.py", line 365, in get_query_set
+    qs = qs.filter(reduce(operator.or_, or_queries))
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/query.py", line 624, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/query.py", line 642, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1247, in add_q
+    self.add_q(child, used_aliases, force_having=force_having)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1250, in add_q
+    can_reuse=used_aliases, force_having=force_having)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1185, in add_filter
+    connector)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/where.py", line 69, in add
+    value = obj.prepare(lookup_type, value)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/where.py", line 320, in prepare
+    return self.field.get_prep_lookup(lookup_type, value)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/fields/related.py", line 142, in get_prep_lookup
+    raise TypeError("Related Field has invalid lookup: %s" % lookup_type)
+TypeError: Related Field has invalid lookup: icontains
+WARNING 2016-05-17 21:32:02,608 base 13806 -1267729600 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-17 21:32:03,501 base 13806 -1299186880 Not Found: /media/img/bg-img2.png
+ERROR 2016-05-17 21:33:06,275 base 13806 -1313342656 Internal Server Error: /admin/adjod/userprofile/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/options.py", line 366, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 91, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/views/decorators/cache.py", line 89, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 196, in inner
+    return view(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 25, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 91, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 21, in bound_func
+    return func(self, *args2, **kwargs2)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1128, in changelist_view
+    self)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/views/main.py", line 71, in __init__
+    self.query_set = self.get_query_set(request)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/views/main.py", line 365, in get_query_set
+    qs = qs.filter(reduce(operator.or_, or_queries))
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/query.py", line 624, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/query.py", line 642, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1247, in add_q
+    self.add_q(child, used_aliases, force_having=force_having)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1250, in add_q
+    can_reuse=used_aliases, force_having=force_having)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1185, in add_filter
+    connector)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/where.py", line 69, in add
+    value = obj.prepare(lookup_type, value)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/where.py", line 320, in prepare
+    return self.field.get_prep_lookup(lookup_type, value)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/fields/related.py", line 142, in get_prep_lookup
+    raise TypeError("Related Field has invalid lookup: %s" % lookup_type)
+TypeError: Related Field has invalid lookup: icontains
+ERROR 2016-05-17 21:35:08,762 base 13806 -1313342656 Internal Server Error: /admin/adjod/userprofile/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/options.py", line 366, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 91, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/views/decorators/cache.py", line 89, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 196, in inner
+    return view(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 25, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 91, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 21, in bound_func
+    return func(self, *args2, **kwargs2)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1128, in changelist_view
+    self)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/views/main.py", line 71, in __init__
+    self.query_set = self.get_query_set(request)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/views/main.py", line 365, in get_query_set
+    qs = qs.filter(reduce(operator.or_, or_queries))
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/query.py", line 624, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/query.py", line 642, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1247, in add_q
+    self.add_q(child, used_aliases, force_having=force_having)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1250, in add_q
+    can_reuse=used_aliases, force_having=force_having)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1185, in add_filter
+    connector)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/where.py", line 69, in add
+    value = obj.prepare(lookup_type, value)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/where.py", line 320, in prepare
+    return self.field.get_prep_lookup(lookup_type, value)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/fields/related.py", line 142, in get_prep_lookup
+    raise TypeError("Related Field has invalid lookup: %s" % lookup_type)
+TypeError: Related Field has invalid lookup: icontains
+ERROR 2016-05-17 21:35:16,986 base 13806 -1278215360 Internal Server Error: /admin/adjod/userprofile/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/options.py", line 366, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 91, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/views/decorators/cache.py", line 89, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 196, in inner
+    return view(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 25, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 91, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 21, in bound_func
+    return func(self, *args2, **kwargs2)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1128, in changelist_view
+    self)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/views/main.py", line 71, in __init__
+    self.query_set = self.get_query_set(request)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/views/main.py", line 365, in get_query_set
+    qs = qs.filter(reduce(operator.or_, or_queries))
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/query.py", line 624, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/query.py", line 642, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1247, in add_q
+    self.add_q(child, used_aliases, force_having=force_having)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1250, in add_q
+    can_reuse=used_aliases, force_having=force_having)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1185, in add_filter
+    connector)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/where.py", line 69, in add
+    value = obj.prepare(lookup_type, value)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/where.py", line 320, in prepare
+    return self.field.get_prep_lookup(lookup_type, value)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/fields/related.py", line 142, in get_prep_lookup
+    raise TypeError("Related Field has invalid lookup: %s" % lookup_type)
+TypeError: Related Field has invalid lookup: icontains
+ERROR 2016-05-17 21:38:48,787 base 13954 -1247343808 Internal Server Error: /admin/adjod/userprofile/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/options.py", line 366, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 91, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/views/decorators/cache.py", line 89, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 196, in inner
+    return view(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 25, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 91, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 21, in bound_func
+    return func(self, *args2, **kwargs2)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1128, in changelist_view
+    self)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/views/main.py", line 71, in __init__
+    self.query_set = self.get_query_set(request)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/views/main.py", line 365, in get_query_set
+    qs = qs.filter(reduce(operator.or_, or_queries))
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/query.py", line 624, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/query.py", line 642, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1247, in add_q
+    self.add_q(child, used_aliases, force_having=force_having)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1250, in add_q
+    can_reuse=used_aliases, force_having=force_having)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1122, in add_filter
+    process_extras=process_extras)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1316, in setup_joins
+    "Choices are: %s" % (name, ", ".join(names)))
+FieldError: Cannot resolve keyword 'userprofile_id' into field. Choices are: ad_count, age_status, city, confirmation_code, date_joined, email, first_name, freealert, gender, groups, id, is_active, is_allow_sms, is_emailverified, is_marketing_person, is_staff, is_subscribed, is_superuser, language, last_login, last_name, lastactive, locality, logentry, mobile, password, person_is, product, productstatistic, profile_picture, social_auth, subscribed_plan, transaction, user_address, user_age, user_permissions, user_ptr, username, visit_history
+ERROR 2016-05-17 21:39:02,024 base 14051 -1247278272 Internal Server Error: /admin/adjod/userprofile/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/options.py", line 366, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 91, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/views/decorators/cache.py", line 89, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 196, in inner
+    return view(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 25, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 91, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 21, in bound_func
+    return func(self, *args2, **kwargs2)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1128, in changelist_view
+    self)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/views/main.py", line 71, in __init__
+    self.query_set = self.get_query_set(request)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/views/main.py", line 365, in get_query_set
+    qs = qs.filter(reduce(operator.or_, or_queries))
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/query.py", line 624, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/query.py", line 642, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1247, in add_q
+    self.add_q(child, used_aliases, force_having=force_having)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1250, in add_q
+    can_reuse=used_aliases, force_having=force_having)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1122, in add_filter
+    process_extras=process_extras)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1316, in setup_joins
+    "Choices are: %s" % (name, ", ".join(names)))
+FieldError: Cannot resolve keyword 'userprofile' into field. Choices are: ad_count, age_status, city, confirmation_code, date_joined, email, first_name, freealert, gender, groups, id, is_active, is_allow_sms, is_emailverified, is_marketing_person, is_staff, is_subscribed, is_superuser, language, last_login, last_name, lastactive, locality, logentry, mobile, password, person_is, product, productstatistic, profile_picture, social_auth, subscribed_plan, transaction, user_address, user_age, user_permissions, user_ptr, username, visit_history
+ERROR 2016-05-17 21:39:10,283 base 14083 -1247605952 Internal Server Error: /admin/adjod/userprofile/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/options.py", line 366, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 91, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/views/decorators/cache.py", line 89, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 196, in inner
+    return view(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 25, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 91, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 21, in bound_func
+    return func(self, *args2, **kwargs2)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1128, in changelist_view
+    self)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/views/main.py", line 71, in __init__
+    self.query_set = self.get_query_set(request)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/views/main.py", line 365, in get_query_set
+    qs = qs.filter(reduce(operator.or_, or_queries))
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/query.py", line 624, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/query.py", line 642, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1247, in add_q
+    self.add_q(child, used_aliases, force_having=force_having)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1250, in add_q
+    can_reuse=used_aliases, force_having=force_having)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1185, in add_filter
+    connector)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/where.py", line 69, in add
+    value = obj.prepare(lookup_type, value)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/where.py", line 320, in prepare
+    return self.field.get_prep_lookup(lookup_type, value)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/fields/related.py", line 142, in get_prep_lookup
+    raise TypeError("Related Field has invalid lookup: %s" % lookup_type)
+TypeError: Related Field has invalid lookup: icontains
+ERROR 2016-05-17 21:41:28,622 base 14104 -1246872768 Internal Server Error: /admin/adjod/userprofile/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/options.py", line 366, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 91, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/views/decorators/cache.py", line 89, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 196, in inner
+    return view(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 25, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 91, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 21, in bound_func
+    return func(self, *args2, **kwargs2)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1128, in changelist_view
+    self)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/views/main.py", line 71, in __init__
+    self.query_set = self.get_query_set(request)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/views/main.py", line 365, in get_query_set
+    qs = qs.filter(reduce(operator.or_, or_queries))
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/query.py", line 624, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/query.py", line 642, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1247, in add_q
+    self.add_q(child, used_aliases, force_having=force_having)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1250, in add_q
+    can_reuse=used_aliases, force_having=force_having)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1122, in add_filter
+    process_extras=process_extras)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1316, in setup_joins
+    "Choices are: %s" % (name, ", ".join(names)))
+FieldError: Cannot resolve keyword 'userprofile' into field. Choices are: ad_count, age_status, city, confirmation_code, date_joined, email, first_name, freealert, gender, groups, id, is_active, is_allow_sms, is_emailverified, is_marketing_person, is_staff, is_subscribed, is_superuser, language, last_login, last_name, lastactive, locality, logentry, mobile, password, person_is, product, productstatistic, profile_picture, social_auth, subscribed_plan, transaction, user_address, user_age, user_permissions, user_ptr, username, visit_history
+ERROR 2016-05-17 21:41:44,139 base 14173 -1247659200 Internal Server Error: /admin/adjod/userprofile/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/options.py", line 366, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 91, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/views/decorators/cache.py", line 89, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 196, in inner
+    return view(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 25, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 91, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 21, in bound_func
+    return func(self, *args2, **kwargs2)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1128, in changelist_view
+    self)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/views/main.py", line 71, in __init__
+    self.query_set = self.get_query_set(request)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/views/main.py", line 365, in get_query_set
+    qs = qs.filter(reduce(operator.or_, or_queries))
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/query.py", line 624, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/query.py", line 642, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1247, in add_q
+    self.add_q(child, used_aliases, force_having=force_having)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1250, in add_q
+    can_reuse=used_aliases, force_having=force_having)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1185, in add_filter
+    connector)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/where.py", line 69, in add
+    value = obj.prepare(lookup_type, value)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/where.py", line 320, in prepare
+    return self.field.get_prep_lookup(lookup_type, value)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/fields/related.py", line 142, in get_prep_lookup
+    raise TypeError("Related Field has invalid lookup: %s" % lookup_type)
+TypeError: Related Field has invalid lookup: icontains
+ERROR 2016-05-17 21:53:31,016 base 14261 -1246872768 Internal Server Error: /admin/adjod/userprofile/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 89, in get_response
+    response = middleware_method(request)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/middleware/locale.py", line 21, in process_request
+    check_path = self.is_language_prefix_patterns_used()
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/middleware/locale.py", line 54, in is_language_prefix_patterns_used
+    for url_pattern in get_resolver(None).url_patterns:
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 328, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 323, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+  File "/home/administrator/virtual_django/resell/Adjod/adjod/adjod/urls.py", line 23, in <module>
+    admin.autodiscover()
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/__init__.py", line 29, in autodiscover
+    import_module('%s.admin' % app)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+  File "/home/administrator/virtual_django/resell/Adjod/adjod/adjod/admin.py", line 69, in <module>
+    class UserAdmin(OriginalUserAdmin):
+NameError: name 'OriginalUserAdmin' is not defined
+ERROR 2016-05-17 21:53:52,215 base 14261 -1257243840 Internal Server Error: /admin/adjod/userprofile/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 89, in get_response
+    response = middleware_method(request)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/middleware/locale.py", line 21, in process_request
+    check_path = self.is_language_prefix_patterns_used()
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/middleware/locale.py", line 54, in is_language_prefix_patterns_used
+    for url_pattern in get_resolver(None).url_patterns:
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 328, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 323, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+  File "/home/administrator/virtual_django/resell/Adjod/adjod/adjod/urls.py", line 23, in <module>
+    admin.autodiscover()
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/__init__.py", line 29, in autodiscover
+    import_module('%s.admin' % app)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+  File "/home/administrator/virtual_django/resell/Adjod/adjod/adjod/admin.py", line 69, in <module>
+    class UserAdmin(OriginalUserAdmin):
+  File "/home/administrator/virtual_django/resell/Adjod/adjod/adjod/admin.py", line 72, in UserAdmin
+    form = UserForm
+NameError: name 'UserForm' is not defined
+ERROR 2016-05-17 21:55:05,951 base 14261 -1257243840 Internal Server Error: /admin/adjod/userprofile/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 89, in get_response
+    response = middleware_method(request)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/middleware/locale.py", line 21, in process_request
+    check_path = self.is_language_prefix_patterns_used()
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/middleware/locale.py", line 54, in is_language_prefix_patterns_used
+    for url_pattern in get_resolver(None).url_patterns:
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 328, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 323, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+  File "/home/administrator/virtual_django/resell/Adjod/adjod/adjod/urls.py", line 23, in <module>
+    admin.autodiscover()
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/__init__.py", line 29, in autodiscover
+    import_module('%s.admin' % app)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+  File "/home/administrator/virtual_django/resell/Adjod/adjod/adjod/admin.py", line 69, in <module>
+    class UserAdmin(OriginalUserAdmin):
+  File "/home/administrator/virtual_django/resell/Adjod/adjod/adjod/admin.py", line 74, in UserAdmin
+    UserAdmin.list_display = ('email', 'first_name', 'last_name', 'is_active', 'date_joined', 'is_staff')
+NameError: name 'UserAdmin' is not defined
+ERROR 2016-05-17 21:55:28,488 base 14261 -1257243840 Internal Server Error: /admin/adjod/userprofile/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 89, in get_response
+    response = middleware_method(request)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/middleware/locale.py", line 21, in process_request
+    check_path = self.is_language_prefix_patterns_used()
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/middleware/locale.py", line 54, in is_language_prefix_patterns_used
+    for url_pattern in get_resolver(None).url_patterns:
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 328, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 323, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+  File "/home/administrator/virtual_django/resell/Adjod/adjod/adjod/urls.py", line 23, in <module>
+    admin.autodiscover()
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/__init__.py", line 29, in autodiscover
+    import_module('%s.admin' % app)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+  File "/home/administrator/virtual_django/resell/Adjod/adjod/adjod/admin.py", line 70, in <module>
+    class UserAdmin(OriginalUserAdmin):
+  File "/home/administrator/virtual_django/resell/Adjod/adjod/adjod/admin.py", line 172, in UserAdmin
+    delete_selected.short_description = ugettext_lazy("Delete selected %(verbose_name_plural)s")
+NameError: name 'ugettext_lazy' is not defined
+ERROR 2016-05-17 21:55:43,604 base 14261 -1257243840 Internal Server Error: /admin/adjod/userprofile/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/options.py", line 366, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 91, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/views/decorators/cache.py", line 89, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 196, in inner
+    return view(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 25, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 91, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 21, in bound_func
+    return func(self, *args2, **kwargs2)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1128, in changelist_view
+    self)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/views/main.py", line 71, in __init__
+    self.query_set = self.get_query_set(request)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/views/main.py", line 365, in get_query_set
+    qs = qs.filter(reduce(operator.or_, or_queries))
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/query.py", line 624, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/query.py", line 642, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1247, in add_q
+    self.add_q(child, used_aliases, force_having=force_having)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1250, in add_q
+    can_reuse=used_aliases, force_having=force_having)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1185, in add_filter
+    connector)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/where.py", line 69, in add
+    value = obj.prepare(lookup_type, value)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/where.py", line 320, in prepare
+    return self.field.get_prep_lookup(lookup_type, value)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/fields/related.py", line 142, in get_prep_lookup
+    raise TypeError("Related Field has invalid lookup: %s" % lookup_type)
+TypeError: Related Field has invalid lookup: icontains
+ERROR 2016-05-17 21:55:54,752 base 14261 -1257243840 Internal Server Error: /admin/adjod/userprofile/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/options.py", line 366, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 91, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/views/decorators/cache.py", line 89, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 196, in inner
+    return view(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 25, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 91, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 21, in bound_func
+    return func(self, *args2, **kwargs2)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1128, in changelist_view
+    self)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/views/main.py", line 71, in __init__
+    self.query_set = self.get_query_set(request)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/views/main.py", line 365, in get_query_set
+    qs = qs.filter(reduce(operator.or_, or_queries))
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/query.py", line 624, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/query.py", line 642, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1247, in add_q
+    self.add_q(child, used_aliases, force_having=force_having)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1250, in add_q
+    can_reuse=used_aliases, force_having=force_having)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1185, in add_filter
+    connector)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/where.py", line 69, in add
+    value = obj.prepare(lookup_type, value)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/where.py", line 320, in prepare
+    return self.field.get_prep_lookup(lookup_type, value)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/fields/related.py", line 142, in get_prep_lookup
+    raise TypeError("Related Field has invalid lookup: %s" % lookup_type)
+TypeError: Related Field has invalid lookup: icontains
+ERROR 2016-05-17 21:56:51,113 base 14459 -1247450304 Internal Server Error: /admin/adjod/userprofile/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 89, in get_response
+    response = middleware_method(request)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/middleware/locale.py", line 21, in process_request
+    check_path = self.is_language_prefix_patterns_used()
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/middleware/locale.py", line 54, in is_language_prefix_patterns_used
+    for url_pattern in get_resolver(None).url_patterns:
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 328, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 323, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+  File "/home/administrator/virtual_django/resell/Adjod/adjod/adjod/urls.py", line 23, in <module>
+    admin.autodiscover()
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/__init__.py", line 29, in autodiscover
+    import_module('%s.admin' % app)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+  File "/home/administrator/virtual_django/resell/Adjod/adjod/adjod/admin.py", line 74, in <module>
+    admin.site.register(User,UserProfileAdmin)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 92, in register
+    validate(admin_class, model)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/validation.py", line 25, in validate
+    validate_base(cls, model)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/validation.py", line 278, in validate_base
+    validate_fields_spec(cls, model, opts, cls.fields, 'fields')
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/validation.py", line 249, in validate_fields_spec
+    check_formfield(cls, model, opts, label, field)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/validation.py", line 396, in check_formfield
+    "is missing from the form." % (cls.__name__, label, field))
+ImproperlyConfigured: 'UserProfileAdmin.fields' refers to field 'mobile' that is missing from the form.
+ERROR 2016-05-17 21:58:02,286 base 14459 -1247450304 Internal Server Error: /admin/adjod/userprofile/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 89, in get_response
+    response = middleware_method(request)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/middleware/locale.py", line 21, in process_request
+    check_path = self.is_language_prefix_patterns_used()
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/middleware/locale.py", line 54, in is_language_prefix_patterns_used
+    for url_pattern in get_resolver(None).url_patterns:
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 328, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 323, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+  File "/home/administrator/virtual_django/resell/Adjod/adjod/adjod/urls.py", line 23, in <module>
+    admin.autodiscover()
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/__init__.py", line 29, in autodiscover
+    import_module('%s.admin' % app)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+  File "/home/administrator/virtual_django/resell/Adjod/adjod/adjod/admin.py", line 74, in <module>
+    admin.site.register(User,UserProfileAdmin)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 92, in register
+    validate(admin_class, model)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/validation.py", line 164, in validate
+    check_readonly_fields(cls, model, opts)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/validation.py", line 419, in check_readonly_fields
+    % (cls.__name__, idx, field, cls.__name__, model._meta.object_name))
+ImproperlyConfigured: UserProfileAdmin.readonly_fields[0], 'city' is not a callable or an attribute of 'UserProfileAdmin' or found in the model 'User'.
+WARNING 2016-05-17 21:58:08,575 base 14459 -1247450304 Not Found: /admin/adjod/userprofile/
+WARNING 2016-05-17 21:58:13,069 base 14459 -1247450304 Not Found: /admin/adjod/userprofile/
+ERROR 2016-05-17 21:58:23,335 base 14556 -1247659200 Internal Server Error: /admin/adjod/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 89, in get_response
+    response = middleware_method(request)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/middleware/locale.py", line 21, in process_request
+    check_path = self.is_language_prefix_patterns_used()
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/middleware/locale.py", line 54, in is_language_prefix_patterns_used
+    for url_pattern in get_resolver(None).url_patterns:
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 328, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 323, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+  File "/home/administrator/virtual_django/resell/Adjod/adjod/adjod/urls.py", line 23, in <module>
+    admin.autodiscover()
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/__init__.py", line 29, in autodiscover
+    import_module('%s.admin' % app)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+  File "/home/administrator/virtual_django/resell/Adjod/adjod/adjod/admin.py", line 74, in <module>
+    admin.site.register(User,UserProfileAdmin)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 92, in register
+    validate(admin_class, model)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/validation.py", line 25, in validate
+    validate_base(cls, model)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/validation.py", line 278, in validate_base
+    validate_fields_spec(cls, model, opts, cls.fields, 'fields')
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/validation.py", line 249, in validate_fields_spec
+    check_formfield(cls, model, opts, label, field)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/validation.py", line 396, in check_formfield
+    "is missing from the form." % (cls.__name__, label, field))
+ImproperlyConfigured: 'UserProfileAdmin.fields' refers to field 'mobile' that is missing from the form.
+ERROR 2016-05-17 22:13:19,654 base 14556 -1276118208 Internal Server Error: /admin/adjod/userprofile/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/options.py", line 366, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 91, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/views/decorators/cache.py", line 89, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 196, in inner
+    return view(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 25, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 91, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 21, in bound_func
+    return func(self, *args2, **kwargs2)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1128, in changelist_view
+    self)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/views/main.py", line 71, in __init__
+    self.query_set = self.get_query_set(request)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/views/main.py", line 365, in get_query_set
+    qs = qs.filter(reduce(operator.or_, or_queries))
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/query.py", line 624, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/query.py", line 642, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1247, in add_q
+    self.add_q(child, used_aliases, force_having=force_having)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1250, in add_q
+    can_reuse=used_aliases, force_having=force_having)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1185, in add_filter
+    connector)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/where.py", line 69, in add
+    value = obj.prepare(lookup_type, value)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/where.py", line 320, in prepare
+    return self.field.get_prep_lookup(lookup_type, value)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/fields/related.py", line 142, in get_prep_lookup
+    raise TypeError("Related Field has invalid lookup: %s" % lookup_type)
+TypeError: Related Field has invalid lookup: icontains
+WARNING 2016-05-18 21:23:57,053 base 10722 -1275069632 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-18 21:23:58,401 base 10722 -1247188160 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-18 21:24:02,715 base 10722 -1306526912 Not Found: /favicon.ico
+WARNING 2016-05-18 21:24:02,915 base 10722 -1306526912 Not Found: /favicon.ico
+ERROR 2016-05-18 21:55:37,422 base 10828 -1275069632 Internal Server Error: /admin/adjod/userprofile/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/options.py", line 366, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 91, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/views/decorators/cache.py", line 89, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 196, in inner
+    return view(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 25, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 91, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 21, in bound_func
+    return func(self, *args2, **kwargs2)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1128, in changelist_view
+    self)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/views/main.py", line 71, in __init__
+    self.query_set = self.get_query_set(request)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/contrib/admin/views/main.py", line 365, in get_query_set
+    qs = qs.filter(reduce(operator.or_, or_queries))
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/query.py", line 624, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/query.py", line 642, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1247, in add_q
+    self.add_q(child, used_aliases, force_having=force_having)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1250, in add_q
+    can_reuse=used_aliases, force_having=force_having)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1185, in add_filter
+    connector)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/where.py", line 69, in add
+    value = obj.prepare(lookup_type, value)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/sql/where.py", line 320, in prepare
+    return self.field.get_prep_lookup(lookup_type, value)
+  File "/home/administrator/virtual_django/venv/local/lib/python2.7/site-packages/django/db/models/fields/related.py", line 142, in get_prep_lookup
+    raise TypeError("Related Field has invalid lookup: %s" % lookup_type)
+TypeError: Related Field has invalid lookup: icontains
+WARNING 2016-05-18 22:07:38,247 base 10828 -1323312320 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-18 22:07:39,123 base 10828 -1285555392 Not Found: /media/img/bg-img2.png
