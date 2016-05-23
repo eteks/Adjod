@@ -274,8 +274,8 @@
                   	<!-- <iframe width="600" height="315" src="https://www.youtube.com/embed/qerrZSVNJHY" frameborder="0" allowfullscreen class="visible-lg"></iframe>
                   	<iframe width="360" height="200" src="https://www.youtube.com/embed/qerrZSVNJHY" frameborder="0" allowfullscreen class="visible-xs"></iframe> -->
                     <!-- <span><a target="__blank" href="{{adinfo.video}}">{{adinfo.video}}</a></span> -->
-                    <iframe width="600" height="315" src="{{adinfo.video}}" frameborder="0" allowfullscreen class="visible-lg" id="video_url"></iframe>
-                    <iframe width="360" height="200" src="{{adinfo.video}}" frameborder="0" allowfullscreen class="visible-xs" id="video_url"></iframe>
+                    <iframe width="600" height="315" src="{{adinfo.video|get_videos}}" frameborder="0" allowfullscreen class="visible-lg" id="video_url"></iframe>
+                    <iframe width="360" height="200" src="{{adinfo.video|get_videos}}" frameborder="0" allowfullscreen class="visible-xs" id="video_url"></iframe>
                   </div>
                   {% endif %}
                   <div class="description_box">

@@ -93,7 +93,7 @@
             <div class="logo_mobile">
               <a href="#"><code></code></a>
             </div><!--logo_mobile-->
-            <div class="custom_select language_custom_select lang_select hidden-lg">
+     <!--        <div class="custom_select language_custom_select lang_select hidden-lg">
               <div class="select">
                   <p>
                       {% if request.LANGUAGE_CODE == 'en' or request.REQUEST.la == 'en' %}
@@ -109,7 +109,7 @@
                       {% endif %}
                   </p>
                   <i class="fa fa-caret-down"></i>
-              </div><!-- select -->
+              </div><!- select ->
               <form action="/i18n/setlang/" method="post" id="language_selector">
                   {% csrf_token %}
                     <input name="next" type="hidden" value="{{request.path}}{% if request.GET.urlencode %}?{{request.GET.urlencode}}{% endif %}" />
@@ -117,10 +117,10 @@
                         <option class="lang_hover" value="" style="display: none;"> </option>
                         <option class="lang_hover" value="en">{% trans "English" %}</option>
                         <option class="lang_hover" value="zh">{% trans "Chinese" %}</option>
-                        <!-- <option class="lang_hover" value="ms">{% trans "Malay" %}</option> -->
+                        <!- <option class="lang_hover" value="ms">{% trans "Malay" %}</option> ->
                     </select>
               </form>
-            </div><!-- custom_select -->
+            </div> --><!-- custom_select -->
             <!-- newly comment by kalai -- >
             <!-- <div class="user_mobile hidden-lg">
               <ul class="nav navbar-nav navbar-right">
@@ -219,7 +219,7 @@
                     </li>
                     {% endif %} -->
 
-                     <li>
+                    <!--  <li>
                         <div class="custom_select language_custom_select lang_select">
                             <div class="select">
                               <p>
@@ -238,7 +238,7 @@
                               </p>
 
                               <i class="fa fa-caret-down"></i>
-                              </div><!-- select -->
+                              </div><!- select ->
                                <form action="/i18n/setlang/" method="post" id="language_selector">
                                 {% csrf_token %}
                                   <input name="next" type="hidden" value="{{request.path}}{% if request.GET.urlencode %}?{{request.GET.urlencode}}{% endif %}" />
@@ -246,13 +246,13 @@
                                       <option class="lang_hover" value="" style="display: none;"> </option>
                                       <option class="lang_hover" value="en">{% trans "English" %}</option>
                                       <option class="lang_hover" value="zh">{% trans "Chinese" %}</option>
-                                      <!-- <option class="lang_hover" value="ms">{% trans "Malay" %}</option> -->
+                                      <!- <option class="lang_hover" value="ms">{% trans "Malay" %}</option> ->
                                   </select>
                                 </form>
 
-                            </div><!-- custom_select -->
+                            </div><!- custom_select ->
 
-                      </li>
+                      </li> -->
 
                        <li>
                           {% if user.is_authenticated %}
@@ -495,13 +495,13 @@
               <hr class="photos_line" noshade="noshade">
             </div> <!-- hr_div -->
 
-            <div class=" facebook fl" >
-              <a  href="{% url socialauth_begin 'facebook' %}" ><button class="fb_button"><!-- <i class="fa fa-facebook"></i> -->{% trans "Facebook" %}</button></a>
-            </div>
+            <!-- <div class=" facebook fl" >
+              <a  href="{% url socialauth_begin 'facebook' %}" ><button class="fb_button"><i class="fa fa-facebook"></i>{% trans "Facebook" %}</button></a>
+            </div> -->
 
-            <div  class=" fl">
-              <a  href="{% url socialauth_begin 'google-oauth2' %}" ><button class="gmail_button"><!-- <i class="fa fa-google-plus"></i> -->{% trans "Gmail" %}</button></a>
-            </div>
+         <!--    <div  class=" fl">
+              <a  href="{% url socialauth_begin 'google-oauth2' %}" ><button class="gmail_button"><i class="fa fa-google-plus"></i>{% trans "Gmail" %}</button></a>
+            </div> -->
 
             <div class="clear_both"></div>
             <div id="free_signup_div" class="form-group">

@@ -14,10 +14,18 @@ def get_photos(photo):
 	photo=str(photo).split(',')
 	return photo[0]
 
+# @register.filter
+# def get_videos(video):
+# 	video=str(video).split(',')
+# 	return video[0]
+
 @register.filter
 def get_videos(video):
-	video=str(video).split(',')
-	return video[0]
+	if "=" in str(video):
+		video=str(video).split('=')
+		return "https://www.youtube.com/embed/"+video[1]
+	else:
+		return str(video)
 
 @register.filter
 def get_categories(initial_load):
