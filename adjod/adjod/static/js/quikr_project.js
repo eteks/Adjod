@@ -531,7 +531,7 @@ $( document ).ready(function() {
         $('.sign_in_div').hide();
         document.body.style.overflow = 'hidden';
     });
-    $('.popup_sign_in, .footer_login').click(function(){
+    $('.popup_sign_in, .footer_login, .na_post_button').click(function(){
         sign_in_center_align();
         $('.popup_fade').show();
         $('.sign_in_div, .close_btn').show();
@@ -873,93 +873,107 @@ $( document ).ready(function() {
     //*************** Start Post Ad form validation ***********
     required = ["category", "ad_title", "your_price", "your_description", "your_email"];
     jQuery("#post").click(function(){
-      var regYoutube = /(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/ ]{11})/i;
-        for (i=0;i<required.length;i++) {
-          var input = jQuery('#'+required[i]);
-          if (input.val() == "")  {
-            input.addClass("error_input_field");
-            input.siblings('.labelError').show();
 
-          } else {
-            input.removeClass("error_input_field");
-            input.siblings('.labelError').hide();
+      return_response = false;
+      $.get("/check_authenticate/", function(data, status){
+          if (data == "yes"){
+              var regYoutube = /(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/ ]{11})/i;
+              for (i=0;i<required.length;i++) {
+                var input = jQuery('#'+required[i]);
+                if (input.val() == "")  {
+                  input.addClass("error_input_field");
+                  input.siblings('.labelError').show();
+
+                } else {
+                  input.removeClass("error_input_field");
+                  input.siblings('.labelError').hide();
+                }
+              }
+              // Buy and Sell Radio
+              if($('#buy').attr('checked') || $('#sell').attr('checked')){
+                $('#buy,#sell').removeClass("error_input_field");
+                $('#buy,#sell').siblings('.labelError').hide();
+              }
+              else {
+                $('#buy,#sell').addClass("error_input_field");
+
+                $('#buy,#sell').siblings('.labelError').show();
+              }
+              // Dealer and Individual Radio
+              if($('#individual').attr('checked') || $('#dealer').attr('checked')){
+                $('#individual,#dealer').removeClass("error_input_field");
+                $('#individual,#dealer').siblings('.labelError').hide();
+              }
+              else {
+                $('#individual,#dealer').addClass("error_input_field");
+
+                $('#individual,#dealer').siblings('.labelError').show();
+              }
+              // Dropdown city
+              if (($('#select_post_city').text() == "Select city *") || ($('#select_post_city').text() == "Select City")) {
+                $('.select_container_city').addClass("error_input_field");
+                $('.select_container_city').find('.labelError').show();
+              }
+              else{
+                $('.select_container_city').removeClass("error_input_field");
+                $('.select_container_city').find('.labelError').hide();
+              }
+              // Dropdown locality
+              if (($('#select_post_locality').text() == "Select locality *") || ($('#select_post_locality').text() == "Select Locality")) {
+                $('.select_container_locality').addClass("error_input_field");
+                $('.select_container_locality').find('.labelError').show();
+              }
+              else{
+                $('.select_container_locality').removeClass("error_input_field");
+                $('.select_container_locality').find('.labelError').hide();
+              }
+              //Validate the e-mail.
+              if($('#your_email').val() != ''){
+              if (!/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/.test($('#your_email').val())) {
+                $('#your_email').addClass("error_input_field");
+                $('#your_email').siblings('.labelError').text("Please enter valid email address");
+                $('.labelError').show();
+              }
+              else
+              {
+                $('#your_email').removeClass("error_input_field");
+                $('#your_email').siblings('.labelError').hide();
+              }
+              }
+              if($('#terms_of_use').attr('checked')){
+                // $('#terms_required').hide();
+                $('#terms_of_use').removeClass("error_input_field");
+                $('#terms_of_use').next().siblings('.labelError').hide();
+              }
+              else{
+                // $('#terms_required').show();
+                $('#terms_of_use').addClass("error_input_field");
+                $('#terms_of_use').next().siblings('.labelError').show();
+              }
+              video_url = $('#videos1').val();
+              if(regYoutube.test(video_url)) {
+                $('#videos1').siblings('.labelError').hide();
+              }
+              else if(video_url !=''){
+                $('#videos1').siblings('.labelError').show();
+              }
+              if ($(":input").hasClass("error_input_field") || $(".select_container_city").hasClass("error_input_field") || $(".select_container_locality").hasClass("error_input_field") || $("#buy,#sell").hasClass("error_input_field") || $("#individual,#dealer,.photo_labelError").hasClass("error_input_field") || $('#your_mobile_no').hasClass("error")){
+                return_response = false;
+              }
+              else{
+                return_response = true;
+                $('form[name="post_ad"]').submit();
+              }
           }
-        }
-        // Buy and Sell Radio
-        if($('#buy').attr('checked') || $('#sell').attr('checked')){
-          $('#buy,#sell').removeClass("error_input_field");
-          $('#buy,#sell').siblings('.labelError').hide();
-        }
-        else {
-          $('#buy,#sell').addClass("error_input_field");
-
-          $('#buy,#sell').siblings('.labelError').show();
-        }
-        // Dealer and Individual Radio
-        if($('#individual').attr('checked') || $('#dealer').attr('checked')){
-          $('#individual,#dealer').removeClass("error_input_field");
-          $('#individual,#dealer').siblings('.labelError').hide();
-        }
-        else {
-          $('#individual,#dealer').addClass("error_input_field");
-
-          $('#individual,#dealer').siblings('.labelError').show();
-        }
-        // Dropdown city
-        if (($('#select_post_city').text() == "Select city *") || ($('#select_post_city').text() == "Select City")) {
-          $('.select_container_city').addClass("error_input_field");
-          $('.select_container_city').find('.labelError').show();
-        }
-        else{
-          $('.select_container_city').removeClass("error_input_field");
-          $('.select_container_city').find('.labelError').hide();
-        }
-        // Dropdown locality
-        if (($('#select_post_locality').text() == "Select locality *") || ($('#select_post_locality').text() == "Select Locality")) {
-          $('.select_container_locality').addClass("error_input_field");
-          $('.select_container_locality').find('.labelError').show();
-        }
-        else{
-          $('.select_container_locality').removeClass("error_input_field");
-          $('.select_container_locality').find('.labelError').hide();
-        }
-        //Validate the e-mail.
-        if($('#your_email').val() != ''){
-        if (!/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/.test($('#your_email').val())) {
-          $('#your_email').addClass("error_input_field");
-          $('#your_email').siblings('.labelError').text("Please enter valid email address");
-          $('.labelError').show();
-        }
-        else
-        {
-          $('#your_email').removeClass("error_input_field");
-          $('#your_email').siblings('.labelError').hide();
-        }
-        }
-        if($('#terms_of_use').attr('checked')){
-          // $('#terms_required').hide();
-          $('#terms_of_use').removeClass("error_input_field");
-          $('#terms_of_use').next().siblings('.labelError').hide();
-        }
-        else{
-          // $('#terms_required').show();
-          $('#terms_of_use').addClass("error_input_field");
-          $('#terms_of_use').next().siblings('.labelError').show();
-        }
-        video_url = $('#videos1').val();
-        if(regYoutube.test(video_url)) {
-          $('#videos1').siblings('.labelError').hide();
-        }
-        else if(video_url !=''){
-          $('#videos1').siblings('.labelError').show();
-        }
-        if ($(":input").hasClass("error_input_field") || $(".select_container_city").hasClass("error_input_field") || $(".select_container_locality").hasClass("error_input_field") || $("#buy,#sell").hasClass("error_input_field") || $("#individual,#dealer,.photo_labelError").hasClass("error_input_field") || $('#your_mobile_no').hasClass("error")){
-        return false;
-        }
-        else{
-          return true;
-          $('form[name="post_ad"]').submit();
-        }
+          else{
+            sign_up_center_align();
+            $('.popup_fade').show();
+            $('.sign_in_div, .close_btn').show();
+            $('.sign_up_div').hide();
+            document.body.style.overflow = 'hidden';
+          }
+      }); 
+      return return_response;    
     });
 
     //============= FOR SET PREMIUM PLAN AMOUNT ===========

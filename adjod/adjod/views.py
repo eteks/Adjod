@@ -652,3 +652,11 @@ def password_reset_confirm(request, uidb36=None, token=None,
 
 def testads_google(request):
 	return render_to_response('testads_google.html', context_instance=RequestContext(request))
+
+@csrf_exempt
+def check_authenticate(request):
+	if request.user.is_authenticated():
+		results = "yes"
+	else:
+		results = "no"	
+	return HttpResponse(simplejson.dumps(results), mimetype='application/json')

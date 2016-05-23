@@ -177,7 +177,11 @@
           <div class="tooltip">{% trans "You already add 3 posts," %}<br>{% trans "if u want add more posts," %}<br>{% trans "u have to make ur account as premium" %}<button type="button" class="btn btn-link link_tooltip">{% trans "Click here" %}</button></div>
         </div> -->
         <div class=""> 
-          <a href="{% url product_form %}" class="#postbutton btn btn-warning post_button">Post Free Ad</a>
+          {% if user.is_authenticated %}
+           <a href="{% url product_form %}" class="#postbutton btn btn-warning post_button">Post Free Ad</a>
+            {% else %}
+             <a class="#postbutton btn btn-warning post_button na_post_button">Post Free Ad</a>
+           {% endif %}     
         </div>
         <div class="alert_content">
         <h4 class="need_txt">{% trans "Tell us your need" %}</h4>

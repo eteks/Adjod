@@ -329,7 +329,11 @@
                         <div class="searchpage_tooltip">{% trans "You already add 3 posts," %}<br>{% trans "if u want add more posts," %}<br>{% trans "u have to make ur account as premium" %}<button type="button" class="btn btn-link link_tooltip">{% trans "Click here" %}</button></div>
                       </div> -->
                        <div class="search_tool">
+                       {% if user.is_authenticated %}
                         <a href="{% url product_form %}" class="btn btn-lg post-button">{% trans "Post Free Ad" %}</a>
+                        {% else %}
+                        <a class="btn btn-lg post-button na_post_button">{% trans "Post Free Ad" %}</a>
+                       {% endif %}
                       </div>
                       <a class="btn btn-lg alert-button">{% trans "Create free alert" %}</a>
 
@@ -347,7 +351,11 @@
                         {% endif %}
                         </div>
                       <button type="submit"class="btn btn-lg btn-success search_b">{% trans "Search" %}</button>
-                      <a href="{% url product_form %}" class="btn btn-lg post-button">{% trans "Post free Ad" %}</a>
+                      {% if user.is_authenticated %}
+                        <a href="{% url product_form %}" class="btn btn-lg post-button">{% trans "Post Free Ad" %}</a>
+                        {% else %}
+                        <a class="btn btn-lg post-button na_post_button">{% trans "Post Free Ad" %}</a>
+                      {% endif %}
                       <a href="/" class="btn btn-lg alert-button">{% trans "Create free alert" %}</a>
                 </form> <!-- info_form -->
           </div> <!-- container logo_part -->

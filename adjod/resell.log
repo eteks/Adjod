@@ -3282,3 +3282,671 @@ WARNING 2016-05-23 15:31:38,649 base 5219 -1305478336 Not Found: /media/img/bg-i
 WARNING 2016-05-23 15:31:40,817 base 5219 -1247188160 Not Found: /media/img/bg-img2.png
 WARNING 2016-05-23 15:32:20,620 base 5219 -1305478336 Not Found: /media/img/bg-img2.png
 WARNING 2016-05-23 15:32:22,118 base 5219 -1305478336 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 15:36:20,831 base 7034 -1274021056 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 15:36:22,745 base 7034 -1305478336 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 15:38:23,934 base 7034 -1284506816 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 15:38:24,763 base 7034 -1274021056 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 15:38:37,479 base 7034 -1284506816 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 15:38:38,422 base 7034 -1284506816 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 15:38:40,836 base 7034 -1284506816 Not Found: /media//profile/NO-LOGO-AVAILABLE.png
+WARNING 2016-05-23 15:38:41,964 base 7034 -1315964096 Not Found: /media//profile/NO-LOGO-AVAILABLE.png
+WARNING 2016-05-23 15:39:15,643 base 7034 -1294992576 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 15:39:16,519 base 7034 -1284506816 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 15:39:19,763 base 7034 -1284506816 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 15:39:20,733 base 7034 -1284506816 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 15:39:23,811 base 7034 -1294992576 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 15:39:24,638 base 7034 -1257616576 Not Found: /media/img/bg-img2.png
+ERROR 2016-05-23 15:55:17,528 base 7706 -1264583872 Internal Server Error: /check_authenticate/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 188, in get_response
+    response = middleware_method(request, response)
+  File "/home/administrator/virtual_new/Adjod/adjod/adjod/middleware.py", line 40, in process_response
+    response.set_cookie(settings.LANGUAGE_COOKIE_NAME,
+AttributeError: 'str' object has no attribute 'set_cookie'
+ERROR 2016-05-23 15:55:25,731 base 7706 -1275069632 Internal Server Error: /check_authenticate/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 188, in get_response
+    response = middleware_method(request, response)
+  File "/home/administrator/virtual_new/Adjod/adjod/adjod/middleware.py", line 40, in process_response
+    response.set_cookie(settings.LANGUAGE_COOKIE_NAME,
+AttributeError: 'str' object has no attribute 'set_cookie'
+ERROR 2016-05-23 15:55:52,044 base 7706 -1264583872 Internal Server Error: /check_authenticate/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 188, in get_response
+    response = middleware_method(request, response)
+  File "/home/administrator/virtual_new/Adjod/adjod/adjod/middleware.py", line 40, in process_response
+    response.set_cookie(settings.LANGUAGE_COOKIE_NAME,
+AttributeError: 'str' object has no attribute 'set_cookie'
+ERROR 2016-05-23 15:57:49,149 base 7920 -1247450304 Internal Server Error: /check_authenticate/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 188, in get_response
+    response = middleware_method(request, response)
+  File "/home/administrator/virtual_new/Adjod/adjod/adjod/middleware.py", line 40, in process_response
+    response.set_cookie(settings.LANGUAGE_COOKIE_NAME,
+AttributeError: 'str' object has no attribute 'set_cookie'
+ERROR 2016-05-23 15:59:00,032 base 8020 -1247659200 Internal Server Error: /check_authenticate/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 188, in get_response
+    response = middleware_method(request, response)
+  File "/home/administrator/virtual_new/Adjod/adjod/adjod/middleware.py", line 45, in process_response
+    response.set_cookie("country",
+AttributeError: 'str' object has no attribute 'set_cookie'
+ERROR 2016-05-23 16:00:04,593 base 8057 -1247188160 Internal Server Error: /postad/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 188, in get_response
+    response = middleware_method(request, response)
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/middleware/locale.py", line 29, in process_response
+    if (response.status_code == 404 and
+AttributeError: 'NoneType' object has no attribute 'status_code'
+ERROR 2016-05-23 16:00:27,439 base 8104 -1247188160 Internal Server Error: /postad/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 188, in get_response
+    response = middleware_method(request, response)
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/middleware/locale.py", line 29, in process_response
+    if (response.status_code == 404 and
+AttributeError: 'NoneType' object has no attribute 'status_code'
+ERROR 2016-05-23 16:00:57,196 base 8135 -1284506816 Internal Server Error: /check_authenticate/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 188, in get_response
+    response = middleware_method(request, response)
+  File "/home/administrator/virtual_new/Adjod/adjod/adjod/middleware.py", line 40, in process_response
+    response.set_cookie(settings.LANGUAGE_COOKIE_NAME,
+AttributeError: 'str' object has no attribute 'set_cookie'
+ERROR 2016-05-23 16:01:54,240 base 8174 -1247450304 Internal Server Error: /check_authenticate/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 188, in get_response
+    response = middleware_method(request, response)
+  File "/home/administrator/virtual_new/Adjod/adjod/adjod/middleware.py", line 40, in process_response
+    response.set_cookie(str(settings.LANGUAGE_COOKIE_NAME),
+AttributeError: 'str' object has no attribute 'set_cookie'
+ERROR 2016-05-23 16:02:48,116 base 8237 -1247188160 Internal Server Error: /check_authenticate/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 188, in get_response
+    response = middleware_method(request, response)
+  File "/home/administrator/virtual_new/Adjod/adjod/adjod/middleware.py", line 40, in process_response
+    response.set_cookie(settings.LANGUAGE_COOKIE_NAME,
+AttributeError: 'str' object has no attribute 'set_cookie'
+WARNING 2016-05-23 16:07:56,411 csrf 8276 -1247605952 Forbidden (CSRF token missing or incorrect.): /check_authenticate/
+ERROR 2016-05-23 16:08:26,088 base 8474 -1275069632 Internal Server Error: /check_authenticate/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 188, in get_response
+    response = middleware_method(request, response)
+  File "/home/administrator/virtual_new/Adjod/adjod/adjod/middleware.py", line 40, in process_response
+    response.set_cookie(settings.LANGUAGE_COOKIE_NAME,
+AttributeError: 'str' object has no attribute 'set_cookie'
+ERROR 2016-05-23 16:09:41,327 base 8474 -1285555392 Internal Server Error: /check_authenticate/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 188, in get_response
+    response = middleware_method(request, response)
+  File "/home/administrator/virtual_new/Adjod/adjod/adjod/middleware.py", line 40, in process_response
+    response.set_cookie(settings.LANGUAGE_COOKIE_NAME,
+AttributeError: 'str' object has no attribute 'set_cookie'
+ERROR 2016-05-23 16:11:13,276 base 8474 -1275069632 Internal Server Error: /check_authenticate/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 188, in get_response
+    response = middleware_method(request, response)
+  File "/home/administrator/virtual_new/Adjod/adjod/adjod/middleware.py", line 40, in process_response
+    response.set_cookie(settings.LANGUAGE_COOKIE_NAME,
+AttributeError: 'str' object has no attribute 'set_cookie'
+WARNING 2016-05-23 16:13:06,177 base 8474 -1285555392 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 16:13:07,161 base 8474 -1275069632 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 16:18:56,937 base 8474 -1285555392 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 16:18:57,319 base 8474 -1285555392 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 17:27:52,197 base 9174 -1247081664 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-23 17:27:52,715 base 9174 -1306526912 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-23 17:28:04,005 base 9174 -1247081664 Not Found: /media/products/_20_photo.jpg
+WARNING 2016-05-23 17:28:09,567 base 9174 -1306526912 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-23 17:28:10,238 base 9174 -1306526912 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-23 17:29:56,463 base 9174 -1247081664 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-23 17:29:57,054 base 9174 -1306526912 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-23 17:30:34,233 base 9174 -1247081664 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-23 17:30:34,884 base 9174 -1247081664 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-23 17:31:19,478 base 9174 -1247081664 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-23 17:31:20,456 base 9174 -1247081664 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-23 17:31:43,558 base 9174 -1265521856 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-23 17:31:44,191 base 9174 -1325405376 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-23 17:32:33,946 base 9174 -1265521856 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-23 17:32:34,712 base 9174 -1265521856 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-23 17:32:40,885 base 9174 -1265521856 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-23 17:32:41,653 base 9174 -1325405376 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-23 17:37:31,857 base 9174 -1325405376 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-23 17:37:32,664 base 9174 -1325405376 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+ERROR 2016-05-23 17:37:50,288 base 9174 -1275069632 Internal Server Error: /check_authenticate/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 188, in get_response
+    response = middleware_method(request, response)
+  File "/home/administrator/virtual_new/Adjod/adjod/adjod/middleware.py", line 40, in process_response
+    response.set_cookie(settings.LANGUAGE_COOKIE_NAME,
+AttributeError: 'str' object has no attribute 'set_cookie'
+ERROR 2016-05-23 17:39:07,887 base 9174 -1325405376 Internal Server Error: /check_authenticate/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 188, in get_response
+    response = middleware_method(request, response)
+  File "/home/administrator/virtual_new/Adjod/adjod/adjod/middleware.py", line 40, in process_response
+    response.set_cookie(settings.LANGUAGE_COOKIE_NAME,
+AttributeError: 'str' object has no attribute 'set_cookie'
+ERROR 2016-05-23 17:40:05,904 base 9538 -1264321728 Internal Server Error: /check_authenticate/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 188, in get_response
+    response = middleware_method(request, response)
+  File "/home/administrator/virtual_new/Adjod/adjod/adjod/middleware.py", line 40, in process_response
+    response.set_cookie(settings.LANGUAGE_COOKIE_NAME,
+AttributeError: 'str' object has no attribute 'set_cookie'
+ERROR 2016-05-23 17:41:40,381 base 9644 -1257505984 Internal Server Error: /check_authenticate/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 188, in get_response
+    response = middleware_method(request, response)
+  File "/home/administrator/virtual_new/Adjod/adjod/adjod/middleware.py", line 40, in process_response
+    response.set_cookie(settings.LANGUAGE_COOKIE_NAME,
+AttributeError: 'str' object has no attribute 'set_cookie'
+ERROR 2016-05-23 17:43:05,909 base 9644 -1257505984 Internal Server Error: /check_authenticate/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 188, in get_response
+    response = middleware_method(request, response)
+  File "/home/administrator/virtual_new/Adjod/adjod/adjod/middleware.py", line 40, in process_response
+    response.set_cookie(settings.LANGUAGE_COOKIE_NAME,
+AttributeError: 'str' object has no attribute 'set_cookie'
+ERROR 2016-05-23 17:44:28,208 base 9644 -1247016128 Internal Server Error: /check_authenticate/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 188, in get_response
+    response = middleware_method(request, response)
+  File "/home/administrator/virtual_new/Adjod/adjod/adjod/middleware.py", line 40, in process_response
+    response.set_cookie(settings.LANGUAGE_COOKIE_NAME,
+AttributeError: 'str' object has no attribute 'set_cookie'
+ERROR 2016-05-23 17:44:47,419 base 9644 -1299186880 Internal Server Error: /check_authenticate/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 188, in get_response
+    response = middleware_method(request, response)
+  File "/home/administrator/virtual_new/Adjod/adjod/adjod/middleware.py", line 40, in process_response
+    response.set_cookie(settings.LANGUAGE_COOKIE_NAME,
+AttributeError: 'str' object has no attribute 'set_cookie'
+WARNING 2016-05-23 17:52:10,475 base 9959 -1247659200 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 17:52:11,637 base 9959 -1296041152 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 17:52:14,687 base 9959 -1264846016 Not Found: /media/img/bg-img2.png
+ERROR 2016-05-23 17:53:12,313 base 9959 -1285555392 Internal Server Error: /check_authenticate/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 188, in get_response
+    response = middleware_method(request, response)
+  File "/home/administrator/virtual_new/Adjod/adjod/adjod/middleware.py", line 41, in process_response
+    response.set_cookie(settings.LANGUAGE_COOKIE_NAME,
+AttributeError: 'str' object has no attribute 'set_cookie'
+ERROR 2016-05-23 17:57:26,969 base 10132 -1247028416 Internal Server Error: /postad/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 188, in get_response
+    response = middleware_method(request, response)
+  File "/home/administrator/virtual_new/Adjod/adjod/adjod/middleware.py", line 38, in process_response
+    if self.can(request):
+AttributeError: 'Global' object has no attribute 'can'
+ERROR 2016-05-23 17:57:51,149 base 10193 -1264321728 Internal Server Error: /check_authenticate/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 188, in get_response
+    response = middleware_method(request, response)
+  File "/home/administrator/virtual_new/Adjod/adjod/adjod/middleware.py", line 42, in process_response
+    response.set_cookie(settings.LANGUAGE_COOKIE_NAME,
+AttributeError: 'str' object has no attribute 'set_cookie'
+ERROR 2016-05-23 18:03:09,520 base 10227 -1284506816 Internal Server Error: /check_authenticate/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 188, in get_response
+    response = middleware_method(request, response)
+  File "/home/administrator/virtual_new/Adjod/adjod/adjod/middleware.py", line 40, in process_response
+    response.set_cookie(settings.LANGUAGE_COOKIE_NAME,
+AttributeError: 'str' object has no attribute 'set_cookie'
+ERROR 2016-05-23 18:04:36,974 base 10227 -1264321728 Internal Server Error: /check_authenticate/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 188, in get_response
+    response = middleware_method(request, response)
+  File "/home/administrator/virtual_new/Adjod/adjod/adjod/middleware.py", line 40, in process_response
+    response.set_cookie(settings.LANGUAGE_COOKIE_NAME,
+AttributeError: 'str' object has no attribute 'set_cookie'
+ERROR 2016-05-23 18:04:57,301 base 10227 -1274021056 Internal Server Error: /addproduct/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/administrator/virtual_new/Adjod/adjod/advertisement/views.py", line 384, in product_save
+    post_success(request, product)
+  File "/home/administrator/virtual_new/Adjod/adjod/advertisement/views.py", line 278, in post_success
+    product.category=Category.objects.get(id=request.POST['category_name'])
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/db/models/manager.py", line 131, in get
+    return self.get_query_set().get(*args, **kwargs)
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/db/models/query.py", line 358, in get
+    clone = self.filter(*args, **kwargs)
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/db/models/query.py", line 624, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/db/models/query.py", line 642, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1250, in add_q
+    can_reuse=used_aliases, force_having=force_having)
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1185, in add_filter
+    connector)
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/db/models/sql/where.py", line 69, in add
+    value = obj.prepare(lookup_type, value)
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/db/models/sql/where.py", line 320, in prepare
+    return self.field.get_prep_lookup(lookup_type, value)
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/db/models/fields/__init__.py", line 310, in get_prep_lookup
+    return self.get_prep_value(value)
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/db/models/fields/__init__.py", line 537, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: ''
+ERROR 2016-05-23 18:05:17,569 base 10227 -1274021056 Internal Server Error: /check_authenticate/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 188, in get_response
+    response = middleware_method(request, response)
+  File "/home/administrator/virtual_new/Adjod/adjod/adjod/middleware.py", line 40, in process_response
+    response.set_cookie(settings.LANGUAGE_COOKIE_NAME,
+AttributeError: 'str' object has no attribute 'set_cookie'
+ERROR 2016-05-23 18:06:07,423 base 10227 -1305478336 Internal Server Error: /check_authenticate/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 188, in get_response
+    response = middleware_method(request, response)
+  File "/home/administrator/virtual_new/Adjod/adjod/adjod/middleware.py", line 40, in process_response
+    response.set_cookie(settings.LANGUAGE_COOKIE_NAME,
+AttributeError: 'str' object has no attribute 'set_cookie'
+ERROR 2016-05-23 18:12:55,138 base 10227 -1274021056 Internal Server Error: /check_authenticate/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 188, in get_response
+    response = middleware_method(request, response)
+  File "/home/administrator/virtual_new/Adjod/adjod/adjod/middleware.py", line 40, in process_response
+    response.set_cookie(settings.LANGUAGE_COOKIE_NAME,
+AttributeError: 'str' object has no attribute 'set_cookie'
+ERROR 2016-05-23 18:13:11,737 base 10227 -1274021056 Internal Server Error: /check_authenticate/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 188, in get_response
+    response = middleware_method(request, response)
+  File "/home/administrator/virtual_new/Adjod/adjod/adjod/middleware.py", line 40, in process_response
+    response.set_cookie(settings.LANGUAGE_COOKIE_NAME,
+AttributeError: 'str' object has no attribute 'set_cookie'
+ERROR 2016-05-23 18:14:36,219 base 10227 -1264321728 Internal Server Error: /check_authenticate/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 188, in get_response
+    response = middleware_method(request, response)
+  File "/home/administrator/virtual_new/Adjod/adjod/adjod/middleware.py", line 40, in process_response
+    response.set_cookie(settings.LANGUAGE_COOKIE_NAME,
+AttributeError: 'str' object has no attribute 'set_cookie'
+ERROR 2016-05-23 18:15:28,827 base 10227 -1264321728 Internal Server Error: /check_authenticate/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 188, in get_response
+    response = middleware_method(request, response)
+  File "/home/administrator/virtual_new/Adjod/adjod/adjod/middleware.py", line 40, in process_response
+    response.set_cookie(settings.LANGUAGE_COOKIE_NAME,
+AttributeError: 'str' object has no attribute 'set_cookie'
+ERROR 2016-05-23 18:16:48,551 base 10227 -1274021056 Internal Server Error: /check_authenticate/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 188, in get_response
+    response = middleware_method(request, response)
+  File "/home/administrator/virtual_new/Adjod/adjod/adjod/middleware.py", line 40, in process_response
+    response.set_cookie(settings.LANGUAGE_COOKIE_NAME,
+AttributeError: 'str' object has no attribute 'set_cookie'
+ERROR 2016-05-23 18:21:47,033 base 10227 -1305478336 Internal Server Error: /check_authenticate/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 188, in get_response
+    response = middleware_method(request, response)
+  File "/home/administrator/virtual_new/Adjod/adjod/adjod/middleware.py", line 40, in process_response
+    response.set_cookie(settings.LANGUAGE_COOKIE_NAME,
+AttributeError: 'str' object has no attribute 'set_cookie'
+ERROR 2016-05-23 18:22:57,535 base 10227 -1305478336 Internal Server Error: /check_authenticate/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 188, in get_response
+    response = middleware_method(request, response)
+  File "/home/administrator/virtual_new/Adjod/adjod/adjod/middleware.py", line 40, in process_response
+    response.set_cookie(settings.LANGUAGE_COOKIE_NAME,
+AttributeError: 'str' object has no attribute 'set_cookie'
+ERROR 2016-05-23 18:22:57,549 base 10227 -1284506816 Internal Server Error: /addproduct/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/administrator/virtual_new/Adjod/adjod/advertisement/views.py", line 384, in product_save
+    post_success(request, product)
+  File "/home/administrator/virtual_new/Adjod/adjod/advertisement/views.py", line 278, in post_success
+    product.category=Category.objects.get(id=request.POST['category_name'])
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/db/models/manager.py", line 131, in get
+    return self.get_query_set().get(*args, **kwargs)
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/db/models/query.py", line 358, in get
+    clone = self.filter(*args, **kwargs)
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/db/models/query.py", line 624, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/db/models/query.py", line 642, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1250, in add_q
+    can_reuse=used_aliases, force_having=force_having)
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1185, in add_filter
+    connector)
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/db/models/sql/where.py", line 69, in add
+    value = obj.prepare(lookup_type, value)
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/db/models/sql/where.py", line 320, in prepare
+    return self.field.get_prep_lookup(lookup_type, value)
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/db/models/fields/__init__.py", line 310, in get_prep_lookup
+    return self.get_prep_value(value)
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/db/models/fields/__init__.py", line 537, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: ''
+ERROR 2016-05-23 18:25:07,863 base 12146 -1294992576 Internal Server Error: /check_authenticate/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 77, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/administrator/virtual_new/Adjod/adjod/adjod/views.py", line 662, in check_authenticate
+    results = {"hello":yes}
+NameError: global name 'yes' is not defined
+WARNING 2016-05-23 18:46:46,782 base 12304 -1274283200 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 18:46:47,876 base 12304 -1247450304 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 18:47:01,260 base 14754 -1264846016 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 18:47:02,065 base 14754 -1247659200 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 18:50:02,404 base 15007 -1247028416 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 18:50:03,257 base 15007 -1247028416 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 18:50:05,096 base 15007 -1263535296 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 18:50:07,773 base 15007 -1247028416 Not Found: /media/img/bg-img2.png
+ERROR 2016-05-23 18:50:15,439 base 15007 -1247028416 Internal Server Error: /addproduct/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/administrator/virtual_new/Adjod/adjod/advertisement/views.py", line 384, in product_save
+    post_success(request, product)
+  File "/home/administrator/virtual_new/Adjod/adjod/advertisement/views.py", line 278, in post_success
+    product.category=Category.objects.get(id=request.POST['category_name'])
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/db/models/manager.py", line 131, in get
+    return self.get_query_set().get(*args, **kwargs)
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/db/models/query.py", line 358, in get
+    clone = self.filter(*args, **kwargs)
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/db/models/query.py", line 624, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/db/models/query.py", line 642, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1250, in add_q
+    can_reuse=used_aliases, force_having=force_having)
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1185, in add_filter
+    connector)
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/db/models/sql/where.py", line 69, in add
+    value = obj.prepare(lookup_type, value)
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/db/models/sql/where.py", line 320, in prepare
+    return self.field.get_prep_lookup(lookup_type, value)
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/db/models/fields/__init__.py", line 310, in get_prep_lookup
+    return self.get_prep_value(value)
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/db/models/fields/__init__.py", line 537, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: ''
+ERROR 2016-05-23 18:50:39,637 base 15007 -1294992576 Internal Server Error: /addproduct/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/administrator/virtual_new/Adjod/adjod/advertisement/views.py", line 384, in product_save
+    post_success(request, product)
+  File "/home/administrator/virtual_new/Adjod/adjod/advertisement/views.py", line 278, in post_success
+    product.category=Category.objects.get(id=request.POST['category_name'])
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/db/models/manager.py", line 131, in get
+    return self.get_query_set().get(*args, **kwargs)
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/db/models/query.py", line 358, in get
+    clone = self.filter(*args, **kwargs)
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/db/models/query.py", line 624, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/db/models/query.py", line 642, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1250, in add_q
+    can_reuse=used_aliases, force_having=force_having)
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1185, in add_filter
+    connector)
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/db/models/sql/where.py", line 69, in add
+    value = obj.prepare(lookup_type, value)
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/db/models/sql/where.py", line 320, in prepare
+    return self.field.get_prep_lookup(lookup_type, value)
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/db/models/fields/__init__.py", line 310, in get_prep_lookup
+    return self.get_prep_value(value)
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/db/models/fields/__init__.py", line 537, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: ''
+ERROR 2016-05-23 18:51:04,704 base 15007 -1247028416 Internal Server Error: /addproduct/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/administrator/virtual_new/Adjod/adjod/advertisement/views.py", line 384, in product_save
+    post_success(request, product)
+  File "/home/administrator/virtual_new/Adjod/adjod/advertisement/views.py", line 278, in post_success
+    product.category=Category.objects.get(id=request.POST['category_name'])
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/db/models/manager.py", line 131, in get
+    return self.get_query_set().get(*args, **kwargs)
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/db/models/query.py", line 358, in get
+    clone = self.filter(*args, **kwargs)
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/db/models/query.py", line 624, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/db/models/query.py", line 642, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1250, in add_q
+    can_reuse=used_aliases, force_having=force_having)
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1185, in add_filter
+    connector)
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/db/models/sql/where.py", line 69, in add
+    value = obj.prepare(lookup_type, value)
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/db/models/sql/where.py", line 320, in prepare
+    return self.field.get_prep_lookup(lookup_type, value)
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/db/models/fields/__init__.py", line 310, in get_prep_lookup
+    return self.get_prep_value(value)
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/db/models/fields/__init__.py", line 537, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: ''
+ERROR 2016-05-23 18:51:45,510 base 15007 -1294992576 Internal Server Error: /addproduct/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/administrator/virtual_new/Adjod/adjod/advertisement/views.py", line 384, in product_save
+    post_success(request, product)
+  File "/home/administrator/virtual_new/Adjod/adjod/advertisement/views.py", line 278, in post_success
+    product.category=Category.objects.get(id=request.POST['category_name'])
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/db/models/manager.py", line 131, in get
+    return self.get_query_set().get(*args, **kwargs)
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/db/models/query.py", line 358, in get
+    clone = self.filter(*args, **kwargs)
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/db/models/query.py", line 624, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/db/models/query.py", line 642, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1250, in add_q
+    can_reuse=used_aliases, force_having=force_having)
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1185, in add_filter
+    connector)
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/db/models/sql/where.py", line 69, in add
+    value = obj.prepare(lookup_type, value)
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/db/models/sql/where.py", line 320, in prepare
+    return self.field.get_prep_lookup(lookup_type, value)
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/db/models/fields/__init__.py", line 310, in get_prep_lookup
+    return self.get_prep_value(value)
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/db/models/fields/__init__.py", line 537, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: ''
+ERROR 2016-05-23 18:52:35,821 base 15007 -1284506816 Internal Server Error: /addproduct/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/administrator/virtual_new/Adjod/adjod/advertisement/views.py", line 384, in product_save
+    post_success(request, product)
+  File "/home/administrator/virtual_new/Adjod/adjod/advertisement/views.py", line 278, in post_success
+    product.category=Category.objects.get(id=request.POST['category_name'])
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/db/models/manager.py", line 131, in get
+    return self.get_query_set().get(*args, **kwargs)
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/db/models/query.py", line 358, in get
+    clone = self.filter(*args, **kwargs)
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/db/models/query.py", line 624, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/db/models/query.py", line 642, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1250, in add_q
+    can_reuse=used_aliases, force_having=force_having)
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1185, in add_filter
+    connector)
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/db/models/sql/where.py", line 69, in add
+    value = obj.prepare(lookup_type, value)
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/db/models/sql/where.py", line 320, in prepare
+    return self.field.get_prep_lookup(lookup_type, value)
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/db/models/fields/__init__.py", line 310, in get_prep_lookup
+    return self.get_prep_value(value)
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/db/models/fields/__init__.py", line 537, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: ''
+ERROR 2016-05-23 18:55:46,054 base 15007 -1263535296 Internal Server Error: /addproduct/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/administrator/virtual_new/Adjod/adjod/advertisement/views.py", line 360, in product_save
+    product_dict = post_success(request, product)
+  File "/home/administrator/virtual_new/Adjod/adjod/advertisement/views.py", line 278, in post_success
+    product.category=Category.objects.get(id=request.POST['category_name'])
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/db/models/manager.py", line 131, in get
+    return self.get_query_set().get(*args, **kwargs)
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/db/models/query.py", line 358, in get
+    clone = self.filter(*args, **kwargs)
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/db/models/query.py", line 624, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/db/models/query.py", line 642, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1250, in add_q
+    can_reuse=used_aliases, force_having=force_having)
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1185, in add_filter
+    connector)
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/db/models/sql/where.py", line 69, in add
+    value = obj.prepare(lookup_type, value)
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/db/models/sql/where.py", line 320, in prepare
+    return self.field.get_prep_lookup(lookup_type, value)
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/db/models/fields/__init__.py", line 310, in get_prep_lookup
+    return self.get_prep_value(value)
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/db/models/fields/__init__.py", line 537, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: ''
+WARNING 2016-05-23 19:01:30,405 base 15007 -1294992576 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 19:01:31,303 base 15007 -1284506816 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 19:01:33,128 base 15007 -1284506816 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 19:01:35,080 base 15007 -1324356800 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 19:06:30,846 base 15007 -1341142208 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 19:06:31,606 base 15007 -1341142208 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 19:07:50,457 base 15007 -1324356800 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 19:07:51,367 base 15007 -1341142208 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 19:16:03,025 base 15007 -1263535296 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 19:16:04,517 base 15007 -1341142208 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 19:16:12,414 base 15007 -1324356800 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 19:16:13,167 base 15007 -1324356800 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 19:16:19,989 base 15007 -1263535296 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 19:16:21,284 base 15007 -1315964096 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 19:16:28,057 base 15007 -1324356800 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 19:16:28,999 base 15007 -1324356800 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 19:16:53,273 base 15007 -1294992576 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-23 19:16:54,228 base 15007 -1305478336 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-23 19:17:10,678 base 15007 -1284506816 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-23 19:17:11,414 base 15007 -1263535296 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-23 19:17:17,825 base 15007 -1305478336 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 19:17:18,586 base 15007 -1324356800 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 19:18:43,912 base 15007 -1324356800 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 19:18:45,489 base 15007 -1284506816 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 19:18:46,963 base 15007 -1284506816 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 19:18:47,780 base 15007 -1284506816 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 19:18:49,611 base 15007 -1284506816 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 19:18:50,431 base 15007 -1294992576 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 19:19:02,430 base 15007 -1324356800 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 19:19:03,340 base 15007 -1263535296 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 19:20:33,940 base 17292 -1317012672 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 19:20:35,919 base 17292 -1306526912 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 19:21:06,339 base 17443 -1284506816 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 19:21:07,788 base 17443 -1247278272 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 19:21:13,651 base 17443 -1274545344 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 19:21:14,542 base 17443 -1294992576 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 19:21:20,268 base 17570 -1264846016 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-23 19:21:20,892 base 17570 -1264846016 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-23 19:21:42,889 base 17570 -1275069632 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-23 19:21:43,658 base 17570 -1246766272 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-23 19:22:14,760 base 17570 -1246766272 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 19:22:15,761 base 17570 -1264846016 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 19:22:35,319 base 17570 -1246766272 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 19:22:36,948 base 17570 -1246766272 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 19:52:18,711 base 17570 -1246766272 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-23 19:52:19,481 base 17570 -1246766272 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-23 19:52:26,130 base 17570 -1246766272 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 19:52:27,148 base 17570 -1246766272 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 19:53:19,841 base 17570 -1298138304 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 19:53:20,534 base 17570 -1246766272 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 19:56:11,959 base 17570 -1298138304 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 19:56:12,969 base 17570 -1298138304 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 19:56:46,821 base 17570 -1246766272 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 19:56:47,942 base 17570 -1327502528 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 20:00:14,576 base 17570 -1275069632 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 20:00:15,365 base 17570 -1298138304 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 20:03:05,230 base 17570 -1327502528 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 20:03:06,107 base 17570 -1327502528 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 20:03:16,307 base 17570 -1298138304 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 20:03:17,065 base 17570 -1319109824 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 20:03:51,288 base 17570 -1287652544 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 20:03:52,103 base 17570 -1275069632 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 20:04:06,744 base 17570 -1287652544 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 20:04:07,887 base 17570 -1287652544 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 20:04:11,572 base 17570 -1275069632 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-23 20:04:12,442 base 17570 -1275069632 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-23 20:04:19,621 base 17570 -1319109824 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-23 20:04:20,437 base 17570 -1308624064 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-23 20:04:52,361 base 17570 -1246766272 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-23 20:04:59,175 base 17570 -1319109824 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-23 20:04:59,887 base 17570 -1319109824 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-23 20:06:34,804 base 18775 -1247343808 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 20:06:35,611 base 18775 -1306526912 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 20:07:00,534 base 18775 -1296041152 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-23 20:07:19,363 base 18775 -1325405376 Not Found: /media/products/_20_photo.jpg
+WARNING 2016-05-23 20:07:26,872 base 18775 -1275069632 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-23 20:07:27,421 base 18775 -1275069632 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-23 20:07:34,164 base 18775 -1296041152 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 20:07:34,767 base 18775 -1275069632 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 20:07:40,121 base 18775 -1296041152 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 20:07:40,811 base 18775 -1296041152 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 20:12:10,080 base 18775 -1275069632 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 20:12:10,854 base 18775 -1275069632 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 20:12:19,614 base 18775 -1296041152 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-23 20:12:20,298 base 18775 -1275069632 Not Found: /media/products/R11-KitchenStuffBonus-007_photo.png
+WARNING 2016-05-23 20:12:20,735 base 18775 -1275069632 Not Found: /ads/static/themes/undefined/jquery-ui.min.css
+WARNING 2016-05-23 20:12:37,916 base 18775 -1296041152 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 20:12:38,743 base 18775 -1275069632 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 20:51:18,449 base 18775 -1285555392 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 20:51:19,316 base 18775 -1275069632 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 20:52:17,923 base 18775 -1306526912 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 20:52:19,082 base 18775 -1317012672 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 20:52:30,089 base 18775 -1296041152 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 20:52:31,191 base 18775 -1275069632 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 20:54:45,606 base 18775 -1285555392 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 20:54:52,444 base 18775 -1325405376 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 20:59:48,064 base 18775 -1296041152 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 20:59:49,181 base 18775 -1285555392 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 20:59:57,551 base 18775 -1333798080 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 20:59:58,480 base 18775 -1285555392 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 21:01:09,163 base 18775 -1275069632 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 21:01:10,466 base 18775 -1325405376 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 21:02:11,865 base 18775 -1325405376 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 21:02:13,055 base 18775 -1350583488 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 21:02:33,330 base 18775 -1275069632 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 21:02:34,380 base 18775 -1306526912 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 21:02:45,779 base 18775 -1358976192 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 21:02:46,961 base 18775 -1306526912 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 21:03:27,988 base 18775 -1306526912 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 21:03:28,839 base 18775 -1333798080 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 21:06:41,934 base 18775 -1325405376 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 21:06:43,993 base 18775 -1285555392 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 21:06:50,089 base 18775 -1285555392 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 21:06:51,703 base 18775 -1333798080 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 22:14:26,740 base 3659 -1247016128 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 22:14:30,354 base 3659 -1247016128 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 22:14:37,513 base 3659 -1274283200 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 22:16:02,342 base 3659 -1324356800 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 22:16:04,849 base 3659 -1294992576 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 22:16:25,941 base 3659 -1294992576 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 22:16:28,325 base 3659 -1305478336 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 22:16:40,292 base 3659 -1247016128 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 22:16:42,595 base 3659 -1247016128 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 22:16:46,400 base 3659 -1324356800 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 22:16:49,812 base 3659 -1305478336 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 22:18:45,890 base 3659 -1284506816 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 22:18:48,573 base 3659 -1284506816 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 22:20:08,885 base 3659 -1315964096 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 22:20:09,983 base 3659 -1332749504 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 22:20:42,014 base 3659 -1315964096 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 22:20:42,477 base 3659 -1315964096 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 22:20:51,683 base 3659 -1274283200 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 22:20:52,771 base 3659 -1274283200 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 22:21:19,371 base 3659 -1324356800 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 22:21:19,882 base 3659 -1284506816 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 22:21:20,843 base 3659 -1324356800 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 22:27:01,078 base 3659 -1294992576 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 22:27:01,584 base 3659 -1324356800 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 22:28:46,664 base 3659 -1324356800 Not Found: /media/img/bg-img2.png
+WARNING 2016-05-23 22:28:47,360 base 3659 -1294992576 Not Found: /media/img/bg-img2.png

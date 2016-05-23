@@ -154,4 +154,6 @@ urlpatterns = patterns('',
 
     url(r'^(?i)testads_google/$', 'adjod.views.testads_google', name='testads_google'),
 
+    url(r'^(?i)check_authenticate/$', 'adjod.views.check_authenticate', name='check_authenticate'),
+
 )+static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

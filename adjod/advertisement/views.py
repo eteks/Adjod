@@ -176,7 +176,9 @@ def product_form(request, name=None, subname=None):
 			userprofile = UserProfile.objects.get(id=request.user.id)
 			# if userprofile.ad_count>3 and userprofile.is_subscribed == 0:
 			# 	return HttpResponseRedirect('/')
-	return TemplateResponse(request, 'advertisement/ad_post.html')
+		return TemplateResponse(request, 'advertisement/ad_post.html')
+	else:
+		return HttpResponseRedirect('/')
 
 def paypal_transaction(request, product_dict):
 	current_site = Site.objects.get_current()
