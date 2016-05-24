@@ -531,13 +531,21 @@ $( document ).ready(function() {
         $('.sign_in_div').hide();
         document.body.style.overflow = 'hidden';
     });
-    $('.popup_sign_in, .footer_login, .na_post_button').click(function(){
+    $('.popup_sign_in, .footer_login').click(function(){
         sign_in_center_align();
         $('.popup_fade').show();
         $('.sign_in_div, .close_btn').show();
         $('.sign_up_div').hide();
         document.body.style.overflow = 'hidden';
     });
+    $('.na_post_button').click(function(){
+        $('.next_path').val('/postad/');
+        sign_in_center_align();
+        $('.popup_fade').show();
+        $('.sign_in_div, .close_btn').show();
+        $('.sign_up_div').hide();
+        document.body.style.overflow = 'hidden';
+    }); 
     $('.choose_button').click(function(){
         category_popup_center_align();
         $('.popup_fade').show();
@@ -828,7 +836,7 @@ $( document ).ready(function() {
 
     //*************** start Sign Up form validation ***********
     // Place ID's of all required fields here.
-    sign_up_required=["email_id", "password","user_id"];
+    sign_up_required=["email_id", "password","user_id","mobile_number_sign_up_home"];
     jQuery('#create').click(function(){
     if ($('.confirm').prop('checked') == true){
             for (i=0;i<sign_up_required.length;i++) {
@@ -837,9 +845,13 @@ $( document ).ready(function() {
             input.addClass("error_input_field");
             input.siblings('.error_message').hide();
             input.siblings('.signup_labelError').show();
+            // For only mobile field
+            input.parents('#mobile_number_div').children('.signup_labelError').show();
             } else {
               input.removeClass("error_input_field");
               input.siblings('.signup_labelError').hide();
+            //For only mobile field
+            input.parents('#mobile_number_div').children('.signup_labelError').hide();
             }
           }
           //Validate the e-mail.
@@ -952,12 +964,14 @@ $( document ).ready(function() {
               }
               video_url = $('#videos1').val();
               if(regYoutube.test(video_url)) {
+                $('#videos1').removeClass("error_input_field");
                 $('#videos1').siblings('.labelError').hide();
               }
               else if(video_url !=''){
+                $('#videos1').addClass("error_input_field");
                 $('#videos1').siblings('.labelError').show();
               }
-              if ($(":input").hasClass("error_input_field") || $(".select_container_city").hasClass("error_input_field") || $(".select_container_locality").hasClass("error_input_field") || $("#buy,#sell").hasClass("error_input_field") || $("#individual,#dealer,.photo_labelError").hasClass("error_input_field") || $('#your_mobile_no').hasClass("error")){
+              if ($(":input").hasClass("error_input_field") || $(".select_container_city").hasClass("error_input_field") || $(".select_container_locality").hasClass("error_input_field") || $("#buy,#sell").hasClass("error_input_field") || $("#individual,#dealer,.photo_labelError").hasClass("error_input_field") || $('#your_mobile_no').hasClass("error") || $("#videos1").hasClass("error_input_field")){
                 return_response = false;
               }
               else{

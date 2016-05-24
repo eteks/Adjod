@@ -278,9 +278,9 @@
 
 {%block search_results1%}
 <div class="fl filter_result_wrapper" id="search_result" style="position:relative;">
-<p class="search_result">{{ page.number }} of {{page.paginator.num_pages}} Results</p>
       <div class="right_part">
         {% if page and page.object_list %}
+        <p class="search_result">{{ page.number }} of {{page.paginator.num_pages}} Results</p>
           <ul class="product1">
               {% for product in page.object_list %}
               {% if product.object %}
@@ -296,12 +296,14 @@
                     <img src="{{ MEDIA_URL }}{{ product.object.photos|get_photos }}" class="dn">
                     </a>
                     {% endif %}
-                    {% if product.object.imagecount != 0 %}
+                    <!-- {% if product.object.imagecount != 0 %} -->
+                    {% if product.object.photos != '' %}
                       <div class="count_holder1">
                           <span>{{product.object.imagecount}}</span>
                           <i class="fa fa-camera"></i>
                       </div>
                     {% endif %}
+                    <!-- {% endif %} -->
                 </div>
                 <div class="details">
                   <div class="product_name1">

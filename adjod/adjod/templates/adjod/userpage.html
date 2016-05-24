@@ -215,12 +215,15 @@
                       {% else %}
                         <img src="{{MEDIA_URL}}{{recentads.photos|get_photos}}" class="dn">
                       {% endif %}
-                      {% if recentads.imagecount != 0 %}
+                      <!-- {% if recentads.imagecount != 0 %} -->
+                      {% if recentads.photos != '' %}
                       <div class="count_holder">
                         <span>{{recentads.imagecount}}</span>
                         <i class="fa fa-camera"></i>
                       </div><!-- count_holder -->
                       {% endif %}
+                      <!-- {% endif %} -->
+
                     </a>
                   </div>
                   <div class="product_name"><a href="{% url product_detail recentads.id %}" class="span"> {{recentads.title}}</a></div>

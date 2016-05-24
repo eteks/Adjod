@@ -48,10 +48,12 @@
                 {% endif %}
                 </a>
                 {% endif %}
+                {% if my_ads.photos != '' %}
                 <div class="count_holder1 visible-lg">
                       <span>{{my_ads.imagecount}}</span>
                       <i class="fa fa-camera"></i>
                 </div><!--count_holder1-->
+                {% endif %}
               </div><!--product_images1-->
               <div class="ads_details1">
             <form action="/delete_ad" method="post" id="userprofile_form">

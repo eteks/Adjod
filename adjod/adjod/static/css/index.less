@@ -4206,6 +4206,7 @@ list-style:none;
 	left: -12px;
     position: relative;
     top:-5px;
+    margin-bottom: -8px;
 	@media (min-width: @grid-float-breakpoint){
 		display:block;
 		left: -22px;
@@ -6349,12 +6350,19 @@ color: #858585;
 }
 
 #valid-msg {
+    color: red;
+    font-size: 11px;
     position: relative;
+    right: 7px;
     top: -24px;
-    color:red;
-    font-size:12px;
-    width:100%;
-    right: 20px;
+	@media (min-width: @grid-float-breakpoint){
+	    position: relative;
+	    top: -24px;
+	    color:red;
+	    font-size:12px;
+	    width:100%;
+	    right: 20px;
+   }
 }
 .error-msg {
     color: red;
@@ -6887,4 +6895,12 @@ ul, ol { list-style: none; }
 
 .sign_in_div{
 	width: 588px !important;
+}
+#mobile_required{
+  	position: absolute;
+  	top: 51px;
+	@media (min-width: @grid-float-breakpoint){
+      position: absolute;
+      top: 62px;
+    }    
 }
