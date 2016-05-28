@@ -81,8 +81,14 @@
                 <div class="ads_name3 hidden-xs">
                     <!--   <a href="#" class="spans2">Action</a> -->
                     <span class="{%if my_ads.status_isactive == 1 %}action view_action{%else%}disable_post{%endif%}"><a href="{%if my_ads.status_isactive == 1 %}/ads/{{my_ads.id}}{%else%}#{%endif%}" class="action view_action">{% trans "View" %}</a></span>
-                    <span class="edit_action disable_post"><a href="/edit_postad_detail/{{my_ads.id}}" id="for_edit" class="action remove_class">{% trans "Edit" %}</a></span>
-                    <span class="action delete_action disable_post"><a href="#" value="{{my_ads.id}}" class="action delete_action remove_class">{% trans "Delete" %}</a></span>            
+                    <div class="inactive_edit_delete_action">
+                      <span class="edit_action disable_post"><a id="for_edit" class="action remove_class">{% trans "Edit" %}</a></span>
+                      <span class="action delete_action disable_post"><a value="{{my_ads.id}}" class="action delete_action remove_class">{% trans "Delete" %}</a></span>
+                    </div>
+                    <div class="active_edit_delete_action" style="display:none;">
+                      <span class="edit_action"><a href="/edit_postad_detail/{{my_ads.id}}" id="for_edit" class="action remove_class">{% trans "Edit" %}</a></span>
+                      <span class="action delete_action"><a href="#" value="{{my_ads.id}}" class="action delete_action remove_class">{% trans "Delete" %}</a></span>    
+                    </div>        
                </div><!--ads_name3-->
               <div class="ads_name3 visible-xs">
                   <!-- <a href="#" class="spans2 hidden-xs">{% trans "Action" %}</a> -->

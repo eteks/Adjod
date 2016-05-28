@@ -13214,3 +13214,221 @@ WARNING 2016-05-28 15:58:04,350 base 4375 -1267729600 Not Found: /media/img/bg-i
 WARNING 2016-05-28 15:58:05,064 base 4375 -1267729600 Not Found: /media/img/bg-img2.png
 WARNING 2016-05-28 15:58:16,785 base 4375 -1318065344 Not Found: /media/img/bg-img2.png
 WARNING 2016-05-28 15:58:17,512 base 4375 -1278215360 Not Found: /media/img/bg-img2.png
+ERROR 2016-05-28 17:49:01,745 base 14753 -1294992576 Internal Server Error: /delete_ad/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 77, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/administrator/virtual_new/Adjod/adjod/adjod/views.py", line 617, in delete_ad
+    get_products = [int(i) for i in list_items]
+ValueError: invalid literal for int() with base 10: ''
+ERROR 2016-05-28 17:49:02,128 base 14753 -1294992576 Internal Server Error: /delete_ad/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 77, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/administrator/virtual_new/Adjod/adjod/adjod/views.py", line 617, in delete_ad
+    get_products = [int(i) for i in list_items]
+ValueError: invalid literal for int() with base 10: ''
+ERROR 2016-05-28 17:49:03,204 base 14753 -1294992576 Internal Server Error: /delete_ad/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 77, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/administrator/virtual_new/Adjod/adjod/adjod/views.py", line 617, in delete_ad
+    get_products = [int(i) for i in list_items]
+ValueError: invalid literal for int() with base 10: ''
+ERROR 2016-05-28 17:49:03,404 base 14753 -1294992576 Internal Server Error: /delete_ad/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 77, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/administrator/virtual_new/Adjod/adjod/adjod/views.py", line 617, in delete_ad
+    get_products = [int(i) for i in list_items]
+ValueError: invalid literal for int() with base 10: ''
+ERROR 2016-05-28 17:49:04,506 base 14753 -1294992576 Internal Server Error: /delete_ad/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 77, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/administrator/virtual_new/Adjod/adjod/adjod/views.py", line 617, in delete_ad
+    get_products = [int(i) for i in list_items]
+ValueError: invalid literal for int() with base 10: ''
+ERROR 2016-05-28 17:49:04,655 base 14753 -1294992576 Internal Server Error: /delete_ad/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 77, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/administrator/virtual_new/Adjod/adjod/adjod/views.py", line 617, in delete_ad
+    get_products = [int(i) for i in list_items]
+ValueError: invalid literal for int() with base 10: ''
+ERROR 2016-05-28 17:49:09,216 base 14753 -1294992576 Internal Server Error: /delete_ad/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 77, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/administrator/virtual_new/Adjod/adjod/adjod/views.py", line 617, in delete_ad
+    get_products = [int(i) for i in list_items]
+ValueError: invalid literal for int() with base 10: ''
+ERROR 2016-05-28 17:49:49,797 base 14753 -1294992576 Internal Server Error: /delete_ad/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 77, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/administrator/virtual_new/Adjod/adjod/adjod/views.py", line 617, in delete_ad
+    get_products = [int(i) for i in list_items]
+ValueError: invalid literal for int() with base 10: ''
+ERROR 2016-05-28 17:49:50,331 base 14753 -1294992576 Internal Server Error: /delete_ad/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 77, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/administrator/virtual_new/Adjod/adjod/adjod/views.py", line 617, in delete_ad
+    get_products = [int(i) for i in list_items]
+ValueError: invalid literal for int() with base 10: ''
+ERROR 2016-05-28 17:49:50,625 base 14753 -1294992576 Internal Server Error: /delete_ad/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 77, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/administrator/virtual_new/Adjod/adjod/adjod/views.py", line 617, in delete_ad
+    get_products = [int(i) for i in list_items]
+ValueError: invalid literal for int() with base 10: ''
+ERROR 2016-05-28 17:51:01,422 base 14753 -1294992576 Internal Server Error: /delete_ad/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 77, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/administrator/virtual_new/Adjod/adjod/adjod/views.py", line 617, in delete_ad
+    get_products = [int(i) for i in list_items]
+ValueError: invalid literal for int() with base 10: ''
+ERROR 2016-05-28 17:51:01,481 base 14753 -1305478336 Internal Server Error: /delete_ad/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 77, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/administrator/virtual_new/Adjod/adjod/adjod/views.py", line 617, in delete_ad
+    get_products = [int(i) for i in list_items]
+ValueError: invalid literal for int() with base 10: ''
+ERROR 2016-05-28 17:51:01,623 base 14753 -1305478336 Internal Server Error: /delete_ad/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 77, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/administrator/virtual_new/Adjod/adjod/adjod/views.py", line 617, in delete_ad
+    get_products = [int(i) for i in list_items]
+ValueError: invalid literal for int() with base 10: ''
+ERROR 2016-05-28 17:51:02,807 base 14753 -1305478336 Internal Server Error: /delete_ad/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 77, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/administrator/virtual_new/Adjod/adjod/adjod/views.py", line 617, in delete_ad
+    get_products = [int(i) for i in list_items]
+ValueError: invalid literal for int() with base 10: ''
+ERROR 2016-05-28 18:02:49,244 base 14753 -1305478336 Internal Server Error: /edit_postad_detail/34/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 129, in get_response
+    raise ValueError("The view %s.%s didn't return an HttpResponse object." % (callback.__module__, view_name))
+ValueError: The view adjod.views.edit_postad_detail didn't return an HttpResponse object.
+WARNING 2016-05-28 18:02:49,922 base 14753 -1305478336 Not Found: /favicon.ico
+ERROR 2016-05-28 18:03:36,814 base 14753 -1305478336 Internal Server Error: /delete_ad/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 77, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/administrator/virtual_new/Adjod/adjod/adjod/views.py", line 617, in delete_ad
+    get_products = [int(i) for i in list_items]
+ValueError: invalid literal for int() with base 10: ''
+ERROR 2016-05-28 18:03:36,931 base 14753 -1324356800 Internal Server Error: /delete_ad/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 77, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/administrator/virtual_new/Adjod/adjod/adjod/views.py", line 617, in delete_ad
+    get_products = [int(i) for i in list_items]
+ValueError: invalid literal for int() with base 10: ''
+ERROR 2016-05-28 18:03:39,799 base 14753 -1324356800 Internal Server Error: /delete_ad/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 77, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/administrator/virtual_new/Adjod/adjod/adjod/views.py", line 617, in delete_ad
+    get_products = [int(i) for i in list_items]
+ValueError: invalid literal for int() with base 10: ''
+ERROR 2016-05-28 18:05:20,250 base 14753 -1332749504 Internal Server Error: /edit_postad_detail/34/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 129, in get_response
+    raise ValueError("The view %s.%s didn't return an HttpResponse object." % (callback.__module__, view_name))
+ValueError: The view adjod.views.edit_postad_detail didn't return an HttpResponse object.
+WARNING 2016-05-28 18:05:45,072 base 16249 -1305478336 Not Found: /edit_postad_detail/static/img/urgent_ad.png
+WARNING 2016-05-28 18:05:45,097 base 16249 -1257505984 Not Found: /edit_postad_detail/static/img/close_btn.png
+WARNING 2016-05-28 18:05:45,098 base 16249 -1274021056 Not Found: /edit_postad_detail/static/img/premium_urgent_ad.png
+WARNING 2016-05-28 18:05:45,098 base 16249 -1294992576 Not Found: /edit_postad_detail/static/img/urgent_mobile.png
+WARNING 2016-05-28 18:05:45,099 base 16249 -1246872768 Not Found: /edit_postad_detail/static/img/premium_mobile.png
+WARNING 2016-05-28 18:05:45,099 base 16249 -1315964096 Not Found: /edit_postad_detail/static/img/premium_ad.png
+WARNING 2016-05-28 18:05:45,512 base 16249 -1274021056 Not Found: /edit_postad_detail/static/img/premium_urgent_mobile.png
+WARNING 2016-05-28 18:05:46,014 base 16249 -1274021056 Not Found: /edit_postad_detail/static/img/urgent_ad.png
+WARNING 2016-05-28 18:05:46,015 base 16249 -1294992576 Not Found: /edit_postad_detail/static/img/close_btn.png
+WARNING 2016-05-28 18:05:46,016 base 16249 -1257505984 Not Found: /edit_postad_detail/static/img/premium_urgent_ad.png
+WARNING 2016-05-28 18:05:46,016 base 16249 -1315964096 Not Found: /edit_postad_detail/static/img/premium_ad.png
+WARNING 2016-05-28 18:05:46,218 base 16249 -1274021056 Not Found: /edit_postad_detail/static/img/urgent_mobile.png
+WARNING 2016-05-28 18:05:46,268 base 16249 -1294992576 Not Found: /edit_postad_detail/static/img/premium_mobile.png
+WARNING 2016-05-28 18:05:46,291 base 16249 -1305478336 Not Found: /edit_postad_detail/static/img/premium_urgent_mobile.png
+WARNING 2016-05-28 18:05:46,330 base 16249 -1284506816 Not Found: /edit_postad_detail/static/themes/undefined/jquery-ui.min.css
+WARNING 2016-05-28 18:06:01,630 base 16249 -1294992576 Not Found: /edit_postad_detail/static/img/urgent_ad.png
+WARNING 2016-05-28 18:06:01,656 base 16249 -1315964096 Not Found: /edit_postad_detail/static/img/premium_urgent_ad.png
+WARNING 2016-05-28 18:06:01,657 base 16249 -1274021056 Not Found: /edit_postad_detail/static/img/premium_ad.png
+WARNING 2016-05-28 18:06:01,657 base 16249 -1305478336 Not Found: /edit_postad_detail/static/img/urgent_mobile.png
+WARNING 2016-05-28 18:06:01,657 base 16249 -1284506816 Not Found: /edit_postad_detail/static/img/close_btn.png
+WARNING 2016-05-28 18:06:01,658 base 16249 -1257505984 Not Found: /edit_postad_detail/static/img/premium_mobile.png
+WARNING 2016-05-28 18:06:01,865 base 16249 -1294992576 Not Found: /edit_postad_detail/static/img/premium_urgent_mobile.png
+WARNING 2016-05-28 18:06:02,175 base 16249 -1274021056 Not Found: /edit_postad_detail/static/img/urgent_mobile.png
+WARNING 2016-05-28 18:06:02,209 base 16249 -1315964096 Not Found: /edit_postad_detail/static/img/premium_ad.png
+WARNING 2016-05-28 18:06:02,209 base 16249 -1284506816 Not Found: /edit_postad_detail/static/img/premium_urgent_ad.png
+WARNING 2016-05-28 18:06:02,210 base 16249 -1305478336 Not Found: /edit_postad_detail/static/img/urgent_ad.png
+WARNING 2016-05-28 18:06:02,572 base 16249 -1284506816 Not Found: /edit_postad_detail/static/themes/undefined/jquery-ui.min.css
+ERROR 2016-05-28 18:07:26,315 base 16249 -1274021056 Internal Server Error: /delete_ad/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 77, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/administrator/virtual_new/Adjod/adjod/adjod/views.py", line 617, in delete_ad
+    get_products = [int(i) for i in list_items]
+ValueError: invalid literal for int() with base 10: ''
+ERROR 2016-05-28 18:07:27,506 base 16249 -1274021056 Internal Server Error: /delete_ad/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 77, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/administrator/virtual_new/Adjod/adjod/adjod/views.py", line 617, in delete_ad
+    get_products = [int(i) for i in list_items]
+ValueError: invalid literal for int() with base 10: ''
+ERROR 2016-05-28 18:07:27,673 base 16249 -1274021056 Internal Server Error: /delete_ad/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 77, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/administrator/virtual_new/Adjod/adjod/adjod/views.py", line 617, in delete_ad
+    get_products = [int(i) for i in list_items]
+ValueError: invalid literal for int() with base 10: ''

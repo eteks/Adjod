@@ -358,21 +358,24 @@ $( document ).ready(function() {
     $('input[type="checkbox"].check_individual_act').change(function(){
       
         if($(this).prop('checked')==true){
-           $(this).parent().siblings().find('.edit_action, .delete_action').removeClass('disable_post');
-
-             if ($('input[type="checkbox"].check_individual_act:checked').size() > 1){
-              $('input[type="checkbox"].check_individual_act:checked').each(function(){
-                $(this).parent().siblings().find('.view_action, .edit_action, .delete_action').hide();
-              });
-              $('.delete_act').prop('disabled', false);      
-            }         
+           // $(this).parent().siblings().find('.edit_action, .delete_action').removeClass('disable_post');
+            //  if ($('input[type="checkbox"].check_individual_act:checked').size() > 1){
+            //   $('input[type="checkbox"].check_individual_act:checked').each(function(){
+            //     $(this).parent().siblings().find('.view_action, .edit_action, .delete_action').hide();
+            //   });
+            //   $('.delete_act').prop('disabled', false);      
+            // }     
+           $(this).parents('ul').find('.inactive_edit_delete_action').hide();
+           $(this).parents('ul').find('.active_edit_delete_action').show();
         }
         else{
-            $(this).parent().siblings().find('.edit_action, .delete_action').addClass('disable_post');
-             if ($('input[type="checkbox"].check_individual_act:checked').size() < 2){
-                 $(this).parent().siblings().find('.view_action, .edit_action, .delete_action').show();                
-                 $('.delete_act').prop('disabled', true);      
-            } 
+            // $(this).parent().siblings().find('.edit_action, .delete_action').addClass('disable_post');
+            //  if ($('input[type="checkbox"].check_individual_act:checked').size() < 2){
+            //      $(this).parent().siblings().find('.view_action, .edit_action, .delete_action').show();                
+            //      $('.delete_act').prop('disabled', true);      
+            // } 
+          $(this).parents('ul').find('.inactive_edit_delete_action').show();
+           $(this).parents('ul').find('.active_edit_delete_action').hide();
         }           
     });
 

@@ -493,7 +493,7 @@ def edit_postad_detail(request , pk):
 		pic=[n for n in str(edit_product.photos).split(',')]
 	else:
 		pic=[]
-	render_to_response('advertisement/ad_post.html', {'edit_product':edit_product, 'pic':pic}, context_instance=RequestContext(request))	
+	return render_to_response('advertisement/ad_post.html', {'edit_product':edit_product, 'pic':pic}, context_instance=RequestContext(request))	
 	# response = render_to_response('advertisement/ad_post.html', {'edit_product':edit_product, 'pic':pic}, context_instance=RequestContext(request))
 	# if request.COOKIES.get('edit_image_path'):
 	# 	response.set_cookie("edit_image_path", "")
