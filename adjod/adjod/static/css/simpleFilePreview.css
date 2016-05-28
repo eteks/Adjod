@@ -85,7 +85,7 @@
   display: inline-block;
 }
 .simpleFilePreview_remove {
-  display: none;
+  display: none; 
   color: #c33;
   font-weight: bold;
   position: absolute;

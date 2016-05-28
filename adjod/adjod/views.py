@@ -487,9 +487,18 @@ def user_manage(request):
 
 @login_required
 def edit_postad_detail(request , pk):
+	import urllib
 	edit_product = Product.objects.get(pk=int(pk))
-	pic=[n for n in str(edit_product.photos).split(',')]
-	return render_to_response('advertisement/ad_post.html', {'edit_product':edit_product, 'pic':pic}, context_instance=RequestContext(request))
+	if edit_product.photos:
+		pic=[n for n in str(edit_product.photos).split(',')]
+	else:
+		pic=[]
+	render_to_response('advertisement/ad_post.html', {'edit_product':edit_product, 'pic':pic}, context_instance=RequestContext(request))	
+	# response = render_to_response('advertisement/ad_post.html', {'edit_product':edit_product, 'pic':pic}, context_instance=RequestContext(request))
+	# if request.COOKIES.get('edit_image_path'):
+	# 	response.set_cookie("edit_image_path", "")
+	# response.set_cookie("edit_image_path", urllib.quote(str(edit_product.photos)))
+	# return response
 
 @transaction.commit_on_success
 def update_success(request, pk):
@@ -523,10 +532,21 @@ def update_success(request, pk):
 			# 	print 'photos>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>', photos
 			# 	updated_product.photos, updated_product.imagecount, updated_product.thumbnail = create_path_for_photos_thumbanails(photos, updated_product)
 			# 	print 'image_receive', updated_product.photos
+			# hidden_image_src = request.POST.get('hidden_image_src')
+			# product_photos = ''
+			# if request.FILES.getlist('photos[]'):
 			photos =request.FILES.getlist('photos[]')
 			print 'photos>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>', photos
+			# updated_product.photos, updated_product.imagecount, updated_product.thumbnail = create_path_for_photos_thumbanails(photos, updated_product)
 			updated_product.photos, updated_product.imagecount, updated_product.thumbnail = create_path_for_photos_thumbanails(photos, updated_product)
-			print 'image_receive', updated_product.photos
+			# print 'image_receive', product_photos
+			# if hidden_image_src != '' and product_photos != '':
+			# 	updated_product.photos = str(hidden_image_src)+','+str(product_photos)
+			# elif hidden_image_src !='' and product_photos == '':
+			# 	updated_product.photos = str(hidden_image_src)
+			# else:
+			# 	updated_product.photos = product_photos
+			
 			updated_product.video = request.POST.get('video_url')
 			updated_product.created_date  = datetime.datetime.now()
 			updated_product.modified_date  = datetime.datetime.now()

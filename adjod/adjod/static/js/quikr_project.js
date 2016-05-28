@@ -513,8 +513,12 @@ $( document ).ready(function() {
 
   //change image upload in user update profile
   $('.profile_poster_update').change(function(){
-      $('.upload_image_change').remove();
-      $('#clean_img').remove();
+      // for post ad page while edit posted ads
+      $(this).siblings('.upload_image_change,.editpost_image_change,.nav_post_image_change').remove();
+      $(this).siblings('#clean_img').remove();
+      // for update profile page
+      $(this).parents('.simpleFilePreview').siblings('.upload_image_change').remove();
+      $(this).parents('.simpleFilePreview').siblings('#clean_img').remove();
   });
   //remove image upload in user update profile
   // $('.upload_image_remove').click(function(){
@@ -641,16 +645,30 @@ $( document ).ready(function() {
     };
 
     // on blur: validate
-    $("#post").click(function() {
+    // $("#post").click(function() {
+    //   reset();
+    //   if ($.trim($("#your_mobile_no").val())) {
+    //     if ($("#your_mobile_no").intlTelInput("isValidNumber")) {
+    //        validMsg.removeClass("hide");
+    //        $("#your_mobile_no").removeClass("error");
+    //     } else {
+    //      $("#your_mobile_no").addClass("error");
+    //     errorMsg.removeClass("hide");
+    //     }
+    //   }
+    // });
+
+     $("#post").click(function() {
       reset();
       if ($.trim($("#your_mobile_no").val())) {
-        if ($("#your_mobile_no").intlTelInput("isValidNumber")) {
-           validMsg.removeClass("hide");
-           $("#your_mobile_no").removeClass("error");
-        } else {
-         $("#your_mobile_no").addClass("error");
+       if($("#your_mobile_no").val().length >=8 ){
+         validMsg.removeClass("hide");
+         $("#mobile_number_sign_up_home").removeClass("error");
+       }
+       else{
         errorMsg.removeClass("hide");
-        }
+        $("#your_mobile_no").addClass("error");
+       }
       }
     });
 
@@ -712,19 +730,44 @@ $( document ).ready(function() {
       errorMsg.addClass("hide");
       validMsg.addClass("hide");
     };
+    $('#mobile_number_sign_up_home,#your_mobile_no').keypress(function(evt){
+        var theEvent = evt || window.event;
+        var key = theEvent.keyCode || theEvent.which;
+        key = String.fromCharCode( key );
+        var regex = /^[0-9\b]+$/;    // allow only numbers [0-9] 
+        if( !regex.test(key) ) {
+          theEvent.returnValue = false;
+          if(theEvent.preventDefault) theEvent.preventDefault();
+        }
+    });
+    
 
     // on blur: validate
+    // $("#create").click(function() {
+    //   reset();
+    //   if ($.trim($("#mobile_number_sign_up_home").val())) {
+    //            if ($("#mobile_number_sign_up_home").intlTelInput("isValidNumber")) {
+    //       errorMsg.removeClass("hide");
+    //        $("#mobile_number_sign_up_home").removeClass("error");
+    //     } else {
+    //      validMsg.removeClass("hide");
+    //      $("#mobile_number_sign_up_home").addClass("error");
+
+    //     }
+    //   }
+    // });
+
     $("#create").click(function() {
       reset();
       if ($.trim($("#mobile_number_sign_up_home").val())) {
-               if ($("#mobile_number_sign_up_home").intlTelInput("isValidNumber")) {
-          errorMsg.removeClass("hide");
-           $("#mobile_number_sign_up_home").removeClass("error");
-        } else {
-         validMsg.removeClass("hide");
-         $("#mobile_number_sign_up_home").addClass("error");
-
-        }
+       if($("#mobile_number_sign_up_home").val().length >=8 ){
+         errorMsg.removeClass("hide");
+         $("#mobile_number_sign_up_home").removeClass("error");
+       }
+       else{
+        validMsg.removeClass("hide");
+        $("#mobile_number_sign_up_home").addClass("error");
+       }
       }
     });
 
@@ -1124,10 +1167,10 @@ $( document ).ready(function() {
     
     $(".user_dropdown").hide();
     $(".caret_user").click(function(event){
-    	event.stopPropagation();
+      event.stopPropagation();
         $('.user_dropdown').toggle();
     });
-   	$(document).click( function(){
+    $(document).click( function(){
         $('.user_dropdown').hide();
     });
     
@@ -1241,6 +1284,26 @@ $( document ).ready(function() {
    $('.upperimg img').on('hover', function(){
     $('.view_icon').show();
    });
+
+   // $('.upload_image_remove').click(function(){
+   //  alert("yes");
+   //  // $(this).parents('.simpleFilePreview').remove();
+   //  // alert($.cookie("edit_image_path"));
+   // });
+
+});
+$( window ).load(function() {
+  if($('.simpleFilePreview_multiUI').hasClass('edit_image_available')){
+    image_clone = $('.simpleFilePreview_multi li:last').clone(true);
+    class_id = $('.simpleFilePreview_multi li:last').attr('id');
+    id_data = Number(class_id.split('_')[1]) + 1;
+    image_clone.find('.edit_after_save,.editpost_image_change,.simpleFilePreview_input,.upload_image_remove').remove();
+    $('.simpleFilePreview_multi').append("<li id='simpleFilePreview_"+id_data+"' class='simpleFilePreview' data-sfpallowmultiple='1'>\
+                                          <a class='simpleFilePreview_input'>\
+                                          <span class='simpleFilePreview_inputButtonText'>\
+                                          <i class='fa fa-plus-circle fa_small'></i>\
+                                          </span></a>"+image_clone.html()+"</li>");
+  }
 });
 
 // executes when complete page is fully loaded, including all frames, objects and images

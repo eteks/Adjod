@@ -42,12 +42,13 @@
     <script src="{% static "js/jquery.main.js" %}"></script>
     <script src="{% static "js/config.js" %}"></script>
     <script src="{% static "js/i18n_en.js" %}"></script>
+    <script src="{% static "js/intlTelInput.min.js" %}"></script>
     <script src="{% static "js/quikr_project.js" %}"></script>
     <script src="{% static "js/search.js" %}"></script>
     <!-- <script type="text/javascript" src="{% static "js/jquery.fancybox.js" %}"></script> -->
     <script type="text/javascript" src="{% static "js/jquery.simpleFilePreview.js" %}"></script>
     <!-- <script src="{% static "js/jquery.iframe-transport.js" %}"></script> -->
-    <script src="{% static "js/intlTelInput.min.js" %}"></script>
+
     <script src="{% static "js/mobile_action.js" %}"></script>
     <script type="text/javascript" src="{% url django.views.i18n.javascript_catalog %}"></script> 
     <script type="text/javascript" src="{% static "js/jquery.magnific-popup.min.js" %}"></script>
@@ -562,7 +563,7 @@
 
 
               <div id="mobile_number_div" class="form-group fr">
-                <input class="mobile_number" name="your_mobile_number" id="mobile_number_sign_up_home"  type="tel"/><br><br>
+                <input class="mobile_number" name="your_mobile_number" id="mobile_number_sign_up_home"  type="tel" maxlength="8"/><br><br>
                 <label for="mobile_number" id="mobile_required" class="signup_labelError" style="display:none;">{% trans "Please enter Mobile number" %}</label>
                 <label id="valid-msg" class="hide">Please enter valid mobile number</label>
               </div>

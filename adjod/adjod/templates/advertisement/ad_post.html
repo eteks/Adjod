@@ -22,28 +22,28 @@
 <!--end script-->
 
     <!--======================
-      	 Post form content
+         Post form content
     ========================-->
 
     <div class="container center">
       <div class="inner_container">
          <form method="post" action="{% if path == '/postad/' %}/addproduct/{% else %}{% url update_product edit_product.id %}{% endif %}" name="post_ad" id="post_ad" enctype="multipart/form-data" novalidate="novalidate">
           {% csrf_token %}
-     	    <!--div class="{% if request.REQUEST.pt %} labelError success_post {% endif %}">{# for message in messages%}{{message}}{% endfor #}</div-->
-       		<!-- <div class="field_title form-group" id="type_of_ad_title">
-       				<span class="title">Type of ad</span>
-       				<span class="mandatory">*</span>
-       		</div> --> <!-- type_of_ad_title -->
-   		   <!-- <div class="field_div form-group" id="type_of_ad_content">
-   			    <input type="radio" name="condition" value="sell" id="sell" class="ad_type_choice">
+          <!--div class="{% if request.REQUEST.pt %} labelError success_post {% endif %}">{# for message in messages%}{{message}}{% endfor #}</div-->
+          <!-- <div class="field_title form-group" id="type_of_ad_title">
+              <span class="title">Type of ad</span>
+              <span class="mandatory">*</span>
+          </div> --> <!-- type_of_ad_title -->
+         <!-- <div class="field_div form-group" id="type_of_ad_content">
+            <input type="radio" name="condition" value="sell" id="sell" class="ad_type_choice">
             <label for="sell" class="ad_type"><span><span></span></span>I want to sell</label>
-   			    <input type="radio" name="condition" value="buy" id="buy" class="ad_type_choice">
+            <input type="radio" name="condition" value="buy" id="buy" class="ad_type_choice">
             <label for="buy" class="ad_type"><span><span></span></span>I want to buy</label>
             <label id="condition_required" class="labelError" style="display:none;">Please select Type of ad.</label>
             <div class="clear_both"></div>
          </div> --> <!-- type_of_ad_content -->
 
-         	<div class="field_div form-group" id="category_div">
+          <div class="field_div form-group" id="category_div">
               <div style="display: none">
                 <input type="hidden" name="category_name" id="category_name" value="{% if edit_product.category%}{{edit_product.category.id}}{%endif%}">
                 <input type="hidden" name="subcategory_name" id="subcategory_name" value="{% if edit_product.subcategory%}{{edit_product.subcategory.id}}{%endif%}">
@@ -53,18 +53,18 @@
                 {% if not edit_product.category %}
                 <a class="btn choose_button">Choose</a>
                 {% endif %}
-           		<label for="category" id="category_required" class="labelError" style="display:none;">Please choose category, Subcategory and Brand.</label>
+              <label for="category" id="category_required" class="labelError" style="display:none;">Please choose category, Subcategory and Brand.</label>
               <div class="clear_both"></div>
-         	</div> <!-- category_div -->
+          </div> <!-- category_div -->
 
-         	<div class="field_div form-group" id="ad_title_div">
-         		<input type="text" class="ad_title" maxlength="200" onchange="updateCountdownTitle()" onkeyup="updateCountdownTitle()" name="ad_title" id="ad_title" value="{% if edit_product.title  %}{{edit_product.title}}{% endif %}" placeholder="Give a title to your Ad*" {% if edit_product.title  %}disabled{% endif %}/><br/>   
+          <div class="field_div form-group" id="ad_title_div">
+            <input type="text" class="ad_title" maxlength="200" onchange="updateCountdownTitle()" onkeyup="updateCountdownTitle()" name="ad_title" id="ad_title" value="{% if edit_product.title  %}{{edit_product.title}}{% endif %}" placeholder="Give a title to your Ad*" {% if edit_product.title  %}disabled{% endif %}/><br/>   
             {% if edit_product.title%}
               <input type="hidden" name="ad_title" id="ad_title" value="{{edit_product.title}}">    
             {%endif%}    
-         		<div class="char_left"><span id="ad_title_count">200</span> characters left</div>
-         		<label id="ad_title_required" class="labelError" style="display:none;">Please enter title to your ad.</label>
-         	</div> <!-- ad_title_div -->
+            <div class="char_left"><span id="ad_title_count">200</span> characters left</div>
+            <label id="ad_title_required" class="labelError" style="display:none;">Please enter title to your ad.</label>
+          </div> <!-- ad_title_div -->
 
           <div style="display: block;" class="field_div form-group" id="price_div">
             <input type="text" class="your_price input" name="your_price" id="your_price" value="{% if edit_product.price  %}{{edit_product.price}}{% endif %}" placeholder="Price*"/>
@@ -75,36 +75,73 @@
             <label id="price_required" class="labelError price_mbl" style="display:none;">{% trans "Please enter price." %}</label>
           </div>
 
-         	<div class="field_div form-group" id="description_div">
-         		<textarea class="description" maxlength="1000" onchange="updateCountdownDesc()" onkeyup="updateCountdownDesc()" name="description" id="your_description" placeholder="Give description to your Ad*" value="">{% if edit_product.description %}{{edit_product.description}}{% endif %}</textarea>
-          	<br />
-         		<div class="char_left"><span id="desc_count">1000</span> {% trans "characters left" %} </div>
-         		<label id="desc_required" class="labelError" style="display:none;">{% trans "Please enter description." %}</label>
-         	</div> <!-- description_div -->
+          <div class="field_div form-group" id="description_div">
+            <textarea class="description" maxlength="1000" onchange="updateCountdownDesc()" onkeyup="updateCountdownDesc()" name="description" id="your_description" placeholder="Give description to your Ad*" value="">{% if edit_product.description %}{{edit_product.description}}{% endif %}</textarea>
+            <br />
+            <div class="char_left"><span id="desc_count">1000</span> {% trans "characters left" %} </div>
+            <label id="desc_required" class="labelError" style="display:none;">{% trans "Please enter description." %}</label>
+          </div> <!-- description_div -->
 
-         	<div class="field_title form-group">
+          <div class="field_title form-group">
             <span class="title upload_txt">{% trans "Upload Photos" %}</span>
           </div> <!-- field_title -->
           <div class="field_div form-group upload_image" id="upload_photos_div">
-            {% if pic %}
-               {% for pics in pic %}
-               <input type='file' id="profile_poster" class="poster profile_poster_update" name="photos[]" value=""/>
-                <img id="clean_img" class="after_save" src="{{MEDIA_URL}}{{pics}}">
-                <span class="upload_image_change">Change</span>
-                <!-- <span class="upload_image_remove">Remove</span> -->
-                <span class="photo_labelError"></span>
-                
-              <!--  <input type='file' id='photos' name='photos' class="poster" value="{{MEDIA_URL}}{{pics}}" />
-                <img id="uploaded_img_{{forloop.counter0}}" class="after_save" alt="" src="{{MEDIA_URL}}{{pics}}" style="width: 92px; height: 92px;">     -->       
+          {% if edit_product %}
+            {% if pic|length != 0 %}
+              <div class="simpleFilePreview_multiUI edit_image_available">
+               <span class="simpleFilePreview_shiftRight simpleFilePreview_shifter"></span>
+               <div class="simpleFilePreview_multiClip">
+               <ul class="simpleFilePreview_multi" style="width: 560px;">
+                 {% for pics in pic %}
+                   <li id="simpleFilePreview_{{forloop.counter}}" class="simpleFilePreview" data-sfpallowmultiple="1">
+                     <a class="simpleFilePreview_input" style="display: none;">
+                          <span class="simpleFilePreview_inputButtonText">
+                          <i class="fa fa-plus-circle fa_small"></i>
+                          </span>
+                      </a>
+                      <span class="simpleFilePreview_remove" style="display: none;">Remove</span>
+                      <input type='file' id="profile_poster" class="poster profile_poster_update simpleFilePreview_formInput" value="" style="z-index:0 !important;" name="photos[]"/>
+                      <img id="clean_img" class="edit_after_save simpleFilePreview_preview" title="Remove this file" src="{{MEDIA_URL}}{{pics}}">
+                      <!-- <span class="editpost_image_change">Change</span> -->
+                      <span class="upload_image_remove">Remove</span>
+                      <!-- <span class="photo_labelError"></span> -->
+                    </li> 
+                  <!--  <input type='file' id='photos' name='photos' class="poster" value="{{MEDIA_URL}}{{pics}}" />
+                    <img id="uploaded_img_{{forloop.counter0}}" class="after_save" alt="" src="{{MEDIA_URL}}{{pics}}" style="width: 92px; height: 92px;">     -->       
               {% endfor %}
+              </ul>
+              </div>
+              <span class="simpleFilePreview_shiftLeft simpleFilePreview_shifter"></span>
+              </div>
             {% else %}
-              <input type='file' id='photos' name='photos[]' multiple='multiple' class="poster" value="" />             
-              <span class="error_photo" style="color:red; display:none; line-height:3;">{% trans "Invalid file type" %}</span>
+               <div class="simpleFilePreview_multiUI edit_image_notavailable">
+               <span class="simpleFilePreview_shiftRight simpleFilePreview_shifter"></span>
+               <div class="simpleFilePreview_multiClip">
+               <ul class="simpleFilePreview_multi" style="width: 560px;">
+                   <li id="simpleFilePreview_0" class="simpleFilePreview" data-sfpallowmultiple="1">
+                   <a class="simpleFilePreview_input">
+                        <span class="simpleFilePreview_inputButtonText">
+                        <i class="fa fa-plus-circle fa_small"></i>
+                        </span>
+                    </a>
+                    <span class="simpleFilePreview_remove" style="display: none;">Remove</span>
+                      <input type='file' id='photos' name='photos[]' class="poster profile_poster_update" value="" />     
+                      <!-- <img id="clean_img" class="default_photo" src="/static/img/bg-img2.png">         -->
+                      <!-- <span class="nav_post_image_change">Change</span> -->
+                  </li>
+                  </ul>
+              </div>
+              <span class="simpleFilePreview_shiftLeft simpleFilePreview_shifter"></span>
+              </div>
             {% endif %}
+          {% else %}
+             <input type='file' id='photos' name='photos[]' multiple='multiple' class="poster" value="" /> <span class="error_photo" style="color:red; display:none; line-height:3;">{% trans "Invalid file type" %}</span>  
+          {% endif %}
             <div class="photo_labelError"></div>
             <div class="photos_text ads_photo" >
               {% trans "Ads with photos sell faster(Upload only png, jpg, jpeg, gif)" %}
-            </div> <!-- photos_text -->
+            </div> 
+            <input type="hidden" name="hidden_image_src" class="hidden_image_src"><!-- photos_text -->
            <!--  <span class="photo_labelError"></span> -->
         </div> <!-- upload_photos_div -->
          <!--  <div class="field_title form-group">
@@ -124,17 +161,17 @@
           </div> <!-- description_div -->
           <!-- <hr noshade="noshade" class="photos_line" /> -->
 
-         	<div class="field_div seller_info_div" >
-         		   {% trans "Seller Information" %}
-         	</div>
+          <div class="field_div seller_info_div" >
+               {% trans "Seller Information" %}
+          </div>
           <div class="field_div buyer_info_div" style="display:none;">
                {% trans "Buyer Information" %}
           </div>
 
           <div class="field_title form-group" id="you_are_title">
-         			<span class="title">{% trans "You are" %}</span>
-         			<span class="mandatory">*</span>
-     		  </div> <!-- you_are_title -->
+              <span class="title">{% trans "You are" %}</span>
+              <span class="mandatory">*</span>
+          </div> <!-- you_are_title -->
 
           <div class="field_div form-group" id="you_are_content">
               <input type="radio" name="you_are_radio" id="individual" value="individual" {% if edit_product.you_are == 'individual' %} checked="checked"{% endif %}>
@@ -157,8 +194,8 @@
 
 
           <!-- <div class="field_div form-group" id="name_div">
-           		<input class="your_name" name="your_name" id="your_name" placeholder="Your name" />
-           		<input class="your_mobile_no" name="your_mobile_no" id="your_mobile_no" placeholder="Your mobile number" onkeyup="if (/\D/g.test(this.value)) this.value = this.value.replace(/\D/g,'')" onkeypress="isValidMobileNo();" />
+              <input class="your_name" name="your_name" id="your_name" placeholder="Your name" />
+              <input class="your_mobile_no" name="your_mobile_no" id="your_mobile_no" placeholder="Your mobile number" onkeyup="if (/\D/g.test(this.value)) this.value = this.value.replace(/\D/g,'')" onkeypress="isValidMobileNo();" />
           </div> --><!-- name_div -->
 
           <div class="field_div form-group" id="name_div">
@@ -168,12 +205,12 @@
             {% else %}
             <input class="your_name" name="your_name" id="your_name" placeholder="Your name"/>
             {% endif %}
-            <input class="your_mobile_no" name="your_mobile_no" id="your_mobile_no" type="tel" />
+            <input class="your_mobile_no" name="your_mobile_no" id="your_mobile_no" type="tel" maxlength="8" />
             <!-- <span id="valid-msg" class="hide mgs">Valid</span> -->
             <label id="error-msg" class="hide mgs_error">Please enter valid mobile number</label>
           </div> <!-- name_div -->
 
-         	<div class="field_div form-group" id="email_div">
+          <div class="field_div form-group" id="email_div">
             {% if user.is_authenticated %}
               <input type="text" class="your_email" name="your_email" id="your_email" placeholder="Your email*" value="{{request.user.email}}" disabled/>
               <label id="email_required" class="labelError" style="display:none;">{% trans "Please enter email id." %}</label>
@@ -182,7 +219,7 @@
               <input type="text" class="your_email" name="your_email" id="your_email" placeholder="Your email*" value=""/>
               <label id="email_required" class="labelError" style="display:none;">{% trans "Please enter email id." %}</label>
             {% endif %}
-         	</div> <!-- email_div -->
+          </div> <!-- email_div -->
 
 
           <div class="field_div form-group" id="city_div">
@@ -231,22 +268,22 @@
             <div class="clear_both"></div>
           </div> <!-- city_div -->
 
-           	<div class="field_div form-group" id="privacy_div">
-           		<input type="checkbox" name="privacy" id="privacy" />
-           		<span class="privacy_text">{% trans "Maintain my Privacy (Buyers will first contact you via reply, you can decide when to reveal your phone number to them)" %}</span>
-           	</div> <!-- privacy -->
+            <div class="field_div form-group" id="privacy_div">
+              <input type="checkbox" name="privacy" id="privacy" />
+              <span class="privacy_text">{% trans "Maintain my Privacy (Buyers will first contact you via reply, you can decide when to reveal your phone number to them)" %}</span>
+            </div> <!-- privacy -->
             <div class="choose_plan">{% trans "Please Select Your Plan" %}</div>
 
-           	<div class="field_div form-group" id="premium_ad">
-             		<div class="row premium_row">
-             			<div class="premium_title col-md-12">
-             				<span>{% trans "Make your Ad Premium" %}</span>
-             			</div> <!-- premium_title -->
-             		</div> <!-- row -->
-             		<div class="row premium_row">
-        					<div id="premium_col_1" class="col-md-4">
-          						<span class="premium_row_1">{% trans "Urgent Ad" %}</span>
-          						<span class="premium_row_2">
+            <div class="field_div form-group" id="premium_ad">
+                <div class="row premium_row">
+                  <div class="premium_title col-md-12">
+                    <span>{% trans "Make your Ad Premium" %}</span>
+                  </div> <!-- premium_title -->
+                </div> <!-- row -->
+                <div class="row premium_row">
+                  <div id="premium_col_1" class="col-md-4">
+                      <span class="premium_row_1">{% trans "Urgent Ad" %}</span>
+                      <span class="premium_row_2">
                         <a href="#" class="urgent_ad visible-lg">{% trans "View Example" %}</a>
                         <a href="#" class="urgent_ad_mbl hidden-lg">{% trans "View Example" %}</a>
                       </span>
@@ -260,14 +297,14 @@
                       </div>
                       <span class="premium_row_3">{% trans "S$ 9.99 per ad" %}</a></span>
 
-          						<!-- <span class="premium_row_4"><input class="btn btn-default" type="button" value="Select" id="premium_plan1" name="premium_plan" title="{% if not user.is_authenticated %}Please register in our website and then make ur ad premium {% endif %}"></span> -->
+                      <!-- <span class="premium_row_4"><input class="btn btn-default" type="button" value="Select" id="premium_plan1" name="premium_plan" title="{% if not user.is_authenticated %}Please register in our website and then make ur ad premium {% endif %}"></span> -->
                       <span class="premium_row_4 select_premium">
                         <input type="checkbox" id="premium_plan1" class="check_disable checkbox_premium" value="9.99"><span class="premium_new">{% trans "Select" %}</span>
                       </span>
-      					  </div> <!-- premium_col_1 -->
-        					<div id="premium_col_2" class="col-md-4">
-          						<span class="premium_row_1">{% trans "Top of the page Ad" %}</span>
-          						<span class="premium_row_2">
+                  </div> <!-- premium_col_1 -->
+                  <div id="premium_col_2" class="col-md-4">
+                      <span class="premium_row_1">{% trans "Top of the page Ad" %}</span>
+                      <span class="premium_row_2">
                         <a href="#" class="premium_ad visible-lg">{% trans "View Example" %}</a>
                         <a href="#" class="premium_ad_mbl hidden-lg">{% trans "View Example" %}</a>
                       </span>
@@ -280,15 +317,15 @@
                         <img src="../static/img/close_btn.png" class="popup_close1 cancel_btn scroll_close">
                       </div>
                      
-          						<span class="premium_row_3">{% trans "S$ 14.99 per ad" %}</a></span>
-          						<!-- <span class="premium_row_4"><input class="btn btn-default" type="button" value="Select" id="premium_plan2" name="premium_plan" title="{% if not user.is_authenticated %}Please register in our website and then make ur ad premium {% endif %}"></span> -->
+                      <span class="premium_row_3">{% trans "S$ 14.99 per ad" %}</a></span>
+                      <!-- <span class="premium_row_4"><input class="btn btn-default" type="button" value="Select" id="premium_plan2" name="premium_plan" title="{% if not user.is_authenticated %}Please register in our website and then make ur ad premium {% endif %}"></span> -->
                       <span class="premium_row_4 select_premium">
                       <input type="checkbox" id="premium_plan2" class="check_disable checkbox_premium" value="14.99"><span class="premium_new">{% trans "Select" %}</span>
                       </span>
-      					</div> <!-- premium_col_2 -->
-      					<div id="premium_col_3" class="col-md-4">
-          						<span class="premium_row_1">{% trans "Top of the page Ad + Urgent Ad" %}</span>
-          						<span class="premium_row_2">
+                </div> <!-- premium_col_2 -->
+                <div id="premium_col_3" class="col-md-4">
+                      <span class="premium_row_1">{% trans "Top of the page Ad + Urgent Ad" %}</span>
+                      <span class="premium_row_2">
                         <a href="#" class="premium_urgent_ad visible-lg">{% trans "View Example" %}</a>
                         <a href="#" class="premium_urgent_mbl hidden-lg">{% trans "View Example" %}</a></span>
                       <div class="visible-lg">
@@ -299,45 +336,45 @@
                         <img src="../static/img/premium_urgent_mobile.png" class="premium_urgent_mobile">
                         <img src="../static/img/close_btn.png" class="popup_close2 cancel_btn scroll_close">
                       </div>
-          						<span class="premium_row_3">{% trans "S$ 19.99 per ad" %}</a></span>
-          						<!-- <span class="premium_row_4"><input class="btn btn-default" type="button" value="Select" id="premium_plan3" name="premium_plan" title="{% if not user.is_authenticated %}Please register in our website and then make ur ad premium {% endif %}"></span> -->
+                      <span class="premium_row_3">{% trans "S$ 19.99 per ad" %}</a></span>
+                      <!-- <span class="premium_row_4"><input class="btn btn-default" type="button" value="Select" id="premium_plan3" name="premium_plan" title="{% if not user.is_authenticated %}Please register in our website and then make ur ad premium {% endif %}"></span> -->
                       <span class="premium_row_4 select_premium">
                       <input type="checkbox" id="premium_plan3" class="check_disable checkbox_premium" value="19.99"><span class="premium_new">{% trans "Select" %}</span>
                       </span>
-    					   </div> <!-- premium_col_3 -->
+                 </div> <!-- premium_col_3 -->
                  <input type="hidden" class="premium_plan" name="premium_plan" value="">
-  				    </div> <!-- row -->
-          			<!-- 	<div class="row premium_row">
-                     			<div class="payable_amount col-md-12">
-                     				<span class="payable_row_1">Payable amount: Rs 817</span>
-                     				<span class="payable_row_2"># Price is exclusive of 12.36% service tax.</span>
-                     				<span class="payable_row_3">
-                     		<div class="select_container_payment fl">
-                     			<div class="select_div">
-                     				<p id="payment_method">Choose payment method</p>
-                     				<i class="city_fa fa fa-caret-down">
+              </div> <!-- row -->
+                <!--  <div class="row premium_row">
+                          <div class="payable_amount col-md-12">
+                            <span class="payable_row_1">Payable amount: Rs 817</span>
+                            <span class="payable_row_2"># Price is exclusive of 12.36% service tax.</span>
+                            <span class="payable_row_3">
+                        <div class="select_container_payment fl">
+                          <div class="select_div">
+                            <p id="payment_method">Choose payment method</p>
+                            <i class="city_fa fa fa-caret-down">
 
-                     				</i>
-                     			</div> --> <!-- select_div -->
-                     			<!-- <select class="select_payment">
-                     				<option value="Online payment method">Online payment method</option>
-                     				<option value="Offline payment method">Offline payment method</option>
-                     			</select>
-                     		</div> --> <!-- select_container -->
-                     					<!-- <select class="payment_method">
-                     						<option>Choose payment method</option>
-                     						<option>Online payment method</option>
-                     					</select> <!- payment_method -->
-                     				<!-- </span>
-                     			</div> --> <!-- payable_amount -->
-                     		<!-- </div> --> <!-- row -->
-          </div>	<!-- premium_ad -->
+                            </i>
+                          </div> --> <!-- select_div -->
+                          <!-- <select class="select_payment">
+                            <option value="Online payment method">Online payment method</option>
+                            <option value="Offline payment method">Offline payment method</option>
+                          </select>
+                        </div> --> <!-- select_container -->
+                              <!-- <select class="payment_method">
+                                <option>Choose payment method</option>
+                                <option>Online payment method</option>
+                              </select> <!- payment_method -->
+                            <!-- </span>
+                          </div> --> <!-- payable_amount -->
+                        <!-- </div> --> <!-- row -->
+          </div>  <!-- premium_ad -->
 
-         	<div class="field_div form-group privacy_div" id="terms_of_use_div">
-         		<input type="checkbox" name="terms_of_use" id="terms_of_use" checked={% if edit_product.post_term_status == 1 %}"checked"{% endif %}/>
-         		<span class="privacy_text">{% trans "By clicking 'Post', you agree to our" %}<a>{% trans "Terms of Use" %}</a> & <a>{% trans "Privacy Policy" %}</a></span>
+          <div class="field_div form-group privacy_div" id="terms_of_use_div">
+            <input type="checkbox" name="terms_of_use" id="terms_of_use" checked={% if edit_product.post_term_status == 1 %}"checked"{% endif %}/>
+            <span class="privacy_text">{% trans "By clicking 'Post', you agree to our" %}<a>{% trans "Terms of Use" %}</a> & <a>{% trans "Privacy Policy" %}</a></span>
             <label id="terms_required" class="labelError choose_error" style="display:none;">{% trans "Please click the checkbox" %}</label>
-         	</div> <!-- terms_of_use_div -->
+          </div> <!-- terms_of_use_div -->
 
           <!-- <div class="field_div form-group {% if user.is_authenticated and userprofile.ad_count >= 3 and userprofile.is_subscribed == 0 and 'edit_postad_detail' in path %}{% elif user.is_authenticated and userprofile.ad_count >= 3 and userprofile.is_subscribed == 0 %}disable_post_ad{% endif%}" id="post_button_div">
             <input class="btn-warning btn post_form_send" type="submit" value="Post the Ad" id="post" name="post" {% if user.is_authenticated and userprofile.ad_count >= 3 and userprofile.is_subscribed == 0 and 'edit_postad_detail' in path %}{% elif user.is_authenticated and userprofile.ad_count >= 3 and userprofile.is_subscribed == 0 %}disabled{% endif%}/>
@@ -346,7 +383,7 @@
           <div class="field_div form-group" id="post_button_div">
             <input class="btn-warning btn post_form_send" type="submit" value="Post the Ad" id="post" name="post"/>
           </div> <!-- post_button_div -->
-     	</form> <!-- post_ad -->
+      </form> <!-- post_ad -->
     </div> <!-- inner_container -->
   </div> <!-- container center -->
 
@@ -376,43 +413,43 @@
     ========================-->
 
       <!--======================
-      		Category popup
+          Category popup
       ========================-->
 
 
       <div class="container hidden-xs">
-      	<div id="category_popup" class="choose_category_div" style="display:none;">
+        <div id="category_popup" class="choose_category_div" style="display:none;">
         <code class="close_btn cancel_btn" style="display: none;"> </code>
-      		<div class="row title_row">
-  				<div class="col-md-4">{% trans "Category" %}</div>
-  				<div class="col-md-4">{% trans "Sub Category" %}</div>
-  				<div id="brand" class="col-md-4">{% trans "Brand" %}</div>
-			</div>
-      		<div class="row content_row">
-  				<div class="category_list_div col-md-4">
-					<ul class="category_list">
+          <div class="row title_row">
+          <div class="col-md-4">{% trans "Category" %}</div>
+          <div class="col-md-4">{% trans "Sub Category" %}</div>
+          <div id="brand" class="col-md-4">{% trans "Brand" %}</div>
+      </div>
+          <div class="row content_row">
+          <div class="category_list_div col-md-4">
+          <ul class="category_list">
             {% for categories in category %}
-						<li class=""><img height="30" width="30" src="{{ MEDIA_URL }}{{ categories.icon }}" />
+            <li class=""><img height="30" width="30" src="{{ MEDIA_URL }}{{ categories.icon }}" />
             <input type="hidden" value="{{categories.id}}" name="category">{{categories.name}}</li>
-						{% endfor %}
-					</ul>
-				</div> <!-- category_list_div -->
-  				<div class="col-md-4 subcategory_list_div">
-  					<ul class="subcategory_list">	<!-- style="display:none" -->
-  						<li class=""><input type="hidden" value="" name="subcategory"></li>
-  					</ul>
-  				</div> <!-- subcategory_list_div -->
-  				<div class="col-md-4 brand_list_div">
-  					<ul style="display: none;" class="brand_list">	<!-- style="display:none" -->
-  						<li class=""><input type="hidden" value="" name="brand"></li>
-  					</ul>
-  				</div>
-			</div> <!-- row -->
+            {% endfor %}
+          </ul>
+        </div> <!-- category_list_div -->
+          <div class="col-md-4 subcategory_list_div">
+            <ul class="subcategory_list"> <!-- style="display:none" -->
+              <li class=""><input type="hidden" value="" name="subcategory"></li>
+            </ul>
+          </div> <!-- subcategory_list_div -->
+          <div class="col-md-4 brand_list_div">
+            <ul style="display: none;" class="brand_list">  <!-- style="display:none" -->
+              <li class=""><input type="hidden" value="" name="brand"></li>
+            </ul>
+          </div>
+      </div> <!-- row -->
 
-      	</div> <!-- choose_category_div -->
+        </div> <!-- choose_category_div -->
       </div> <!-- container -->
       <!--======================
-      	   End Category popup
+           End Category popup
       ========================-->
 
 

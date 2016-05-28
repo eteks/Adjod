@@ -161,22 +161,25 @@
           // if it's a multi-select, add another selection box to the end
           // NOTE: this is done first since we clone the previous input
           // NOTE: the second check is there because IE 8 fires multiple change events for no good reason
+          // if (window.location.href.indexOf("edit_postad_detail") <= -1) {
+            if($('.simpleFilePreview').children().not('.editpost_image_change')){
+            if (p.attr('data-sfpallowmultiple') == 1 && !p.find('.simpleFilePreview_preview').length) {
+              var newId = $.simpleFilePreview.uid++;
+              var newN = p.clone(true).attr('id', "simpleFilePreview_"+newId);
+              newN.find('input.simpleFilePreview_formInput').attr('id', newN.find('input.simpleFilePreview_formInput').attr('id')+'_'+newId).val('');
+              if($('.simpleFilePreview_multiUI').hasClass('edit_image_notavailable')){
+                newN.find('.simpleFilePreview_input').css('display','block');
+              }
+              p.after(newN);
+              var nw = p.parents('.simpleFilePreview_multi').width('+='+newN.outerWidth(true)).width();
+              if (nw > p.parents('.simpleFilePreview_multiClip').width()) {
+                p.parents('.simpleFilePreview_multiUI')
+                 .find('.simpleFilePreview_shiftRight')
+                 .click();
+              }
 
-          if (p.attr('data-sfpallowmultiple') == 1 && !p.find('.simpleFilePreview_preview').length) {
-            // alert("if");
-            var newId = $.simpleFilePreview.uid++;
-            var newN = p.clone(true).attr('id', "simpleFilePreview_"+newId);
-            newN.find('input.simpleFilePreview_formInput').attr('id', newN.find('input.simpleFilePreview_formInput').attr('id')+'_'+newId).val('');
-            p.after(newN);
-            var nw = p.parents('.simpleFilePreview_multi').width('+='+newN.outerWidth(true)).width();
-            if (nw > p.parents('.simpleFilePreview_multiClip').width()) {
-              p.parents('.simpleFilePreview_multiUI')
-               .find('.simpleFilePreview_shiftRight')
-               .click();
             }
-
           }
-
           if (this.files && this.files[0]) {
             if ((new RegExp("^image\/("+$.simpleFilePreview.previewFileTypes+")$")).test(this.files[0].type.toLowerCase())) {
 
@@ -286,6 +289,18 @@
             }
 
             p.parents('.simpleFilePreview_multi').width('-='+p.width());
+            
+            // image_src = $(this).attr('src').replace('/media/','');
+            // cookie_edit_image_path = $.cookie("edit_image_path");
+            // image_array = $.makeArray($(cookie_edit_image_path.split(',')));
+            
+            // //Remove selected image path
+            // image_array = jQuery.grep(image_array, function(value) {
+            // return value != image_src;
+            // });
+            // $.removeCookie('edit_image_path', { path: '/' });
+            // $.cookie("edit_image_path",image_array);
+            // $('.hidden_image_src').val(image_array);
             p.remove();
 
           } else {
@@ -350,30 +365,31 @@
     var isMulti = n.is('[multiple]');
     // "multiple" removed because it's handled later manually
     n = n.removeAttr('multiple').addClass('simpleFilePreview_formInput');
+    if (window.location.href.indexOf("edit_postad_detail") <= -1) {
+      // wrap input with necessary structure
+      var c = $("<"+((isMulti)?'li':'div')+" id='simpleFilePreview_"+($.simpleFilePreview.uid++)+"' class='simpleFilePreview' data-sfpallowmultiple='"+((isMulti)?1:0)+"'>" +
+                "<a class='simpleFilePreview_input'><span class='simpleFilePreview_inputButtonText'>"+o.buttonContent+"</span></a>" +
+                "<span class='simpleFilePreview_remove'>"+o.removeContent+"</span>"+
+                "</"+((isMulti)?'li':'div')+">");
+      n.before(c);
+      c.append(n);
+      n.css({
+        width: c.width()+'px',
+        height: c.height()+'px'
+      });
 
-    // wrap input with necessary structure
-    var c = $("<"+((isMulti)?'li':'div')+" id='simpleFilePreview_"+($.simpleFilePreview.uid++)+"' class='simpleFilePreview' data-sfpallowmultiple='"+((isMulti)?1:0)+"'>" +
-              "<a class='simpleFilePreview_input'><span class='simpleFilePreview_inputButtonText'>"+o.buttonContent+"</span></a>" +
-              "<span class='simpleFilePreview_remove'>"+o.removeContent+"</span>"+
-              "</"+((isMulti)?'li':'div')+">");
-    n.before(c);
-    c.append(n);
+      // mostly for IE, the file input must be sized the same as the container,
+      // opacity 0, and z-indexed above other elements within the preview container
+     
+      // if it's a multi-select we use multiple separate inputs instead to support file preview
+      if (isMulti) {
+        c.wrap("<div class='simpleFilePreview_multiUI'><div class='simpleFilePreview_multiClip'><ul class='simpleFilePreview_multi'></ul></div></div>");
+        c.parents('.simpleFilePreview_multiUI')
+          .prepend("<span class='simpleFilePreview_shiftRight simpleFilePreview_shifter'>"+o.shiftRight+"</span>")
+          .append("<span class='simpleFilePreview_shiftLeft simpleFilePreview_shifter'>"+o.shiftLeft+"</span>");
+      }
 
-    // mostly for IE, the file input must be sized the same as the container,
-    // opacity 0, and z-indexed above other elements within the preview container
-    n.css({
-      width: c.width()+'px',
-      height: c.height()+'px'
-    });
-
-    // if it's a multi-select we use multiple separate inputs instead to support file preview
-    if (isMulti) {
-      c.wrap("<div class='simpleFilePreview_multiUI'><div class='simpleFilePreview_multiClip'><ul class='simpleFilePreview_multi'></ul></div></div>");
-      c.parents('.simpleFilePreview_multiUI')
-        .prepend("<span class='simpleFilePreview_shiftRight simpleFilePreview_shifter'>"+o.shiftRight+"</span>")
-        .append("<span class='simpleFilePreview_shiftLeft simpleFilePreview_shifter'>"+o.shiftLeft+"</span>");
-    }
-
+      
     var ex = o.existingFiles;
     if (ex) {
       if (isMulti) {
@@ -428,6 +444,7 @@
       $('.simpleFilePreview_multi').width(c.outerWidth(true) * c.parent().find('.simpleFilePreview').length);
     }
 
+    }
   };
 
   var addOrChangePreview = function(p, src, fn) {
@@ -444,6 +461,8 @@
 
       //customise
       $('.simpleFilePreview').css('background-color','#ffffff !important');
+      //newly added on may 25
+      $('.default_photo,.post_image_change').hide();
     }
 
     if (fn) {
