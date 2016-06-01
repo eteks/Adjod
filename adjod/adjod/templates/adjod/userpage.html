@@ -357,7 +357,7 @@
                     <p class="{% if recentads.premium_plan_id = None %} premium-img {% elif recentads.premium_plan_id = 1 %} premium-img1_mobile {% elif recentads.premium_plan_id = 2 %} premium-img2_mobile {% elif recentads.premium_plan_id = 3 %} premium-img3_mobile {% endif%} "></p>
                     <a href="{% url product_detail recentads.id %}">
                       {% if recentads.photos = '' %}
-                      <img src="{{MEDIA_URL}}img/bg-img2.png">
+                      <img src="{{STATIC_URL}}img/bg-img2.png">
                       {% else %}
                         <img src="{{MEDIA_URL}}{{recentads.photos|get_photos}}">
                       {% endif %}
