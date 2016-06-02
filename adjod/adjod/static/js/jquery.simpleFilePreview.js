@@ -145,7 +145,6 @@
                     else
                         edit_remove_photos = edit_remove_photos + ","+ $(this).attr('src');         
                     var regex = new RegExp("/media/", 'g');
-                    alert(edit_remove_photos.replace(regex,""));
                     $('.edit_remove_photos').val(edit_remove_photos.replace(regex,""));
                     p.remove();
                 } else {

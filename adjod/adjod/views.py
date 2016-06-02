@@ -554,6 +554,7 @@ def update_success(request, pk):
 				updated_product.photos = photos_list+","+str(updated_product.photos)
 			else:
 				updated_product.photos = photos_list
+			updated_product.imagecount = len([n for n in str(updated_product.photos).split(',')])
 			# print 'image_receive', product_photos
 			# if hidden_image_src != '' and product_photos != '':
 			# 	updated_product.photos = str(hidden_image_src)+','+str(product_photos)
