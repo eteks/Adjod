@@ -14530,3 +14530,599 @@ WARNING 2016-06-01 21:33:31,321 base 16136 -1275069632 Not Found: /media/img/bg-
 WARNING 2016-06-01 21:33:35,397 base 16136 -1296041152 Not Found: /media/img/bg-img2.png
 WARNING 2016-06-01 21:42:37,604 base 16136 -1275069632 Not Found: /media/img/bg-img2.png
 WARNING 2016-06-01 21:42:39,110 base 16136 -1275069632 Not Found: /media/img/bg-img2.png
+ERROR 2016-06-02 14:07:28,579 base 4098 -1296041152 Internal Server Error: /delete_ad/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 77, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/administrator/virtual_new/Adjod/adjod/adjod/views.py", line 617, in delete_ad
+    get_products = [int(i) for i in list_items]
+ValueError: invalid literal for int() with base 10: ''
+ERROR 2016-06-02 14:07:28,721 base 4098 -1275069632 Internal Server Error: /delete_ad/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 77, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/administrator/virtual_new/Adjod/adjod/adjod/views.py", line 617, in delete_ad
+    get_products = [int(i) for i in list_items]
+ValueError: invalid literal for int() with base 10: ''
+ERROR 2016-06-02 14:07:28,887 base 4098 -1275069632 Internal Server Error: /delete_ad/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 77, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/administrator/virtual_new/Adjod/adjod/adjod/views.py", line 617, in delete_ad
+    get_products = [int(i) for i in list_items]
+ValueError: invalid literal for int() with base 10: ''
+ERROR 2016-06-02 14:07:29,079 base 4098 -1275069632 Internal Server Error: /delete_ad/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 77, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/administrator/virtual_new/Adjod/adjod/adjod/views.py", line 617, in delete_ad
+    get_products = [int(i) for i in list_items]
+ValueError: invalid literal for int() with base 10: ''
+WARNING 2016-06-02 14:07:49,103 base 4098 -1285555392 Not Found: /edit_postad_detail/static/img/urgent_mobile.png
+WARNING 2016-06-02 14:07:49,104 base 4098 -1296041152 Not Found: /edit_postad_detail/static/img/close_btn.png
+WARNING 2016-06-02 14:07:49,104 base 4098 -1275069632 Not Found: /edit_postad_detail/static/img/urgent_ad.png
+WARNING 2016-06-02 14:07:49,105 base 4098 -1306526912 Not Found: /edit_postad_detail/static/img/premium_ad.png
+WARNING 2016-06-02 14:07:49,105 base 4098 -1317012672 Not Found: /edit_postad_detail/static/img/premium_mobile.png
+WARNING 2016-06-02 14:07:49,254 base 4098 -1265108160 Not Found: /edit_postad_detail/static/img/premium_urgent_ad.png
+WARNING 2016-06-02 14:07:49,355 base 4098 -1285555392 Not Found: /edit_postad_detail/static/img/premium_urgent_mobile.png
+WARNING 2016-06-02 14:07:49,405 base 4098 -1296041152 Not Found: /edit_postad_detail/static/img/urgent_mobile.png
+WARNING 2016-06-02 14:13:10,820 base 3647 -1264583872 Not Found: /edit_postad_detail/static/img/premium_ad.png
+WARNING 2016-06-02 14:13:10,862 base 3647 -1275069632 Not Found: /edit_postad_detail/static/img/urgent_mobile.png
+WARNING 2016-06-02 14:13:10,862 base 3647 -1296041152 Not Found: /edit_postad_detail/static/img/close_btn.png
+WARNING 2016-06-02 14:13:10,863 base 3647 -1306526912 Not Found: /edit_postad_detail/static/img/urgent_ad.png
+WARNING 2016-06-02 14:13:10,864 base 3647 -1247540416 Not Found: /edit_postad_detail/static/img/premium_mobile.png
+WARNING 2016-06-02 14:13:11,121 base 3647 -1285555392 Not Found: /edit_postad_detail/static/img/premium_urgent_ad.png
+WARNING 2016-06-02 14:13:11,164 base 3647 -1264583872 Not Found: /edit_postad_detail/static/img/premium_urgent_mobile.png
+WARNING 2016-06-02 14:13:11,340 base 3647 -1275069632 Not Found: /edit_postad_detail/static/img/urgent_mobile.png
+WARNING 2016-06-02 14:13:11,340 base 3647 -1296041152 Not Found: /edit_postad_detail/static/img/close_btn.png
+WARNING 2016-06-02 14:13:11,390 base 3647 -1306526912 Not Found: /edit_postad_detail/static/img/premium_ad.png
+WARNING 2016-06-02 14:13:23,297 base 3647 -1285555392 Not Found: /edit_postad_detail/static/img/close_btn.png
+WARNING 2016-06-02 14:13:23,322 base 3647 -1296041152 Not Found: /edit_postad_detail/static/img/urgent_mobile.png
+WARNING 2016-06-02 14:13:23,323 base 3647 -1306526912 Not Found: /edit_postad_detail/static/img/urgent_ad.png
+WARNING 2016-06-02 14:13:23,323 base 3647 -1264583872 Not Found: /edit_postad_detail/static/img/premium_urgent_ad.png
+WARNING 2016-06-02 14:13:23,324 base 3647 -1247540416 Not Found: /edit_postad_detail/static/img/premium_mobile.png
+WARNING 2016-06-02 14:13:23,324 base 3647 -1275069632 Not Found: /edit_postad_detail/static/img/premium_ad.png
+WARNING 2016-06-02 14:13:23,590 base 3647 -1285555392 Not Found: /edit_postad_detail/static/img/premium_urgent_mobile.png
+WARNING 2016-06-02 14:13:24,668 base 3647 -1264583872 Not Found: /edit_postad_detail/static/img/urgent_ad.png
+WARNING 2016-06-02 14:13:24,694 base 3647 -1285555392 Not Found: /edit_postad_detail/static/img/close_btn.png
+WARNING 2016-06-02 14:13:24,694 base 3647 -1306526912 Not Found: /edit_postad_detail/static/img/premium_mobile.png
+WARNING 2016-06-02 14:13:24,694 base 3647 -1247540416 Not Found: /edit_postad_detail/static/img/premium_ad.png
+WARNING 2016-06-02 14:13:24,699 base 3647 -1275069632 Not Found: /edit_postad_detail/static/img/urgent_mobile.png
+WARNING 2016-06-02 14:13:24,700 base 3647 -1296041152 Not Found: /edit_postad_detail/static/img/premium_urgent_ad.png
+WARNING 2016-06-02 14:13:24,939 base 3647 -1285555392 Not Found: /edit_postad_detail/static/img/premium_urgent_mobile.png
+WARNING 2016-06-02 14:13:32,042 base 3647 -1317012672 Not Found: /edit_postad_detail/static/img/urgent_ad.png
+WARNING 2016-06-02 14:13:32,067 base 3647 -1264583872 Not Found: /edit_postad_detail/static/img/premium_mobile.png
+WARNING 2016-06-02 14:13:32,068 base 3647 -1247540416 Not Found: /edit_postad_detail/static/img/urgent_mobile.png
+WARNING 2016-06-02 14:13:32,068 base 3647 -1306526912 Not Found: /edit_postad_detail/static/img/close_btn.png
+WARNING 2016-06-02 14:13:32,068 base 3647 -1275069632 Not Found: /edit_postad_detail/static/img/premium_ad.png
+WARNING 2016-06-02 14:13:32,069 base 3647 -1296041152 Not Found: /edit_postad_detail/static/img/premium_urgent_ad.png
+WARNING 2016-06-02 14:13:32,318 base 3647 -1317012672 Not Found: /edit_postad_detail/static/img/premium_urgent_mobile.png
+WARNING 2016-06-02 14:13:33,638 base 3647 -1306526912 Not Found: /edit_postad_detail/static/img/urgent_ad.png
+WARNING 2016-06-02 14:13:33,671 base 3647 -1317012672 Not Found: /edit_postad_detail/static/img/close_btn.png
+WARNING 2016-06-02 14:13:33,671 base 3647 -1275069632 Not Found: /edit_postad_detail/static/img/premium_ad.png
+WARNING 2016-06-02 14:13:33,672 base 3647 -1296041152 Not Found: /edit_postad_detail/static/img/urgent_mobile.png
+WARNING 2016-06-02 14:13:33,672 base 3647 -1247540416 Not Found: /edit_postad_detail/static/img/premium_mobile.png
+WARNING 2016-06-02 14:13:33,672 base 3647 -1264583872 Not Found: /edit_postad_detail/static/img/premium_urgent_ad.png
+WARNING 2016-06-02 14:13:33,891 base 3647 -1317012672 Not Found: /edit_postad_detail/static/img/premium_urgent_mobile.png
+WARNING 2016-06-02 16:04:07,648 base 9042 -1267729600 Not Found: /edit_postad_detail/static/img/premium_ad.png
+WARNING 2016-06-02 16:04:07,674 base 9042 -1299186880 Not Found: /edit_postad_detail/static/img/premium_urgent_ad.png
+WARNING 2016-06-02 16:04:07,674 base 9042 -1288701120 Not Found: /edit_postad_detail/static/img/premium_mobile.png
+WARNING 2016-06-02 16:04:07,674 base 9042 -1309672640 Not Found: /edit_postad_detail/static/img/urgent_ad.png
+WARNING 2016-06-02 16:04:07,675 base 9042 -1318065344 Not Found: /edit_postad_detail/static/img/urgent_mobile.png
+WARNING 2016-06-02 16:04:07,675 base 9042 -1278215360 Not Found: /edit_postad_detail/static/img/close_btn.png
+WARNING 2016-06-02 16:04:07,858 base 9042 -1267729600 Not Found: /edit_postad_detail/static/img/premium_urgent_mobile.png
+WARNING 2016-06-02 16:04:08,259 base 9042 -1267729600 Not Found: /edit_postad_detail/static/img/close_btn.png
+WARNING 2016-06-02 16:04:08,284 base 9042 -1299186880 Not Found: /edit_postad_detail/static/img/urgent_ad.png
+WARNING 2016-06-02 16:04:08,285 base 9042 -1278215360 Not Found: /edit_postad_detail/static/img/urgent_mobile.png
+WARNING 2016-06-02 16:04:08,285 base 9042 -1318065344 Not Found: /edit_postad_detail/static/img/premium_ad.png
+WARNING 2016-06-02 16:04:08,285 base 9042 -1288701120 Not Found: /edit_postad_detail/static/img/premium_urgent_ad.png
+WARNING 2016-06-02 16:04:08,286 base 9042 -1309672640 Not Found: /edit_postad_detail/static/img/premium_mobile.png
+WARNING 2016-06-02 16:04:08,512 base 9042 -1299186880 Not Found: /edit_postad_detail/static/img/premium_urgent_mobile.png
+WARNING 2016-06-02 16:04:37,461 base 9042 -1267729600 Not Found: /edit_postad_detail/static/img/close_btn.png
+WARNING 2016-06-02 16:04:37,487 base 9042 -1299186880 Not Found: /edit_postad_detail/static/img/urgent_ad.png
+WARNING 2016-06-02 16:04:37,487 base 9042 -1309672640 Not Found: /edit_postad_detail/static/img/urgent_mobile.png
+WARNING 2016-06-02 16:04:37,488 base 9042 -1318065344 Not Found: /edit_postad_detail/static/img/premium_urgent_ad.png
+WARNING 2016-06-02 16:04:37,488 base 9042 -1278215360 Not Found: /edit_postad_detail/static/img/premium_mobile.png
+WARNING 2016-06-02 16:04:37,488 base 9042 -1288701120 Not Found: /edit_postad_detail/static/img/premium_ad.png
+WARNING 2016-06-02 16:04:37,721 base 9042 -1267729600 Not Found: /edit_postad_detail/static/img/premium_urgent_mobile.png
+WARNING 2016-06-02 16:04:38,993 base 9042 -1278215360 Not Found: /edit_postad_detail/static/img/urgent_ad.png
+WARNING 2016-06-02 16:04:38,994 base 9042 -1318065344 Not Found: /edit_postad_detail/static/img/close_btn.png
+WARNING 2016-06-02 16:04:38,995 base 9042 -1309672640 Not Found: /edit_postad_detail/static/img/premium_ad.png
+WARNING 2016-06-02 16:04:38,995 base 9042 -1299186880 Not Found: /edit_postad_detail/static/img/urgent_mobile.png
+WARNING 2016-06-02 16:04:39,119 base 9042 -1288701120 Not Found: /edit_postad_detail/static/img/premium_urgent_ad.png
+WARNING 2016-06-02 16:04:39,154 base 9042 -1326458048 Not Found: /edit_postad_detail/static/img/premium_mobile.png
+WARNING 2016-06-02 16:04:39,279 base 9042 -1318065344 Not Found: /edit_postad_detail/static/img/premium_urgent_mobile.png
+WARNING 2016-06-02 16:04:50,692 base 9042 -1326458048 Not Found: /edit_postad_detail/static/img/urgent_ad.png
+WARNING 2016-06-02 16:04:50,726 base 9042 -1334850752 Not Found: /edit_postad_detail/static/img/premium_urgent_ad.png
+WARNING 2016-06-02 16:04:50,726 base 9042 -1318065344 Not Found: /edit_postad_detail/static/img/premium_urgent_mobile.png
+WARNING 2016-06-02 16:04:50,727 base 9042 -1343243456 Not Found: /edit_postad_detail/static/img/premium_mobile.png
+WARNING 2016-06-02 16:04:50,727 base 9042 -1299186880 Not Found: /edit_postad_detail/static/img/premium_ad.png
+WARNING 2016-06-02 16:04:50,728 base 9042 -1267729600 Not Found: /edit_postad_detail/static/img/urgent_mobile.png
+WARNING 2016-06-02 16:04:50,728 base 9042 -1309672640 Not Found: /edit_postad_detail/static/img/close_btn.png
+WARNING 2016-06-02 16:04:52,055 base 9042 -1267729600 Not Found: /edit_postad_detail/static/img/urgent_mobile.png
+WARNING 2016-06-02 16:04:52,080 base 9042 -1309672640 Not Found: /edit_postad_detail/static/img/close_btn.png
+WARNING 2016-06-02 16:04:52,081 base 9042 -1343243456 Not Found: /edit_postad_detail/static/img/premium_mobile.png
+WARNING 2016-06-02 16:04:52,081 base 9042 -1278215360 Not Found: /edit_postad_detail/static/img/premium_urgent_ad.png
+WARNING 2016-06-02 16:04:52,081 base 9042 -1351636160 Not Found: /edit_postad_detail/static/img/urgent_ad.png
+WARNING 2016-06-02 16:04:52,082 base 9042 -1299186880 Not Found: /edit_postad_detail/static/img/premium_ad.png
+WARNING 2016-06-02 16:04:52,316 base 9042 -1309672640 Not Found: /edit_postad_detail/static/img/premium_urgent_mobile.png
+WARNING 2016-06-02 16:07:36,769 base 9042 -1309672640 Not Found: /edit_postad_detail/static/img/urgent_ad.png
+WARNING 2016-06-02 16:07:36,794 base 9042 -1351636160 Not Found: /edit_postad_detail/static/img/premium_ad.png
+WARNING 2016-06-02 16:07:36,795 base 9042 -1299186880 Not Found: /edit_postad_detail/static/img/premium_mobile.png
+WARNING 2016-06-02 16:07:36,796 base 9042 -1278215360 Not Found: /edit_postad_detail/static/img/urgent_mobile.png
+WARNING 2016-06-02 16:07:36,796 base 9042 -1288701120 Not Found: /edit_postad_detail/static/img/close_btn.png
+WARNING 2016-06-02 16:07:36,796 base 9042 -1267729600 Not Found: /edit_postad_detail/static/img/premium_urgent_ad.png
+WARNING 2016-06-02 16:07:37,121 base 9042 -1309672640 Not Found: /edit_postad_detail/static/img/premium_urgent_mobile.png
+WARNING 2016-06-02 16:07:38,149 base 9042 -1288701120 Not Found: /edit_postad_detail/static/img/urgent_ad.png
+WARNING 2016-06-02 16:07:38,182 base 9042 -1309672640 Not Found: /edit_postad_detail/static/img/close_btn.png
+WARNING 2016-06-02 16:07:38,182 base 9042 -1267729600 Not Found: /edit_postad_detail/static/img/urgent_mobile.png
+WARNING 2016-06-02 16:07:38,183 base 9042 -1278215360 Not Found: /edit_postad_detail/static/img/premium_ad.png
+WARNING 2016-06-02 16:07:38,183 base 9042 -1299186880 Not Found: /edit_postad_detail/static/img/premium_mobile.png
+WARNING 2016-06-02 16:07:38,184 base 9042 -1318065344 Not Found: /edit_postad_detail/static/img/premium_urgent_ad.png
+WARNING 2016-06-02 16:07:38,500 base 9042 -1309672640 Not Found: /edit_postad_detail/static/img/premium_urgent_mobile.png
+WARNING 2016-06-02 16:13:16,432 base 9042 -1309672640 Not Found: /edit_postad_detail/static/img/close_btn.png
+WARNING 2016-06-02 16:13:16,457 base 9042 -1288701120 Not Found: /edit_postad_detail/static/img/premium_ad.png
+WARNING 2016-06-02 16:13:16,457 base 9042 -1267729600 Not Found: /edit_postad_detail/static/img/urgent_mobile.png
+WARNING 2016-06-02 16:13:16,458 base 9042 -1318065344 Not Found: /edit_postad_detail/static/img/urgent_ad.png
+WARNING 2016-06-02 16:13:16,458 base 9042 -1278215360 Not Found: /edit_postad_detail/static/img/premium_mobile.png
+WARNING 2016-06-02 16:13:16,459 base 9042 -1299186880 Not Found: /edit_postad_detail/static/img/premium_urgent_ad.png
+WARNING 2016-06-02 16:13:16,675 base 9042 -1309672640 Not Found: /edit_postad_detail/static/img/premium_urgent_mobile.png
+WARNING 2016-06-02 16:13:17,963 base 9042 -1318065344 Not Found: /edit_postad_detail/static/img/close_btn.png
+WARNING 2016-06-02 16:13:17,964 base 9042 -1267729600 Not Found: /edit_postad_detail/static/img/urgent_mobile.png
+WARNING 2016-06-02 16:13:17,964 base 9042 -1278215360 Not Found: /edit_postad_detail/static/img/urgent_ad.png
+WARNING 2016-06-02 16:13:17,965 base 9042 -1288701120 Not Found: /edit_postad_detail/static/img/premium_ad.png
+WARNING 2016-06-02 16:13:18,089 base 9042 -1309672640 Not Found: /edit_postad_detail/static/img/premium_urgent_ad.png
+WARNING 2016-06-02 16:13:18,124 base 9042 -1299186880 Not Found: /edit_postad_detail/static/img/premium_mobile.png
+WARNING 2016-06-02 16:13:18,249 base 9042 -1267729600 Not Found: /edit_postad_detail/static/img/premium_urgent_mobile.png
+WARNING 2016-06-02 16:13:39,369 base 9042 -1278215360 Not Found: /edit_postad_detail/static/img/close_btn.png
+WARNING 2016-06-02 16:13:39,403 base 9042 -1299186880 Not Found: /edit_postad_detail/static/img/premium_ad.png
+WARNING 2016-06-02 16:13:39,403 base 9042 -1288701120 Not Found: /edit_postad_detail/static/img/premium_urgent_ad.png
+WARNING 2016-06-02 16:13:39,404 base 9042 -1267729600 Not Found: /edit_postad_detail/static/img/premium_mobile.png
+WARNING 2016-06-02 16:13:39,404 base 9042 -1318065344 Not Found: /edit_postad_detail/static/img/urgent_mobile.png
+WARNING 2016-06-02 16:13:39,404 base 9042 -1326458048 Not Found: /edit_postad_detail/static/img/urgent_ad.png
+WARNING 2016-06-02 16:13:39,629 base 9042 -1278215360 Not Found: /edit_postad_detail/static/img/premium_urgent_mobile.png
+WARNING 2016-06-02 16:13:40,876 base 9042 -1299186880 Not Found: /edit_postad_detail/static/img/premium_ad.png
+WARNING 2016-06-02 16:13:40,876 base 9042 -1318065344 Not Found: /edit_postad_detail/static/img/urgent_ad.png
+WARNING 2016-06-02 16:13:40,876 base 9042 -1288701120 Not Found: /edit_postad_detail/static/img/urgent_mobile.png
+WARNING 2016-06-02 16:13:40,877 base 9042 -1267729600 Not Found: /edit_postad_detail/static/img/close_btn.png
+WARNING 2016-06-02 16:13:41,026 base 9042 -1278215360 Not Found: /edit_postad_detail/static/img/premium_urgent_ad.png
+WARNING 2016-06-02 16:13:41,127 base 9042 -1326458048 Not Found: /edit_postad_detail/static/img/premium_urgent_mobile.png
+WARNING 2016-06-02 16:13:41,128 base 9042 -1299186880 Not Found: /edit_postad_detail/static/img/premium_mobile.png
+WARNING 2016-06-02 16:14:39,372 base 9042 -1318065344 Not Found: /edit_postad_detail/static/img/premium_ad.png
+WARNING 2016-06-02 16:14:39,406 base 9042 -1299186880 Not Found: /edit_postad_detail/static/img/urgent_ad.png
+WARNING 2016-06-02 16:14:39,406 base 9042 -1288701120 Not Found: /edit_postad_detail/static/img/close_btn.png
+WARNING 2016-06-02 16:14:39,407 base 9042 -1309672640 Not Found: /edit_postad_detail/static/img/premium_urgent_ad.png
+WARNING 2016-06-02 16:14:39,407 base 9042 -1278215360 Not Found: /edit_postad_detail/static/img/premium_mobile.png
+WARNING 2016-06-02 16:14:39,407 base 9042 -1267729600 Not Found: /edit_postad_detail/static/img/urgent_mobile.png
+WARNING 2016-06-02 16:14:39,927 base 9042 -1267729600 Not Found: /edit_postad_detail/static/img/premium_urgent_mobile.png
+WARNING 2016-06-02 16:14:40,972 base 9042 -1299186880 Not Found: /edit_postad_detail/static/img/urgent_mobile.png
+WARNING 2016-06-02 16:14:40,972 base 9042 -1318065344 Not Found: /edit_postad_detail/static/img/premium_ad.png
+WARNING 2016-06-02 16:14:40,973 base 9042 -1309672640 Not Found: /edit_postad_detail/static/img/urgent_ad.png
+WARNING 2016-06-02 16:14:40,973 base 9042 -1288701120 Not Found: /edit_postad_detail/static/img/close_btn.png
+WARNING 2016-06-02 16:14:41,148 base 9042 -1278215360 Not Found: /edit_postad_detail/static/img/premium_urgent_ad.png
+WARNING 2016-06-02 16:14:41,181 base 9042 -1267729600 Not Found: /edit_postad_detail/static/img/premium_mobile.png
+WARNING 2016-06-02 16:14:41,215 base 9042 -1299186880 Not Found: /edit_postad_detail/static/img/premium_urgent_mobile.png
+WARNING 2016-06-02 16:15:13,250 base 9042 -1309672640 Not Found: /edit_postad_detail/static/img/urgent_mobile.png
+WARNING 2016-06-02 16:15:13,283 base 9042 -1267729600 Not Found: /edit_postad_detail/static/img/urgent_ad.png
+WARNING 2016-06-02 16:15:13,284 base 9042 -1299186880 Not Found: /edit_postad_detail/static/img/close_btn.png
+WARNING 2016-06-02 16:15:13,284 base 9042 -1288701120 Not Found: /edit_postad_detail/static/img/premium_urgent_ad.png
+WARNING 2016-06-02 16:15:13,285 base 9042 -1318065344 Not Found: /edit_postad_detail/static/img/premium_ad.png
+WARNING 2016-06-02 16:15:13,285 base 9042 -1278215360 Not Found: /edit_postad_detail/static/img/premium_mobile.png
+WARNING 2016-06-02 16:15:13,527 base 9042 -1309672640 Not Found: /edit_postad_detail/static/img/premium_urgent_mobile.png
+WARNING 2016-06-02 16:15:14,906 base 9042 -1288701120 Not Found: /edit_postad_detail/static/img/close_btn.png
+WARNING 2016-06-02 16:15:14,907 base 9042 -1267729600 Not Found: /edit_postad_detail/static/img/urgent_mobile.png
+WARNING 2016-06-02 16:15:14,908 base 9042 -1318065344 Not Found: /edit_postad_detail/static/img/urgent_ad.png
+WARNING 2016-06-02 16:15:14,909 base 9042 -1299186880 Not Found: /edit_postad_detail/static/img/premium_ad.png
+WARNING 2016-06-02 16:15:15,059 base 9042 -1326458048 Not Found: /edit_postad_detail/static/img/premium_urgent_ad.png
+WARNING 2016-06-02 16:15:15,083 base 9042 -1278215360 Not Found: /edit_postad_detail/static/img/premium_mobile.png
+WARNING 2016-06-02 16:15:15,109 base 9042 -1288701120 Not Found: /edit_postad_detail/static/img/premium_urgent_mobile.png
+WARNING 2016-06-02 16:16:54,748 base 9042 -1278215360 Not Found: /edit_postad_detail/static/img/close_btn.png
+WARNING 2016-06-02 16:16:54,773 base 9042 -1299186880 Not Found: /edit_postad_detail/static/img/premium_ad.png
+WARNING 2016-06-02 16:16:54,774 base 9042 -1288701120 Not Found: /edit_postad_detail/static/img/urgent_mobile.png
+WARNING 2016-06-02 16:16:54,774 base 9042 -1318065344 Not Found: /edit_postad_detail/static/img/urgent_ad.png
+WARNING 2016-06-02 16:16:54,775 base 9042 -1267729600 Not Found: /edit_postad_detail/static/img/premium_mobile.png
+WARNING 2016-06-02 16:16:54,775 base 9042 -1309672640 Not Found: /edit_postad_detail/static/img/premium_urgent_ad.png
+WARNING 2016-06-02 16:16:54,958 base 9042 -1278215360 Not Found: /edit_postad_detail/static/img/premium_urgent_mobile.png
+WARNING 2016-06-02 16:16:56,221 base 9042 -1309672640 Not Found: /edit_postad_detail/static/img/urgent_ad.png
+WARNING 2016-06-02 16:16:56,222 base 9042 -1318065344 Not Found: /edit_postad_detail/static/img/close_btn.png
+WARNING 2016-06-02 16:16:56,223 base 9042 -1288701120 Not Found: /edit_postad_detail/static/img/urgent_mobile.png
+WARNING 2016-06-02 16:16:56,223 base 9042 -1299186880 Not Found: /edit_postad_detail/static/img/premium_ad.png
+WARNING 2016-06-02 16:16:56,347 base 9042 -1278215360 Not Found: /edit_postad_detail/static/img/premium_urgent_ad.png
+WARNING 2016-06-02 16:16:56,457 base 9042 -1309672640 Not Found: /edit_postad_detail/static/img/premium_mobile.png
+WARNING 2016-06-02 16:16:56,489 base 9042 -1267729600 Not Found: /edit_postad_detail/static/img/premium_urgent_mobile.png
+WARNING 2016-06-02 16:18:11,032 base 9042 -1299186880 Not Found: /edit_postad_detail/static/img/urgent_ad.png
+WARNING 2016-06-02 16:18:11,058 base 9042 -1267729600 Not Found: /edit_postad_detail/static/img/premium_ad.png
+WARNING 2016-06-02 16:18:11,058 base 9042 -1309672640 Not Found: /edit_postad_detail/static/img/close_btn.png
+WARNING 2016-06-02 16:18:11,059 base 9042 -1278215360 Not Found: /edit_postad_detail/static/img/premium_mobile.png
+WARNING 2016-06-02 16:18:11,059 base 9042 -1288701120 Not Found: /edit_postad_detail/static/img/urgent_mobile.png
+WARNING 2016-06-02 16:18:11,059 base 9042 -1318065344 Not Found: /edit_postad_detail/static/img/premium_urgent_ad.png
+WARNING 2016-06-02 16:18:11,242 base 9042 -1299186880 Not Found: /edit_postad_detail/static/img/premium_urgent_mobile.png
+WARNING 2016-06-02 16:18:12,622 base 9042 -1288701120 Not Found: /edit_postad_detail/static/img/urgent_ad.png
+WARNING 2016-06-02 16:18:12,648 base 9042 -1278215360 Not Found: /edit_postad_detail/static/img/close_btn.png
+WARNING 2016-06-02 16:18:12,649 base 9042 -1309672640 Not Found: /edit_postad_detail/static/img/premium_ad.png
+WARNING 2016-06-02 16:18:12,649 base 9042 -1267729600 Not Found: /edit_postad_detail/static/img/urgent_mobile.png
+WARNING 2016-06-02 16:18:12,801 base 9042 -1318065344 Not Found: /edit_postad_detail/static/img/premium_urgent_ad.png
+WARNING 2016-06-02 16:18:12,833 base 9042 -1288701120 Not Found: /edit_postad_detail/static/img/premium_mobile.png
+WARNING 2016-06-02 16:18:12,849 base 9042 -1299186880 Not Found: /edit_postad_detail/static/img/premium_urgent_mobile.png
+WARNING 2016-06-02 16:18:24,629 base 9042 -1267729600 Not Found: /edit_postad_detail/static/img/urgent_ad.png
+WARNING 2016-06-02 16:18:24,655 base 9042 -1299186880 Not Found: /edit_postad_detail/static/img/urgent_mobile.png
+WARNING 2016-06-02 16:18:24,655 base 9042 -1318065344 Not Found: /edit_postad_detail/static/img/premium_urgent_ad.png
+WARNING 2016-06-02 16:18:24,656 base 9042 -1278215360 Not Found: /edit_postad_detail/static/img/close_btn.png
+WARNING 2016-06-02 16:18:24,656 base 9042 -1309672640 Not Found: /edit_postad_detail/static/img/premium_ad.png
+WARNING 2016-06-02 16:18:24,656 base 9042 -1288701120 Not Found: /edit_postad_detail/static/img/premium_mobile.png
+WARNING 2016-06-02 16:18:24,839 base 9042 -1267729600 Not Found: /edit_postad_detail/static/img/premium_urgent_mobile.png
+WARNING 2016-06-02 16:18:26,413 base 9042 -1326458048 Not Found: /edit_postad_detail/static/img/premium_ad.png
+WARNING 2016-06-02 16:18:26,413 base 9042 -1278215360 Not Found: /edit_postad_detail/static/img/urgent_ad.png
+WARNING 2016-06-02 16:18:26,414 base 9042 -1288701120 Not Found: /edit_postad_detail/static/img/premium_urgent_ad.png
+WARNING 2016-06-02 16:18:26,414 base 9042 -1299186880 Not Found: /edit_postad_detail/static/img/close_btn.png
+WARNING 2016-06-02 16:18:26,537 base 9042 -1318065344 Not Found: /edit_postad_detail/static/img/urgent_mobile.png
+WARNING 2016-06-02 16:18:26,569 base 9042 -1267729600 Not Found: /edit_postad_detail/static/img/premium_mobile.png
+WARNING 2016-06-02 16:18:26,639 base 9042 -1326458048 Not Found: /edit_postad_detail/static/img/premium_urgent_mobile.png
+WARNING 2016-06-02 16:19:48,395 base 9042 -1278215360 Not Found: /edit_postad_detail/static/img/urgent_ad.png
+WARNING 2016-06-02 16:19:48,421 base 9042 -1288701120 Not Found: /edit_postad_detail/static/img/premium_urgent_ad.png
+WARNING 2016-06-02 16:19:48,421 base 9042 -1318065344 Not Found: /edit_postad_detail/static/img/premium_ad.png
+WARNING 2016-06-02 16:19:48,422 base 9042 -1326458048 Not Found: /edit_postad_detail/static/img/close_btn.png
+WARNING 2016-06-02 16:19:48,422 base 9042 -1267729600 Not Found: /edit_postad_detail/static/img/premium_mobile.png
+WARNING 2016-06-02 16:19:48,422 base 9042 -1309672640 Not Found: /edit_postad_detail/static/img/urgent_mobile.png
+WARNING 2016-06-02 16:19:48,629 base 9042 -1278215360 Not Found: /edit_postad_detail/static/img/premium_urgent_mobile.png
+WARNING 2016-06-02 16:19:50,110 base 9042 -1299186880 Not Found: /edit_postad_detail/static/img/premium_ad.png
+WARNING 2016-06-02 16:19:50,110 base 9042 -1326458048 Not Found: /edit_postad_detail/static/img/close_btn.png
+WARNING 2016-06-02 16:19:50,111 base 9042 -1288701120 Not Found: /edit_postad_detail/static/img/urgent_mobile.png
+WARNING 2016-06-02 16:19:50,111 base 9042 -1267729600 Not Found: /edit_postad_detail/static/img/urgent_ad.png
+WARNING 2016-06-02 16:19:50,294 base 9042 -1278215360 Not Found: /edit_postad_detail/static/img/premium_urgent_ad.png
+WARNING 2016-06-02 16:19:50,403 base 9042 -1318065344 Not Found: /edit_postad_detail/static/img/premium_mobile.png
+WARNING 2016-06-02 16:19:50,412 base 9042 -1309672640 Not Found: /edit_postad_detail/static/img/premium_urgent_mobile.png
+WARNING 2016-06-02 16:20:23,661 base 9042 -1278215360 Not Found: /edit_postad_detail/static/img/close_btn.png
+WARNING 2016-06-02 16:20:23,686 base 9042 -1309672640 Not Found: /edit_postad_detail/static/img/urgent_mobile.png
+WARNING 2016-06-02 16:20:23,687 base 9042 -1318065344 Not Found: /edit_postad_detail/static/img/urgent_ad.png
+WARNING 2016-06-02 16:20:23,687 base 9042 -1299186880 Not Found: /edit_postad_detail/static/img/premium_ad.png
+WARNING 2016-06-02 16:20:23,688 base 9042 -1288701120 Not Found: /edit_postad_detail/static/img/premium_urgent_ad.png
+WARNING 2016-06-02 16:20:23,688 base 9042 -1267729600 Not Found: /edit_postad_detail/static/img/premium_mobile.png
+WARNING 2016-06-02 16:20:23,913 base 9042 -1278215360 Not Found: /edit_postad_detail/static/img/premium_urgent_mobile.png
+WARNING 2016-06-02 16:20:25,335 base 9042 -1288701120 Not Found: /edit_postad_detail/static/img/urgent_ad.png
+WARNING 2016-06-02 16:20:25,336 base 9042 -1309672640 Not Found: /edit_postad_detail/static/img/urgent_mobile.png
+WARNING 2016-06-02 16:20:25,336 base 9042 -1318065344 Not Found: /edit_postad_detail/static/img/premium_ad.png
+WARNING 2016-06-02 16:20:25,336 base 9042 -1299186880 Not Found: /edit_postad_detail/static/img/close_btn.png
+WARNING 2016-06-02 16:20:25,460 base 9042 -1267729600 Not Found: /edit_postad_detail/static/img/premium_urgent_ad.png
+WARNING 2016-06-02 16:20:25,544 base 9042 -1278215360 Not Found: /edit_postad_detail/static/img/premium_urgent_mobile.png
+WARNING 2016-06-02 16:20:25,545 base 9042 -1288701120 Not Found: /edit_postad_detail/static/img/premium_mobile.png
+WARNING 2016-06-02 16:23:08,404 base 9042 -1318065344 Not Found: /edit_postad_detail/static/img/close_btn.png
+WARNING 2016-06-02 16:23:08,429 base 9042 -1278215360 Not Found: /edit_postad_detail/static/img/urgent_mobile.png
+WARNING 2016-06-02 16:23:08,430 base 9042 -1288701120 Not Found: /edit_postad_detail/static/img/premium_mobile.png
+WARNING 2016-06-02 16:23:08,430 base 9042 -1299186880 Not Found: /edit_postad_detail/static/img/premium_urgent_ad.png
+WARNING 2016-06-02 16:23:08,430 base 9042 -1309672640 Not Found: /edit_postad_detail/static/img/premium_ad.png
+WARNING 2016-06-02 16:23:08,431 base 9042 -1267729600 Not Found: /edit_postad_detail/static/img/urgent_ad.png
+WARNING 2016-06-02 16:23:08,613 base 9042 -1318065344 Not Found: /edit_postad_detail/static/img/premium_urgent_mobile.png
+WARNING 2016-06-02 16:23:10,050 base 9042 -1309672640 Not Found: /edit_postad_detail/static/img/urgent_mobile.png
+WARNING 2016-06-02 16:23:10,084 base 9042 -1318065344 Not Found: /edit_postad_detail/static/img/urgent_ad.png
+WARNING 2016-06-02 16:23:10,084 base 9042 -1278215360 Not Found: /edit_postad_detail/static/img/premium_mobile.png
+WARNING 2016-06-02 16:23:10,085 base 9042 -1299186880 Not Found: /edit_postad_detail/static/img/premium_ad.png
+WARNING 2016-06-02 16:23:10,085 base 9042 -1288701120 Not Found: /edit_postad_detail/static/img/premium_urgent_ad.png
+WARNING 2016-06-02 16:23:10,086 base 9042 -1267729600 Not Found: /edit_postad_detail/static/img/close_btn.png
+WARNING 2016-06-02 16:23:10,344 base 9042 -1318065344 Not Found: /edit_postad_detail/static/img/premium_urgent_mobile.png
+ERROR 2016-06-02 17:47:50,652 base 10956 -1247450304 Internal Server Error: /edit_postad_detail/51/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 89, in get_response
+    response = middleware_method(request)
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/middleware/locale.py", line 21, in process_request
+    check_path = self.is_language_prefix_patterns_used()
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/middleware/locale.py", line 54, in is_language_prefix_patterns_used
+    for url_pattern in get_resolver(None).url_patterns:
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 328, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 323, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+  File "/home/administrator/virtual_new/Adjod/adjod/adjod/urls.py", line 4, in <module>
+    from adjod.views import *
+  File "/home/administrator/virtual_new/Adjod/adjod/adjod/views.py", line 545
+    if photos_list = '':
+                   ^
+SyntaxError: invalid syntax
+WARNING 2016-06-02 17:48:01,864 base 10956 -1247450304 Not Found: /edit_postad_detail/static/img/close_btn.png
+WARNING 2016-06-02 17:48:01,889 base 10956 -1296041152 Not Found: /edit_postad_detail/static/img/premium_mobile.png
+WARNING 2016-06-02 17:48:01,890 base 10956 -1306526912 Not Found: /edit_postad_detail/static/img/premium_urgent_ad.png
+WARNING 2016-06-02 17:48:01,890 base 10956 -1275069632 Not Found: /edit_postad_detail/static/img/urgent_ad.png
+WARNING 2016-06-02 17:48:01,891 base 10956 -1285555392 Not Found: /edit_postad_detail/static/img/premium_ad.png
+WARNING 2016-06-02 17:48:01,891 base 10956 -1264846016 Not Found: /edit_postad_detail/static/img/urgent_mobile.png
+WARNING 2016-06-02 17:48:02,082 base 10956 -1247450304 Not Found: /edit_postad_detail/static/img/premium_urgent_mobile.png
+WARNING 2016-06-02 17:48:02,902 base 10956 -1247450304 Not Found: /edit_postad_detail/static/img/close_btn.png
+WARNING 2016-06-02 17:48:02,927 base 10956 -1285555392 Not Found: /edit_postad_detail/static/img/premium_ad.png
+WARNING 2016-06-02 17:48:02,927 base 10956 -1264846016 Not Found: /edit_postad_detail/static/img/urgent_mobile.png
+WARNING 2016-06-02 17:48:02,928 base 10956 -1296041152 Not Found: /edit_postad_detail/static/img/urgent_ad.png
+WARNING 2016-06-02 17:48:02,928 base 10956 -1275069632 Not Found: /edit_postad_detail/static/img/premium_mobile.png
+WARNING 2016-06-02 17:48:02,928 base 10956 -1306526912 Not Found: /edit_postad_detail/static/img/premium_urgent_ad.png
+WARNING 2016-06-02 17:48:03,177 base 10956 -1247450304 Not Found: /edit_postad_detail/static/img/premium_urgent_mobile.png
+WARNING 2016-06-02 17:48:56,810 base 10956 -1285555392 Not Found: /edit_postad_detail/static/img/premium_mobile.png
+WARNING 2016-06-02 17:48:56,845 base 10956 -1247450304 Not Found: /edit_postad_detail/static/img/urgent_mobile.png
+WARNING 2016-06-02 17:48:56,845 base 10956 -1275069632 Not Found: /edit_postad_detail/static/img/urgent_ad.png
+WARNING 2016-06-02 17:48:56,846 base 10956 -1264846016 Not Found: /edit_postad_detail/static/img/close_btn.png
+WARNING 2016-06-02 17:48:56,846 base 10956 -1317012672 Not Found: /edit_postad_detail/static/img/premium_ad.png
+WARNING 2016-06-02 17:48:56,847 base 10956 -1296041152 Not Found: /edit_postad_detail/static/img/premium_urgent_ad.png
+WARNING 2016-06-02 17:48:57,038 base 10956 -1285555392 Not Found: /edit_postad_detail/static/img/premium_urgent_mobile.png
+WARNING 2016-06-02 17:48:57,642 base 10956 -1247450304 Not Found: /edit_postad_detail/static/img/close_btn.png
+WARNING 2016-06-02 17:48:57,643 base 10956 -1264846016 Not Found: /edit_postad_detail/static/img/urgent_ad.png
+WARNING 2016-06-02 17:48:57,644 base 10956 -1275069632 Not Found: /edit_postad_detail/static/img/premium_ad.png
+WARNING 2016-06-02 17:48:57,769 base 10956 -1296041152 Not Found: /edit_postad_detail/static/img/premium_urgent_ad.png
+WARNING 2016-06-02 17:48:57,835 base 10956 -1285555392 Not Found: /edit_postad_detail/static/img/premium_mobile.png
+WARNING 2016-06-02 17:48:57,835 base 10956 -1317012672 Not Found: /edit_postad_detail/static/img/urgent_mobile.png
+WARNING 2016-06-02 17:48:57,895 base 10956 -1247450304 Not Found: /edit_postad_detail/static/img/premium_urgent_mobile.png
+WARNING 2016-06-02 17:49:30,220 base 10956 -1264846016 Not Found: /edit_postad_detail/static/img/urgent_ad.png
+WARNING 2016-06-02 17:49:30,245 base 10956 -1296041152 Not Found: /edit_postad_detail/static/img/close_btn.png
+WARNING 2016-06-02 17:49:30,245 base 10956 -1317012672 Not Found: /edit_postad_detail/static/img/premium_urgent_ad.png
+WARNING 2016-06-02 17:49:30,246 base 10956 -1306526912 Not Found: /edit_postad_detail/static/img/premium_ad.png
+WARNING 2016-06-02 17:49:30,246 base 10956 -1285555392 Not Found: /edit_postad_detail/static/img/urgent_mobile.png
+WARNING 2016-06-02 17:49:30,247 base 10956 -1275069632 Not Found: /edit_postad_detail/static/img/premium_mobile.png
+WARNING 2016-06-02 17:49:30,488 base 10956 -1264846016 Not Found: /edit_postad_detail/static/img/premium_urgent_mobile.png
+WARNING 2016-06-02 17:49:31,041 base 10956 -1264846016 Not Found: /edit_postad_detail/static/img/close_btn.png
+WARNING 2016-06-02 17:49:31,075 base 10956 -1275069632 Not Found: /edit_postad_detail/static/img/urgent_mobile.png
+WARNING 2016-06-02 17:49:31,075 base 10956 -1285555392 Not Found: /edit_postad_detail/static/img/premium_ad.png
+WARNING 2016-06-02 17:49:31,075 base 10956 -1296041152 Not Found: /edit_postad_detail/static/img/premium_urgent_ad.png
+WARNING 2016-06-02 17:49:31,076 base 10956 -1306526912 Not Found: /edit_postad_detail/static/img/premium_mobile.png
+WARNING 2016-06-02 17:49:31,076 base 10956 -1317012672 Not Found: /edit_postad_detail/static/img/urgent_ad.png
+WARNING 2016-06-02 17:49:31,284 base 10956 -1275069632 Not Found: /edit_postad_detail/static/img/premium_urgent_mobile.png
+WARNING 2016-06-02 17:49:37,233 base 10956 -1264846016 Not Found: /edit_postad_detail/static/img/close_btn.png
+WARNING 2016-06-02 17:49:37,284 base 10956 -1306526912 Not Found: /edit_postad_detail/static/img/premium_ad.png
+WARNING 2016-06-02 17:49:37,284 base 10956 -1275069632 Not Found: /edit_postad_detail/static/img/urgent_ad.png
+WARNING 2016-06-02 17:49:37,284 base 10956 -1317012672 Not Found: /edit_postad_detail/static/img/urgent_mobile.png
+WARNING 2016-06-02 17:49:37,285 base 10956 -1285555392 Not Found: /edit_postad_detail/static/img/premium_mobile.png
+WARNING 2016-06-02 17:49:37,285 base 10956 -1296041152 Not Found: /edit_postad_detail/static/img/premium_urgent_ad.png
+WARNING 2016-06-02 17:49:37,610 base 10956 -1264846016 Not Found: /edit_postad_detail/static/img/premium_urgent_mobile.png
+WARNING 2016-06-02 17:49:37,685 base 10956 -1306526912 Not Found: /edit_postad_detail/static/img/close_btn.png
+WARNING 2016-06-02 17:49:37,719 base 10956 -1275069632 Not Found: /edit_postad_detail/static/img/premium_ad.png
+WARNING 2016-06-02 17:49:39,115 base 10956 -1275069632 Not Found: /edit_postad_detail/static/img/urgent_mobile.png
+WARNING 2016-06-02 17:49:39,140 base 10956 -1285555392 Not Found: /edit_postad_detail/static/img/premium_mobile.png
+WARNING 2016-06-02 17:49:39,140 base 10956 -1296041152 Not Found: /edit_postad_detail/static/img/premium_urgent_ad.png
+WARNING 2016-06-02 17:49:39,141 base 10956 -1306526912 Not Found: /edit_postad_detail/static/img/close_btn.png
+WARNING 2016-06-02 17:49:39,141 base 10956 -1264846016 Not Found: /edit_postad_detail/static/img/urgent_ad.png
+WARNING 2016-06-02 17:49:39,142 base 10956 -1325405376 Not Found: /edit_postad_detail/static/img/premium_ad.png
+WARNING 2016-06-02 17:49:39,409 base 10956 -1275069632 Not Found: /edit_postad_detail/static/img/premium_urgent_mobile.png
+WARNING 2016-06-02 17:49:40,163 base 10956 -1296041152 Not Found: /edit_postad_detail/static/img/premium_ad.png
+WARNING 2016-06-02 17:49:40,163 base 10956 -1264846016 Not Found: /edit_postad_detail/static/img/urgent_ad.png
+WARNING 2016-06-02 17:49:40,164 base 10956 -1285555392 Not Found: /edit_postad_detail/static/img/urgent_mobile.png
+WARNING 2016-06-02 17:49:40,165 base 10956 -1306526912 Not Found: /edit_postad_detail/static/img/close_btn.png
+WARNING 2016-06-02 17:49:40,316 base 10956 -1317012672 Not Found: /edit_postad_detail/static/img/premium_urgent_ad.png
+WARNING 2016-06-02 17:49:40,338 base 10956 -1275069632 Not Found: /edit_postad_detail/static/img/premium_mobile.png
+WARNING 2016-06-02 17:49:40,364 base 10956 -1325405376 Not Found: /edit_postad_detail/static/img/premium_urgent_mobile.png
+WARNING 2016-06-02 17:49:51,298 base 10956 -1264846016 Not Found: /edit_postad_detail/static/img/urgent_ad.png
+WARNING 2016-06-02 17:49:51,324 base 10956 -1285555392 Not Found: /edit_postad_detail/static/img/urgent_mobile.png
+WARNING 2016-06-02 17:49:51,324 base 10956 -1296041152 Not Found: /edit_postad_detail/static/img/premium_ad.png
+WARNING 2016-06-02 17:49:51,325 base 10956 -1317012672 Not Found: /edit_postad_detail/static/img/premium_urgent_ad.png
+WARNING 2016-06-02 17:49:51,325 base 10956 -1306526912 Not Found: /edit_postad_detail/static/img/premium_mobile.png
+WARNING 2016-06-02 17:49:51,325 base 10956 -1275069632 Not Found: /edit_postad_detail/static/img/close_btn.png
+WARNING 2016-06-02 17:49:51,541 base 10956 -1264846016 Not Found: /edit_postad_detail/static/img/premium_urgent_mobile.png
+WARNING 2016-06-02 17:49:52,086 base 10956 -1296041152 Not Found: /edit_postad_detail/static/img/urgent_ad.png
+WARNING 2016-06-02 17:49:52,111 base 10956 -1264846016 Not Found: /edit_postad_detail/static/img/close_btn.png
+WARNING 2016-06-02 17:49:52,112 base 10956 -1275069632 Not Found: /edit_postad_detail/static/img/urgent_mobile.png
+WARNING 2016-06-02 17:49:52,112 base 10956 -1306526912 Not Found: /edit_postad_detail/static/img/premium_ad.png
+WARNING 2016-06-02 17:49:52,113 base 10956 -1317012672 Not Found: /edit_postad_detail/static/img/premium_mobile.png
+WARNING 2016-06-02 17:49:52,113 base 10956 -1285555392 Not Found: /edit_postad_detail/static/img/premium_urgent_ad.png
+WARNING 2016-06-02 17:49:52,364 base 10956 -1264846016 Not Found: /edit_postad_detail/static/img/premium_urgent_mobile.png
+WARNING 2016-06-02 17:51:47,553 base 10956 -1296041152 Not Found: /edit_postad_detail/static/img/urgent_ad.png
+WARNING 2016-06-02 17:51:47,579 base 10956 -1306526912 Not Found: /edit_postad_detail/static/img/premium_urgent_ad.png
+WARNING 2016-06-02 17:51:47,579 base 10956 -1264846016 Not Found: /edit_postad_detail/static/img/close_btn.png
+WARNING 2016-06-02 17:51:47,580 base 10956 -1275069632 Not Found: /edit_postad_detail/static/img/premium_mobile.png
+WARNING 2016-06-02 17:51:47,580 base 10956 -1285555392 Not Found: /edit_postad_detail/static/img/urgent_mobile.png
+WARNING 2016-06-02 17:51:47,580 base 10956 -1317012672 Not Found: /edit_postad_detail/static/img/premium_ad.png
+WARNING 2016-06-02 17:51:47,763 base 10956 -1296041152 Not Found: /edit_postad_detail/static/img/premium_urgent_mobile.png
+WARNING 2016-06-02 17:51:49,318 base 10956 -1285555392 Not Found: /edit_postad_detail/static/img/urgent_ad.png
+WARNING 2016-06-02 17:51:49,324 base 10956 -1264846016 Not Found: /edit_postad_detail/static/img/urgent_mobile.png
+WARNING 2016-06-02 17:51:49,324 base 10956 -1306526912 Not Found: /edit_postad_detail/static/img/premium_ad.png
+WARNING 2016-06-02 17:51:49,325 base 10956 -1275069632 Not Found: /edit_postad_detail/static/img/close_btn.png
+WARNING 2016-06-02 17:51:49,524 base 10956 -1296041152 Not Found: /edit_postad_detail/static/img/premium_urgent_ad.png
+WARNING 2016-06-02 17:51:49,578 base 10956 -1317012672 Not Found: /edit_postad_detail/static/img/premium_mobile.png
+WARNING 2016-06-02 17:51:49,620 base 10956 -1285555392 Not Found: /edit_postad_detail/static/img/premium_urgent_mobile.png
+WARNING 2016-06-02 17:52:08,472 base 10956 -1296041152 Not Found: /edit_postad_detail/static/img/urgent_ad.png
+WARNING 2016-06-02 17:52:08,497 base 10956 -1275069632 Not Found: /edit_postad_detail/static/img/close_btn.png
+WARNING 2016-06-02 17:52:08,498 base 10956 -1264846016 Not Found: /edit_postad_detail/static/img/urgent_mobile.png
+WARNING 2016-06-02 17:52:08,498 base 10956 -1325405376 Not Found: /edit_postad_detail/static/img/premium_ad.png
+WARNING 2016-06-02 17:52:08,498 base 10956 -1306526912 Not Found: /edit_postad_detail/static/img/premium_urgent_ad.png
+WARNING 2016-06-02 17:52:08,499 base 10956 -1285555392 Not Found: /edit_postad_detail/static/img/premium_mobile.png
+WARNING 2016-06-02 17:52:08,682 base 10956 -1296041152 Not Found: /edit_postad_detail/static/img/premium_urgent_mobile.png
+WARNING 2016-06-02 17:52:10,061 base 10956 -1285555392 Not Found: /edit_postad_detail/static/img/urgent_ad.png
+WARNING 2016-06-02 17:52:10,062 base 10956 -1325405376 Not Found: /edit_postad_detail/static/img/close_btn.png
+WARNING 2016-06-02 17:52:10,062 base 10956 -1275069632 Not Found: /edit_postad_detail/static/img/premium_ad.png
+WARNING 2016-06-02 17:52:10,063 base 10956 -1264846016 Not Found: /edit_postad_detail/static/img/urgent_mobile.png
+WARNING 2016-06-02 17:52:10,188 base 10956 -1296041152 Not Found: /edit_postad_detail/static/img/premium_urgent_ad.png
+WARNING 2016-06-02 17:52:10,237 base 10956 -1306526912 Not Found: /edit_postad_detail/static/img/premium_mobile.png
+WARNING 2016-06-02 17:52:10,263 base 10956 -1285555392 Not Found: /edit_postad_detail/static/img/premium_urgent_mobile.png
+WARNING 2016-06-02 17:53:08,483 base 10956 -1285555392 Not Found: /edit_postad_detail/static/img/close_btn.png
+WARNING 2016-06-02 17:53:08,508 base 10956 -1275069632 Not Found: /edit_postad_detail/static/img/premium_mobile.png
+WARNING 2016-06-02 17:53:08,508 base 10956 -1325405376 Not Found: /edit_postad_detail/static/img/urgent_ad.png
+WARNING 2016-06-02 17:53:08,509 base 10956 -1264846016 Not Found: /edit_postad_detail/static/img/premium_ad.png
+WARNING 2016-06-02 17:53:08,509 base 10956 -1306526912 Not Found: /edit_postad_detail/static/img/urgent_mobile.png
+WARNING 2016-06-02 17:53:08,510 base 10956 -1296041152 Not Found: /edit_postad_detail/static/img/premium_urgent_ad.png
+WARNING 2016-06-02 17:53:08,692 base 10956 -1285555392 Not Found: /edit_postad_detail/static/img/premium_urgent_mobile.png
+WARNING 2016-06-02 17:53:10,205 base 10956 -1317012672 Not Found: /edit_postad_detail/static/img/premium_ad.png
+WARNING 2016-06-02 17:53:10,206 base 10956 -1306526912 Not Found: /edit_postad_detail/static/img/urgent_ad.png
+WARNING 2016-06-02 17:53:10,207 base 10956 -1264846016 Not Found: /edit_postad_detail/static/img/close_btn.png
+WARNING 2016-06-02 17:53:10,207 base 10956 -1275069632 Not Found: /edit_postad_detail/static/img/urgent_mobile.png
+WARNING 2016-06-02 17:53:10,398 base 10956 -1296041152 Not Found: /edit_postad_detail/static/img/premium_urgent_ad.png
+WARNING 2016-06-02 17:53:10,423 base 10956 -1285555392 Not Found: /edit_postad_detail/static/img/premium_mobile.png
+WARNING 2016-06-02 17:53:10,456 base 10956 -1317012672 Not Found: /edit_postad_detail/static/img/premium_urgent_mobile.png
+WARNING 2016-06-02 17:53:29,801 base 10956 -1264846016 Not Found: /edit_postad_detail/static/img/urgent_mobile.png
+WARNING 2016-06-02 17:53:29,826 base 10956 -1306526912 Not Found: /edit_postad_detail/static/img/premium_mobile.png
+WARNING 2016-06-02 17:53:29,826 base 10956 -1285555392 Not Found: /edit_postad_detail/static/img/close_btn.png
+WARNING 2016-06-02 17:53:29,827 base 10956 -1317012672 Not Found: /edit_postad_detail/static/img/premium_urgent_ad.png
+WARNING 2016-06-02 17:53:29,827 base 10956 -1275069632 Not Found: /edit_postad_detail/static/img/premium_ad.png
+WARNING 2016-06-02 17:53:29,828 base 10956 -1296041152 Not Found: /edit_postad_detail/static/img/urgent_ad.png
+WARNING 2016-06-02 17:53:30,036 base 10956 -1264846016 Not Found: /edit_postad_detail/static/img/premium_urgent_mobile.png
+WARNING 2016-06-02 17:53:31,377 base 10956 -1296041152 Not Found: /edit_postad_detail/static/img/urgent_ad.png
+WARNING 2016-06-02 17:53:31,378 base 10956 -1306526912 Not Found: /edit_postad_detail/static/img/premium_ad.png
+WARNING 2016-06-02 17:53:31,378 base 10956 -1285555392 Not Found: /edit_postad_detail/static/img/urgent_mobile.png
+WARNING 2016-06-02 17:53:31,380 base 10956 -1317012672 Not Found: /edit_postad_detail/static/img/close_btn.png
+WARNING 2016-06-02 17:53:31,752 base 10956 -1264846016 Not Found: /edit_postad_detail/static/img/premium_urgent_ad.png
+WARNING 2016-06-02 17:53:31,783 base 10956 -1275069632 Not Found: /edit_postad_detail/static/img/premium_mobile.png
+WARNING 2016-06-02 17:53:31,921 base 10956 -1306526912 Not Found: /edit_postad_detail/static/img/premium_urgent_mobile.png
+WARNING 2016-06-02 17:58:36,241 base 10956 -1285555392 Not Found: /edit_postad_detail/static/img/close_btn.png
+WARNING 2016-06-02 17:58:36,267 base 10956 -1264846016 Not Found: /edit_postad_detail/static/img/premium_ad.png
+WARNING 2016-06-02 17:58:36,267 base 10956 -1306526912 Not Found: /edit_postad_detail/static/img/premium_mobile.png
+WARNING 2016-06-02 17:58:36,268 base 10956 -1317012672 Not Found: /edit_postad_detail/static/img/premium_urgent_ad.png
+WARNING 2016-06-02 17:58:36,268 base 10956 -1275069632 Not Found: /edit_postad_detail/static/img/urgent_ad.png
+WARNING 2016-06-02 17:58:36,268 base 10956 -1296041152 Not Found: /edit_postad_detail/static/img/urgent_mobile.png
+WARNING 2016-06-02 17:58:36,450 base 10956 -1285555392 Not Found: /edit_postad_detail/static/img/premium_urgent_mobile.png
+WARNING 2016-06-02 17:58:38,307 base 10956 -1275069632 Not Found: /edit_postad_detail/static/img/urgent_ad.png
+WARNING 2016-06-02 17:58:38,307 base 10956 -1317012672 Not Found: /edit_postad_detail/static/img/close_btn.png
+WARNING 2016-06-02 17:58:38,308 base 10956 -1306526912 Not Found: /edit_postad_detail/static/img/premium_urgent_ad.png
+WARNING 2016-06-02 17:58:38,309 base 10956 -1264846016 Not Found: /edit_postad_detail/static/img/premium_ad.png
+WARNING 2016-06-02 17:58:38,466 base 10956 -1285555392 Not Found: /edit_postad_detail/static/img/urgent_mobile.png
+WARNING 2016-06-02 17:58:38,498 base 10956 -1325405376 Not Found: /edit_postad_detail/static/img/premium_mobile.png
+WARNING 2016-06-02 17:58:38,552 base 10956 -1275069632 Not Found: /edit_postad_detail/static/img/premium_urgent_mobile.png
+WARNING 2016-06-02 17:59:03,015 base 10956 -1333798080 Not Found: /edit_postad_detail/static/img/premium_urgent_ad.png
+WARNING 2016-06-02 17:59:03,048 base 10956 -1296041152 Not Found: /edit_postad_detail/static/img/urgent_mobile.png
+WARNING 2016-06-02 17:59:03,049 base 10956 -1306526912 Not Found: /edit_postad_detail/static/img/premium_ad.png
+WARNING 2016-06-02 17:59:03,049 base 10956 -1342190784 Not Found: /edit_postad_detail/static/img/premium_mobile.png
+WARNING 2016-06-02 17:59:03,050 base 10956 -1285555392 Not Found: /edit_postad_detail/static/img/urgent_ad.png
+WARNING 2016-06-02 17:59:03,050 base 10956 -1317012672 Not Found: /edit_postad_detail/static/img/close_btn.png
+WARNING 2016-06-02 17:59:03,266 base 10956 -1333798080 Not Found: /edit_postad_detail/static/img/premium_urgent_mobile.png
+WARNING 2016-06-02 17:59:04,585 base 10956 -1317012672 Not Found: /edit_postad_detail/static/img/close_btn.png
+WARNING 2016-06-02 17:59:04,611 base 10956 -1285555392 Not Found: /edit_postad_detail/static/img/premium_ad.png
+WARNING 2016-06-02 17:59:04,611 base 10956 -1333798080 Not Found: /edit_postad_detail/static/img/urgent_ad.png
+WARNING 2016-06-02 17:59:04,611 base 10956 -1342190784 Not Found: /edit_postad_detail/static/img/urgent_mobile.png
+WARNING 2016-06-02 17:59:04,612 base 10956 -1264846016 Not Found: /edit_postad_detail/static/img/premium_mobile.png
+WARNING 2016-06-02 17:59:04,612 base 10956 -1275069632 Not Found: /edit_postad_detail/static/img/premium_urgent_ad.png
+WARNING 2016-06-02 17:59:04,845 base 10956 -1285555392 Not Found: /edit_postad_detail/static/img/premium_urgent_mobile.png
+WARNING 2016-06-02 17:59:22,335 base 10956 -1306526912 Not Found: /edit_postad_detail/static/img/urgent_ad.png
+WARNING 2016-06-02 17:59:22,360 base 10956 -1285555392 Not Found: /edit_postad_detail/static/img/premium_ad.png
+WARNING 2016-06-02 17:59:22,360 base 10956 -1296041152 Not Found: /edit_postad_detail/static/img/urgent_mobile.png
+WARNING 2016-06-02 17:59:22,361 base 10956 -1275069632 Not Found: /edit_postad_detail/static/img/premium_mobile.png
+WARNING 2016-06-02 17:59:22,361 base 10956 -1317012672 Not Found: /edit_postad_detail/static/img/premium_urgent_ad.png
+WARNING 2016-06-02 17:59:22,361 base 10956 -1264846016 Not Found: /edit_postad_detail/static/img/close_btn.png
+WARNING 2016-06-02 17:59:22,552 base 10956 -1306526912 Not Found: /edit_postad_detail/static/img/premium_urgent_mobile.png
+WARNING 2016-06-02 17:59:24,039 base 10956 -1317012672 Not Found: /edit_postad_detail/static/img/urgent_ad.png
+WARNING 2016-06-02 17:59:24,066 base 10956 -1275069632 Not Found: /edit_postad_detail/static/img/urgent_mobile.png
+WARNING 2016-06-02 17:59:24,066 base 10956 -1285555392 Not Found: /edit_postad_detail/static/img/close_btn.png
+WARNING 2016-06-02 17:59:24,091 base 10956 -1296041152 Not Found: /edit_postad_detail/static/img/premium_ad.png
+WARNING 2016-06-02 17:59:24,293 base 10956 -1264846016 Not Found: /edit_postad_detail/static/img/premium_urgent_ad.png
+WARNING 2016-06-02 17:59:24,302 base 10956 -1317012672 Not Found: /edit_postad_detail/static/img/premium_mobile.png
+WARNING 2016-06-02 17:59:24,317 base 10956 -1306526912 Not Found: /edit_postad_detail/static/img/premium_urgent_mobile.png
+WARNING 2016-06-02 17:59:48,727 base 10956 -1317012672 Not Found: /edit_postad_detail/static/img/close_btn.png
+WARNING 2016-06-02 17:59:48,753 base 10956 -1285555392 Not Found: /edit_postad_detail/static/img/urgent_ad.png
+WARNING 2016-06-02 17:59:48,753 base 10956 -1325405376 Not Found: /edit_postad_detail/static/img/premium_ad.png
+WARNING 2016-06-02 17:59:48,753 base 10956 -1296041152 Not Found: /edit_postad_detail/static/img/premium_urgent_ad.png
+WARNING 2016-06-02 17:59:48,755 base 10956 -1275069632 Not Found: /edit_postad_detail/static/img/urgent_mobile.png
+WARNING 2016-06-02 17:59:48,755 base 10956 -1264846016 Not Found: /edit_postad_detail/static/img/premium_mobile.png
+WARNING 2016-06-02 17:59:49,004 base 10956 -1317012672 Not Found: /edit_postad_detail/static/img/premium_urgent_mobile.png
+WARNING 2016-06-02 17:59:51,516 base 10956 -1264846016 Not Found: /edit_postad_detail/static/img/close_btn.png
+WARNING 2016-06-02 17:59:51,542 base 10956 -1285555392 Not Found: /edit_postad_detail/static/img/premium_mobile.png
+WARNING 2016-06-02 17:59:51,542 base 10956 -1306526912 Not Found: /edit_postad_detail/static/img/premium_urgent_ad.png
+WARNING 2016-06-02 17:59:51,543 base 10956 -1296041152 Not Found: /edit_postad_detail/static/img/premium_ad.png
+WARNING 2016-06-02 17:59:51,543 base 10956 -1275069632 Not Found: /edit_postad_detail/static/img/urgent_mobile.png
+WARNING 2016-06-02 17:59:51,544 base 10956 -1317012672 Not Found: /edit_postad_detail/static/img/urgent_ad.png
+WARNING 2016-06-02 17:59:51,751 base 10956 -1285555392 Not Found: /edit_postad_detail/static/img/premium_urgent_mobile.png
+WARNING 2016-06-02 18:00:29,210 base 10956 -1264846016 Not Found: /edit_postad_detail/static/img/premium_ad.png
+WARNING 2016-06-02 18:00:29,244 base 10956 -1275069632 Not Found: /edit_postad_detail/static/img/urgent_mobile.png
+WARNING 2016-06-02 18:00:29,245 base 10956 -1325405376 Not Found: /edit_postad_detail/static/img/premium_urgent_ad.png
+WARNING 2016-06-02 18:00:29,245 base 10956 -1306526912 Not Found: /edit_postad_detail/static/img/urgent_ad.png
+WARNING 2016-06-02 18:00:29,245 base 10956 -1296041152 Not Found: /edit_postad_detail/static/img/close_btn.png
+WARNING 2016-06-02 18:00:29,246 base 10956 -1317012672 Not Found: /edit_postad_detail/static/img/premium_mobile.png
+WARNING 2016-06-02 18:00:29,554 base 10956 -1264846016 Not Found: /edit_postad_detail/static/img/premium_urgent_mobile.png
+WARNING 2016-06-02 18:00:30,814 base 10956 -1264846016 Not Found: /edit_postad_detail/static/img/urgent_ad.png
+WARNING 2016-06-02 18:00:30,840 base 10956 -1317012672 Not Found: /edit_postad_detail/static/img/close_btn.png
+WARNING 2016-06-02 18:00:30,840 base 10956 -1306526912 Not Found: /edit_postad_detail/static/img/premium_ad.png
+WARNING 2016-06-02 18:00:30,841 base 10956 -1296041152 Not Found: /edit_postad_detail/static/img/urgent_mobile.png
+WARNING 2016-06-02 18:00:30,841 base 10956 -1285555392 Not Found: /edit_postad_detail/static/img/premium_urgent_ad.png
+WARNING 2016-06-02 18:00:30,841 base 10956 -1275069632 Not Found: /edit_postad_detail/static/img/premium_mobile.png
+WARNING 2016-06-02 18:00:31,067 base 10956 -1317012672 Not Found: /edit_postad_detail/static/img/premium_urgent_mobile.png
+WARNING 2016-06-02 18:00:42,711 base 10956 -1325405376 Not Found: /edit_postad_detail/static/img/close_btn.png
+WARNING 2016-06-02 18:00:42,736 base 10956 -1264846016 Not Found: /edit_postad_detail/static/img/premium_mobile.png
+WARNING 2016-06-02 18:00:42,736 base 10956 -1275069632 Not Found: /edit_postad_detail/static/img/urgent_ad.png
+WARNING 2016-06-02 18:00:42,737 base 10956 -1317012672 Not Found: /edit_postad_detail/static/img/premium_ad.png
+WARNING 2016-06-02 18:00:42,737 base 10956 -1296041152 Not Found: /edit_postad_detail/static/img/premium_urgent_ad.png
+WARNING 2016-06-02 18:00:42,737 base 10956 -1285555392 Not Found: /edit_postad_detail/static/img/urgent_mobile.png
+WARNING 2016-06-02 18:00:42,920 base 10956 -1325405376 Not Found: /edit_postad_detail/static/img/premium_urgent_mobile.png
+WARNING 2016-06-02 18:00:44,432 base 10956 -1296041152 Not Found: /edit_postad_detail/static/img/urgent_ad.png
+WARNING 2016-06-02 18:00:44,459 base 10956 -1264846016 Not Found: /edit_postad_detail/static/img/urgent_mobile.png
+WARNING 2016-06-02 18:00:44,459 base 10956 -1275069632 Not Found: /edit_postad_detail/static/img/premium_ad.png
+WARNING 2016-06-02 18:00:44,460 base 10956 -1317012672 Not Found: /edit_postad_detail/static/img/close_btn.png
+WARNING 2016-06-02 18:00:44,645 base 10956 -1325405376 Not Found: /edit_postad_detail/static/img/premium_urgent_ad.png
+WARNING 2016-06-02 18:00:44,677 base 10956 -1296041152 Not Found: /edit_postad_detail/static/img/premium_mobile.png
+WARNING 2016-06-02 18:00:44,693 base 10956 -1285555392 Not Found: /edit_postad_detail/static/img/premium_urgent_mobile.png
+WARNING 2016-06-02 18:00:56,024 base 10956 -1285555392 Not Found: /edit_postad_detail/static/img/urgent_mobile.png
+WARNING 2016-06-02 18:00:56,049 base 10956 -1264846016 Not Found: /edit_postad_detail/static/img/urgent_ad.png
+WARNING 2016-06-02 18:00:56,050 base 10956 -1296041152 Not Found: /edit_postad_detail/static/img/premium_urgent_ad.png
+WARNING 2016-06-02 18:00:56,050 base 10956 -1275069632 Not Found: /edit_postad_detail/static/img/premium_ad.png
+WARNING 2016-06-02 18:00:56,051 base 10956 -1317012672 Not Found: /edit_postad_detail/static/img/close_btn.png
+WARNING 2016-06-02 18:00:56,051 base 10956 -1325405376 Not Found: /edit_postad_detail/static/img/premium_mobile.png
+WARNING 2016-06-02 18:00:56,233 base 10956 -1285555392 Not Found: /edit_postad_detail/static/img/premium_urgent_mobile.png
+WARNING 2016-06-02 18:00:57,662 base 10956 -1285555392 Not Found: /edit_postad_detail/static/img/urgent_ad.png
+WARNING 2016-06-02 18:00:57,696 base 10956 -1325405376 Not Found: /edit_postad_detail/static/img/close_btn.png
+WARNING 2016-06-02 18:00:57,696 base 10956 -1317012672 Not Found: /edit_postad_detail/static/img/urgent_mobile.png
+WARNING 2016-06-02 18:00:57,696 base 10956 -1264846016 Not Found: /edit_postad_detail/static/img/premium_mobile.png
+WARNING 2016-06-02 18:00:57,697 base 10956 -1296041152 Not Found: /edit_postad_detail/static/img/premium_urgent_ad.png
+WARNING 2016-06-02 18:00:57,699 base 10956 -1275069632 Not Found: /edit_postad_detail/static/img/premium_ad.png
+WARNING 2016-06-02 18:00:57,957 base 10956 -1325405376 Not Found: /edit_postad_detail/static/img/premium_urgent_mobile.png
+ERROR 2016-06-02 18:01:25,693 base 10956 -1325405376 Internal Server Error: /update_product/51/
+Traceback (most recent call last):
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/administrator/virtual_new/env/local/lib/python2.7/site-packages/django/db/transaction.py", line 209, in inner
+    return func(*args, **kwargs)
+  File "/home/administrator/virtual_new/Adjod/adjod/adjod/views.py", line 554, in update_success
+    updated_product.photos = photos_list+","+updated_product.photos
+TypeError: cannot concatenate 'str' and 'ImageFieldFile' objects
+WARNING 2016-06-02 18:02:17,976 base 12901 -1305478336 Not Found: /edit_postad_detail/static/img/urgent_ad.png
+WARNING 2016-06-02 18:02:17,976 base 12901 -1247188160 Not Found: /edit_postad_detail/static/img/close_btn.png
+WARNING 2016-06-02 18:02:17,977 base 12901 -1294992576 Not Found: /edit_postad_detail/static/img/premium_ad.png
+WARNING 2016-06-02 18:02:17,978 base 12901 -1315964096 Not Found: /edit_postad_detail/static/img/premium_mobile.png
+WARNING 2016-06-02 18:02:17,978 base 12901 -1274545344 Not Found: /edit_postad_detail/static/img/urgent_mobile.png
+WARNING 2016-06-02 18:02:18,127 base 12901 -1284506816 Not Found: /edit_postad_detail/static/img/premium_urgent_ad.png
+WARNING 2016-06-02 18:02:18,211 base 12901 -1305478336 Not Found: /edit_postad_detail/static/img/premium_urgent_mobile.png
+WARNING 2016-06-02 18:02:19,597 base 12901 -1274545344 Not Found: /edit_postad_detail/static/img/urgent_mobile.png
+WARNING 2016-06-02 18:02:19,650 base 12901 -1305478336 Not Found: /edit_postad_detail/static/img/urgent_ad.png
+WARNING 2016-06-02 18:02:19,650 base 12901 -1247188160 Not Found: /edit_postad_detail/static/img/premium_mobile.png
+WARNING 2016-06-02 18:02:19,651 base 12901 -1294992576 Not Found: /edit_postad_detail/static/img/premium_urgent_ad.png
+WARNING 2016-06-02 18:02:19,651 base 12901 -1284506816 Not Found: /edit_postad_detail/static/img/close_btn.png
+WARNING 2016-06-02 18:02:19,651 base 12901 -1315964096 Not Found: /edit_postad_detail/static/img/premium_ad.png
+WARNING 2016-06-02 18:02:19,941 base 12901 -1305478336 Not Found: /edit_postad_detail/static/img/premium_urgent_mobile.png
+WARNING 2016-06-02 18:02:59,944 base 12901 -1284506816 Not Found: /edit_postad_detail/static/img/urgent_mobile.png
+WARNING 2016-06-02 18:02:59,978 base 12901 -1315964096 Not Found: /edit_postad_detail/static/img/close_btn.png
+WARNING 2016-06-02 18:02:59,979 base 12901 -1294992576 Not Found: /edit_postad_detail/static/img/premium_ad.png
+WARNING 2016-06-02 18:02:59,979 base 12901 -1324356800 Not Found: /edit_postad_detail/static/img/premium_mobile.png
+WARNING 2016-06-02 18:02:59,980 base 12901 -1274545344 Not Found: /edit_postad_detail/static/img/urgent_ad.png
+WARNING 2016-06-02 18:03:00,271 base 12901 -1305478336 Not Found: /edit_postad_detail/static/img/premium_urgent_ad.png
+WARNING 2016-06-02 18:03:00,297 base 12901 -1284506816 Not Found: /edit_postad_detail/static/img/premium_urgent_mobile.png
+WARNING 2016-06-02 18:03:02,482 base 12901 -1284506816 Not Found: /edit_postad_detail/static/img/urgent_ad.png
+WARNING 2016-06-02 18:03:02,484 base 12901 -1324356800 Not Found: /edit_postad_detail/static/img/urgent_mobile.png
+WARNING 2016-06-02 18:03:02,484 base 12901 -1305478336 Not Found: /edit_postad_detail/static/img/close_btn.png
+WARNING 2016-06-02 18:03:02,485 base 12901 -1294992576 Not Found: /edit_postad_detail/static/img/premium_ad.png
+WARNING 2016-06-02 18:03:02,485 base 12901 -1315964096 Not Found: /edit_postad_detail/static/img/premium_mobile.png
+WARNING 2016-06-02 18:03:02,666 base 12901 -1274545344 Not Found: /edit_postad_detail/static/img/premium_urgent_ad.png
+WARNING 2016-06-02 18:03:02,692 base 12901 -1284506816 Not Found: /edit_postad_detail/static/img/premium_urgent_mobile.png
+WARNING 2016-06-02 18:03:26,702 base 12901 -1284506816 Not Found: /edit_postad_detail/static/img/urgent_ad.png
+WARNING 2016-06-02 18:03:26,736 base 12901 -1305478336 Not Found: /edit_postad_detail/static/img/premium_mobile.png
+WARNING 2016-06-02 18:03:26,736 base 12901 -1294992576 Not Found: /edit_postad_detail/static/img/premium_ad.png
+WARNING 2016-06-02 18:03:26,737 base 12901 -1274545344 Not Found: /edit_postad_detail/static/img/close_btn.png
+WARNING 2016-06-02 18:03:26,737 base 12901 -1315964096 Not Found: /edit_postad_detail/static/img/urgent_mobile.png
+WARNING 2016-06-02 18:03:26,936 base 12901 -1324356800 Not Found: /edit_postad_detail/static/img/premium_urgent_ad.png
+WARNING 2016-06-02 18:03:27,019 base 12901 -1284506816 Not Found: /edit_postad_detail/static/img/premium_urgent_mobile.png
+WARNING 2016-06-02 18:03:28,515 base 12901 -1324356800 Not Found: /edit_postad_detail/static/img/close_btn.png
+WARNING 2016-06-02 18:03:28,540 base 12901 -1315964096 Not Found: /edit_postad_detail/static/img/urgent_mobile.png
+WARNING 2016-06-02 18:03:28,541 base 12901 -1284506816 Not Found: /edit_postad_detail/static/img/urgent_ad.png
+WARNING 2016-06-02 18:03:28,541 base 12901 -1305478336 Not Found: /edit_postad_detail/static/img/premium_mobile.png
+WARNING 2016-06-02 18:03:28,541 base 12901 -1294992576 Not Found: /edit_postad_detail/static/img/premium_ad.png
+WARNING 2016-06-02 18:03:28,733 base 12901 -1324356800 Not Found: /edit_postad_detail/static/img/premium_urgent_ad.png
+WARNING 2016-06-02 18:03:28,749 base 12901 -1274545344 Not Found: /edit_postad_detail/static/img/premium_urgent_mobile.png
+WARNING 2016-06-02 18:04:00,890 base 13090 -1257243840 Not Found: /edit_postad_detail/static/img/urgent_ad.png
+WARNING 2016-06-02 18:04:00,924 base 13090 -1278215360 Not Found: /edit_postad_detail/static/img/premium_urgent_ad.png
+WARNING 2016-06-02 18:04:00,925 base 13090 -1267729600 Not Found: /edit_postad_detail/static/img/premium_mobile.png
+WARNING 2016-06-02 18:04:00,925 base 13090 -1288701120 Not Found: /edit_postad_detail/static/img/premium_ad.png
+WARNING 2016-06-02 18:04:00,926 base 13090 -1246766272 Not Found: /edit_postad_detail/static/img/urgent_mobile.png
+WARNING 2016-06-02 18:04:00,926 base 13090 -1299186880 Not Found: /edit_postad_detail/static/img/close_btn.png
+WARNING 2016-06-02 18:04:01,278 base 13090 -1246766272 Not Found: /edit_postad_detail/static/img/premium_urgent_mobile.png
+WARNING 2016-06-02 18:04:01,839 base 13090 -1278215360 Not Found: /edit_postad_detail/static/img/premium_ad.png
+WARNING 2016-06-02 18:04:01,840 base 13090 -1267729600 Not Found: /edit_postad_detail/static/img/close_btn.png
+WARNING 2016-06-02 18:04:01,840 base 13090 -1288701120 Not Found: /edit_postad_detail/static/img/urgent_ad.png
+WARNING 2016-06-02 18:04:01,841 base 13090 -1257243840 Not Found: /edit_postad_detail/static/img/urgent_mobile.png
+WARNING 2016-06-02 18:04:02,091 base 13090 -1246766272 Not Found: /edit_postad_detail/static/img/premium_urgent_ad.png
+WARNING 2016-06-02 18:04:02,116 base 13090 -1299186880 Not Found: /edit_postad_detail/static/img/premium_mobile.png
+WARNING 2016-06-02 18:04:02,150 base 13090 -1278215360 Not Found: /edit_postad_detail/static/img/premium_urgent_mobile.png

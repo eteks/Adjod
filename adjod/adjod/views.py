@@ -535,10 +535,25 @@ def update_success(request, pk):
 			# hidden_image_src = request.POST.get('hidden_image_src')
 			# product_photos = ''
 			# if request.FILES.getlist('photos[]'):
+			photos_list = ''
+			edit_hidden_photos  = request.POST.get('edit_hidden_photos')
+			edit_remove_photos  = request.POST.get('edit_remove_photos')
+			edit_hidden_photos_array  = [n for n in str(edit_hidden_photos).split(',')]
+			edit_remove_photos_array  = [n for n in str(edit_remove_photos).split(',')]
+			exists_photo_array = list(set(edit_hidden_photos_array) - set(edit_remove_photos_array))
+			for e in exists_photo_array:
+				if photos_list == '':
+					photos_list = photos_list + e
+				else:
+					photos_list = photos_list + "," + e
 			photos =request.FILES.getlist('photos[]')
 			print 'photos>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>', photos
 			# updated_product.photos, updated_product.imagecount, updated_product.thumbnail = create_path_for_photos_thumbanails(photos, updated_product)
 			updated_product.photos, updated_product.imagecount, updated_product.thumbnail = create_path_for_photos_thumbanails(photos, updated_product)
+			if updated_product.photos:
+				updated_product.photos = photos_list+","+str(updated_product.photos)
+			else:
+				updated_product.photos = photos_list
 			# print 'image_receive', product_photos
 			# if hidden_image_src != '' and product_photos != '':
 			# 	updated_product.photos = str(hidden_image_src)+','+str(product_photos)

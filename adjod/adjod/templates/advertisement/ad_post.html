@@ -87,6 +87,8 @@
           </div> <!-- field_title -->
           <div class="field_div form-group upload_image" id="upload_photos_div">
           {% if edit_product %}
+          <input type="hidden" name="edit_hidden_photos" class="edit_hidden_photos" value="{{edit_product.photos}}">
+          <input type="hidden" name="edit_remove_photos" class="edit_remove_photos" value="">
             {% if pic|length != 0 %}
               <div class="simpleFilePreview_multiUI edit_image_available">
                <span class="simpleFilePreview_shiftRight simpleFilePreview_shifter"></span>
