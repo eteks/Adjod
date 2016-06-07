@@ -550,10 +550,10 @@ def update_success(request, pk):
 			print 'photos>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>', photos
 			# updated_product.photos, updated_product.imagecount, updated_product.thumbnail = create_path_for_photos_thumbanails(photos, updated_product)
 			updated_product.photos, updated_product.imagecount, updated_product.thumbnail = create_path_for_photos_thumbanails(photos, updated_product)
-			if updated_product.photos:
+			if updated_product.photos and photos_list != '':
 				updated_product.photos = photos_list+","+str(updated_product.photos)
 			else:
-				updated_product.photos = photos_list
+				updated_product.photos = updated_product.photos
 			updated_product.imagecount = len([n for n in str(updated_product.photos).split(',')])
 			# print 'image_receive', product_photos
 			# if hidden_image_src != '' and product_photos != '':

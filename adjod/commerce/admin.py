@@ -4,9 +4,9 @@ from commerce.models import Order, Transaction
 
 class OrderAdmin(admin.ModelAdmin):
     fields = ['banner', 'banner_plan']
-    list_display = ('id', 'banner_name', 'banner_plan_page',)
+    list_display = ('id', 'banner', 'banner_plan','product','subscription_plan')
     list_filter = ['banner__admin_status', 'banner_plan__page','banner_plan__position']
-    search_fields = ['banner__user']
+    search_fields = ['id','product__title','subscription_plan__purpose','banner_plan__position']
     list_per_page = 50
 
     def has_delete_permission(self, request, obj=None):
@@ -17,13 +17,13 @@ class OrderAdmin(admin.ModelAdmin):
             return self.readonly_fields + ('banner', 'banner_plan')
         return self.readonly_fields
 
-    def banner_name(self, obj):
-        return obj.banner.user
-    banner_name.short_description = 'User'
+    # def banner_name(self, obj):
+    #     return obj.banner.user
+    # banner_name.short_description = 'User'
 
-    def banner_plan_page(self, obj):
-        return obj.banner_plan.page
-    banner_plan_page.short_description = 'Page'
+    # def banner_plan_page(self, obj):
+    #     return obj.banner_plan.page
+    # banner_plan_page.short_description = 'Page'
 
 
 class TransactionAdmin(admin.ModelAdmin):

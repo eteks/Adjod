@@ -2989,3 +2989,13 @@ a:hover{
     color: #fff !important;
     font-weight: bold;
 }
+.text {
+    width: 150px;
+}
+.row1 > td,.row2 > td{
+    height: 30px;  
+     overflow: hidden; 
+}
+.description-column .text{
+     width: 600px !important;
+} 

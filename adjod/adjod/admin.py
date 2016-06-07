@@ -4,14 +4,17 @@ from django.contrib import admin
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.models import User
 from django.contrib.auth.admin import UserAdmin
+from adjod.forms import UserProfileForm
 
 
 class UserProfileAdmin(admin.ModelAdmin):
 
+    form = UserProfileForm
+
     fields=['username','first_name','last_name','password','email','mobile','city','language','is_subscribed','age_status']
-    list_display = ('id','email','mobile','city','language','ad_count','is_emailverified','is_subscribed','age_status',)
+    list_display = ('id','username','first_name','last_name','email','mobile','city','language','ad_count','is_emailverified','is_subscribed','age_status',)
     list_filter = ['city','language']
-    search_fields = ['city', 'language','username','email','mobile']
+    # search_fields = ['city', 'language','username','email','mobile']
     readonly_fields =['city']
     list_per_page = 50
 
@@ -65,7 +68,7 @@ class BaseCurrencyAdmin(admin.ModelAdmin):
 
     def has_delete_permission(self, request, obj=None):
         return False
-
+admin.site.unregister(User)
 admin.site.register(UserProfile,UserProfileAdmin)
 admin.site.register(BaseCurrency,BaseCurrencyAdmin)
 admin.site.register(ExchangeRate,ExchangeRateAdmin)

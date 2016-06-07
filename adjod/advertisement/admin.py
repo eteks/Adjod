@@ -22,7 +22,7 @@ class SubCategoryAdmin(admin.ModelAdmin):
     fields=['category','name']
     list_display = ('id', 'category','name')
     list_filter = ['category']
-    search_fields = ['name']
+    search_fields = ['name','category__name']
     # readonly_fields =['id']
     list_per_page = 50
 
@@ -50,7 +50,7 @@ class DropdownAdmin(admin.ModelAdmin):
     fields=['brand_name','subcat']
     list_display = ('id', 'brand_name','subcategory' )
     list_filter = ['subcat__category']
-    search_fields = ['id', 'brand_name']
+    search_fields = ['id', 'brand_name','subcat__name']
     # readonly_fields =['id']
     list_per_page = 50
 
@@ -80,7 +80,7 @@ class PremiumPriceInfoAdmin(admin.ModelAdmin):
     fields=['premium_price','purpose','duration']
     list_display = ('id', 'premium_price','base_currency','purpose','duration')
     list_filter = ['purpose']
-    search_fields = ['premium_price','base_currency','purpose']
+    search_fields = ['premium_price','base_currency','purpose','duration']
     readonly_fields =['base_currency']
     list_per_page = 50
 
@@ -89,7 +89,7 @@ class ProductAdmin(admin.ModelAdmin):
     list_display = ('id', 'userprofile','category', 'subcategory', 'adtype', 'title', 'photos', 'thumbnail', 'imagecount','condition', 'price',
             'ad_brand','ad_year','city', 'locality', 'description', 'you_are','you_name', 'you_email','you_phone','ispremium','premium_plan','created_date','modified_date','status_isactive')
     list_filter = ['category', 'subcategory','ispremium','premium_plan']
-    search_fields = ['id','^userprofile__username']
+    search_fields = ['id','^userprofile__username','category__name','subcategory__name','title','city__city','locality__locality','you_email']
     readonly_fields =['city']
     fieldsets = [
       ('Product Details', {
@@ -115,6 +115,9 @@ class ProductAdmin(admin.ModelAdmin):
       }),
     ]
     list_per_page = 50
+
+    def has_add_permission(self, request):
+        return False
 
 admin.site.register(PremiumPriceInfo, PremiumPriceInfoAdmin)
 admin.site.register(FreeAlert, FreeAlertAdmin)
